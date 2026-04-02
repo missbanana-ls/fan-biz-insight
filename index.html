@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAN商业化行业洞察 — 每日动态</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Product+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --font: 'Google Sans', 'Noto Sans SC', 'Segoe UI', system-ui, sans-serif;
+
+      --white: #ffffff;
+      --bg: #ffffff;
+      --bg-surface: #f8f9fa;
+      --bg-hover: #f1f3f4;
+      --bg-active: #e8f0fe;
+
+      --text: #202124;
+      --text-2: #5f6368;
+      --text-3: #80868b;
+      --text-4: #bdc1c6;
+
+      --blue: #1a73e8;
+      --blue-hover: #1765cc;
+      --blue-light: #e8f0fe;
+      --blue-pale: #f0f6ff;
+
+      --green: #1e8e3e;
+      --green-bg: #e6f4ea;
+      --yellow: #f9ab00;
+      --yellow-bg: #fef7e0;
+      --red: #d93025;
+      --red-bg: #fce8e6;
+      --teal: #12a4af;
+      --teal-bg: #e4f7f7;
+      --purple: #8430ce;
+      --purple-bg: #f3e8fd;
+      --orange: #e8710a;
+      --orange-bg: #feefe3;
+
+      --border: #dadce0;
+      --border-light: #e8eaed;
+      --border-focus: #1a73e8;
+
+      --shadow-1: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+      --shadow-2: 0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
+      --shadow-hover: 0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
+
+      --radius: 8px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --radius-full: 100px;
+
+      --ease: cubic-bezier(0.2, 0, 0, 1);
+      --max-w: 1200px;
+    }
+
+    [data-theme="dark"] {
+      --bg: #1f1f1f;
+      --bg-surface: #292a2d;
+      --bg-hover: #333538;
+      --bg-active: #28344a;
+
+      --text: #e8eaed;
+      --text-2: #9aa0a6;
+      --text-3: #80868b;
+      --text-4: #5f6368;
+
+      --blue: #8ab4f8;
+      --blue-hover: #aecbfa;
+      --blue-light: #28344a;
+      --blue-pale: #1d2a3e;
+
+      --green: #81c995;
+      --green-bg: #1b3626;
+      --yellow: #fdd663;
+      --yellow-bg: #3e3012;
+      --red: #f28b82;
+      --red-bg: #3c2020;
+      --teal: #78d9d9;
+      --teal-bg: #1a3232;
+      --purple: #c58af9;
+      --purple-bg: #2d1f3d;
+      --orange: #fcad70;
+      --orange-bg: #3c2610;
+
+      --white: #1f1f1f;
+      --border: #3c4043;
+      --border-light: #333538;
+      --border-focus: #8ab4f8;
+
+      --shadow-1: 0 1px 3px 0 rgba(0,0,0,0.5), 0 1px 2px 0 rgba(0,0,0,0.3);
+      --shadow-2: 0 2px 6px 0 rgba(0,0,0,0.5), 0 4px 12px 4px rgba(0,0,0,0.3);
+      --shadow-hover: 0 2px 6px 0 rgba(0,0,0,0.5), 0 4px 12px 4px rgba(0,0,0,0.3);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+
+    ::selection { background: var(--blue-light); color: var(--blue); }
+
+    /* ====== TOP NAV ====== */
+    .topnav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-light);
+      height: 64px;
+    }
+
+    .topnav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: var(--text);
+      letter-spacing: -0.01em;
+    }
+
+    .topnav-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+      margin-left: auto;
+    }
+
+    .search-wrap {
+      position: relative;
+    }
+
+    .search-input {
+      height: 40px;
+      width: 220px;
+      padding: 0 12px 0 38px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-full);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 0.875rem;
+      font-family: var(--font);
+      transition: all 200ms var(--ease);
+    }
+
+    .search-input::placeholder { color: var(--text-4); }
+    .search-input:focus { outline: none; border-color: var(--border-focus); box-shadow: 0 0 0 2px var(--blue-light); width: 280px; }
+
+    .search-wrap svg {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-3);
+      pointer-events: none;
+    }
+
+
+    /* ====== HERO ====== */
+    .hero {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 48px 24px 0;
+      text-align: left;
+    }
+
+    .hero-top {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .hero-title {
+      font-size: 2.75rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: var(--text);
+    }
+
+    .hero-date-nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--bg-surface);
+      border-radius: var(--radius-full);
+      padding: 4px;
+      flex-shrink: 0;
+    }
+
+    .hero-date-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: none;
+      background: transparent;
+      color: var(--text-2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 200ms var(--ease);
+    }
+
+    .hero-date-btn:hover { background: var(--bg-hover); }
+    .hero-date-btn:focus-visible { outline: 2px solid var(--border-focus); outline-offset: 1px; }
+
+    .hero-date-label {
+      padding: 0 12px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text);
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    .hero-subtitle {
+      margin-top: 12px;
+      font-size: 1rem;
+      color: var(--text-2);
+      font-weight: 400;
+      max-width: 560px;
+    }
+
+    .hero-stats {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0;
+    }
+
+    .hero-stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 28px;
+    }
+
+    .hero-stat:first-child {
+      padding-left: 0;
+    }
+
+    .hero-stat-num {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .hero-stat-label {
+      font-size: 0.75rem;
+      color: var(--text-3);
+      font-weight: 500;
+      margin-top: 2px;
+    }
+
+    .hero-divider {
+      width: 1px;
+      height: 36px;
+      background: var(--border);
+    }
+
+    /* ====== FILTERS ====== */
+    .filters {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 28px 24px 0;
+    }
+
+    .filters-scroll {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .filters-scroll::-webkit-scrollbar { display: none; }
+
+    .chip {
+      height: 36px;
+      padding: 0 16px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text-2);
+      font-size: 0.8125rem;
+      font-weight: 500;
+      font-family: var(--font);
+      cursor: pointer;
+      transition: all 200ms var(--ease);
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .chip:hover { background: var(--bg-surface); border-color: var(--text-4); }
+
+    .chip.active {
+      background: var(--blue-light);
+      color: var(--blue);
+      border-color: transparent;
+    }
+
+    .chip .chip-num {
+      font-size: 0.6875rem;
+      opacity: 0.5;
+    }
+
+    .chip.active .chip-num { opacity: 0.7; }
+
+    /* ====== CONTENT GRID ====== */
+    .grid-wrap {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 28px 24px 80px;
+    }
+
+    .section-row {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 0.6875rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-3);
+      padding-bottom: 12px;
+      margin-bottom: 4px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 16px;
+    }
+
+    /* ====== CARD (Material-style) ====== */
+    .card {
+      background: var(--bg);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      transition: box-shadow 200ms var(--ease), border-color 200ms var(--ease);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card:hover {
+      box-shadow: var(--shadow-hover);
+      border-color: var(--border);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .card h3 {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.5;
+      letter-spacing: -0.005em;
+    }
+
+    .card-source {
+      flex-shrink: 0;
+      font-size: 0.6875rem;
+      font-weight: 500;
+      color: var(--text-3);
+      background: var(--bg-surface);
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      white-space: nowrap;
+      margin-top: 2px;
+    }
+
+    .card-body {
+      font-size: 0.8125rem;
+      color: var(--text-2);
+      line-height: 1.7;
+    }
+
+    .card-insight {
+      background: var(--bg-surface);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+    }
+
+    .card-insight-label {
+      font-size: 0.625rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-3);
+      margin-bottom: 3px;
+    }
+
+    .card-insight-text {
+      font-size: 0.8125rem;
+      color: var(--text-2);
+      line-height: 1.6;
+    }
+
+    .card-ime {
+      background: var(--bg-surface);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+    }
+
+    .card-ime-label {
+      font-size: 0.625rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-3);
+      margin-bottom: 3px;
+    }
+
+    .card-ime-text {
+      font-size: 0.8125rem;
+      color: var(--text-2);
+      line-height: 1.6;
+    }
+
+    .card-foot {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: auto;
+      padding-top: 4px;
+    }
+
+    .card-tag {
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.6875rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 150ms var(--ease);
+      background: var(--bg-surface);
+      color: var(--text-2);
+      border: 1px solid var(--border-light);
+    }
+
+    .card-tag:hover { background: var(--bg-hover); color: var(--text); }
+
+    .card-priority {
+      margin-left: auto;
+      font-size: 0.625rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: var(--text-4);
+    }
+
+    .card-priority .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+
+    .card-priority.high { color: var(--red); }
+    .card-priority.high .dot { background: var(--red); }
+    .card-priority.medium { color: var(--yellow); }
+    .card-priority.medium .dot { background: var(--yellow); }
+    .card-priority.normal { color: var(--text-4); }
+    .card-priority.normal .dot { background: var(--text-4); }
+
+    /* ====== EMPTY ====== */
+    .empty {
+      text-align: center;
+      padding: 80px 24px;
+    }
+
+    .empty-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--bg-surface);
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-4);
+    }
+
+    .empty-title {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text-2);
+      margin-bottom: 8px;
+    }
+
+    .empty-desc {
+      font-size: 0.875rem;
+      color: var(--text-3);
+      max-width: 340px;
+      margin: 0 auto;
+    }
+
+    /* ====== FOOTER ====== */
+    .footer {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px 40px;
+      text-align: center;
+    }
+
+    .footer-line {
+      width: 40px;
+      height: 1px;
+      background: var(--border);
+      margin: 0 auto 20px;
+    }
+
+    .footer-text {
+      font-size: 0.75rem;
+      color: var(--text-4);
+    }
+
+    /* ====== SCROLL TOP ====== */
+    .scroll-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-1);
+      opacity: 0;
+      transform: translateY(12px);
+      transition: all 300ms var(--ease);
+      pointer-events: none;
+      z-index: 50;
+    }
+
+    .scroll-top.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+    .scroll-top:hover { box-shadow: var(--shadow-2); background: var(--bg-surface); }
+    .scroll-top:focus-visible { outline: 2px solid var(--border-focus); outline-offset: 2px; }
+
+    /* ====== RESPONSIVE ====== */
+    @media (max-width: 768px) {
+      .topnav-inner { padding: 0 16px; gap: 12px; }
+      .hero { padding: 32px 16px 0; }
+      .hero-title { font-size: 2rem; }
+      .hero-subtitle { font-size: 0.875rem; }
+      .hero-top { flex-direction: column; gap: 12px; }
+      .hero-stats { gap: 0; }
+      .hero-stat { padding: 0 16px; }
+      .hero-stat-num { font-size: 1.25rem; }
+      .filters { padding: 20px 16px 0; }
+      .grid-wrap { padding: 20px 16px 64px; }
+      .cards { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .search-wrap { display: none; }
+      .hero-title { font-size: 1.5rem; }
+      .hero-stat { padding: 0 12px; }
+      .hero-stats { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="#" class="brand">
+        <span class="brand-name">FAN商业化行业洞察</span>
+      </a>
+
+      <div class="topnav-right">
+        <div class="search-wrap">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="search" class="search-input" id="searchInput" placeholder="搜索资讯..." aria-label="搜索资讯" />
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="hero"></header>
+
+  <!-- FILTERS -->
+  <div class="filters">
+    <div class="filters-scroll" id="filterRow"></div>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="grid-wrap" id="mainContent"></main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-line"></div>
+    <p class="footer-text">FAN商业化行业洞察 — 每日互联网商业化动态精选 · 数据仅供参考</p>
+  </footer>
+
+  <!-- SCROLL TOP -->
+  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="回到顶部">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+<script>
+// ============================================================
+// TAG → COLOR MAP (Google palette)
+// ============================================================
+const TAG_COLORS = {
+  "广告营销": "blue",
+  "电商零售": "green",
+  "订阅会员": "purple",
+  "AI商业化": "teal",
+  "社交变现": "orange",
+  "金融科技": "blue",
+  "游戏": "red",
+  "短视频/直播": "red",
+  "出海": "teal",
+  "本地生活": "yellow",
+  "企业服务": "purple",
+  "隐私合规": "orange",
+  "平台治理": "green",
+};
+
+// ============================================================
+// DATA
+// ============================================================
+const NEWS_DATA = {
+  "2026-04-02": [
+    {
+      title: "抖音电商推出「全域兴趣电商2.0」战略，打通内容场与货架场数据",
+      summary: "抖音电商宣布升级全域兴趣电商至2.0版本，统一内容场与货架场用户行为数据，实现精准跨场景推荐，并向商户开放「全域ROI」指标面板。",
+      reason: "字节在电商领域的关键战略升级，标志着内容电商进入数据驱动的精细化运营阶段，对依赖抖音渠道的商家和服务商影响深远。",
+      imeInsight: "输入法可借鉴「全域数据打通」思路，将输入场景（聊天、搜索、评论）与商业化场景（广告、电商导流）的用户意图数据统一建模，提升跨场景推荐转化率。",
+      tags: ["电商零售", "短视频/直播"], priority: "high", source: "36Kr"
+    },
+    {
+      title: "Google Ads 引入 AI Overviews 广告位，搜索广告格局迎来巨变",
+      summary: "Google 正式在 AI Overviews 结果中嵌入广告位，以「推荐」标签出现在 AI 摘要下方，传统 SEO/SEM 流量分配逻辑将被重塑。",
+      reason: "搜索广告是全球最大的数字广告市场，Google 在 AI 搜索中植入广告是商业化里程碑，直接影响全球数百万广告主投放策略。",
+      imeInsight: "输入法正在集成 AI 对话和搜索能力。在 AI 生成的候选词、智能回复和搜索建议中嵌入原生广告位，是输入法复刻 Google AI Overviews 广告模式的直接机会。",
+      tags: ["广告营销", "AI商业化"], priority: "high", source: "The Verge"
+    },
+    {
+      title: "微信小店「送礼物」功能灰度开放，社交电商再探新路",
+      summary: "微信小店新增「送礼物」功能，用户可在小店内选购商品后以微信红包形式赠送好友，好友填写地址后即可收货。",
+      reason: "送礼场景天然契合社交链路，可能成为继拼多多拼团之后又一个社交电商的破局点。",
+      imeInsight: "输入法是社交聊天的入口。可在用户输入节日祝福、生日快乐等关键词时，智能推荐礼物卡片、红包封面或小店商品链接，将输入行为直接转化为社交电商交易。",
+      tags: ["电商零售", "社交变现"], priority: "high", source: "微信派"
+    },
+    {
+      title: "Netflix 广告套餐用户突破1亿，AVOD 模式验证成功",
+      summary: "Netflix Q1 数据显示含广告的低价订阅套餐全球月活突破1亿，ARPU 超过纯订阅基础套餐，广告收入同比增长150%。",
+      reason: "流媒体巨头广告化转型首次得到规模验证，证明「订阅+广告」混合模式是视频平台最优商业模式。",
+      imeInsight: "输入法可参考「基础免费+高级付费+广告混合」模式：免费版展示适量原生广告，付费会员享受无广告+高级AI功能，两层用户互相补充ARPU。",
+      tags: ["订阅会员", "广告营销"], priority: "high", source: "Bloomberg"
+    },
+    {
+      title: "OpenAI 推出企业版 API 按效果付费计费新模式",
+      summary: "OpenAI 针对企业客户推出按成功完成任务数计费的模式，首批支持客服对话解决率、代码审查通过率等指标。",
+      reason: "从 Token 计费到效果计费是商业模式根本转变，可能重新定义整个 AI SaaS 行业收费标准。",
+      imeInsight: "输入法面向B端（如客服系统、企业IM）提供智能输入SDK时，可引入按效果计费模式——按智能回复采纳率、输入效率提升比例收费，而非简单的API调用量计费。",
+      tags: ["AI商业化", "企业服务"], priority: "high", source: "OpenAI Blog"
+    },
+    {
+      title: "拼多多 Temu 在欧洲推出「半托管」模式",
+      summary: "Temu 在德国、法国、西班牙同时上线半托管模式，允许本地卖家自行管理仓储物流，佣金从10%降至5%。",
+      reason: "标志着中国出海电商从纯跨境模式向本地化平台模式的关键转型，直接影响 Amazon 欧洲站竞争格局。",
+      imeInsight: "输入法出海同样面临本地化挑战。可借鉴Temu半托管思路：核心AI引擎由总部提供，但词库、语言模型和本地化内容运营交由当地团队或合作伙伴，降低出海成本。",
+      tags: ["电商零售", "出海"], priority: "medium", source: "晚点LatePost"
+    },
+    {
+      title: "B站推出 UP 主直播带货分成新政，最高70%佣金",
+      summary: "哔哩哔哩针对10万粉以上 UP 主推出直播电商激励计划，佣金分成最高达70%，同时开放品牌商务合作平台。",
+      reason: "B站全力押注直播电商作为核心变现路径，值得观察其与抖音电商模式的差异化竞争。",
+      imeInsight: "输入法可以建立类似的「创作者生态」：邀请皮肤设计师、表情包创作者入驻，提供高比例分成激励，形成UGC内容供给，同时丰富输入法商城的付费内容池。",
+      tags: ["短视频/直播", "社交变现"], priority: "medium", source: "B站"
+    },
+    {
+      title: "Visa 推出 Visa+ 跨平台即时转账服务",
+      summary: "Visa 全球上线 Visa+ 服务，支持 Venmo、PayPal、Cash App 等不同支付应用间实时互转资金，已覆盖美国和12个欧洲国家。",
+      reason: "传统卡组织主动推动支付互联互通，可能重塑数字支付竞争格局。",
+      imeInsight: "输入法作为跨App的通用入口，天然具备打通支付场景的能力。可探索在输入时直接唤起转账、AA收款等轻量支付功能，成为支付互联互通的新触点。",
+      tags: ["金融科技"], priority: "medium", source: "Finextra"
+    },
+    {
+      title: "小红书上线「本地团购」频道，进军本地生活",
+      summary: "小红书 App 新增「附近」tab，整合本地餐饮、休闲娱乐团购服务，用户可直接在笔记内购买并到店核销。",
+      reason: "小红书凭借种草内容优势切入万亿级本地生活市场，可能形成独特的种草-购买-到店闭环。",
+      imeInsight: "用户在聊天中讨论「吃什么」「去哪玩」时，输入法可基于LBS智能推荐附近团购优惠卡片，将输入场景的即时需求与本地生活服务直连，形成新的分佣变现通路。",
+      tags: ["本地生活", "社交变现"], priority: "medium", source: "Tech星球"
+    },
+    {
+      title: "欧盟 DMA 首批罚单落地，Apple 和 Meta 被罚28亿欧元",
+      summary: "欧盟依据《数字市场法》对 Apple 罚17亿欧元、Meta 罚11亿欧元，须6个月内完成整改。",
+      reason: "DMA 执法进入实质阶段，为全球互联网平台合规治理设立标杆，国内平台出海需密切关注。",
+      imeInsight: "输入法收集大量用户输入行为和偏好数据，在海外市场需高度关注DMA及隐私法规。应提前建立数据合规框架：本地化存储、透明的数据使用说明、用户可控的个性化开关。",
+      tags: ["平台治理", "隐私合规"], priority: "medium", source: "Reuters"
+    },
+    {
+      title: "米哈游《原神》接入 AI 动态定价系统",
+      summary: "《原神》5.5版本后不同地区抽卡价格出现差异化，米哈游引入基于 AI 的动态定价模型。",
+      reason: "游戏行业 AI 动态定价是商业化新方向，头部厂商首次大规模实践将影响整个手游行业定价策略。",
+      imeInsight: "输入法会员、皮肤、主题等付费商品可引入AI动态定价策略：根据用户活跃度、付费意愿和市场区域智能调整价格和促销力度，提升整体付费转化率。",
+      tags: ["游戏", "AI商业化"], priority: "normal", source: "游戏葡萄"
+    },
+    {
+      title: "Shopify AI 店铺助手 Sidekick 正式版上线",
+      summary: "Shopify 将 AI 助手 Sidekick 升级为正式版，支持自然语言管理库存、生成营销文案和自动优化广告投放，运营效率提升40%。",
+      reason: "AI 从辅助工具变为电商运营核心基础设施，预示电商 SaaS 将全面 AI 化。",
+      imeInsight: "输入法的AI能力（智能纠错、文案生成、翻译）可以封装为面向企业的SaaS SDK，嵌入电商后台、客服系统等场景，将输入法AI技术从C端延伸至B端变现。",
+      tags: ["AI商业化", "电商零售"], priority: "normal", source: "Shopify Blog"
+    }
+  ],
+  "2026-04-01": [
+    {
+      title: "快手电商发布「信任电商」战略，聚焦品质保障",
+      summary: "快手电商宣布2026年核心战略为「信任电商」，推行假一赔十、第三方品质检测、信誉分体系，30%流量向高信誉商家倾斜。",
+      reason: "电商竞争进入信任阶段，快手从价格战转向品质战，反映下沉市场电商升级趋势。",
+      imeInsight: "输入法商业化同样需要「信任」基建：广告内容质量审核、虚假推荐拦截、用户反馈闭环。只有用户信任输入法推荐的内容不是垃圾广告，商业化效率才能持续提升。",
+      tags: ["电商零售", "平台治理"], priority: "high", source: "快手电商"
+    },
+    {
+      title: "YouTube Shorts 开放45秒以上短视频中贴片广告",
+      summary: "YouTube 对时长超45秒的 Shorts 开放 mid-roll 广告，创作者可获得45%分成。",
+      reason: "短视频货币化是全球性难题，YouTube 的中贴片模式如成功可能成为行业标准变现手段。",
+      imeInsight: "输入法中的「内容流」场景（如输入法内置的资讯、热搜、表情推荐页）可借鉴短视频信息流广告模式，在用户浏览内容时插入原生广告卡片，提升广告库存。",
+      tags: ["短视频/直播", "广告营销"], priority: "high", source: "YouTube Blog"
+    },
+    {
+      title: "支付宝上线「AI理财助手」",
+      summary: "蚂蚁集团在支付宝理财频道推出基于百灵大模型的 AI 理财助手，支持对话式基金推荐和资产配置建议。",
+      reason: "AI+金融是商业化潜力最大的方向之一，支付宝6亿用户基础可能重新定义个人财富管理行业。",
+      imeInsight: "输入法的AI对话能力可以垂直化：与金融机构合作，在用户输入理财相关话题时提供智能助手入口，通过CPS（按成交计费）模式实现金融导流变现。",
+      tags: ["金融科技", "AI商业化"], priority: "high", source: "蚂蚁集团"
+    },
+    {
+      title: "TikTok Shop 美区「超级品牌日」单场 GMV 破千万美元",
+      summary: "TikTok Shop 美区首次「超级品牌日」，e.l.f. Cosmetics 单场 GMV 突破1000万美元。",
+      reason: "数据证明直播电商在北美市场可行性，打破西方用户不接受直播带货的质疑。",
+      imeInsight: "输入法在海外市场的商业化模式需因地制宜。欧美用户对隐私和广告更敏感，可优先尝试品牌合作定制键盘皮肤、表情IP联名等非侵入式变现方式。",
+      tags: ["电商零售", "出海", "短视频/直播"], priority: "medium", source: "TechCrunch"
+    },
+    {
+      title: "腾讯广告推出混元大模型智能出价系统「灵犀」",
+      summary: "「灵犀」基于混元大模型实时优化广告竞价策略，测试数据显示转化成本降低18%，ROI 提升25%。",
+      reason: "大模型正在重构广告技术栈，腾讯 AI 出价系统将直接影响数万广告主投放决策。",
+      imeInsight: "输入法广告系统可接入大模型能力优化广告匹配：基于用户当前输入的语义上下文实时理解意图，动态匹配最相关的广告素材，从关键词匹配升级为意图理解匹配。",
+      tags: ["广告营销", "AI商业化"], priority: "medium", source: "腾讯广告"
+    },
+    {
+      title: "Stripe 推出 Revenue Recognition AI",
+      summary: "AI 驱动的收入确认工具，自动识别合同条款并生成符合 ASC 606 / IFRS 15 标准的会计记录。",
+      reason: "Stripe 将支付数据与 AI 会计结合，展示金融科技公司沿价值链延伸的商业化路径。",
+      imeInsight: "输入法企业版（面向B端客户的SDK授权）在收入确认上同样复杂（按设备、按用量、按订阅）。AI自动化财务工具的成熟将降低输入法B端业务的运营门槛。",
+      tags: ["金融科技", "企业服务"], priority: "medium", source: "Stripe Blog"
+    },
+    {
+      title: "美团闪购上线品牌旗舰店，即时零售提速",
+      summary: "Apple、戴森、茅台等50个品牌入驻，承诺核心城区1小时送达，品牌可自主管理页面和营销活动。",
+      reason: "美团将即时零售提升至与天猫京东同等品牌化水平，是 O2O 商业化重要里程碑。",
+      imeInsight: "输入法可在用户输入与购物相关内容时（如地址、商品名），智能推荐即时配送服务卡片，与美团闪购等即时零售平台合作进行CPS导流变现。",
+      tags: ["电商零售", "本地生活"], priority: "normal", source: "美团"
+    },
+    {
+      title: "Discord 推出付费「超级反应」功能",
+      summary: "用户可花 $0.99-$4.99 购买特效反应表情，服务器主获30%分成。",
+      reason: "社区平台变现新尝试，虚拟物品微交易模式值得国内社区产品参考。",
+      imeInsight: "特效表情/动态贴纸正是输入法的核心资产。可参考Discord模式推出「超级表情」付费功能：用户购买高级动态表情包在聊天中使用，创作者分成，形成表情经济生态。",
+      tags: ["社交变现"], priority: "normal", source: "Discord Blog"
+    }
+  ],
+  "2026-03-31": [
+    {
+      title: "阿里妈妈发布「全站推广3.0」，AI 全自动投放",
+      summary: "商家只需设定预算和目标 ROI，系统自动完成人群定向、创意生成、出价调整和跨渠道分配，测试商家 ROI 提升35%。",
+      reason: "广告投放全面 AI 化不可逆转，阿里3.0版本效果将直接影响百万级商家营销预算分配。",
+      imeInsight: "输入法广告平台可朝同样方向进化：广告主只需设定预算和目标，系统自动完成输入场景匹配、素材适配和出价优化，降低输入法广告投放门槛，吸引更多中小广告主。",
+      tags: ["广告营销", "AI商业化"], priority: "high", source: "阿里妈妈"
+    },
+    {
+      title: "苹果宣布 App Store 佣金结构调整",
+      summary: "订阅制应用第二年佣金从15%降至10%，年收入100万以下开发者首年佣金降至8%。",
+      reason: "全球最大应用分发平台佣金调整直接影响数百万开发者商业模式和定价策略。",
+      imeInsight: "输入法内置的主题/皮肤商城、应用推荐等也涉及分成体系。苹果降佣趋势下，输入法应考虑对内容创作者提供更有竞争力的分成比例，激活UGC内容供给。",
+      tags: ["订阅会员", "平台治理"], priority: "high", source: "Apple Newsroom"
+    },
+    {
+      title: "字节推出 AI 广告创意平台「即创2.0」",
+      summary: "支持 AI 生成多语言广告文案配音、自动适配各平台尺寸、基于历史数据预测创意效果。",
+      reason: "字节用 AI 大幅降低广告创意成本，可能加速中小广告主的投放规模增长。",
+      imeInsight: "输入法广告素材（候选词广告、banner、卡片）可用AI自动生成和适配：根据输入场景自动调整文案、根据键盘尺寸自动适配素材，大幅降低广告制作成本。",
+      tags: ["广告营销", "AI商业化", "出海"], priority: "medium", source: "巨量引擎"
+    },
+    {
+      title: "Spotify 播客付费订阅全球开放",
+      summary: "创作者可设置 $2.99-$29.99/月订阅价格，前两年零佣金，第三年起收5%。",
+      reason: "播客商业化长期依赖广告，付费订阅模式成功将为整个音频内容行业开辟新收入来源。",
+      imeInsight: "输入法可探索「订阅制高级功能包」：AI写作助手、专业翻译、语音输入增强等高级能力按月订阅，与基础免费功能形成分层，类似Spotify的免费+订阅双轨模式。",
+      tags: ["订阅会员", "社交变现"], priority: "medium", source: "Spotify"
+    },
+    {
+      title: "京东云 AIGC 电商内容生成方案发布",
+      summary: "1分钟生成100张商品主图，支持场景合成、模特换装和视频脚本，单张成本0.1元。",
+      reason: "京东云将 AIGC 产品化并极低价提供，预示 AI 正在成为电商基础设施。",
+      imeInsight: "输入法AIGC能力同样可以产品化输出：面向内容创作者提供AI文案生成、多语言翻译、文风转换等工具，按使用量收费，将技术能力转化为独立收入流。",
+      tags: ["AI商业化", "电商零售"], priority: "medium", source: "京东科技"
+    },
+    {
+      title: "印度 RBI 批准 WhatsApp Pay 用户上限提至5亿",
+      summary: "Meta 旗下 WhatsApp Pay 获批从1亿扩至5亿用户，印度 UPI 月交易量已超150亿笔。",
+      reason: "Meta 在全球最大数字支付市场之一的商业化布局迈出关键一步。",
+      imeInsight: "印度是输入法出海的重要市场（多语言、高活跃度）。WhatsApp Pay的扩展说明印度数字支付生态成熟，输入法可以在印度市场探索输入+支付的场景联动。",
+      tags: ["金融科技", "出海"], priority: "normal", source: "Economic Times"
+    },
+    {
+      title: "Roblox 推出品牌虚拟体验广告 API",
+      summary: "Nike、Gucci 首批入驻，品牌可在游戏世界中创建沉浸式营销体验。",
+      reason: "Roblox 7000万日活用户中大部分为 Z 世代，品牌广告 API 可能开创全新广告品类。",
+      imeInsight: "输入法键盘皮肤、动态主题是天然的品牌沉浸式营销场景。可参考Roblox开放品牌API的模式，让品牌方自主创建定制键盘主题和表情包，用户使用即品牌曝光。",
+      tags: ["广告营销", "游戏"], priority: "normal", source: "Roblox Blog"
+    }
+  ]
+};
+
+// ============================================================
+// STATE
+// ============================================================
+let currentDate = new Date(2026, 3, 2);
+let activeTag = null;
+let searchQuery = '';
+
+const WEEKDAYS = ['周日','周一','周二','周三','周四','周五','周六'];
+
+function fmtKey(d) {
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+
+function getDayNews() { return NEWS_DATA[fmtKey(currentDate)] || []; }
+
+// ============================================================
+// DATE
+// ============================================================
+function changeDate(delta) {
+  currentDate.setDate(currentDate.getDate() + delta);
+  activeTag = null;
+  render();
+}
+
+// ============================================================
+// SEARCH
+// ============================================================
+document.getElementById('searchInput').addEventListener('input', e => {
+  searchQuery = e.target.value.trim().toLowerCase();
+  renderContent();
+});
+
+// ============================================================
+// RENDER
+// ============================================================
+function render() {
+  renderHero();
+  renderFilters();
+  renderContent();
+}
+
+function renderHero() {
+  const d = currentDate;
+  const m = d.getMonth() + 1, day = d.getDate(), wd = WEEKDAYS[d.getDay()];
+  const news = getDayNews();
+  const high = news.filter(n => n.priority === 'high').length;
+  const tags = new Set(); news.forEach(n => n.tags.forEach(t => tags.add(t)));
+
+  const wdShort = ['周日','周一','周二','周三','周四','周五','周六'][d.getDay()];
+
+  document.getElementById('hero').innerHTML = `
+    <h1 class="hero-title">${m}月${day}日商业化洞察</h1>
+    <p class="hero-subtitle">每日精选互联网商业化领域最值得关注的动态，助你快速掌握行业脉搏</p>
+    <div class="hero-top">
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="hero-stat-num">${news.length}</span><span class="hero-stat-label">条资讯</span></div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat"><span class="hero-stat-num">${high}</span><span class="hero-stat-label">高关注</span></div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat"><span class="hero-stat-num">${tags.size}</span><span class="hero-stat-label">个领域</span></div>
+      </div>
+      <div class="hero-date-nav">
+        <button class="hero-date-btn" onclick="changeDate(-1)" aria-label="前一天">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <span class="hero-date-label">${d.getFullYear()}年${m}月${day}日 ${wdShort}</span>
+        <button class="hero-date-btn" onclick="changeDate(1)" aria-label="后一天">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+function renderFilters() {
+  const news = getDayNews();
+  const counts = {};
+  news.forEach(n => n.tags.forEach(t => { counts[t] = (counts[t] || 0) + 1; }));
+  const sorted = Object.entries(counts).sort((a,b) => b[1] - a[1]);
+
+  let h = `<button class="chip ${activeTag === null ? 'active' : ''}" onclick="filterByTag(null)">全部 <span class="chip-num">${news.length}</span></button>`;
+  sorted.forEach(([tag, c]) => {
+    h += `<button class="chip ${activeTag === tag ? 'active' : ''}" onclick="filterByTag('${tag}')">${tag} <span class="chip-num">${c}</span></button>`;
+  });
+  document.getElementById('filterRow').innerHTML = h;
+}
+
+function filterByTag(tag) {
+  activeTag = activeTag === tag ? null : tag;
+  renderFilters();
+  renderContent();
+}
+
+function renderContent() {
+  const main = document.getElementById('mainContent');
+  let news = getDayNews();
+
+  if (activeTag) news = news.filter(n => n.tags.includes(activeTag));
+  if (searchQuery) {
+    news = news.filter(n =>
+      n.title.toLowerCase().includes(searchQuery) ||
+      n.summary.toLowerCase().includes(searchQuery) ||
+      n.reason.toLowerCase().includes(searchQuery) ||
+      (n.imeInsight && n.imeInsight.toLowerCase().includes(searchQuery)) ||
+      n.tags.some(t => t.toLowerCase().includes(searchQuery))
+    );
+  }
+
+  if (!news.length && !getDayNews().length) {
+    main.innerHTML = `<div class="empty"><div class="empty-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7"/><path d="M16 3H8l-5 4h18l-5-4z"/></svg></div><div class="empty-title">暂无当日资讯</div><div class="empty-desc">当天没有收录商业化资讯，请切换到其他日期查看</div></div>`;
+    return;
+  }
+  if (!news.length) {
+    main.innerHTML = `<div class="empty"><div class="empty-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div><div class="empty-title">没有匹配结果</div><div class="empty-desc">请调整筛选标签或搜索关键词</div></div>`;
+    return;
+  }
+
+  // group
+  const groups = {};
+  news.forEach(n => { const p = n.tags[0]; if (!groups[p]) groups[p] = []; groups[p].push(n); });
+  const sg = Object.entries(groups).sort((a,b) => b[1].length - a[1].length);
+
+  let h = '';
+  sg.forEach(([tag, items]) => {
+    h += `<section class="section-row"><div class="section-title">${tag} · ${items.length}</div><div class="cards">`;
+    items.forEach(n => { h += renderCard(n); });
+    h += '</div></section>';
+  });
+  main.innerHTML = h;
+}
+
+function renderCard(n) {
+  const pl = { high: '高关注', medium: '中关注', normal: '关注' };
+  return `
+    <article class="card">
+      <div class="card-header">
+        <h3>${n.title}</h3>
+        <span class="card-source">${n.source}</span>
+      </div>
+      <p class="card-body">${n.summary}</p>
+      <div class="card-insight">
+        <div class="card-insight-label">值得关注</div>
+        <p class="card-insight-text">${n.reason}</p>
+      </div>
+      ${n.imeInsight ? `<div class="card-ime">
+        <div class="card-ime-label">输入法启示</div>
+        <p class="card-ime-text">${n.imeInsight}</p>
+      </div>` : ''}
+      <div class="card-foot">
+        ${n.tags.map(t => `<span class="card-tag" onclick="filterByTag('${t}')">${t}</span>`).join('')}
+        <span class="card-priority ${n.priority}"><span class="dot"></span>${pl[n.priority]}</span>
+      </div>
+    </article>`;
+}
+
+// ============================================================
+// SCROLL TOP
+// ============================================================
+window.addEventListener('scroll', () => {
+  document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 400);
+});
+
+// ============================================================
+// KEYBOARD
+// ============================================================
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowLeft' && !e.target.closest('input')) changeDate(-1);
+  if (e.key === 'ArrowRight' && !e.target.closest('input')) changeDate(1);
+  if ((e.key === '/' || e.key === 'k') && (e.metaKey || e.ctrlKey)) {
+    e.preventDefault();
+    document.getElementById('searchInput').focus();
+  }
+});
+
+// ============================================================
+// INIT
+// ============================================================
+render();
+</script>
+</body>
+</html>
