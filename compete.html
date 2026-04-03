@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAN商业化行业洞察 — 竞品沉淀</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --font: 'Noto Sans SC', 'Segoe UI', system-ui, sans-serif;
+      --bg: #ffffff;
+      --bg-surface: #f8f9fa;
+      --bg-hover: #f1f3f4;
+      --text: #202124;
+      --text-2: #5f6368;
+      --text-3: #80868b;
+      --text-4: #bdc1c6;
+      --border: #dadce0;
+      --border-light: #e8eaed;
+      --blue: #1a73e8;
+      --blue-light: #e8f0fe;
+      --shadow-hover: 0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
+      --radius: 8px;
+      --radius-lg: 12px;
+      --radius-full: 100px;
+      --ease: cubic-bezier(0.2, 0, 0, 1);
+      --max-w: 1200px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+
+    /* NAV — 与index.html保持一致 */
+    .topnav {
+      position: sticky; top: 0; z-index: 100;
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-light); height: 64px;
+    }
+    .topnav-inner {
+      max-width: var(--max-w); margin: 0 auto; padding: 0 24px;
+      height: 100%; display: flex; align-items: center; gap: 24px;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
+    .brand-name { font-size: 1.125rem; font-weight: 500; color: var(--text); letter-spacing: -0.01em; }
+    .topnav-right { display: flex; align-items: center; gap: 0; flex-shrink: 0; margin-left: auto; }
+    .nav-tabs { display: flex; align-items: center; gap: 0; height: 100%; }
+    .nav-tab {
+      height: 64px; padding: 0 20px; border: none; background: transparent;
+      color: var(--text-3); font-size: 0.875rem; font-weight: 500;
+      font-family: var(--font); cursor: pointer; position: relative;
+      transition: color 200ms var(--ease); display: flex; align-items: center;
+      text-decoration: none;
+    }
+    .nav-tab:hover { color: var(--text); }
+    .nav-tab.active { color: var(--text); }
+    .nav-tab.active::after {
+      content: ''; position: absolute; bottom: 0; left: 20px; right: 20px;
+      height: 2px; background: var(--text); border-radius: 1px 1px 0 0;
+    }
+
+    /* HERO */
+    .hero {
+      max-width: var(--max-w); margin: 0 auto; padding: 48px 24px 0; text-align: left;
+    }
+    .hero-title { font-size: 2.75rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; color: var(--text); }
+    .hero-subtitle { margin-top: 12px; font-size: 1rem; color: var(--text-2); max-width: 640px; }
+
+    /* FILTER */
+    .filters { max-width: var(--max-w); margin: 0 auto; padding: 28px 24px 0; }
+    .filters-scroll { display: flex; align-items: center; gap: 8px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+    .filters-scroll::-webkit-scrollbar { display: none; }
+    .chip {
+      height: 36px; padding: 0 16px; border-radius: var(--radius-full);
+      border: 1px solid var(--border); background: var(--bg); color: var(--text-2);
+      font-size: 0.8125rem; font-weight: 500; font-family: var(--font);
+      cursor: pointer; transition: all 200ms var(--ease); white-space: nowrap;
+      display: flex; align-items: center; gap: 6px; flex-shrink: 0;
+    }
+    .chip:hover { background: var(--bg-surface); border-color: var(--text-4); }
+    .chip.active { background: var(--blue-light); color: var(--blue); border-color: transparent; }
+    .chip .chip-num { font-size: 0.6875rem; opacity: 0.5; }
+    .chip.active .chip-num { opacity: 0.7; }
+
+    /* MASONRY GRID */
+    .gallery {
+      max-width: var(--max-w); margin: 0 auto; padding: 24px 24px 80px;
+      columns: 3; column-gap: 16px;
+    }
+
+    .gallery-card {
+      break-inside: avoid; margin-bottom: 16px;
+      border: 1px solid var(--border-light); border-radius: var(--radius-lg);
+      overflow: hidden; background: var(--bg);
+      transition: box-shadow 200ms var(--ease), border-color 200ms var(--ease);
+    }
+    .gallery-card:hover { box-shadow: var(--shadow-hover); border-color: var(--border); }
+
+    .gallery-img {
+      width: 100%; display: block;
+      background: var(--bg-surface);
+      min-height: 160px;
+      object-fit: cover;
+    }
+
+    .gallery-img-placeholder {
+      width: 100%; display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, var(--bg-surface) 0%, var(--border-light) 100%);
+      color: var(--text-4); font-size: 2rem; min-height: 200px;
+    }
+
+    .gallery-info { padding: 14px 16px; }
+
+    .gallery-title {
+      font-size: 0.875rem; font-weight: 500; color: var(--text);
+      line-height: 1.5; margin-bottom: 6px;
+    }
+
+    .gallery-desc {
+      font-size: 0.75rem; color: var(--text-3); line-height: 1.6; margin-bottom: 10px;
+    }
+
+    .gallery-meta {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 8px; flex-wrap: wrap;
+    }
+
+    .gallery-tags { display: flex; gap: 4px; flex-wrap: wrap; }
+
+    .gallery-tag {
+      padding: 2px 8px; border-radius: var(--radius-full);
+      background: var(--bg-surface); color: var(--text-3); border: 1px solid var(--border-light);
+      font-size: 0.625rem; font-weight: 500; cursor: pointer;
+      transition: all 150ms var(--ease);
+    }
+    .gallery-tag:hover { background: var(--bg-hover); color: var(--text-2); }
+
+    .gallery-source {
+      font-size: 0.625rem; color: var(--text-4); flex-shrink: 0;
+    }
+
+    /* EMPTY */
+    .empty { text-align: center; padding: 80px 24px; }
+    .empty-title { font-size: 1rem; font-weight: 500; color: var(--text-2); margin-bottom: 8px; }
+    .empty-desc { font-size: 0.875rem; color: var(--text-3); max-width: 340px; margin: 0 auto; }
+
+    /* FOOTER */
+    .footer { max-width: var(--max-w); margin: 0 auto; padding: 0 24px 40px; text-align: center; }
+    .footer-line { width: 40px; height: 1px; background: var(--border); margin: 0 auto 20px; }
+    .footer-text { font-size: 0.75rem; color: var(--text-4); }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .gallery { columns: 2; padding: 16px 16px 64px; }
+      .hero { padding: 32px 16px 0; }
+      .hero-title { font-size: 2rem; }
+      .filters { padding: 20px 16px 0; }
+    }
+    @media (max-width: 480px) {
+      .gallery { columns: 1; }
+      .nav-tab { padding: 0 12px; font-size: 0.8125rem; }
+      .hero-title { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="index.html" class="brand"><span class="brand-name">FAN商业化行业洞察</span></a>
+      <div class="topnav-right">
+        <nav class="nav-tabs">
+          <a class="nav-tab" href="index.html">洞察</a>
+          <button class="nav-tab" onclick="alert('体验地图页面开发中…')">体验地图</button>
+          <a class="nav-tab active" href="compete.html">竞品沉淀</a>
+        </nav>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1 class="hero-title">竞品沉淀</h1>
+    <p class="hero-subtitle">精选互联网商业化领域优秀的运营活动设计、会员付费页面、广告创意和增长策略视觉案例，来源于花瓣网、Pinterest、Dribbble 等设计平台</p>
+  </header>
+
+  <div class="filters">
+    <div class="filters-scroll" id="filterRow"></div>
+  </div>
+
+  <div class="gallery" id="gallery"></div>
+
+  <footer class="footer">
+    <div class="footer-line"></div>
+    <p class="footer-text">FAN商业化行业洞察 — 竞品设计沉淀 · 图片版权归原作者所有</p>
+  </footer>
+
+<script>
+const CASES = [
+  {
+    title: "抖音电商618大促主会场",
+    desc: "全屏沉浸式瀑布流设计，品类入口用3D微动效icon，下拉有红包雨互动。色彩以品牌红+金色为主调，营造紧迫感。",
+    tags: ["电商大促", "活动页面"],
+    source: "花瓣网",
+    emoji: "🛒",
+    color: "#ff4d4f"
+  },
+  {
+    title: "Spotify Premium 付费墙设计",
+    desc: "极简黑底+绿色CTA按钮。功能对比表用卡片式呈现，免费vs高级版差异一目了然。试用期强调「0元体验」降低心理门槛。",
+    tags: ["订阅付费", "付费墙"],
+    source: "Dribbble",
+    emoji: "🎵",
+    color: "#1db954"
+  },
+  {
+    title: "淘宝88VIP会员中心改版",
+    desc: "深色尊贵感底色搭配金色图标，权益卡片横滑展示，积分体系可视化进度条。底部用「省了xxx元」强化付费价值感知。",
+    tags: ["会员体系", "VIP设计"],
+    source: "花瓣网",
+    emoji: "👑",
+    color: "#ffa940"
+  },
+  {
+    title: "YouTube Premium 定价页面",
+    desc: "三档定价卡片对比设计，中间档推荐项视觉放大+蓝色高亮。家庭方案用人物头像组暗示共享价值，年付方案标注「省xx%」。",
+    tags: ["订阅付费", "定价策略"],
+    source: "Pinterest",
+    emoji: "📺",
+    color: "#ff0000"
+  },
+  {
+    title: "美团外卖神券节活动页",
+    desc: "黄色主色调满屏优惠券矩阵，倒计时组件营造紧迫感。分时段发券+城市定位个性化推荐，底部浮动「立即领取」按钮。",
+    tags: ["电商大促", "本地生活"],
+    source: "花瓣网",
+    emoji: "🍜",
+    color: "#ffb800"
+  },
+  {
+    title: "Duolingo 超级会员升级引导",
+    desc: "用对话式/游戏化引导推动付费转化。展示学习连胜纪录+生命值耗尽场景制造痛点，CTA文案「别让连胜中断」情感驱动。",
+    tags: ["订阅付费", "游戏化"],
+    source: "Pinterest",
+    emoji: "🦉",
+    color: "#58cc02"
+  },
+  {
+    title: "拼多多百亿补贴频道页",
+    desc: "极简白底+红色价格标签，品牌正品认证徽章强化信任。商品卡片突出「补贴价」与「原价」对比，底部Tab固定品类导航。",
+    tags: ["电商大促", "补贴策略"],
+    source: "花瓣网",
+    emoji: "💰",
+    color: "#e02e24"
+  },
+  {
+    title: "Notion AI 功能付费引导",
+    desc: "在用户使用AI功能时原位弹出升级提示，展示AI已生成内容预览但模糊化。「解锁完整内容」的CTA将使用场景与付费动作无缝衔接。",
+    tags: ["AI商业化", "付费墙"],
+    source: "Dribbble",
+    emoji: "📝",
+    color: "#000000"
+  },
+  {
+    title: "京东PLUS会员日活动",
+    desc: "黑金配色传递尊享感，会员专属价标签醒目。权益轮播+已省金额数字动态累加，邀请返佣裂变模块放置在核心位置。",
+    tags: ["会员体系", "电商大促"],
+    source: "花瓣网",
+    emoji: "🏷️",
+    color: "#c91623"
+  },
+  {
+    title: "Netflix 个性化推荐落地页",
+    desc: "全屏视频背景+半透明渐变遮罩。根据用户IP自动展示当地热门内容海报墙，单CTA「开始观看」极简转化路径。",
+    tags: ["订阅付费", "增长设计"],
+    source: "Pinterest",
+    emoji: "🎬",
+    color: "#e50914"
+  },
+  {
+    title: "小红书商业化品牌合作案例集",
+    desc: "「种草+拔草」一体化品牌合作展示页，左侧KOL内容瀑布流，右侧数据效果看板。品牌案例用Before/After对比呈现。",
+    tags: ["广告营销", "社交变现"],
+    source: "花瓣网",
+    emoji: "📕",
+    color: "#fe2c55"
+  },
+  {
+    title: "Canva Pro 升级弹窗设计",
+    desc: "在用户触达免费限制时即时弹出，高亮展示Pro功能（去背景、AI生成、品牌套件）。提供月付/年付切换，年付标注「最受欢迎」。",
+    tags: ["订阅付费", "SaaS设计"],
+    source: "Dribbble",
+    emoji: "🎨",
+    color: "#7d2ae8"
+  },
+  {
+    title: "微信红包封面开放平台",
+    desc: "品牌定制红包封面的展示与领取页面，3D封面预览+领取动效。品牌故事短视频嵌入，社交裂变分享按钮突出。",
+    tags: ["社交变现", "品牌营销"],
+    source: "花瓣网",
+    emoji: "🧧",
+    color: "#fa5151"
+  },
+  {
+    title: "Figma 定价页设计",
+    desc: "三栏定价清晰对比，免费版功能已足够吸引人。企业版用「联系销售」CTA。功能行对比表可折叠展开，FAQ模块消除疑虑。",
+    tags: ["SaaS设计", "定价策略"],
+    source: "Pinterest",
+    emoji: "🖼️",
+    color: "#a259ff"
+  },
+  {
+    title: "天猫双11品牌数据大屏",
+    desc: "深蓝科技感背景，实时GMV数字翻牌动效。品牌排行榜滚动更新，地图热力图展示各区域消费数据。适合直播间/发布会场景。",
+    tags: ["电商大促", "数据可视化"],
+    source: "花瓣网",
+    emoji: "📊",
+    color: "#1890ff"
+  },
+  {
+    title: "Discord Nitro 订阅页",
+    desc: "暗色主题+动态粒子背景，权益展示用大图标+简短描述。表情包/头像框等虚拟物品预览互动展示，增强「拥有感」驱动转化。",
+    tags: ["订阅付费", "社区变现"],
+    source: "Pinterest",
+    emoji: "💬",
+    color: "#5865f2"
+  },
+  {
+    title: "快手磁力引擎广告投放后台",
+    desc: "B端广告投放工具设计，左侧定向设置面板，右侧实时预览广告效果。数据仪表盘用彩色图表呈现ROI、转化成本等核心指标。",
+    tags: ["广告营销", "B端设计"],
+    source: "花瓣网",
+    emoji: "📡",
+    color: "#ff4906"
+  },
+  {
+    title: "Airbnb 体验活动推广页",
+    desc: "全屏大图+当地人视角的沉浸式推荐。价格标签嵌入图片角落，评分和评论数微妙展示。「稀缺性」标签（仅剩x个名额）驱动决策。",
+    tags: ["本地生活", "增长设计"],
+    source: "Pinterest",
+    emoji: "🏡",
+    color: "#ff5a5f"
+  },
+  {
+    title: "B站大会员开通引导",
+    desc: "粉色渐变主题，番剧/电影海报墙做背景。权益分层展示（大会员vs年度大会员），连续包月标注「首月仅6元」低门槛试用。",
+    tags: ["订阅付费", "会员体系"],
+    source: "花瓣网",
+    emoji: "📱",
+    color: "#fb7299"
+  },
+  {
+    title: "Stripe 开发者定价页",
+    desc: "极简白底，定价数字超大字号突出。费率计算器互动组件让用户输入交易量预估成本。API代码片段预览增强开发者信任。",
+    tags: ["SaaS设计", "定价策略"],
+    source: "Dribbble",
+    emoji: "💳",
+    color: "#635bff"
+  }
+];
+
+// TAGS
+const ALL_TAGS = [...new Set(CASES.flatMap(c => c.tags))];
+let activeTag = null;
+
+function renderFilters() {
+  const el = document.getElementById('filterRow');
+  let h = `<button class="chip ${activeTag === null ? 'active' : ''}" onclick="filterTag(null)">全部 <span class="chip-num">${CASES.length}</span></button>`;
+  ALL_TAGS.forEach(tag => {
+    const count = CASES.filter(c => c.tags.includes(tag)).length;
+    h += `<button class="chip ${activeTag === tag ? 'active' : ''}" onclick="filterTag('${tag}')">${tag} <span class="chip-num">${count}</span></button>`;
+  });
+  el.innerHTML = h;
+}
+
+function filterTag(tag) {
+  activeTag = activeTag === tag ? null : tag;
+  renderFilters();
+  renderGallery();
+}
+
+function renderGallery() {
+  const el = document.getElementById('gallery');
+  let items = CASES;
+  if (activeTag) items = items.filter(c => c.tags.includes(activeTag));
+
+  if (!items.length) {
+    el.innerHTML = `<div class="empty" style="column-span:all"><div class="empty-title">没有匹配结果</div><div class="empty-desc">请调整筛选标签</div></div>`;
+    return;
+  }
+
+  el.innerHTML = items.map(c => `
+    <div class="gallery-card">
+      <div class="gallery-img-placeholder" style="background: linear-gradient(135deg, ${c.color}18 0%, ${c.color}08 100%); min-height: ${160 + Math.random() * 80}px;">
+        <span style="font-size: 3rem;">${c.emoji}</span>
+      </div>
+      <div class="gallery-info">
+        <div class="gallery-title">${c.title}</div>
+        <div class="gallery-desc">${c.desc}</div>
+        <div class="gallery-meta">
+          <div class="gallery-tags">
+            ${c.tags.map(t => `<span class="gallery-tag" onclick="filterTag('${t}')">${t}</span>`).join('')}
+          </div>
+          <span class="gallery-source">${c.source}</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+renderFilters();
+renderGallery();
+</script>
+</body>
+</html>
