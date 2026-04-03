@@ -153,39 +153,52 @@
     .topnav-right {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 0;
       flex-shrink: 0;
       margin-left: auto;
     }
 
-    .search-wrap {
-      position: relative;
+    .nav-tabs {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      height: 100%;
     }
 
-    .search-input {
-      height: 40px;
-      width: 220px;
-      padding: 0 12px 0 38px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-full);
-      background: var(--bg);
-      color: var(--text);
-      font-size: 0.875rem;
-      font-family: var(--font);
-      transition: all 200ms var(--ease);
-    }
-
-    .search-input::placeholder { color: var(--text-4); }
-    .search-input:focus { outline: none; border-color: var(--border-focus); box-shadow: 0 0 0 2px var(--blue-light); width: 280px; }
-
-    .search-wrap svg {
-      position: absolute;
-      left: 12px;
-      top: 50%;
-      transform: translateY(-50%);
+    .nav-tab {
+      height: 64px;
+      padding: 0 20px;
+      border: none;
+      background: transparent;
       color: var(--text-3);
-      pointer-events: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      font-family: var(--font);
+      cursor: pointer;
+      position: relative;
+      transition: color 200ms var(--ease);
+      display: flex;
+      align-items: center;
     }
+
+    .nav-tab:hover { color: var(--text); }
+
+    .nav-tab.active {
+      color: var(--text);
+    }
+
+    .nav-tab.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      right: 20px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 1px 1px 0 0;
+    }
+
+    .nav-tab:focus-visible { outline: 2px solid var(--border-focus); outline-offset: -2px; }
 
 
     /* ====== HERO ====== */
@@ -608,7 +621,7 @@
     }
 
     @media (max-width: 480px) {
-      .search-wrap { display: none; }
+      .nav-tab { padding: 0 12px; font-size: 0.8125rem; }
       .hero-title { font-size: 1.5rem; }
       .hero-stat { padding: 0 12px; }
       .hero-stats { flex-wrap: wrap; }
@@ -624,10 +637,11 @@
       </a>
 
       <div class="topnav-right">
-        <div class="search-wrap">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-          <input type="search" class="search-input" id="searchInput" placeholder="搜索资讯..." aria-label="搜索资讯" />
-        </div>
+        <nav class="nav-tabs">
+          <button class="nav-tab active">洞察</button>
+          <button class="nav-tab" onclick="alert('体验地图页面开发中…')">体验地图</button>
+          <button class="nav-tab" onclick="alert('竞品沉淀页面开发中…')">竞品沉淀</button>
+        </nav>
       </div>
     </div>
   </nav>
@@ -898,14 +912,6 @@ function changeDate(delta) {
   activeTag = null;
   render();
 }
-
-// ============================================================
-// SEARCH
-// ============================================================
-document.getElementById('searchInput').addEventListener('input', e => {
-  searchQuery = e.target.value.trim().toLowerCase();
-  renderContent();
-});
 
 // ============================================================
 // RENDER
