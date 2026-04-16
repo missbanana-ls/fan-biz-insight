@@ -199,6 +199,62 @@
 <script>
 const CASES = [
   {
+    title: "AI Agent支付基础设施 — 机器原生跨平台交易控制台",
+    desc: "面向AI Agent经济的支付基础设施管理界面设计，左侧Agent身份注册与权限管理，中间跨平台交易实时流水（ChatGPT→SaaS服务→自动付款），右侧API集成状态仪表盘。深蓝+薄荷绿科技配色，交易路径可视化展示Agent从发现服务到完成支付的全流程，底部合规审计日志确保每笔Agent交易可追溯。",
+    tags: ["AI商业化", "增长设计"],
+    source: "Dribbble",
+    img: "https://cdn.dribbble.com/userupload/46559693/file/9766dd84252d30ffe63851f6c626fc73.png",
+    pin: "https://dribbble.com/search/shots/popular/web?q=AI+agent+payment+infrastructure+dashboard"
+  },
+  {
+    title: "区块链托管验证 — AI Agent金融交易信任层设计",
+    desc: "AI Agent金融交易的链上托管验证界面设计，三步可视化流程：Agent发起交易请求→智能合约托管锁定资金→任务完成后验证释放。每笔交易附带链上凭证（哈希值+时间戳+Agent身份），置信度评分仪表盘实时监控AI决策质量。暗色+金色配色传递金融安全感，盾牌图标强化信任。",
+    tags: ["AI商业化", "隐私合规"],
+    source: "Dribbble",
+    img: "https://cdn.dribbble.com/userupload/44935740/file/4c73d6918f12aa28b0e311feff834af7.png",
+    pin: "https://dribbble.com/search/shots/popular/web?q=blockchain+escrow+AI+trust+verification+fintech"
+  },
+  {
+    title: "SaaS效果付费 — AI Agent驱动的按效果定价页面",
+    desc: "SaaS产品从按席位订阅转向按AI Agent完成任务效果付费的定价页面设计。三栏对比：传统订阅模式（按人头/月）vs 混合模式（基础费+超额按量）vs Agent模式（纯按任务完成量计费）。中间栏高亮推荐，底部ROI计算器让客户输入预期任务量自动估算月费。紫+白极简风格。",
+    tags: ["订阅付费", "定价策略"],
+    source: "Dribbble",
+    img: "https://cdn.dribbble.com/userupload/47076870/file/fae6c241c1bedbe4ea1fb2f224f43a1c.png",
+    pin: "https://dribbble.com/search/shots/popular/web?q=SaaS+pricing+AI+agent+usage+based+billing"
+  },
+  {
+    title: "AI内容合规助手 — 一键标注「Made with AI」工具栏",
+    desc: "面向内容创作者的AI内容合规标注工具设计，输入法/编辑器底部浮动工具栏形态。一键为文案添加「AI辅助生成」标签，支持X/Instagram/小红书等多平台标注格式适配。右侧合规状态灯：绿色=已标注/黄色=建议标注/红色=必须标注（涉及金融/医疗/武装冲突内容），从被动合规升级为主动合规辅助。",
+    tags: ["隐私合规", "增长设计"],
+    source: "Dribbble",
+    img: "https://cdn.dribbble.com/userupload/46072897/file/881320c42e24c817236fffd8ffa81cdc.png",
+    pin: "https://dribbble.com/search/shots/popular/web?q=AI+content+label+compliance+creator+tool"
+  },
+  {
+    title: "GEO优化SaaS — AI搜索引擎推荐排名分析面板",
+    desc: "GEO优化服务商的客户管理面板设计，左侧AI搜索引擎覆盖率仪表盘（ChatGPT引用次数/DeepSeek推荐排名/Kimi提及率），中间内容优化建议列表（结构化数据标注/权威引用添加/FAQ覆盖），右侧竞品AI可见性对比雷达图。仪表盘实时追踪企业在各AI助手中的曝光表现。",
+    tags: ["广告营销", "AI商业化"],
+    source: "Dribbble",
+    img: "https://cdn.dribbble.com/userupload/46670487/file/7489823be07c288720d32b7ed5988b09.png",
+    pin: "https://dribbble.com/search/shots/popular/web?q=SEO+GEO+AI+search+optimization+analytics+dashboard"
+  },
+  {
+    title: "零售AI全链路 — 智慧门店数字化运营中控台",
+    desc: "Deloitte零售AI趋势报告启发的智慧门店运营中控台设计，四象限布局：左上AI需求预测（库存/补货自动化）、右上个性化推荐引擎效果看板、左下全渠道数据统一视图（线上+线下+社交）、右下体验经济指标（到店率/停留时长/互动转化）。白色极简+品牌色点缀，数据驱动的零售决策。",
+    tags: ["电商大促", "AI商业化"],
+    source: "Dribbble",
+    img: "https://cdn.dribbble.com/userupload/45920986/file/a00cc0a3e19a978e5dee8081a2ef241c.jpg",
+    pin: "https://dribbble.com/search/shots/popular/web?q=retail+AI+analytics+omnichannel+dashboard"
+  },
+  {
+    title: "AI超级入口输入法 — 三合一AI功能集成键盘设计",
+    desc: "将AI翻译+AI写作+AI搜索整合为统一输入法键盘体验的交互设计稿。键盘上方浮层展示三个AI功能入口（翻译/写作/搜索），长按空格键唤起AI助手对话面板。AI写作模式下实时显示Token消耗和生成预览，翻译模式支持28种语言即时互译。「3个AI工具最佳平衡点」理念的产品化实现。",
+    tags: ["AI商业化", "增长设计"],
+    source: "Dribbble",
+    img: "https://cdn.dribbble.com/userupload/44456559/file/a35389a21dd7da57e06bb33ad50f0b37.png",
+    pin: "https://dribbble.com/search/shots/popular/mobile?q=AI+keyboard+smart+input+translation+writing"
+  },
+  {
     title: "AI广告自动化引擎 — Advantage+全自动投放仪表盘",
     desc: "Meta Advantage+风格的AI全自动广告投放控制台设计，广告主只需设定预算和ROI目标，AI自动完成受众定向、创意生成、跨平台分配和出价优化。顶部实时ROAS指标卡+中部投放漏斗可视化+底部AI决策日志，深蓝渐变科技感传递专业与效率。",
     tags: ["广告营销", "AI商业化"],
