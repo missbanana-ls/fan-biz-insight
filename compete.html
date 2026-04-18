@@ -199,6 +199,62 @@
 <script>
 const CASES = [
   {
+    title: "SaaS 2.0定价革命 — AI Agent按效果付费转型页面",
+    desc: "企业SaaS从按席位订阅转向AI Agent按效果付费的定价转型落地页设计。顶部对比时间轴：SaaS 1.0（按席位/月）→ 过渡期（混合定价）→ SaaS 2.0（按Agent完成任务量计费）。中间ROI计算器让客户输入当前SaaS支出自动对比Agent模式节省金额，底部Salesforce Agentforce和Intercom等成功案例背书。深蓝渐变+数据图表传递转型信心。",
+    tags: ["定价策略", "AI商业化"],
+    source: "Dribbble",
+    img: "https://cdn.dribbble.com/userupload/47076870/file/fae6c241c1bedbe4ea1fb2f224f43a1c.png",
+    pin: "https://dribbble.com/search/shots/popular/web?q=SaaS+pricing+AI+agent+usage+billing+transformation"
+  },
+  {
+    title: "多模型搜索聚合器 — TikTok+Google+AI统一搜索入口",
+    desc: "将TikTok视频搜索、Google网页搜索和AI对话搜索整合为统一搜索体验的输入法键盘扩展设计。输入关键词后三栏并列展示：左栏TikTok热门短视频结果、中栏Google精选摘要、右栏AI直接回答。用户一次输入获取三维度信息，底部可切换默认搜索偏好。符合49%用户使用TikTok搜索的多模型搜索新常态。",
+    tags: ["广告营销", "增长设计"],
+    source: "Dribbble",
+    img: "https://cdn.dribbble.com/userupload/46670487/file/7489823be07c288720d32b7ed5988b09.png",
+    pin: "https://dribbble.com/search/shots/popular/web?q=multi+search+aggregator+TikTok+Google+AI+unified"
+  },
+  {
+    title: "直播电商创作者绑定 — 品牌×主播长期合作管理面板",
+    desc: "品牌与直播创作者深度绑定合作的管理后台设计，左侧创作者画像卡片（粉丝画像/直播频率/转化率/真实性评分），中间合作历史时间线+GMV贡献趋势图，右侧合同管理与排期日历。底部「真实性溢价」指标：真人直播vs AI内容的参与率对比数据。暖橙+白色配色传递真实与信任。",
+    tags: ["社交裂变", "广告营销"],
+    source: "Dribbble",
+    img: "https://cdn.dribbble.com/userupload/46367811/file/c693173e7195cde2f3b9fd534a0fb7b2.jpg",
+    pin: "https://dribbble.com/search/shots/popular/web?q=creator+brand+partnership+livestream+dashboard"
+  },
+  {
+    title: "卫星连接低带宽输入 — 离线AI输入法极端环境适配",
+    desc: "面向卫星互联网和偏远地区的超低带宽输入法界面设计，顶部网络状态指示器（卫星连接/低轨/离线三种模式自动切换），键盘区域压缩至最小化数据传输，AI预测引擎完全本地运行。离线模式下展示已缓存的个性化词库和AI模型版本，右上角数据用量微型仪表盘。深空蓝+星辰渐变配色呼应太空互联网主题。",
+    tags: ["AI商业化", "增长设计"],
+    source: "Dribbble",
+    img: "https://cdn.dribbble.com/userupload/44456559/file/a35389a21dd7da57e06bb33ad50f0b37.png",
+    pin: "https://dribbble.com/search/shots/popular/mobile?q=offline+AI+keyboard+satellite+low+bandwidth"
+  },
+  {
+    title: "无脸创作者AI工作台 — 匿名内容批量生产控制台",
+    desc: "面向无脸（faceless）创作者的AI内容批量生产工作台设计，四象限布局：左上AI脚本生成器（输入主题自动产出视频脚本），右上AI旁白合成（多语言/多音色选择），左下AI视频素材库（自动匹配画面），右下发布排程+多平台分发。底部数据面板追踪各平台变现收入。紫+深灰暗色主题传递匿名专业感。",
+    tags: ["AI商业化", "社交裂变"],
+    source: "Dribbble",
+    img: "https://cdn.dribbble.com/userupload/44935740/file/4c73d6918f12aa28b0e311feff834af7.png",
+    pin: "https://dribbble.com/search/shots/popular/web?q=AI+content+creation+faceless+creator+dashboard"
+  },
+  {
+    title: "模块化合规引擎 — 多国AI法规动态适配管理系统",
+    desc: "面向出海企业的模块化AI合规管理系统设计，左侧国家选择器（已覆盖32+国家/地区），中间合规规则模块列表（数据存储/AI透明度/用户授权/内容标识），每个模块显示开启/关闭状态和合规得分。右侧实时合规检测报告+一键生成监管提交文档。底部法规更新时间线自动追踪各国新法规变化。绿白配色传递合规安全感。",
+    tags: ["隐私合规", "增长设计"],
+    source: "Dribbble",
+    img: "https://cdn.dribbble.com/userupload/46072897/file/881320c42e24c817236fffd8ffa81cdc.png",
+    pin: "https://dribbble.com/search/shots/popular/web?q=compliance+engine+modular+multi-country+regulatory"
+  },
+  {
+    title: "后Cookie精准广告 — 第一方意图数据广告定向面板",
+    desc: "Cookie消亡后的广告定向解决方案管理面板设计，对比展示：旧模式（第三方Cookie追踪→用户画像→广告定向）vs 新模式（第一方输入意图数据→实时语义理解→上下文匹配）。中间意图信号实时流可视化（用户正在输入/搜索/讨论的主题），右侧广告匹配准确率对比图：Cookie定向63% vs 意图定向82%。白+蓝绿配色传递数据驱动的专业感。",
+    tags: ["广告营销", "隐私合规"],
+    source: "Dribbble",
+    img: "https://cdn.dribbble.com/userupload/46559693/file/9766dd84252d30ffe63851f6c626fc73.png",
+    pin: "https://dribbble.com/search/shots/popular/web?q=first+party+data+advertising+privacy+contextual+targeting"
+  },
+  {
     title: "AI视频广告生成器 — 静态图一键转短视频投放工具",
     desc: "Google Veo风格的AI视频广告生成工具界面设计，左侧上传区拖入商品静态图，中间AI自动生成10秒短视频预览（多角度旋转+场景合成+文案叠加），右侧一键投放至YouTube/GDN/PMax。底部展示生成成本对比：传统视频制作$2000 vs AI生成$0。蓝白极简+视频时间轴UI。",
     tags: ["广告营销", "AI商业化"],
