@@ -153,7 +153,7 @@
     .topnav-right {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 0;
       flex-shrink: 0;
       margin-left: auto;
     }
@@ -161,12 +161,13 @@
     .nav-tabs {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 0;
+      height: 100%;
     }
 
     .nav-tab {
-      height: 36px;
-      padding: 0 18px;
+      height: 64px;
+      padding: 0 20px;
       border: none;
       background: transparent;
       color: var(--text-3);
@@ -175,21 +176,27 @@
       font-family: var(--font);
       cursor: pointer;
       position: relative;
-      transition: all 200ms var(--ease);
+      transition: color 200ms var(--ease);
       display: flex;
       align-items: center;
-      text-decoration: none;
-      border-radius: 100px;
     }
 
-    .nav-tab:hover { color: var(--text); background: var(--bg-surface); }
+    .nav-tab:hover { color: var(--text); }
 
     .nav-tab.active {
-      color: #fff;
-      background: var(--text);
+      color: var(--text);
     }
 
-    .nav-tab.active:hover { color: #fff; background: var(--text); }
+    .nav-tab.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      right: 20px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 1px 1px 0 0;
+    }
 
     .nav-tab:focus-visible { outline: 2px solid var(--border-focus); outline-offset: -2px; }
 
