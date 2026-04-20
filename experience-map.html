@@ -72,33 +72,43 @@
     .hero-title { font-size: 2.75rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; color: var(--text); }
     .hero-subtitle { margin-top: 12px; font-size: 1rem; color: var(--text-2); max-width: 720px; }
 
-    /* FILTER */
-    .filters { max-width: var(--max-w); margin: 0 auto; padding: 28px 24px 0; }
-    .sub-filters { max-width: var(--max-w); margin: 0 auto; padding: 12px 24px 0; }
-    .filters-scroll { display: flex; align-items: center; gap: 8px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
-    .filters-scroll::-webkit-scrollbar { display: none; }
-    .chip {
-      height: 36px; padding: 0 16px; border-radius: var(--radius-full);
-      border: 1px solid var(--border); background: var(--bg); color: var(--text-2);
-      font-size: 0.8125rem; font-weight: 500; font-family: var(--font);
-      cursor: pointer; transition: all 200ms var(--ease); white-space: nowrap;
-      display: flex; align-items: center; gap: 6px; flex-shrink: 0;
+    /* CATEGORY NAV — 参考 HappyOps 居中导航风格 */
+    .cat-nav {
+      max-width: var(--max-w); margin: 0 auto; padding: 32px 24px 0;
+      display: flex; justify-content: center; align-items: center; gap: 0;
     }
-    .chip:hover { background: var(--bg-surface); border-color: var(--text-4); }
-    .chip.active { background: var(--blue-light); color: var(--blue); border-color: transparent; }
-    .chip .chip-icon { font-size: 0.875rem; }
-    .chip .chip-num { font-size: 0.6875rem; opacity: 0.5; }
-    .chip.active .chip-num { opacity: 0.7; }
-    .sub-chip {
-      height: 30px; padding: 0 12px; border-radius: var(--radius-full);
-      border: 1px solid var(--border-light); background: var(--bg); color: var(--text-3);
-      font-size: 0.75rem; font-weight: 500; font-family: var(--font);
-      cursor: pointer; transition: all 200ms var(--ease); white-space: nowrap;
-      display: flex; align-items: center; gap: 5px; flex-shrink: 0;
+    .cat-link {
+      position: relative; padding: 10px 24px; border: none; background: none;
+      font-family: var(--font); font-size: 0.9375rem; font-weight: 400;
+      color: var(--text-3); cursor: pointer; transition: color 250ms var(--ease);
+      white-space: nowrap; display: flex; align-items: center; gap: 6px;
     }
-    .sub-chip:hover { background: var(--bg-surface); color: var(--text-2); }
-    .sub-chip.active { background: #f3e8fd; color: #8430ce; border-color: transparent; }
-    .sub-chip .chip-num { font-size: 0.625rem; opacity: 0.5; }
+    .cat-link:hover { color: var(--text); }
+    .cat-link.active { color: var(--text); font-weight: 500; }
+    .cat-link .cat-dot {
+      width: 6px; height: 6px; border-radius: 50%; background: var(--text);
+      opacity: 0; transition: opacity 250ms var(--ease);
+    }
+    .cat-link.active .cat-dot { opacity: 1; }
+    .cat-sep { width: 1px; height: 16px; background: var(--border); margin: 0 4px; flex-shrink: 0; }
+
+    /* SUB-CATEGORY NAV */
+    .sub-nav {
+      max-width: var(--max-w); margin: 0 auto; padding: 16px 24px 0;
+      display: none; justify-content: center; align-items: center; gap: 0;
+    }
+    .sub-nav.visible { display: flex; }
+    .sub-link {
+      position: relative; padding: 6px 18px; border: none; background: none;
+      font-family: var(--font); font-size: 0.8125rem; font-weight: 400;
+      color: var(--text-4); cursor: pointer; transition: all 250ms var(--ease);
+      white-space: nowrap; border-radius: var(--radius-full);
+    }
+    .sub-link:hover { color: var(--text-2); }
+    .sub-link.active {
+      color: var(--text); font-weight: 500;
+      background: var(--bg-surface); border: 1px solid var(--border-light);
+    }
 
     /* EMPTY */
     .empty { text-align: center; padding: 60px 24px; }
@@ -202,6 +212,9 @@
     @media (max-width: 768px) {
       .hero { padding: 32px 16px 0; }
       .hero-title { font-size: 2rem; }
+      .cat-nav { padding: 24px 16px 0; gap: 0; flex-wrap: wrap; }
+      .cat-link { padding: 8px 16px; font-size: 0.8125rem; }
+      .sub-nav { padding: 12px 16px 0; flex-wrap: wrap; }
       .report-list { padding: 24px 16px 16px; }
       .report-body { padding: 20px; }
       .rpt-ct { padding: 20px 16px 32px; }
@@ -209,6 +222,8 @@
     @media (max-width: 480px) {
       .nav-tab { padding: 0 12px; font-size: 0.8125rem; }
       .hero-title { font-size: 1.5rem; }
+      .cat-link { padding: 6px 12px; font-size: 0.75rem; }
+      .cat-sep { margin: 0 2px; }
     }
   </style>
 </head>
@@ -231,15 +246,11 @@
     <p class="hero-subtitle">深度剖析竞品产品体验链路、用户需求和设计策略，基于 Figma 设计稿和用户行为调研的一手分析报告</p>
   </header>
 
-  <!-- Filters -->
-  <div class="filters">
-    <div class="filters-scroll" id="filterRow"></div>
-  </div>
+  <!-- Category Nav -->
+  <div class="cat-nav" id="catNav"></div>
 
-  <!-- Sub-category row (for 内容商业化) -->
-  <div class="sub-filters" id="subFilterRow" style="display:none">
-    <div class="filters-scroll" id="subFilterScroll"></div>
-  </div>
+  <!-- Sub-category Nav (for 内容商业化) -->
+  <div class="sub-nav" id="subNav"></div>
 
   <!-- Report List View -->
   <div class="report-list" id="reportList"></div>
@@ -566,32 +577,30 @@ function countReports(cat, sub) {
 }
 
 function renderFilters() {
-  const el = document.getElementById('filterRow');
-  el.innerHTML = CATEGORIES.map(c => {
-    const count = countReports(c.key, null);
+  const el = document.getElementById('catNav');
+  el.innerHTML = CATEGORIES.map((c, i) => {
     const isActive = activeCategory === c.key;
-    return `<button class="chip ${isActive ? 'active' : ''}" onclick="setCategory(${c.key === null ? 'null' : "'" + c.key + "'"})">
-      <span class="chip-icon">${c.icon}</span> ${c.label} <span class="chip-num">${count}</span>
-    </button>`;
+    return (i > 0 ? '<span class="cat-sep"></span>' : '') +
+      `<button class="cat-link ${isActive ? 'active' : ''}" onclick="setCategory(${c.key === null ? 'null' : "'" + c.key + "'"})">
+        <span class="cat-dot"></span>${c.label}
+      </button>`;
   }).join('');
 }
 
 function renderSubFilters() {
-  const subRow = document.getElementById('subFilterRow');
-  const subScroll = document.getElementById('subFilterScroll');
+  const subEl = document.getElementById('subNav');
   const subs = activeCategory ? SUB_CATEGORIES[activeCategory] : null;
 
   if (!subs) {
-    subRow.style.display = 'none';
+    subEl.classList.remove('visible');
     return;
   }
 
-  subRow.style.display = 'block';
-  subScroll.innerHTML = subs.map(s => {
-    const count = countReports(activeCategory, s.key);
+  subEl.classList.add('visible');
+  subEl.innerHTML = subs.map(s => {
     const isActive = activeSubCategory === s.key;
-    return `<button class="sub-chip ${isActive ? 'active' : ''}" onclick="setSubCategory(${s.key === null ? 'null' : "'" + s.key + "'"})">
-      ${s.icon ? '<span class="chip-icon">' + s.icon + '</span>' : ''} ${s.label} <span class="chip-num">${count}</span>
+    return `<button class="sub-link ${isActive ? 'active' : ''}" onclick="setSubCategory(${s.key === null ? 'null' : "'" + s.key + "'"})">
+      ${s.icon ? s.icon + ' ' : ''}${s.label}
     </button>`;
   }).join('');
 }
@@ -652,15 +661,15 @@ function setSubCategory(sub) {
 // ============================================================
 function showReport(id) {
   document.getElementById('reportList').style.display = 'none';
-  document.querySelector('.filters').style.display = 'none';
-  document.getElementById('subFilterRow').style.display = 'none';
+  document.getElementById('catNav').style.display = 'none';
+  document.getElementById('subNav').style.display = 'none';
   document.getElementById('report-' + id).classList.add('active');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 function hideReport() {
   document.querySelectorAll('.report-embed').forEach(el => el.classList.remove('active'));
   document.getElementById('reportList').style.display = 'block';
-  document.querySelector('.filters').style.display = 'block';
+  document.getElementById('catNav').style.display = 'flex';
   renderSubFilters();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
