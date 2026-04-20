@@ -692,6 +692,78 @@ const TAG_COLORS = {
 // DATA
 // ============================================================
 const NEWS_DATA = {
+  "2026-04-20": [
+    {
+      title: "HBR研究：中国Agentic Commerce领跑全球，美团AI Agent实现零交互自主下单",
+      summary: "《哈佛商业评论》4月18日发表重磅研究文章《What China's AI Agents Reveal About the Future of Commerce》，揭示中国正引领全球「代理商务」(Agentic Commerce)变革。核心发现：美团已实现AI Agent完全自主完成交易——用户仅需语音说「点我平时吃的午餐，20分钟后送到」，Agent自主解读意图、匹配商家、应用优惠券并完成支付，全程零手动交互。研究指出中国超级App生态（微信/淘宝/美团）为Agent商务提供了理想试验场，Agentic Commerce正从「辅助发现」升级为「委托执行」——AI不再只帮你找商品，而是替你完成整个购买决策链。",
+      reason: "HBR的研究确认了Agentic Commerce从概念进入规模化落地阶段。美团的零交互下单是全球首个大规模Agent Commerce实践——AI完全取代了用户的搜索、比价、下单流程。这对所有电商和本地生活平台都是颠覆性信号：未来的商业竞争不再是争夺用户点击，而是争夺AI Agent的决策权。",
+      imeInsight: "当购物从人工搜索变为Agent自主决策，输入法的角色将从「输入工具」升级为「意图捕获入口」。用户通过输入法表达的模糊意图（如「饿了」「想买个礼物」）将成为Agent Commerce的触发信号。输入法可以构建意图识别引擎，将用户输入的自然语言实时转化为结构化购买意图，对接各平台Agent完成交易。",
+      tags: ["AI商业化", "电商零售"], priority: "high", source: "Harvard Business Review"
+    },
+    {
+      title: "ChatGPT广告6周收入破1亿美元：AI搜索广告时代正式开启，$60 CPM刷新行业天花板",
+      summary: "据AI Weekly报道，OpenAI在ChatGPT中上线的广告产品已在6周内突破1亿美元收入里程碑。ChatGPT广告于2月9日正式上线，面向免费版和$8/月Go订阅层用户展示，采用Criteo广告基础设施运营。广告定价$60 CPM（每千次展示60美元），最低投放门槛$200K，远超传统数字广告平台。目前以旅行和品牌查询的赞助结果为主要形态，当用户提及特定品牌时会展示竞品广告。自助投放（Self-serve）平台预计4月内开放。Anthropic则明确表示不会在Claude中投放广告，走纯订阅路线。",
+      reason: "ChatGPT广告$60 CPM是Google搜索广告平均CPM的3-4倍，证明AI对话场景的广告价值远高于传统搜索。6周1亿美元的速度也打破了数字广告新平台的增长记录。这意味着AI搜索正在成为继Google搜索、社交信息流之后的第三大广告场景，对整个数字广告产业格局产生深远影响。",
+      imeInsight: "ChatGPT广告的成功验证了一个关键假设：AI对话场景中的用户意图更明确、转化价值更高。输入法作为天然的意图表达入口，其广告价值被严重低估。借鉴ChatGPT模式，输入法可以在AI写作、翻译等AI功能场景中嵌入高CPM的意图驱动型广告，预计CPM可达传统键盘广告的5-10倍。",
+      tags: ["广告营销", "AI商业化"], priority: "high", source: "AI Weekly/TechCrunch"
+    },
+    {
+      title: "OpenAI八位数收购个人理财公司Hiro Finance：ChatGPT剑指万亿财富管理市场",
+      summary: "OpenAI以未披露的八位数金额完成对AI个人理财初创公司Hiro Finance的收购。Hiro由Ethan Bloch创立，专注AI驱动的场景化财务规划——用户可以问「如果我明年换工作、搬到纽约，我的财务状况会怎样」，AI自动建模分析。Hiro团队约10人将加入OpenAI，Hiro App于4月20日停服、5月15日删除用户数据。该收购被定性为acqui-hire（人才收购），但标志着OpenAI首次大规模进军金融科技领域。American Banker分析称此举直接挑战Mint/YNAB等传统理财工具，ChatGPT可能成为下一个超级金融入口。",
+      reason: "OpenAI收购Hiro Finance不仅是人才收购，更是战略信号——ChatGPT正在从通用对话工具向垂直领域超级App演进。金融理财是AI最具商业化价值的垂直场景之一（全球财富管理市场超$100万亿），ChatGPT嵌入理财能力后可能直接从付费订阅升级为金融服务收入模式，打开全新增长曲线。",
+      imeInsight: "ChatGPT进军金融理财说明AI平台正在通过垂直场景深化用户价值。输入法应关注「AI+金融」输入场景：如在支付页面提供AI记账助手、在聊天中识别转账金额自动生成记账条目、输入场景中嵌入汇率换算和理财产品比较。金融场景是输入法商业化价值最高的垂直领域之一。",
+      tags: ["金融科技", "AI商业化"], priority: "high", source: "TechCrunch/American Banker"
+    },
+    {
+      title: "Forrester发布2026十大新兴技术：AI从聊天界面进入物理世界，空间计算与具身智能上榜",
+      summary: "Forrester于4月15日发布《2026年十大新兴技术》报告，核心主题是「AI不再只是聊天界面」。报告指出AI正在从对话（chatbot）层面扩展到物理世界和环境体验层：空间计算、具身AI（embodied AI）、环境智能（ambient intelligence）成为三大核心方向。AI在物理世界的应用已经为消费者带来切实影响——从智能零售门店到自动驾驶配送。Forrester此前预测2026年企业将推迟25%的AI计划支出至2027年，但本次报告修正了这一观点：AI支出没有推迟，而是从模型训练转向了应用部署。",
+      reason: "Forrester作为全球顶级科技咨询机构，其年度新兴技术列表是行业风向标。「AI从聊天进入物理世界」的判断意味着2026年AI商业化的主战场将从纯数字场景（对话/搜索/内容生成）扩展到物理场景（零售门店/物流配送/制造车间）。企业AI支出从训练转向部署也确认了商业化落地的加速。",
+      imeInsight: "AI进入物理世界对输入法意味着新的交互场景：AR眼镜中的手势+语音混合输入、智能门店中的多模态交互、车载场景的语音输入优化。输入法需要从移动端屏幕键盘向多模态、多设备、多场景的输入基础设施演进，成为连接数字世界和物理世界的交互桥梁。",
+      tags: ["AI商业化", "企业服务"], priority: "high", source: "Forrester"
+    },
+    {
+      title: "Reddit成为AI搜索引擎最常引用来源：3000万数据源分析显示UGC内容在AI时代价值飙升",
+      summary: "Verkeer发布4月数字营销行业更新，援引一项覆盖3000万数据源的大规模分析：在ChatGPT、Google AI Mode、Gemini、Perplexity和AI Overviews五大AI搜索/对话产品中，Reddit是被引用最多的域名，YouTube紧随其后。这意味着AI系统在生成回答时高度依赖用户生成内容（UGC）而非品牌官方内容。同时Google AI搜索中广告正式扩展至更多品类——旅行查询最先触发广告，用户提及品牌名时会出现竞品广告。AI搜索自助投放平台预计4月开放。",
+      reason: "Reddit成为AI搜索第一引用源是2026年最反直觉的发现之一——AI时代最有价值的不是精心制作的品牌内容，而是真实的用户讨论。这颠覆了传统SEO逻辑，也为UGC平台（Reddit/知乎/小红书）的商业化打开了新空间。品牌需要从「控制官方内容」转向「影响社区讨论」。",
+      imeInsight: "UGC在AI搜索中的高价值对输入法的启示：输入法AI功能（如AI搜索、AI回答）在选择引用源时，应优先引用高质量UGC内容而非纯SEO优化的品牌页面，以提升回答的真实性和实用性。同时输入法社区（如输入法皮肤社区、表情包社区）的UGC内容也可能成为AI系统的引用来源，提升品牌曝光。",
+      tags: ["广告营销", "社交变现"], priority: "high", source: "Verkeer/AI搜索分析报告"
+    },
+    {
+      title: "AI合成图像法规2026年夏季生效：美国多州立法要求广告中AI生成图像必须标注，违规罚$51,744",
+      summary: "Madfish Digital发布2026年Q2营销趋势报告，重点警示两项即将于今年夏季生效的AI合成图像立法。新法规要求在广告、营销素材中使用AI生成或AI修改的图像必须明确标注「AI Generated」或「AI Modified」标识。单次违规罚款最高达$51,744。法规覆盖范围包括社交媒体广告、电商商品图、品牌营销邮件等所有商业化场景。YouTube、Meta、TikTok已分别上线自动AI标签检测系统，与C2PA内容来源元数据标准对接。品牌需要在夏季前完成全部营销素材的AI使用审计。",
+      reason: "AI图像标注立法从「建议」变为「强制+高额罚款」是2026年合规领域的分水岭事件。$51,744的单次罚款足以让中小品牌重新审视AI内容生成策略。这将催生一个新市场：AI内容合规审计工具——自动检测营销素材中的AI成分并添加合规标签。",
+      imeInsight: "AI内容标注合规对输入法AI功能的影响：当输入法的AI写作、AI图片生成功能被用于商业营销场景时，输出内容需要自动添加AI生成标识。输入法可以内置合规检测模块——AI生成的文案自动追加标注、AI修改的图片自动嵌入元数据，帮助用户一键满足合规要求，将合规成本转化为产品差异化优势。",
+      tags: ["隐私合规", "广告营销"], priority: "high", source: "Madfish Digital"
+    },
+    {
+      title: "AI Agent变现现实检验：MIT报告95%试点项目失败，Klarna全链路复盘揭示Agent商业化三大陷阱",
+      summary: "ShareUHack发布2026年AI Agent变现现实检验深度分析，综合AgentMRR排行榜数据和MIT最新报告。MIT研究显示95%的AI Agent试点项目未能进入生产环境或实现预期ROI。Klarna作为最受关注的Agent商业化案例提供了完整的起伏复盘——从宣布Agent替代700名客服到面临质量问题和监管质疑。报告提出AMR（Agent Marginal Return）成本框架：Agent的边际成本并不趋近于零，而是在规模化后出现「复杂性成本墙」。三种已验证的Agent变现模式：场景限定型（如客服工单）、人机协作型（AI草拟+人类审核）、平台税型（Agent marketplace抽成）。",
+      reason: "95%的Agent试点失败率是对AI Agent热潮的重要冷水——与Anthropic报告的80%企业获ROI形成鲜明对比，说明样本选择和成功定义差异巨大。Klarna复盘揭示Agent商业化不是「部署即成功」而是需要持续的质量管理和预期管理。AMR框架对所有尝试Agent变现的企业都有指导意义。",
+      imeInsight: "Agent商业化的「复杂性成本墙」对输入法AI功能的警示：AI输入功能不应追求全自动化（如完全替代用户输入），而应定位在「人机协作」模式——AI提供智能建议，用户一键确认或修改。这种模式的边际成本可控、用户满意度高、合规风险低。三种验证过的Agent变现模式中，「场景限定型」最适合输入法——限定在翻译、纠错、格式化等特定场景提供AI服务。",
+      tags: ["AI商业化", "企业服务"], priority: "medium", source: "ShareUHack/MIT"
+    },
+    {
+      title: "noyb向TikTok、AppsFlyer发起GDPR投诉：数据共享网络成2026年隐私执法新焦点",
+      summary: "欧洲隐私维权组织noyb于4月中旬分别向TikTok、AppsFlyer和Grindr提起GDPR投诉，标志着2026年隐私执法重心从单一平台数据收集转向跨平台数据共享网络。投诉焦点是这些平台通过SDK、API等技术手段在未经用户明确同意的情况下共享用户行为数据。AI Gov Hub分析指出，GDPR执法正在扩展到「数字平台及其数据共享网络」——不仅数据收集方需要合规，数据接收方和中间传输方都将面临审查。AppsFlyer作为移动归因平台被投诉，意味着整个移动广告归因生态都面临合规风险。",
+      reason: "noyb对数据共享网络的投诉标志着隐私执法进入「生态级」阶段——不再只追究直接收集数据的App，而是追查整条数据流转链路。AppsFlyer被投诉对移动广告行业影响尤其深远——如果归因平台的数据共享模式被裁定违规，整个移动广告的效果衡量体系都需要重构。",
+      imeInsight: "数据共享网络成为执法焦点对输入法的直接影响：输入法如果通过SDK向第三方广告平台、分析工具共享用户输入行为数据，需要确保每个数据接收方都获得了用户的明确同意。建议输入法建立「数据流转地图」——可视化展示用户数据流向哪些第三方，并提供用户一键管理数据共享范围的控制面板。",
+      tags: ["隐私合规", "平台治理"], priority: "medium", source: "noyb/AI Gov Hub"
+    },
+    {
+      title: "Agentic Commerce全球标准化加速：Google UCP、OpenAI ACP两大协议争夺Agent交易话语权",
+      summary: "随着HBR和McKinsey连续发布Agentic Commerce研究报告，Google的UCP（Unified Commerce Protocol）和OpenAI的ACP（Agent Commerce Protocol）两大Agent交易协议竞争白热化。Adam Silva Consulting发布的《State of Agentic Commerce 2026》报告显示：50%的搜索流量正在向AI转移、85%的企业尚未准备好应对Agent Commerce。Google已强制要求部分商家接入UCP协议以获得AI购物推荐曝光，OpenAI则通过ChatGPT插件生态推广ACP。两大协议的竞争将决定未来AI Agent购物的标准化基础设施归属。",
+      reason: "UCP vs ACP的竞争本质是AI时代的「商业操作系统」之争——谁的协议成为Agent交易的标准，谁就掌握了AI商业化的基础设施税。85%的企业未准备好Agent Commerce说明这是一个巨大的咨询和技术服务市场。50%搜索流量向AI转移的数据也再次确认传统SEO/SEM模式面临根本性变革。",
+      imeInsight: "Agent Commerce协议标准化对输入法的机遇：输入法可以成为Agent Commerce的「意图入口」——用户在输入法中表达的购买意图通过标准化协议（UCP/ACP）直接触发Agent交易。输入法需要尽早适配两大协议，确保用户从输入法发起的AI购物能无缝对接各电商平台的Agent系统。先行接入可获得生态位优势。",
+      tags: ["电商零售", "AI商业化"], priority: "high", source: "Adam Silva Consulting/Google/OpenAI"
+    },
+    {
+      title: "AppsFlyer游戏营销报告：AI重塑用户获取策略，游戏广告创意AI生成占比突破40%",
+      summary: "AppsFlyer发布2026年游戏营销状态报告，核心数据：AI已深度重塑游戏营销的用户获取（UA）策略。游戏广告创意中AI生成内容占比突破40%（2024年仅8%），AI驱动的自动化创意测试使广告素材A/B测试效率提升300%。同时游戏变现模式持续向混合模式演进——IAP（应用内购）+广告变现的混合模式占比达67%，纯IAP模式下降至21%。报告特别指出超休闲游戏的广告变现ARPDAU首次超过$0.10/日，AI精准投放是关键推手。",
+      reason: "游戏广告创意AI生成占比突破40%是创意产业的里程碑——意味着游戏行业已率先实现「AI创意工业化」。300%的A/B测试效率提升证明AI在创意优化领域已产生确定性ROI。混合变现模式67%占比也确认了纯付费模式的衰退趋势——未来几乎所有游戏都将包含广告变现组件。",
+      imeInsight: "游戏广告创意AI化对输入法游戏化变现的启示：输入法的游戏化营销活动（如键盘皮肤收集、打字速度挑战）可以借鉴游戏行业的AI创意工业化方法——用AI批量生成活动素材和推送文案，通过自动化A/B测试找到最优转化方案。同时游戏广告SDK的接入可以让输入法成为游戏广告的分发渠道，分享游戏行业的广告变现增长。",
+      tags: ["游戏", "广告营销"], priority: "medium", source: "AppsFlyer"
+    }
+  ],
   "2026-04-19": [
     {
       title: "中国日均Token调用量突破140万亿：两年千倍增长，统计局首次将「词元」纳入宏观经济指标",
@@ -1764,7 +1836,7 @@ const NEWS_DATA = {
 // ============================================================
 // STATE
 // ============================================================
-let currentDate = new Date(2026, 3, 19);
+let currentDate = new Date(2026, 3, 20);
 let activeTag = null;
 let searchQuery = '';
 
