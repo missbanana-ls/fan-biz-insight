@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>搜狗输入法商业化现状诊断报告 · 第三方视角</title>
+<style>
+  :root{
+    --o1:#FF6A00;      /* 主橙 */
+    --o2:#FF8A3D;      /* 亮橙 */
+    --o3:#FFB37A;      /* 柔橙 */
+    --o4:#FFF3E8;      /* 浅橙底 */
+    --o5:#FFE3CC;      /* 卡片边 */
+    --ink1:#1A1A1A;
+    --ink2:#333;
+    --ink3:#555;
+    --ink4:#888;
+    --line:#EFE6DC;
+    --bg:#FFFDFB;
+    --danger:#E23B3B;
+    --warn:#E08A00;
+    --ok:#2EA84F;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink1);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:48px 40px 80px}
+  /* Hero */
+  .hero{border-radius:20px;background:linear-gradient(135deg,#FFF3E8 0%,#FFFDFB 55%,#FFE3CC 100%);padding:44px 44px;border:1px solid var(--o5);position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,var(--o2),transparent 70%);opacity:.25}
+  .tag{display:inline-block;background:var(--o1);color:#fff;font-size:12px;padding:4px 10px;border-radius:999px;letter-spacing:.5px;margin-bottom:14px}
+  .hero h1{font-size:34px;margin:0 0 10px;letter-spacing:-.5px;font-weight:800}
+  .hero h1 em{color:var(--o1);font-style:normal}
+  .hero .sub{color:var(--ink3);font-size:15px;max-width:820px}
+  .meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:22px;font-size:13px;color:var(--ink4)}
+  .meta b{color:var(--ink2);font-weight:600}
+
+  /* 统一标题 */
+  h2{font-size:24px;margin:56px 0 18px;padding-left:14px;border-left:5px solid var(--o1);letter-spacing:-.3px}
+  h3{font-size:18px;margin:28px 0 10px;color:var(--ink1)}
+  h4{font-size:15px;margin:18px 0 6px;color:var(--ink1)}
+  p{color:var(--ink2);font-size:14.5px}
+  .lead{font-size:16px;color:var(--ink2);background:var(--o4);padding:18px 20px;border-radius:12px;border-left:4px solid var(--o1)}
+
+  /* 核心判断卡 */
+  .verdict{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+  .vcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+  .vcard.big{grid-column:span 2;background:linear-gradient(180deg,#FFF8F1,#fff);border-color:var(--o5)}
+  .vcard .k{font-size:12px;color:var(--o1);font-weight:700;letter-spacing:1px}
+  .vcard .v{font-size:18px;font-weight:700;margin-top:6px;color:var(--ink1)}
+  .vcard .d{font-size:13.5px;color:var(--ink3);margin-top:8px}
+
+  /* 问题表格 */
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:10px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th{background:var(--o4);color:var(--ink1);text-align:left;padding:12px 14px;font-weight:600;font-size:13px;border-bottom:1px solid var(--o5)}
+  td{padding:12px 14px;border-bottom:1px solid var(--line);color:var(--ink2);vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  td .pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11.5px;font-weight:600}
+  .p-high{background:#FDECEC;color:var(--danger)}
+  .p-mid{background:#FFF1D9;color:var(--warn)}
+  .p-low{background:#E8F6EC;color:var(--ok)}
+
+  /* 宏观问题 */
+  .macro{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:14px}
+  .mcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;position:relative;overflow:hidden}
+  .mcard::before{content:attr(data-n);position:absolute;right:-12px;top:-28px;font-size:92px;font-weight:900;color:var(--o4);line-height:1}
+  .mcard h4{margin:0 0 8px;font-size:16px;color:var(--o1)}
+  .mcard .sub{font-size:13px;color:var(--ink4);margin-bottom:10px}
+  .mcard p{margin:6px 0;font-size:13.5px;color:var(--ink2)}
+  .mcard .evidence{background:var(--o4);border-radius:8px;padding:10px 12px;margin-top:10px;font-size:12.5px;color:var(--ink3)}
+  .mcard .evidence b{color:var(--o1)}
+
+  /* 链路诊断区 */
+  .link{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;margin-top:18px}
+  .link header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:12px}
+  .link header .name{font-size:17px;font-weight:700}
+  .link header .name span{color:var(--o1)}
+  .link header .score{display:flex;gap:8px;font-size:12px}
+  .link header .score i{font-style:normal;padding:3px 9px;border-radius:999px;background:var(--o4);color:var(--o1);font-weight:600}
+  .link .facts{background:var(--o4);border-radius:10px;padding:14px 16px;font-size:13.5px;color:var(--ink2);margin-bottom:14px}
+  .link .facts b{color:var(--ink1)}
+  .link .cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .link .col h5{margin:0 0 8px;font-size:13px;color:var(--ink4);text-transform:uppercase;letter-spacing:1px}
+  .link .col ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--ink2)}
+  .link .col ul li{margin-bottom:6px}
+  .link .col.micro ul li::marker{color:var(--o1)}
+  .link .col.macro ul li::marker{color:var(--danger)}
+  .link .action{margin-top:14px;padding:12px 14px;background:linear-gradient(90deg,#FFF3E8,#fff);border-left:3px solid var(--o1);border-radius:8px;font-size:13.5px;color:var(--ink2)}
+  .link .action b{color:var(--o1)}
+
+  /* 风险矩阵 */
+  .matrix{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:10px}
+  .matrix .cell{aspect-ratio:1.4/1;border-radius:8px;padding:10px;font-size:12px;color:#fff;display:flex;flex-direction:column;justify-content:space-between}
+  .matrix .axis{background:transparent !important;color:var(--ink4) !important;font-size:11px;aspect-ratio:auto;padding:6px 4px;text-align:center;align-items:center;justify-content:center;display:flex}
+  .c-r5{background:#C41E3A}.c-r4{background:#E23B3B}.c-r3{background:#E88100}.c-r2{background:#E0B000}.c-r1{background:#6ECB63}
+
+  /* 未来方向 */
+  .future{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:14px}
+  .fcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;border-top:4px solid var(--o1)}
+  .fcard.short{border-top-color:#E23B3B}
+  .fcard.mid{border-top-color:#E88100}
+  .fcard.long{border-top-color:#2EA84F}
+  .fcard h4{margin:0 0 4px;font-size:15px}
+  .fcard .horizon{font-size:11.5px;color:var(--ink4);letter-spacing:1px}
+  .fcard ul{padding-left:18px;margin:10px 0 0;font-size:13px;color:var(--ink2)}
+  .fcard ul li{margin-bottom:6px}
+
+  /* 底部 */
+  .signoff{margin-top:60px;padding-top:24px;border-top:1px dashed var(--o5);font-size:12.5px;color:var(--ink4);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .signoff b{color:var(--o1)}
+
+  @media(max-width:900px){
+    .wrap{padding:28px 20px}
+    .hero{padding:28px 22px}
+    .hero h1{font-size:26px}
+    .verdict,.macro,.future,.link .cols{grid-template-columns:1fr}
+    .vcard.big{grid-column:span 1}
+    .matrix{grid-template-columns:repeat(5,1fr)}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Hero -->
+  <section class="hero">
+    <span class="tag">第三方 / 行业分析师视角</span>
+    <h1>搜狗输入法商业化现状诊断 ·<br/><em>从"流量租金"到"用户价值"的十字路口</em></h1>
+    <p class="sub">本报告基于客户方提供的11张商业化链路截图（移动标广/非标、PC标广/非标、合作渠道、这厢有礼）进行纯事实分析，不预设立场、不引用内部路径。判断仅来自可见的产品形态、广告位分布与链路结构。</p>
+    <div class="meta">
+      <span><b>分析对象：</b>搜狗输入法（Android / iOS / PC）商业化链路</span>
+      <span><b>素材范围：</b>11 张链路截图</span>
+      <span><b>输出日期：</b>2026-04-20</span>
+      <span><b>立场：</b>行业第三方（非内部视角）</span>
+    </div>
+  </section>
+
+  <!-- 核心判断 -->
+  <h2>一、核心判断（先说结论）</h2>
+  <p class="lead">搜狗输入法当前的商业化，表面是"广告位密度高"，本质是<b>产品定位错位</b>——把一个高频工具做成了<b>"流量货架"</b>。可见像素几乎全部被明码标价：标广占视觉重区、非标占节日/场景、合作渠道占PC桌面、这厢有礼占键盘入口。短期 eCPM 可以撑住，<b>但护城河正在被自己挖开</b>。</p>
+
+  <div class="verdict">
+    <div class="vcard big">
+      <div class="k">ONE-LINE VERDICT</div>
+      <div class="v">搜狗的商业化曲线是"收割型"，不是"价值型"。每增加一个广告位，就减少一次用户主动打开的理由。</div>
+      <div class="d">在 AI 输入法（豆包/微信键盘/Wispr Flow/百度）用"能力"重构输入法价值的窗口期，继续加厚广告货架等同于<b>把工具位让给对手</b>。</div>
+    </div>
+    <div class="vcard">
+      <div class="k">最严重结构性问题</div>
+      <div class="v">广告位"全域化"</div>
+      <div class="d">键盘、候选区、表情、皮肤、APP、负一屏、PC桌面、右键菜单、安装向导——无一幸免。用户找不到"纯工具"的避风港。</div>
+    </div>
+    <div class="vcard">
+      <div class="k">最稀缺的战略资产</div>
+      <div class="v">输入法的"原生广告能力"</div>
+      <div class="d">意图识别、AI改写、联想下发——这些才是真正值 3-5x eCPM 的位置。当前全部位是"展示位"，没有"智能位"。</div>
+    </div>
+  </div>
+
+  <!-- 宏观问题 -->
+  <h2>二、宏观五大结构性问题</h2>
+  <p>以下问题是<b>跨链路共性</b>，而不是某个广告位的个案。解决单个广告位问题无法根治。</p>
+
+  <div class="macro">
+    <div class="mcard" data-n="01">
+      <h4>宏观问题 1 · 商业化与产品价值严重解耦</h4>
+      <div class="sub">Product-Monetization Decoupling</div>
+      <p>广告位大量集中在<b>表情/皮肤/节日/负一屏</b>等"非输入主场景"，这些场景与输入法核心价值（打字更快、更准、更聪明）几乎无关。</p>
+      <p>这意味着：<b>广告收入每增长1%，用户感受到的"工具性"下降1%</b>，长期会导致月活结构劣化（只剩纯打字刚需用户，商业可运营人群反而缩小）。</p>
+      <div class="evidence"><b>证据：</b>CNY拜年专区场地冠名、倒计时迷你卡、皮肤迷你卡、激励皮肤——都是"借键盘曝光、不增输入能力"的典型样式。</div>
+    </div>
+
+    <div class="mcard" data-n="02">
+      <h4>宏观问题 2 · 广告位"全域化"，没有"避风港"</h4>
+      <div class="sub">No Safe-Zone for Pure Utility</div>
+      <p>从截图可见：APP闪屏、Banner、信息流、激励皮肤、任务中心、消息Push、我的页Banner、拍脸图、键盘运营位、词服务发送后联想、CNY打字弹图……<b>所有用户触点都已商业化</b>。</p>
+      <p>一个健康的工具型产品应保留"<b>无广告主路径</b>"作为底盘。搜狗目前<b>连打字后的联想区都在下发广告</b>，这是极限打法，NPS 下行是时间问题。</p>
+      <div class="evidence"><b>证据：</b>"词服务发送后联想"截图——用户发完词后弹出商品卡，这是把输入结果当作广告触发器，跨越了工具/媒体的伦理线。</div>
+    </div>
+
+    <div class="mcard" data-n="03">
+      <h4>宏观问题 3 · 链路颗粒过细、形态过于碎片</h4>
+      <div class="sub">Fragmentation over Strategy</div>
+      <p>仅移动端标广就看到<b>6种主样式</b>（表情展广/语录展广/电商双栏/安卓负一屏双栏/iOS负一屏双栏/激励皮肤）；非标再叠 6 种；PC端再叠 3+8 种；合作渠道再叠 2 种。</p>
+      <p>对广告主是"眼花缭乱"、对用户是"处处设防"、对设计团队是"<b>维护地狱</b>"。没有任何一个样式是"招牌位"，等于没有品牌级广告产品。</p>
+      <div class="evidence"><b>证据：</b>"这厢有礼"下又细分瑞幸/美团/希尔顿欢朋/老乡鸡/小说VIP/同程旅行会员卡——每券一套UI，券位即栏目，栏目即项目。</div>
+    </div>
+
+    <div class="mcard" data-n="04">
+      <h4>宏观问题 4 · AI 时代的"能力位"严重缺位</h4>
+      <div class="sub">Missing AI-Native Ad Surface</div>
+      <p>截图中<b>没有看到任何"意图识别驱动"的商业化位</b>。广告位全是"展示 / banner / 信息流 / 皮肤"这四种 2015 年就有的形态。</p>
+      <p>同期：豆包把电商做进"边说边买"，Wispr Flow 做语音改写订阅，微信键盘把商业化做成"不商业化"本身的差异点。<b>搜狗是所有头部输入法里，唯一还在靠"展示广告"撑收入的玩家</b>。</p>
+      <div class="evidence"><b>证据：</b>"灵犀标广 / 灵犀应用分发 / 灵犀直达 / 灵犀下载"均为浏览器侧边栏投放，本质上是<b>把灵犀当作另一个"展示容器"</b>，没有用到 AI 语义理解。</div>
+    </div>
+
+    <div class="mcard" data-n="05">
+      <h4>宏观问题 5 · 应用分发链路伦理与合规风险高</h4>
+      <div class="sub">Distribution Ethics &amp; Compliance Risk</div>
+      <p>PC端看到"安装完成→装机必备→右键分发→系统弹窗→侧边栏→灵犀下载→PDF无死弹窗"等一整套分发链路，<b>多处呈现"搭车式"安装</b>（定制输入法/系统弹窗伪装系统通知/右键菜单写入）。</p>
+      <p>这类路径在 <b>2024-2026 年 Windows/工信部专项治理周期</b>内属于高压区，<b>不是能不能做的问题，是什么时候被处罚的问题</b>。曝光 20w~200w 级别的量，一旦被处罚就是品牌级伤害。</p>
+      <div class="evidence"><b>证据：</b>"PC非标-针对新/老用户"截图中出现"系统弹窗""右键分发""PDF无死弹窗""装机必备"——这四类都在最近两年的合规重点清单上。</div>
+    </div>
+
+    <div class="mcard" data-n="06">
+      <h4>宏观问题 6 · "这厢有礼"做成了"券聚合"，错过了输入法原生机会</h4>
+      <div class="sub">Coupon Hub ≠ Input-Native Commerce</div>
+      <p>"这厢有礼"逻辑上是一个<b>券中心</b>——用户在键盘里点入口、跳 H5、领券、复制、粘贴、去第三方 APP 核销。<b>全程和"输入"无关</b>，本质是把美团/瑞幸等外部券搬了个货架。</p>
+      <p>真正的输入法原生商业化应该是：<b>用户打字时 → 识别意图（想喝咖啡）→ 原地下发可用券 → 一键填单</b>。目前的"这厢有礼"把金矿当货架用。</p>
+      <div class="evidence"><b>证据：</b>移动端"这厢有礼"主页面是卡片列表页，入口在APP而不是键盘候选词；与打字行为无任何耦合。</div>
+    </div>
+  </div>
+
+  <!-- 链路级诊断 -->
+  <h2>三、六条链路的逐一诊断</h2>
+  <p>每条链路分别给出：<b>事实 / 微观问题（UX层）/ 宏观问题（商业层）/ 修复方向</b>。评分为分析师主观判断，仅作优先级参考。</p>
+
+  <!-- 链路1 -->
+  <div class="link">
+    <header>
+      <div class="name">链路 1 · 移动标广 — <span>键盘端</span></div>
+      <div class="score"><i>健康度 ★★☆☆☆</i><i>商业价值 ★★★★☆</i><i>风险 ★★★★☆</i></div>
+    </header>
+    <div class="facts"><b>事实：</b>键盘内6类广告位 — 表情展广 / 语录展广 / 电商双栏 / 安卓负一屏双栏 / iOS负一屏双栏 / 激励皮肤，几乎覆盖所有"打字→选字→表情"主路径。</div>
+    <div class="cols">
+      <div class="col micro">
+        <h5>微观问题 (UX)</h5>
+        <ul>
+          <li>表情展广与表情功能区视觉高度雷同，<b>误触率必然高</b>；用户点表情点到广告的情况在设计上是默认的。</li>
+          <li>电商双栏把候选词区强行改造成商品卡，<b>打字流被阻断</b>——用户正在输入时突然要"看商品"。</li>
+          <li>iOS 与 Android 双端样式差异巨大（iOS 更黑化、Android 更素），品牌一致性缺失。</li>
+          <li>激励皮肤"看广告换皮肤"是标准的脏流量玩法，对品牌人群无吸引力。</li>
+        </ul>
+      </div>
+      <div class="col macro">
+        <h5>宏观问题 (商业)</h5>
+        <ul>
+          <li>广告位与"打字意图"<b>零耦合</b>，广告主买的是曝光不是转化，eCPM 天花板有限。</li>
+          <li>候选区 / 表情区是输入法最后的"工具纯净区"，被占用后<b>差异化防线被击穿</b>。</li>
+          <li>与对手对比：微信键盘/Wispr Flow 在这些位置是 AI 改写、语音转写；搜狗是商品卡——代差明显。</li>
+          <li>iOS 下负一屏双栏涉及系统级扩展合规红线，苹果审核趋严的情况下有被驳回风险。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="action"><b>修复方向：</b>保留"表情展广 + 负一屏双栏"两类保收入；<b>立即下线候选区电商双栏与语录展广</b>，替换为"AI改写/AI续写/AI翻译"等能力位，用能力换广告，把键盘主区域改回工具属性。</div>
+  </div>
+
+  <!-- 链路2 -->
+  <div class="link">
+    <header>
+      <div class="name">链路 2 · 移动标广 — <span>APP端</span></div>
+      <div class="score"><i>健康度 ★★★☆☆</i><i>商业价值 ★★★☆☆</i><i>风险 ★★☆☆☆</i></div>
+    </header>
+    <div class="facts"><b>事实：</b>APP端5类 — 闪屏 / Banner / 信息流 / 激励皮肤 / 任务中心。是全链路里最"常规"、最贴近传统媒体 APP 的一条。</div>
+    <div class="cols">
+      <div class="col micro">
+        <h5>微观问题 (UX)</h5>
+        <ul>
+          <li>Banner 样式极其杂乱（影视/游戏/电商/小说/穿戴混投），<b>没有统一视觉规则</b>，用户无法建立广告预期。</li>
+          <li>信息流里出现"红包开启""立即领取"等诱导式创意，对老用户是骚扰、对新用户是劝退。</li>
+          <li>任务中心做成了"金币墙"，游戏化但和输入法本体无关联，留存无意义。</li>
+        </ul>
+      </div>
+      <div class="col macro">
+        <h5>宏观问题 (商业)</h5>
+        <ul>
+          <li>APP 端 DAU 相比键盘 DAU 是<b>两个数量级以下</b>的流量，投入产出比不高，广告位多≠收入多。</li>
+          <li>APP 被做成"广告宿舍"的同时，本来的"皮肤中心/词库中心"工具价值被稀释，<b>打开率会持续下滑</b>。</li>
+          <li>任务中心=金币体系，对广告主是下沉流量，拉低了整体广告人群质量，<b>伤品牌广告客单</b>。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="action"><b>修复方向：</b>APP 端做"减法"比做"加法"更值钱。保留闪屏 + 我的页Banner；砍掉信息流；把任务中心改为"AI 工具箱"（改写/翻译/问问）+ 品牌冠名位，单位流量价值 2~3x 提升。</div>
+  </div>
+
+  <!-- 链路3 -->
+  <div class="link">
+    <header>
+      <div class="name">链路 3 · 移动非标 — <span>键盘端</span></div>
+      <div class="score"><i>健康度 ★★☆☆☆</i><i>商业价值 ★★★★☆</i><i>风险 ★★★★★</i></div>
+    </header>
+    <div class="facts"><b>事实：</b>键盘非标6类 — CNY打字弹图 / CNY拜年专区场地冠名 / 倒计时迷你卡 / 皮肤迷你卡 / 键盘运营位 / 词服务发送后联想。节日+场景驱动，创意华丽。</div>
+    <div class="cols">
+      <div class="col micro">
+        <h5>微观问题 (UX)</h5>
+        <ul>
+          <li>"CNY打字弹图"在用户打字时弹出整屏动画，<b>是输入法里最粗暴的打扰</b>，违反键盘不打扰原则。</li>
+          <li>"词服务发送后联想"在发送后二次触发，<b>用户已经完成动作了还要被营销</b>，感知极差。</li>
+          <li>场地冠名把键盘主色整体改成广告主色（红/橙/金），破坏产品视觉统一。</li>
+        </ul>
+      </div>
+      <div class="col macro">
+        <h5>宏观问题 (商业)</h5>
+        <ul>
+          <li>非标广告价格贵=责任大。一次 CNY 翻车=全年口碑事件，<b>是"赚一次赔三年"的结构</b>。</li>
+          <li>"发送后联想"触及<b>输入内容监听</b>合规底线——广告联动打字内容在隐私合规审查中是高风险项。</li>
+          <li>本来应该是 AI 意图识别的商业化原点（这么好的位置！），却被做成了"打完字再推商品"的低级形态。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="action"><b>修复方向：</b><b>这是整个商业化体系最该被升级的一条链路。</b>把"发送后联想"从"广告触发器"升级为"AI意图商业化"——用户打"我想喝咖啡"→ 识别意图→下发可用券/下单卡片（本地匹配+端上推理，不上传原文）。同一个位置，品牌/合规/价值三升。</div>
+  </div>
+
+  <!-- 链路4 -->
+  <div class="link">
+    <header>
+      <div class="name">链路 4 · 移动非标 — <span>APP端</span></div>
+      <div class="score"><i>健康度 ★★★☆☆</i><i>商业价值 ★★☆☆☆</i><i>风险 ★★★☆☆</i></div>
+    </header>
+    <div class="facts"><b>事实：</b>APP非标4类 — 消息Push通道 / 我的页Banner / APP拍脸图 / 任务中心。Push 与拍脸图是"极限打法"。</div>
+    <div class="cols">
+      <div class="col micro">
+        <h5>微观问题 (UX)</h5>
+        <ul>
+          <li>Push 通道直接用作商业化推送，<b>和系统通知混杂</b>，用户无法区分工具通知与广告。</li>
+          <li>"APP拍脸图"在打开 APP 时整屏遮挡，<b>跳过按钮小、倒计时长</b>是标配——搜狗这里也没例外。</li>
+          <li>"我的页 Banner"本应是账号/权益入口，却塞满第三方广告，<b>页面定位混乱</b>。</li>
+        </ul>
+      </div>
+      <div class="col macro">
+        <h5>宏观问题 (商业)</h5>
+        <ul>
+          <li>Push 通道滥用=<b>推送权限被系统/用户关闭的速度加快</b>，等于提前烧毁这个通道。</li>
+          <li>拍脸图短期 eCPM 高，但<b>次留会显著下降</b>，长期看是"吸血"不是"造血"。</li>
+          <li>Push + 拍脸图 + 任务中心 三个都是"下沉流量级"广告，<b>拉低品牌方对搜狗流量的整体评价</b>。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="action"><b>修复方向：</b>Push 改成"AI 早报/热词快讯"类内容推送（工具感，不是广告感）；拍脸图只保留品牌/合作级（影视/游戏/大促），砍掉效果广告；任务中心改 AI 工具入口。</div>
+  </div>
+
+  <!-- 链路5 -->
+  <div class="link">
+    <header>
+      <div class="name">链路 5 · PC标广（弹窗/灵犀应用分发/灵犀标广）</div>
+      <div class="score"><i>健康度 ★★☆☆☆</i><i>商业价值 ★★★☆☆</i><i>风险 ★★★★★</i></div>
+    </header>
+    <div class="facts"><b>事实：</b>PC 端3类 — PC弹窗 / 灵犀应用分发（浏览器新标签页图标墙）/ 灵犀标广（浏览器首屏 banner）。三类都是<b>"桌面/浏览器级广告"</b>。</div>
+    <div class="cols">
+      <div class="col micro">
+        <h5>微观问题 (UX)</h5>
+        <ul>
+          <li>PC 弹窗是经典的"装机后骚扰"——用户安装的是输入法，弹出的是运营活动，<b>期望错配</b>。</li>
+          <li>灵犀应用分发做成"微软必应起始页图标墙"，<b>把浏览器新标签页变成了应用商店</b>，大量图标=认知噪音。</li>
+          <li>灵犀标广首屏大 Banner 和 Edge/Chrome 新标签页视觉高度接近，用户无法判断是浏览器功能还是广告。</li>
+        </ul>
+      </div>
+      <div class="col macro">
+        <h5>宏观问题 (商业)</h5>
+        <ul>
+          <li>PC 弹窗在<b>工信部近两年"弹窗治理专项"中是重点整治对象</b>，合规风险 S 级。</li>
+          <li>"灵犀"本应是 AI 品牌资产，却被做成了"浏览器广告位"，<b>品牌心智与 AI 能力完全割裂</b>。</li>
+          <li>浏览器新标签页的商业化<b>严重依赖默认浏览器占比</b>，这个链路一旦 Chrome/Edge 份额提升就归零，护城河薄。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="action"><b>修复方向：</b>PC 弹窗改为"版本/能力更新通知"，严禁活动类弹窗；灵犀首屏砍广告、做 AI 搜索入口（对标 Arc / Perplexity）；应用分发只保留"搜狗生态"（元宝、搜狗文档等），外部付费位下线，避免监管风险。</div>
+  </div>
+
+  <!-- 链路6 -->
+  <div class="link">
+    <header>
+      <div class="name">链路 6 · PC非标（针对新/老用户 · 含右键分发/系统弹窗/PDF无死弹窗）</div>
+      <div class="score"><i>健康度 ★☆☆☆☆</i><i>商业价值 ★★★☆☆</i><i>风险 ★★★★★</i></div>
+    </header>
+    <div class="facts"><b>事实：</b>PC非标9类 — 安装完成页 / 安装向导 / 装机必备 / 右键分发 / 侧边栏 / 定制输入法 / 系统弹窗 / 灵犀直达/下载/应用分发 / PDF无死弹窗。<b>全链路都是"分发"</b>。</div>
+    <div class="cols">
+      <div class="col micro">
+        <h5>微观问题 (UX)</h5>
+        <ul>
+          <li>"右键分发"把右键菜单写入成"PC管家加固 / PC管家病毒查杀"，<b>属于系统菜单劫持</b>，对老用户是极大不信任信号。</li>
+          <li>"系统弹窗"样式高度仿冒 Windows 通知中心，<b>伪装系统级消息推广告</b>，是黑灰 UX 的常见手法。</li>
+          <li>"PDF无死弹窗"指用户打开PDF时必出弹窗，<b>且无关闭入口或关闭极难寻找</b>，监管敏感度拉满。</li>
+          <li>"装机必备"诱导用户一键装多款软件，<b>本质是流量套现</b>。</li>
+        </ul>
+      </div>
+      <div class="col macro">
+        <h5>宏观问题 (商业)</h5>
+        <ul>
+          <li><b>这是整个商业化体系里风险最高的一条链路</b>。曝光 20w/100w/200w 级，一次被罚=品牌事件。</li>
+          <li>短期贡献硬收入（安装转化可计费），但<b>收入 / 品牌伤害比 = 最差</b>。</li>
+          <li>"定制输入法"路径在联想/戴尔/华为等 OEM 侧存在合规合同要求，长期看<b>渠道方会主动切断</b>。</li>
+          <li>PC 端用户对搜狗的印象——"装了再说、装了难卸"——这条链路是首犯。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="action"><b>修复方向：</b><b>建议立即做"黑 UX 清零"专项</b>——PDF 无死弹窗、系统弹窗伪装、右键菜单劫持三项 30 天内全部下线；装机必备改可选，安装向导去掉"全家桶勾选"；把预算从"分发"挪到"AI 体验"，PC 灵犀做成正向产品。短期收入损失 20-30%，但<b>避免了 10x 量级的监管代价</b>。</div>
+  </div>
+
+  <!-- 链路7 -->
+  <div class="link">
+    <header>
+      <div class="name">链路 7 · 这厢有礼 · 合作渠道 — <span>移动/键盘端</span></div>
+      <div class="score"><i>健康度 ★★★☆☆</i><i>商业价值 ★★★★☆</i><i>风险 ★★☆☆☆</i></div>
+    </header>
+    <div class="facts"><b>事实：</b>一个"券中心"聚合产品，入口在 APP 和键盘（键盘端入口弱）；已接入瑞幸/美团/希尔顿/老乡鸡/小说VIP/同程旅行会员卡；用户路径=领券→复制码→去第三方APP核销。</div>
+    <div class="cols">
+      <div class="col micro">
+        <h5>微观问题 (UX)</h5>
+        <ul>
+          <li>键盘端入口"弱到几乎找不到"——只看到一张截图，入口层级深。<b>键盘高频 × 入口低可见度 = 流量浪费</b>。</li>
+          <li>每家品牌一套 UI，<b>没有统一领券骨架</b>，维护成本高、品牌认知分散。</li>
+          <li>领券后需"复制→切APP→粘贴"，<b>断点多、转化漏损严重</b>，典型的"互联网1.0券链路"。</li>
+          <li>"我的优惠券"作为资产沉淀位做得过于简陋，没有提醒/过期管理。</li>
+        </ul>
+      </div>
+      <div class="col macro">
+        <h5>宏观问题 (商业)</h5>
+        <ul>
+          <li><b>战略位置被当成战术货架用。</b>这厢有礼本可以是搜狗唯一"输入法原生电商"的突破口，现在做成了第二个美团联盟。</li>
+          <li>没有和"打字意图"耦合——用户在微信聊"今天喝啥"，键盘看不到瑞幸券；这意味着<b>券和场景断开</b>。</li>
+          <li>广告主视角：搜狗提供的是曝光+领取，不是成交；<b>品牌方只愿按 CPC/CPL 付费，不会按 CPS 付费</b>，收入天花板被锁死。</li>
+          <li>对用户的品牌叙事是"搜狗=券搬运工"，对比微信键盘的"不商业化就是最大商业化"——品牌纬度完败。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="action"><b>修复方向：</b>把"这厢有礼"从 APP 端产品重构为<b>"键盘端意图原生商业化"产品</b>——候选区 Ø8pt 呼吸点作为意图识别入口；打字内容本地识别后下发匹配券；领券一键填单、一键发送；打通后端到美团 MCP 之类的原地履约。产品名不重要，<b>"输入法能下单"这件事本身就是十年一次的商业化范式</b>。</div>
+  </div>
+
+  <!-- 风险矩阵 -->
+  <h2>四、风险矩阵（监管/品牌/用户留存三维）</h2>
+  <p>横轴=发生概率，纵轴=危害程度（都分5档）。颜色越深=优先处理。</p>
+
+  <div class="matrix">
+    <div class="cell axis"></div>
+    <div class="cell axis">极低</div>
+    <div class="cell axis">低</div>
+    <div class="cell axis">中</div>
+    <div class="cell axis">高</div>
+
+    <div class="cell axis">灾难</div>
+    <div class="cell c-r2">iOS 负一屏合规驳回</div>
+    <div class="cell c-r3">词服务发送后联想<br/>隐私审查</div>
+    <div class="cell c-r4">PDF 无死弹窗<br/>被监管处罚</div>
+    <div class="cell c-r5">右键菜单劫持/<br/>系统弹窗伪装</div>
+
+    <div class="cell axis">严重</div>
+    <div class="cell c-r2">iOS 广告样式不统一</div>
+    <div class="cell c-r3">CNY 打字弹图<br/>口碑事件</div>
+    <div class="cell c-r4">灵犀品牌心智稀释</div>
+    <div class="cell c-r4">装机必备/全家桶<br/>OEM 切断</div>
+
+    <div class="cell axis">中等</div>
+    <div class="cell c-r1">Banner 杂乱</div>
+    <div class="cell c-r2">任务中心金币墙<br/>拉低人群质量</div>
+    <div class="cell c-r3">Push 通道被关<br/>拉低次留</div>
+    <div class="cell c-r3">候选区电商双栏<br/>误触投诉</div>
+
+    <div class="cell axis">轻微</div>
+    <div class="cell c-r1">皮肤迷你卡样式过时</div>
+    <div class="cell c-r1">倒计时迷你卡<br/>打扰感</div>
+    <div class="cell c-r2">激励皮肤<br/>低质广告循环</div>
+    <div class="cell c-r2">我的页 Banner 混乱</div>
+  </div>
+
+  <!-- 未来方向 -->
+  <h2>五、未来 12 个月的方向建议</h2>
+  <p>分三档：30天止血、90天结构调整、12个月战略转身。不是"要不要做"，而是"按这个顺序做才来得及"。</p>
+
+  <div class="future">
+    <div class="fcard short">
+      <span class="horizon">30 DAYS · 止血</span>
+      <h4>黑 UX 清零</h4>
+      <ul>
+        <li><b>下线</b>PDF无死弹窗、系统弹窗伪装、右键菜单劫持</li>
+        <li><b>下线</b>候选区电商双栏、语录展广</li>
+        <li><b>限流</b>APP拍脸图跳过按钮放大、倒计时≤3s</li>
+        <li><b>重命名</b>Push 通道为"工具通知"，广告类推送默认关闭</li>
+        <li>预估短期收入 -20%，合规风险降 10x</li>
+      </ul>
+    </div>
+    <div class="fcard mid">
+      <span class="horizon">90 DAYS · 结构调整</span>
+      <h4>把"这厢有礼"搬进键盘</h4>
+      <ul>
+        <li>候选区 <b>Ø8pt 橙色呼吸点</b>作为 Intent Mode 唯一入口</li>
+        <li>本地意图识别 → 端上匹配券/服务 → 半浮层原地履约</li>
+        <li>美团/瑞幸等接入 MCP，原生下单，<b>不跳页不跳 App</b></li>
+        <li>广告主付费方式升级：CPC → CPS</li>
+        <li>Push/拍脸图/金币墙 保留但不再加位</li>
+      </ul>
+    </div>
+    <div class="fcard long">
+      <span class="horizon">12 MONTHS · 战略转身</span>
+      <h4>从"流量平台"到"能力平台"</h4>
+      <ul>
+        <li>灵犀重定位为"PC AI 搜索/AI Agent"，<b>不再是广告容器</b></li>
+        <li>键盘商业化主阵地：AI 改写 / AI 翻译 / AI 意图商业化</li>
+        <li>输入法 × 元宝：Agent 位置原生 × 搜狗流量——不是打包，是共生</li>
+        <li>停止新增"展示位"，所有新商业化都必须通过"能力位"标准</li>
+        <li>评估收入结构：展示广告占比从目前估计的 70%+ 降至 40% 以下</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 一页纸总结 -->
+  <h2>六、一页纸总结</h2>
+  <table>
+    <thead>
+      <tr><th style="width:22%">维度</th><th>现状</th><th>未来该有的样子</th><th>优先级</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>商业化与产品的关系</td><td>广告位"全域化"，工具属性被稀释</td><td>键盘主区无广告，商业化走"能力位"</td><td><span class="pill p-high">P0</span></td></tr>
+      <tr><td>核心广告形态</td><td>展示 / Banner / 信息流为主</td><td>AI 意图商业化 / 原生下单 / 能力订阅</td><td><span class="pill p-high">P0</span></td></tr>
+      <tr><td>PC 分发链路</td><td>弹窗/系统伪装/右键劫持高风险</td><td>能力更新为主，商业分发控量</td><td><span class="pill p-high">P0</span></td></tr>
+      <tr><td>这厢有礼定位</td><td>券聚合货架，APP端为主</td><td>键盘意图商业化产品，键盘为主</td><td><span class="pill p-mid">P1</span></td></tr>
+      <tr><td>灵犀品牌</td><td>被做成"浏览器广告位"</td><td>PC AI 搜索 / Agent 主入口</td><td><span class="pill p-mid">P1</span></td></tr>
+      <tr><td>iOS / Android 一致性</td><td>样式差异大，各做各的</td><td>统一商业化设计语言</td><td><span class="pill p-low">P2</span></td></tr>
+      <tr><td>APP 任务中心</td><td>金币墙，下沉人群</td><td>AI 工具箱 + 品牌冠名</td><td><span class="pill p-low">P2</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="signoff">
+    <span><b>结语</b>·搜狗输入法的商业化不是"没做"，是"做得太满"。接下来12个月要学会"做减法"——砍掉的是收入，保住的是未来 5 年的资格。</span>
+    <span>行业第三方分析视角 · 2026-04-20</span>
+  </div>
+
+</div>
+</body>
+</html>
