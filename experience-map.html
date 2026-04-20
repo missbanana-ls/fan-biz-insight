@@ -72,6 +72,40 @@
     .hero-title { font-size: 2.75rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; color: var(--text); }
     .hero-subtitle { margin-top: 12px; font-size: 1rem; color: var(--text-2); max-width: 720px; }
 
+    /* FILTER */
+    .filters { max-width: var(--max-w); margin: 0 auto; padding: 28px 24px 0; }
+    .sub-filters { max-width: var(--max-w); margin: 0 auto; padding: 12px 24px 0; }
+    .filters-scroll { display: flex; align-items: center; gap: 8px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+    .filters-scroll::-webkit-scrollbar { display: none; }
+    .chip {
+      height: 36px; padding: 0 16px; border-radius: var(--radius-full);
+      border: 1px solid var(--border); background: var(--bg); color: var(--text-2);
+      font-size: 0.8125rem; font-weight: 500; font-family: var(--font);
+      cursor: pointer; transition: all 200ms var(--ease); white-space: nowrap;
+      display: flex; align-items: center; gap: 6px; flex-shrink: 0;
+    }
+    .chip:hover { background: var(--bg-surface); border-color: var(--text-4); }
+    .chip.active { background: var(--blue-light); color: var(--blue); border-color: transparent; }
+    .chip .chip-icon { font-size: 0.875rem; }
+    .chip .chip-num { font-size: 0.6875rem; opacity: 0.5; }
+    .chip.active .chip-num { opacity: 0.7; }
+    .sub-chip {
+      height: 30px; padding: 0 12px; border-radius: var(--radius-full);
+      border: 1px solid var(--border-light); background: var(--bg); color: var(--text-3);
+      font-size: 0.75rem; font-weight: 500; font-family: var(--font);
+      cursor: pointer; transition: all 200ms var(--ease); white-space: nowrap;
+      display: flex; align-items: center; gap: 5px; flex-shrink: 0;
+    }
+    .sub-chip:hover { background: var(--bg-surface); color: var(--text-2); }
+    .sub-chip.active { background: #f3e8fd; color: #8430ce; border-color: transparent; }
+    .sub-chip .chip-num { font-size: 0.625rem; opacity: 0.5; }
+
+    /* EMPTY */
+    .empty { text-align: center; padding: 60px 24px; }
+    .empty-icon { font-size: 2.5rem; margin-bottom: 12px; opacity: 0.4; }
+    .empty-title { font-size: 0.9375rem; font-weight: 500; color: var(--text-2); margin-bottom: 6px; }
+    .empty-desc { font-size: 0.8125rem; color: var(--text-3); max-width: 360px; margin: 0 auto; }
+
     /* REPORT LIST */
     .report-list { max-width: var(--max-w); margin: 0 auto; padding: 32px 24px 20px; }
     .report-card {
@@ -197,28 +231,18 @@
     <p class="hero-subtitle">深度剖析竞品产品体验链路、用户需求和设计策略，基于 Figma 设计稿和用户行为调研的一手分析报告</p>
   </header>
 
-  <!-- Report List View -->
-  <div class="report-list" id="reportList">
-    <div class="report-card" onclick="showReport('ai-skin')">
-      <div class="report-accent" style="background:linear-gradient(180deg,#3ECFAC,#8B5CF6)"></div>
-      <div class="report-body">
-        <div class="report-meta">
-          <span class="report-date">2026.04.17</span>
-          <span class="report-tag" style="background:#E8FBF5;color:#2BA88A">竞品体验</span>
-          <span class="report-tag" style="background:#F3EFFE;color:#8B5CF6">AI生成</span>
-          <span class="report-tag" style="background:#FDF0F3;color:#971230">粉丝经济</span>
-        </div>
-        <div class="report-title">搜狗 AI 皮肤制造机 · 基于 Figma 设计稿的深度评估</div>
-        <div class="report-desc">基于 Figma API 实际读取的 12 张设计截图逐帧分析，深入评估搜狗 AI 皮肤制造机的产品链路、AI生成能力、竞品对标，并从张凌赫粉丝「小核桃」视角深挖追星用户的真实需求与现有方案的方向性差距。</div>
-        <div class="report-stats">
-          <span class="report-stat">📱 <strong>12</strong> 张设计截图</span>
-          <span class="report-stat">🆚 <strong>4</strong> 款竞品对标</span>
-          <span class="report-stat">📊 综合评分 <strong>4.0/10</strong></span>
-          <span class="report-stat">🌰 粉丝需求 <strong>6</strong> 层深挖</span>
-        </div>
-      </div>
-    </div>
+  <!-- Filters -->
+  <div class="filters">
+    <div class="filters-scroll" id="filterRow"></div>
   </div>
+
+  <!-- Sub-category row (for 内容商业化) -->
+  <div class="sub-filters" id="subFilterRow" style="display:none">
+    <div class="filters-scroll" id="subFilterScroll"></div>
+  </div>
+
+  <!-- Report List View -->
+  <div class="report-list" id="reportList"></div>
 
   <!-- AI Skin Report Detail -->
   <div class="report-embed" id="report-ai-skin">
@@ -481,16 +505,170 @@
   </footer>
 
 <script>
+// ============================================================
+// REPORTS DATA
+// ============================================================
+const REPORTS = [
+  {
+    id: 'ai-skin',
+    title: '搜狗 AI 皮肤制造机 · 基于 Figma 设计稿的深度评估',
+    desc: '基于 Figma API 实际读取的 12 张设计截图逐帧分析，深入评估搜狗 AI 皮肤制造机的产品链路、AI生成能力、竞品对标，并从张凌赫粉丝「小核桃」视角深挖追星用户的真实需求与现有方案的方向性差距。',
+    date: '2026.04.17',
+    category: '内容商业化',
+    subCategory: '装扮',
+    accent: 'linear-gradient(180deg,#3ECFAC,#8B5CF6)',
+    tags: [
+      { text: '竞品体验', bg: '#E8FBF5', color: '#2BA88A' },
+      { text: 'AI生成', bg: '#F3EFFE', color: '#8B5CF6' },
+      { text: '粉丝经济', bg: '#FDF0F3', color: '#971230' }
+    ],
+    stats: [
+      { icon: '📱', label: '张设计截图', value: '12' },
+      { icon: '🆚', label: '款竞品对标', value: '4' },
+      { icon: '📊', label: '综合评分', value: '4.0/10' },
+      { icon: '🌰', label: '粉丝需求', value: '6 层深挖' }
+    ]
+  }
+];
+
+// ============================================================
+// CATEGORY DEFINITIONS
+// ============================================================
+const CATEGORIES = [
+  { key: null, label: '全部', icon: '📋' },
+  { key: '流量商业化', label: '流量商业化', icon: '📈' },
+  { key: '应用商业化', label: '应用商业化', icon: '📱' },
+  { key: '内容商业化', label: '内容商业化', icon: '🎨' }
+];
+
+const SUB_CATEGORIES = {
+  '内容商业化': [
+    { key: null, label: '全部', icon: '' },
+    { key: '装扮', label: '装扮', icon: '🎭' },
+    { key: '会员', label: '会员', icon: '👑' },
+    { key: '陪伴', label: '陪伴', icon: '💬' },
+    { key: '内容货仓', label: '内容货仓', icon: '📦' }
+  ]
+};
+
+let activeCategory = null;
+let activeSubCategory = null;
+
+// ============================================================
+// RENDER
+// ============================================================
+function countReports(cat, sub) {
+  return REPORTS.filter(r => {
+    if (cat && r.category !== cat) return false;
+    if (sub && r.subCategory !== sub) return false;
+    return true;
+  }).length;
+}
+
+function renderFilters() {
+  const el = document.getElementById('filterRow');
+  el.innerHTML = CATEGORIES.map(c => {
+    const count = countReports(c.key, null);
+    const isActive = activeCategory === c.key;
+    return `<button class="chip ${isActive ? 'active' : ''}" onclick="setCategory(${c.key === null ? 'null' : "'" + c.key + "'"})">
+      <span class="chip-icon">${c.icon}</span> ${c.label} <span class="chip-num">${count}</span>
+    </button>`;
+  }).join('');
+}
+
+function renderSubFilters() {
+  const subRow = document.getElementById('subFilterRow');
+  const subScroll = document.getElementById('subFilterScroll');
+  const subs = activeCategory ? SUB_CATEGORIES[activeCategory] : null;
+
+  if (!subs) {
+    subRow.style.display = 'none';
+    return;
+  }
+
+  subRow.style.display = 'block';
+  subScroll.innerHTML = subs.map(s => {
+    const count = countReports(activeCategory, s.key);
+    const isActive = activeSubCategory === s.key;
+    return `<button class="sub-chip ${isActive ? 'active' : ''}" onclick="setSubCategory(${s.key === null ? 'null' : "'" + s.key + "'"})">
+      ${s.icon ? '<span class="chip-icon">' + s.icon + '</span>' : ''} ${s.label} <span class="chip-num">${count}</span>
+    </button>`;
+  }).join('');
+}
+
+function renderReportList() {
+  const el = document.getElementById('reportList');
+  const filtered = REPORTS.filter(r => {
+    if (activeCategory && r.category !== activeCategory) return false;
+    if (activeSubCategory && r.subCategory !== activeSubCategory) return false;
+    return true;
+  });
+
+  if (!filtered.length) {
+    el.innerHTML = `<div class="empty">
+      <div class="empty-icon">📂</div>
+      <div class="empty-title">暂无相关报告</div>
+      <div class="empty-desc">该分类下还没有体验分析报告，后续将持续补充</div>
+    </div>`;
+    return;
+  }
+
+  el.innerHTML = filtered.map(r => `
+    <div class="report-card" onclick="showReport('${r.id}')">
+      <div class="report-accent" style="background:${r.accent}"></div>
+      <div class="report-body">
+        <div class="report-meta">
+          <span class="report-date">${r.date}</span>
+          <span class="report-tag" style="background:${r.category === '内容商业化' ? '#f3e8fd' : r.category === '流量商业化' ? '#e8f0fe' : '#e6f4ea'};color:${r.category === '内容商业化' ? '#8430ce' : r.category === '流量商业化' ? '#1a73e8' : '#1e8e3e'}">${r.category}</span>
+          ${r.subCategory ? `<span class="report-tag" style="background:#FFF8F0;color:#e8710a">${r.subCategory}</span>` : ''}
+          ${r.tags.map(t => `<span class="report-tag" style="background:${t.bg};color:${t.color}">${t.text}</span>`).join('')}
+        </div>
+        <div class="report-title">${r.title}</div>
+        <div class="report-desc">${r.desc}</div>
+        <div class="report-stats">
+          ${r.stats.map(s => `<span class="report-stat">${s.icon} <strong>${s.value}</strong> ${s.label}</span>`).join('')}
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function setCategory(cat) {
+  activeCategory = activeCategory === cat ? null : cat;
+  activeSubCategory = null;
+  renderFilters();
+  renderSubFilters();
+  renderReportList();
+}
+
+function setSubCategory(sub) {
+  activeSubCategory = activeSubCategory === sub ? null : sub;
+  renderSubFilters();
+  renderReportList();
+}
+
+// ============================================================
+// REPORT DETAIL TOGGLE
+// ============================================================
 function showReport(id) {
   document.getElementById('reportList').style.display = 'none';
+  document.querySelector('.filters').style.display = 'none';
+  document.getElementById('subFilterRow').style.display = 'none';
   document.getElementById('report-' + id).classList.add('active');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 function hideReport() {
   document.querySelectorAll('.report-embed').forEach(el => el.classList.remove('active'));
   document.getElementById('reportList').style.display = 'block';
+  document.querySelector('.filters').style.display = 'block';
+  renderSubFilters();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+// Init
+renderFilters();
+renderSubFilters();
+renderReportList();
 
 // Check URL hash for direct report link
 if (location.hash === '#ai-skin') showReport('ai-skin');
