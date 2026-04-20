@@ -298,6 +298,17 @@
     </main>
   </div>
 
+  <!-- Sogou Biz Expert Report Detail (iframe mode, keeps original orange visual) -->
+  <div class="report-embed" id="report-sogou-biz-expert">
+    <button class="report-back" onclick="hideReport()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      返回报告列表
+    </button>
+    <div class="report-frame">
+      <iframe src="sogou-commercialization-expert-view.html" title="搜狗输入法商业化布局专家诊断 · 终版" style="min-height: 85vh;"></iframe>
+    </div>
+  </div>
+
   <!-- AI Skin Report Detail -->
   <div class="report-embed" id="report-ai-skin">
     <button class="report-back" onclick="hideReport()">
@@ -570,7 +581,6 @@ const REPORTS = [
     date: '2026.04.18',
     category: '全局',
     subCategory: null,
-    link: 'sogou-commercialization-expert-view.html',
     tags: [
       { text: '战略诊断', bg: '#fff0e5', color: '#d96b1f' },
       { text: '广告点位', bg: '#edf3ff', color: '#2a6fd8' },
@@ -690,9 +700,7 @@ function renderReportList() {
         : r.category === '流量商业化'
           ? { bg: '#edf3ff', color: '#2a6fd8' }
           : { bg: '#e6faf3', color: '#007a5e' };
-    const handler = r.link
-      ? `onclick="window.open('${r.link}','_blank')"`
-      : `onclick="showReport('${r.id}')"`;
+    const handler = `onclick="showReport('${r.id}')"`;
     return `
     <div class="report-card" ${handler}>
       <div class="report-meta">
