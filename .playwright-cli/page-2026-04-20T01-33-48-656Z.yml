@@ -1,0 +1,1830 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - paragraph [ref=e5]: "Streamline your search for the next agency. 🚀 See the teams behind this year’s most impactful work in “Dribbble Select: Best Shots of 2026.” 🙌 🥳"
+      - link "Explore Top Agency Shots" [ref=e6] [cursor=pointer]:
+        - /url: https://dribbble.com/resources/agencies/ultimate-dribbble-select-best-shots
+    - button "close" [ref=e7] [cursor=pointer]:
+      - img [ref=e8]
+  - generic [ref=e11]:
+    - link "Back to home page" [ref=e12] [cursor=pointer]:
+      - /url: /
+      - 'img "Dribbble: the community for graphic design" [ref=e13]'
+    - generic [ref=e16]:
+      - combobox "Submit" [ref=e18]:
+        - search [ref=e19]:
+          - searchbox "Submit" [ref=e21]: e commerce promotion campaign sale discount
+      - generic "Change search type" [ref=e22]:
+        - generic:
+          - generic:
+            - button "Shots" [ref=e23] [cursor=pointer]:
+              - generic [ref=e24]: Shots
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Shots
+                  - generic: Designers
+                  - generic: Services
+      - button "Search" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - navigation [ref=e28]:
+      - list [ref=e30]:
+        - listitem [ref=e31]:
+          - link "Explore" [ref=e32] [cursor=pointer]:
+            - /url: /shots/popular
+        - listitem [ref=e33]:
+          - link "Hire Talent" [ref=e34] [cursor=pointer]:
+            - /url: /designers
+        - listitem [ref=e35]:
+          - link "Get Hired" [ref=e36] [cursor=pointer]:
+            - /url: /browse-project-briefs
+        - listitem [ref=e37]:
+          - link "Community" [ref=e38] [cursor=pointer]:
+            - /url: /stories
+    - generic [ref=e39]:
+      - link "Sign up" [ref=e40] [cursor=pointer]:
+        - /url: /signups/new
+      - link "Log in" [ref=e41] [cursor=pointer]:
+        - /url: /session/new
+  - generic [ref=e42]:
+    - generic [ref=e44]:
+      - heading "e commerce promotion campaign sale discount" [level=1] [ref=e45]
+      - paragraph [ref=e46]: Outstanding e commerce promotion campaign sale discount designs
+      - list [ref=e47]:
+        - listitem [ref=e48]: "Related:"
+        - listitem [ref=e49]:
+          - link "discount" [ref=e50] [cursor=pointer]:
+            - /url: /search/discount
+        - listitem [ref=e51]:
+          - link "advertising" [ref=e52] [cursor=pointer]:
+            - /url: /search/advertising
+        - listitem [ref=e53]:
+          - link "promo" [ref=e54] [cursor=pointer]:
+            - /url: /search/promo
+        - listitem [ref=e55]:
+          - link "sale" [ref=e56] [cursor=pointer]:
+            - /url: /search/sale
+        - listitem [ref=e57]:
+          - link "leaflet" [ref=e58] [cursor=pointer]:
+            - /url: /search/leaflet
+        - listitem [ref=e59]:
+          - link "promotional" [ref=e60] [cursor=pointer]:
+            - /url: /search/promotional
+    - generic [ref=e62]:
+      - link "Popular" [ref=e65] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e66]
+        - generic [ref=e68]: Popular
+      - generic [ref=e69]:
+        - link [ref=e70] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e71]
+        - list [ref=e73]:
+          - listitem [ref=e74]:
+            - link "Discover" [ref=e75] [cursor=pointer]:
+              - /url: /search/shots/popular/?q=e-commerce+promotion+campaign+sale+discount
+          - listitem [ref=e76]:
+            - link "Animation" [ref=e77] [cursor=pointer]:
+              - /url: /search/shots/popular/animation?q=e-commerce+promotion+campaign+sale+discount
+          - listitem [ref=e78]:
+            - link "Branding" [ref=e79] [cursor=pointer]:
+              - /url: /search/shots/popular/branding?q=e-commerce+promotion+campaign+sale+discount
+          - listitem [ref=e80]:
+            - link "Illustration" [ref=e81] [cursor=pointer]:
+              - /url: /search/shots/popular/illustration?q=e-commerce+promotion+campaign+sale+discount
+          - listitem [ref=e82]:
+            - link "Mobile" [ref=e83] [cursor=pointer]:
+              - /url: /search/shots/popular/mobile?q=e-commerce+promotion+campaign+sale+discount
+          - listitem [ref=e84]:
+            - link "Print" [ref=e85] [cursor=pointer]:
+              - /url: /search/shots/popular/print?q=e-commerce+promotion+campaign+sale+discount
+          - listitem [ref=e86]:
+            - link "Product Design" [ref=e87] [cursor=pointer]:
+              - /url: /search/shots/popular/product-design?q=e-commerce+promotion+campaign+sale+discount
+          - listitem [ref=e88]:
+            - link "Typography" [ref=e89] [cursor=pointer]:
+              - /url: /search/shots/popular/typography?q=e-commerce+promotion+campaign+sale+discount
+          - listitem [ref=e90]:
+            - link "Web Design" [ref=e91] [cursor=pointer]:
+              - /url: /search/shots/popular/web-design?q=e-commerce+promotion+campaign+sale+discount
+      - link "Filters" [ref=e93] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e94]
+        - text: Filters
+    - main [ref=e97]:
+      - generic [ref=e98]:
+        - list [ref=e99]:
+          - listitem [ref=e100]:
+            - generic [ref=e101]:
+              - figure [ref=e102]:
+                - img "Flash Sale Social Media Post Design advertisingdesign branding campaign creativedesign designinspiration digitaladvertising discount dribbble dribbbledesign ecommerce flashsale graphicdesign marketingdesign modern design promodesign salecreative socialmediadesign socialmediapost uiux visualdesign" [ref=e103]
+              - link "View Flash Sale Social Media Post Design" [ref=e105] [cursor=pointer]:
+                - /url: /shots/27058116-Flash-Sale-Social-Media-Post-Design
+                - generic: View Flash Sale Social Media Post Design
+              - generic:
+                - generic:
+                  - generic: Flash Sale Social Media Post Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e106] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e107]
+                    - button [ref=e109] [cursor=pointer]:
+                      - img [ref=e110]
+            - generic [ref=e112]:
+              - link "Emam Hossain Shad Emam Hossain Shad" [ref=e114] [cursor=pointer]:
+                - /url: /md_emam23
+                - img "Emam Hossain Shad" [ref=e115]
+                - generic [ref=e116]: Emam Hossain Shad
+              - generic [ref=e117]:
+                - generic [ref=e119]:
+                  - generic:
+                    - button [ref=e120] [cursor=pointer]:
+                      - img [ref=e121]
+                    - generic [ref=e123]: "1"
+                - generic [ref=e124]:
+                  - img [ref=e125]
+                  - generic [ref=e128]: "899"
+          - listitem [ref=e129]:
+            - generic [ref=e130]:
+              - figure [ref=e131]:
+                - img "Discount Sale Sign Animation | E-commerce Motion Design animationdesign brandvisuals discountanimation ecommerceanimation flatdesign marketinganimation motiondesign promoanimation saleanimation socialmediaads" [ref=e132]
+              - generic [ref=e133]:
+                - img [ref=e135]
+                - link "Shot Link":
+                  - /url: /shots/27061515-Discount-Sale-Sign-Animation-E-commerce-Motion-Design
+                  - generic: Shot Link
+              - link "View Discount Sale Sign Animation | E-commerce Motion Design" [ref=e138] [cursor=pointer]:
+                - /url: /shots/27061515-Discount-Sale-Sign-Animation-E-commerce-Motion-Design
+                - generic: View Discount Sale Sign Animation | E-commerce Motion Design
+              - generic:
+                - generic:
+                  - generic: Discount Sale Sign Animation | E-commerce Motion Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e139] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e140]
+                    - button [ref=e142] [cursor=pointer]:
+                      - img [ref=e143]
+            - generic [ref=e145]:
+              - link "Pixelvi Pixelvi" [ref=e147] [cursor=pointer]:
+                - /url: /pixelvi
+                - img "Pixelvi" [ref=e148]
+                - generic [ref=e149]: Pixelvi
+              - generic [ref=e150]:
+                - generic [ref=e152]:
+                  - generic:
+                    - button [ref=e153] [cursor=pointer]:
+                      - img [ref=e154]
+                    - generic [ref=e156]: "1"
+                - generic [ref=e157]:
+                  - img [ref=e158]
+                  - generic [ref=e161]: "308"
+          - listitem [ref=e162]:
+            - generic [ref=e163]:
+              - figure [ref=e164]:
+                - img "Super Sale Campaign Animated Graphic advertising animated illustration animation character design commercial illustration discount ecommerce flat illustration marketing marketing campaign megaphone motion design promo promo animation promotion sale social media illustration super sale ui illustration vector illustration" [ref=e165]
+              - generic [ref=e166]:
+                - img [ref=e168]
+                - link "Shot Link":
+                  - /url: /shots/27153931-Super-Sale-Campaign-Animated-Graphic
+                  - generic: Shot Link
+              - link "View Super Sale Campaign Animated Graphic" [ref=e171] [cursor=pointer]:
+                - /url: /shots/27153931-Super-Sale-Campaign-Animated-Graphic
+                - generic: View Super Sale Campaign Animated Graphic
+              - generic:
+                - generic:
+                  - generic: Super Sale Campaign Animated Graphic
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e172] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e173]
+                    - button [ref=e175] [cursor=pointer]:
+                      - img [ref=e176]
+            - generic [ref=e178]:
+              - link "Gafend Gafend" [ref=e180] [cursor=pointer]:
+                - /url: /gading
+                - img "Gafend" [ref=e181]
+                - generic [ref=e182]: Gafend
+              - generic [ref=e183]:
+                - generic [ref=e185]:
+                  - generic:
+                    - button [ref=e186] [cursor=pointer]:
+                      - img [ref=e187]
+                    - generic [ref=e189]: "0"
+                - generic [ref=e190]:
+                  - img [ref=e191]
+                  - generic [ref=e194]: "226"
+          - listitem [ref=e195]:
+            - generic [ref=e196]:
+              - figure [ref=e197]:
+                - img "Black Friday sales campaign aftereffect animation branding graphic design motion graphics social socialmedia socialmedia animation" [ref=e198]
+              - generic [ref=e199]:
+                - img [ref=e201]
+                - link "Shot Link":
+                  - /url: /shots/26961720-Black-Friday-sales-campaign
+                  - generic: Shot Link
+              - link "View Black Friday sales campaign" [ref=e204] [cursor=pointer]:
+                - /url: /shots/26961720-Black-Friday-sales-campaign
+                - generic: View Black Friday sales campaign
+              - generic:
+                - generic:
+                  - generic: Black Friday sales campaign
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e205] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e206]
+                    - button [ref=e208] [cursor=pointer]:
+                      - img [ref=e209]
+            - generic [ref=e211]:
+              - link "Md. Fakrul Hasan Md. Fakrul Hasan" [ref=e213] [cursor=pointer]:
+                - /url: /fakrulhasan900
+                - img "Md. Fakrul Hasan" [ref=e214]
+                - generic [ref=e215]: Md. Fakrul Hasan
+              - generic [ref=e216]:
+                - generic [ref=e218]:
+                  - generic:
+                    - button [ref=e219] [cursor=pointer]:
+                      - img [ref=e220]
+                    - generic [ref=e222]: "1"
+                - generic [ref=e223]:
+                  - img [ref=e224]
+                  - generic [ref=e227]: "428"
+          - listitem [ref=e228]:
+            - generic [ref=e229]:
+              - figure [ref=e230]:
+                - img "Social Media Creatives Advertisement Shoes Sale Instapost Poster advertisement poster advertisments brand marketing brandig business poster creative poster creative visualizer desinger digital marketing post grafikdesigner graphic design inspiration graphic design portfolio minimal poster porfolio psot sale post shoe poster shoes poster social media ads social media creatives" [ref=e231]
+              - link "View Social Media Creatives Advertisement Shoes Sale Instapost Poster" [ref=e233] [cursor=pointer]:
+                - /url: /shots/26186272-Social-Media-Creatives-Advertisement-Shoes-Sale-Instapost-Poster
+                - generic: View Social Media Creatives Advertisement Shoes Sale Instapost Poster
+              - generic:
+                - generic:
+                  - generic: Social Media Creatives Advertisement Shoes Sale Instapost Poster
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e234] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e235]
+                    - button [ref=e237] [cursor=pointer]:
+                      - img [ref=e238]
+            - generic [ref=e240]:
+              - link "Md. Mobinul Hoque Md. Mobinul Hoque" [ref=e242] [cursor=pointer]:
+                - /url: /mobinul10011001
+                - img "Md. Mobinul Hoque" [ref=e243]
+                - generic [ref=e244]: Md. Mobinul Hoque
+              - generic [ref=e245]:
+                - generic [ref=e247]:
+                  - generic:
+                    - button [ref=e248] [cursor=pointer]:
+                      - img [ref=e249]
+                    - generic [ref=e251]: "3"
+                - generic [ref=e252]:
+                  - img [ref=e253]
+                  - generic [ref=e256]: 8.2k
+          - listitem [ref=e257]:
+            - generic [ref=e258]:
+              - figure [ref=e259]:
+                - img "Shoe Sale Banner Design – Bold, Clean & Eye-Catching adobe illustrator adobe photoshop advertising branding design graphic design graphic designer illustration lamia akter ui visual design" [ref=e260]
+              - link "View Shoe Sale Banner Design – Bold, Clean & Eye-Catching" [ref=e262] [cursor=pointer]:
+                - /url: /shots/26103099-Shoe-Sale-Banner-Design-Bold-Clean-Eye-Catching
+                - generic: View Shoe Sale Banner Design – Bold, Clean & Eye-Catching
+              - generic:
+                - generic:
+                  - generic: Shoe Sale Banner Design – Bold, Clean & Eye-Catching
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e263] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e264]
+                    - button [ref=e266] [cursor=pointer]:
+                      - img [ref=e267]
+            - generic [ref=e269]:
+              - link "Lamia Akter Lamia Akter" [ref=e271] [cursor=pointer]:
+                - /url: /lamia_akter
+                - img "Lamia Akter" [ref=e272]
+                - generic [ref=e273]: Lamia Akter
+              - generic [ref=e274]:
+                - generic [ref=e276]:
+                  - generic:
+                    - button [ref=e277] [cursor=pointer]:
+                      - img [ref=e278]
+                    - generic [ref=e280]: "2"
+                - generic [ref=e281]:
+                  - img [ref=e282]
+                  - generic [ref=e285]: 1.5k
+          - listitem [ref=e286]:
+            - generic [ref=e287]:
+              - figure [ref=e288]:
+                - img "Mobile UI/UX Design & Development for Ecommerce App app design b2c digital product digital storefront ecommerce figma finance tools interaction design marketplace mobile app mobile design mobile development online shopping order management product design small business social commerce ui ux verified reviews" [ref=e289]
+              - link "View Mobile UI/UX Design & Development for Ecommerce App" [ref=e291] [cursor=pointer]:
+                - /url: /shots/27034447-Mobile-UI-UX-Design-Development-for-Ecommerce-App
+                - generic: View Mobile UI/UX Design & Development for Ecommerce App
+              - generic:
+                - generic:
+                  - generic: Mobile UI/UX Design & Development for Ecommerce App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e292] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e293]
+                    - button [ref=e295] [cursor=pointer]:
+                      - img [ref=e296]
+            - generic [ref=e298]:
+              - generic [ref=e299]:
+                - link "LYQX Solutions LYQX Solutions" [ref=e300] [cursor=pointer]:
+                  - /url: /lyqx
+                  - img "LYQX Solutions" [ref=e301]
+                  - generic [ref=e302]: LYQX Solutions
+                - link "Pro user" [ref=e304] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e305]:
+                - generic [ref=e307]:
+                  - generic:
+                    - button [ref=e308] [cursor=pointer]:
+                      - img [ref=e309]
+                    - generic [ref=e311]: "57"
+                - generic [ref=e312]:
+                  - img [ref=e313]
+                  - generic [ref=e316]: 3.7k
+          - listitem [ref=e317]:
+            - generic [ref=e318]:
+              - figure [ref=e319]:
+                - img "E-commerce Dashboard Design admin panel analytics clean crm dashboard dashboard design dashboard ui design ecommerce ecommerce dashboard ecommerce sales landing page product design ui ui ux uiux design ux web design web page webside" [ref=e320]
+              - link "View E-commerce Dashboard Design" [ref=e322] [cursor=pointer]:
+                - /url: /shots/25337521-E-commerce-Dashboard-Design
+                - generic: View E-commerce Dashboard Design
+              - generic:
+                - generic:
+                  - generic: E-commerce Dashboard Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e323] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e324]
+                    - button [ref=e326] [cursor=pointer]:
+                      - img [ref=e327]
+            - generic [ref=e329]:
+              - link "Alomoti Khan Alomoti Khan" [ref=e331] [cursor=pointer]:
+                - /url: /Alomoti
+                - img "Alomoti Khan" [ref=e332]
+                - generic [ref=e333]: Alomoti Khan
+              - generic [ref=e334]:
+                - generic [ref=e336]:
+                  - generic:
+                    - button [ref=e337] [cursor=pointer]:
+                      - img [ref=e338]
+                    - generic [ref=e340]: "2"
+                - generic [ref=e341]:
+                  - img [ref=e342]
+                  - generic [ref=e345]: 4k
+          - listitem [ref=e346]:
+            - generic [ref=e347]:
+              - figure [ref=e348]:
+                - img "E-commerce Dashboard Design admin panel analytics clean crm dashboard dashboard design dashboard ui design ecommerce ecommerce dashboard ecommerce sales landing page product design ui uiux ux web design web page web site design website" [ref=e349]
+              - link "View E-commerce Dashboard Design" [ref=e351] [cursor=pointer]:
+                - /url: /shots/25337613-E-commerce-Dashboard-Design
+                - generic: View E-commerce Dashboard Design
+              - generic:
+                - generic:
+                  - generic: E-commerce Dashboard Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e352] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e353]
+                    - button [ref=e355] [cursor=pointer]:
+                      - img [ref=e356]
+            - generic [ref=e358]:
+              - link "Alomoti Khan Alomoti Khan" [ref=e360] [cursor=pointer]:
+                - /url: /Alomoti
+                - img "Alomoti Khan" [ref=e361]
+                - generic [ref=e362]: Alomoti Khan
+              - generic [ref=e363]:
+                - generic [ref=e365]:
+                  - generic:
+                    - button [ref=e366] [cursor=pointer]:
+                      - img [ref=e367]
+                    - generic [ref=e369]: "1"
+                - generic [ref=e370]:
+                  - img [ref=e371]
+                  - generic [ref=e374]: 1.6k
+          - listitem [ref=e375]:
+            - generic [ref=e376]:
+              - figure [ref=e377]:
+                - img "Christmas Sale Ad Design — Holiday Promotion Banners 2025 addesign christmas christmasdesign christmaspromotion christmassale ecommerceads festivedesign holidayads holidaymarketing marketingdesign promobanner seasonalcampaign staticbanner" [ref=e378]
+              - link "View Christmas Sale Ad Design — Holiday Promotion Banners" [ref=e380] [cursor=pointer]:
+                - /url: /shots/26631372-Christmas-Sale-Ad-Design-Holiday-Promotion-Banners
+                - generic: View Christmas Sale Ad Design — Holiday Promotion Banners
+              - generic:
+                - generic:
+                  - generic: Christmas Sale Ad Design — Holiday Promotion Banners
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e381] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e382]
+                    - button [ref=e384] [cursor=pointer]:
+                      - img [ref=e385]
+            - generic [ref=e387]:
+              - link "Md Mostafizur Rahman Md Mostafizur Rahman" [ref=e389] [cursor=pointer]:
+                - /url: /MRGRAPHIC
+                - img "Md Mostafizur Rahman" [ref=e390]
+                - generic [ref=e391]: Md Mostafizur Rahman
+              - generic [ref=e392]:
+                - generic [ref=e394]:
+                  - generic:
+                    - button [ref=e395] [cursor=pointer]:
+                      - img [ref=e396]
+                    - generic [ref=e398]: "1"
+                - generic [ref=e399]:
+                  - img [ref=e400]
+                  - generic [ref=e403]: 3.3k
+          - listitem [ref=e404]:
+            - generic [ref=e405]:
+              - figure [ref=e406]:
+                - img "Flash Sale Email Design – Amanda Lingerie Promo Layout animation branding canva design email design email marketing email template design graphic design klaviyo klaviyo flows mailchimp" [ref=e407]
+              - link "View Flash Sale Email Design – Amanda Lingerie Promo Layout" [ref=e409] [cursor=pointer]:
+                - /url: /shots/26560138-Flash-Sale-Email-Design-Amanda-Lingerie-Promo-Layout
+                - generic: View Flash Sale Email Design – Amanda Lingerie Promo Layout
+              - generic:
+                - generic:
+                  - generic: Flash Sale Email Design – Amanda Lingerie Promo Layout
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e410] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e411]
+                    - button [ref=e413] [cursor=pointer]:
+                      - img [ref=e414]
+            - generic [ref=e416]:
+              - link "MD. UZZAL ALIM MD. UZZAL ALIM" [ref=e418] [cursor=pointer]:
+                - /url: /uzzal6720
+                - img "MD. UZZAL ALIM" [ref=e419]
+                - generic [ref=e420]: MD. UZZAL ALIM
+              - generic [ref=e421]:
+                - generic [ref=e423]:
+                  - generic:
+                    - button [ref=e424] [cursor=pointer]:
+                      - img [ref=e425]
+                    - generic [ref=e427]: "1"
+                - generic [ref=e428]:
+                  - img [ref=e429]
+                  - generic [ref=e432]: 2.5k
+          - listitem [ref=e433]:
+            - generic [ref=e434]:
+              - figure [ref=e435]:
+                - img "Product Promotion Poster Template. advertisement design branding design business promotion flyer design graphic design marketing flyer minimal design modern layout poster template print design product poster product promotion sale flyer shoe advertisement super sale" [ref=e436]
+              - link "View Product Promotion Poster Template." [ref=e438] [cursor=pointer]:
+                - /url: /shots/27226362-Product-Promotion-Poster-Template
+                - generic: View Product Promotion Poster Template.
+              - generic:
+                - generic:
+                  - generic: Product Promotion Poster Template.
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e439] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e440]
+                    - button [ref=e442] [cursor=pointer]:
+                      - img [ref=e443]
+            - generic [ref=e445]:
+              - link "Tahsin Rahman Razin Tahsin Rahman Razin" [ref=e447] [cursor=pointer]:
+                - /url: /trrazin
+                - img "Tahsin Rahman Razin" [ref=e448]
+                - generic [ref=e449]: Tahsin Rahman Razin
+              - generic [ref=e450]:
+                - generic [ref=e452]:
+                  - generic:
+                    - button [ref=e453] [cursor=pointer]:
+                      - img [ref=e454]
+                    - generic [ref=e456]: "1"
+                - generic [ref=e457]:
+                  - img [ref=e458]
+                  - generic [ref=e461]: "309"
+          - listitem [ref=e462]:
+            - generic [ref=e463]:
+              - figure [ref=e464]:
+                - img "45% OFF Bag Sale – Social Media Post Design. advertising design animation brand visuals brandidentity branding character animation design graphic design illustration retail brand promotion ui" [ref=e465]
+              - link "View 45% OFF Bag Sale – Social Media Post Design." [ref=e467] [cursor=pointer]:
+                - /url: /shots/26344696-45-OFF-Bag-Sale-Social-Media-Post-Design
+                - generic: View 45% OFF Bag Sale – Social Media Post Design.
+              - generic:
+                - generic:
+                  - generic: 45% OFF Bag Sale – Social Media Post Design.
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e468] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e469]
+                    - button [ref=e471] [cursor=pointer]:
+                      - img [ref=e472]
+            - generic [ref=e474]:
+              - link "Devid Chakma Devid Chakma" [ref=e476] [cursor=pointer]:
+                - /url: /its-me-devid
+                - img "Devid Chakma" [ref=e477]
+                - generic [ref=e478]: Devid Chakma
+              - generic [ref=e479]:
+                - generic [ref=e481]:
+                  - generic:
+                    - button [ref=e482] [cursor=pointer]:
+                      - img [ref=e483]
+                    - generic [ref=e485]: "0"
+                - generic [ref=e486]:
+                  - img [ref=e487]
+                  - generic [ref=e490]: 1.6k
+          - listitem [ref=e491]:
+            - generic [ref=e492]:
+              - figure [ref=e493]:
+                - img "Eyelovin E-commerce Platform Enhancement ecommerce graphic design landing page lense mobile design redesign ui ui design ux web design" [ref=e494]
+              - link "View Eyelovin E-commerce Platform Enhancement" [ref=e496] [cursor=pointer]:
+                - /url: /shots/26442037-Eyelovin-E-commerce-Platform-Enhancement
+                - generic: View Eyelovin E-commerce Platform Enhancement
+              - generic:
+                - generic:
+                  - generic: Eyelovin E-commerce Platform Enhancement
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e497] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e498]
+                    - button [ref=e500] [cursor=pointer]:
+                      - img [ref=e501]
+            - generic [ref=e503]:
+              - link "Bagus Permadi Bagus Permadi" [ref=e505] [cursor=pointer]:
+                - /url: /skenariobagus
+                - img "Bagus Permadi" [ref=e506]
+                - generic [ref=e507]: Bagus Permadi
+              - generic [ref=e508]:
+                - generic [ref=e510]:
+                  - generic:
+                    - button [ref=e511] [cursor=pointer]:
+                      - img [ref=e512]
+                    - generic [ref=e514]: "0"
+                - generic [ref=e515]:
+                  - img [ref=e516]
+                  - generic [ref=e519]: 5.5k
+          - listitem [ref=e520]:
+            - generic [ref=e521]:
+              - figure [ref=e522]:
+                - img "HATIL - Web Ads Banner Design affordable furniture bedroom furniture set branding buy furniture online discount furniture online furniture sale online hatil web ads banner design home furniture deals living room furniture ideas luxury furniture collection modern design modern furniture sale modern home decor office furniture solutions premium furniture brands sofa set sale web ads banner wooden furniture design" [ref=e523]
+              - generic [ref=e524]:
+                - img [ref=e526]
+                - link "Shot Link":
+                  - /url: /shots/26205347-HATIL-Web-Ads-Banner-Design
+                  - generic: Shot Link
+              - link "View HATIL - Web Ads Banner Design" [ref=e529] [cursor=pointer]:
+                - /url: /shots/26205347-HATIL-Web-Ads-Banner-Design
+                - generic: View HATIL - Web Ads Banner Design
+              - generic:
+                - generic:
+                  - generic: HATIL - Web Ads Banner Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e530] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e531]
+                    - button [ref=e533] [cursor=pointer]:
+                      - img [ref=e534]
+            - generic [ref=e536]:
+              - link "Shohan Khan ⚡ Shohan Khan ⚡" [ref=e538] [cursor=pointer]:
+                - /url: /shohankhangfx
+                - img "Shohan Khan ⚡" [ref=e539]
+                - generic [ref=e540]: Shohan Khan ⚡
+              - generic [ref=e541]:
+                - generic [ref=e543]:
+                  - generic:
+                    - button [ref=e544] [cursor=pointer]:
+                      - img [ref=e545]
+                    - generic [ref=e547]: "0"
+                - generic [ref=e548]:
+                  - img [ref=e549]
+                  - generic [ref=e552]: "664"
+          - listitem [ref=e553]:
+            - generic [ref=e554]:
+              - figure [ref=e555]:
+                - img "Promotional Coupon Design for Women’s Day Campaign discountcoupon ecommerce march8 marketing design minimaldesign promocode promotion sale shopping specialoffer uiux womens day womensday" [ref=e556]
+              - link "View Promotional Coupon Design for Women’s Day Campaign" [ref=e558] [cursor=pointer]:
+                - /url: /shots/25714417-Promotional-Coupon-Design-for-Women-s-Day-Campaign
+                - generic: View Promotional Coupon Design for Women’s Day Campaign
+              - generic:
+                - generic:
+                  - generic: Promotional Coupon Design for Women’s Day Campaign
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e559] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e560]
+                    - button [ref=e562] [cursor=pointer]:
+                      - img [ref=e563]
+            - generic [ref=e565]:
+              - link "Mettevo Mettevo" [ref=e567] [cursor=pointer]:
+                - /url: /Mettevo
+                - img "Mettevo" [ref=e568]
+                - generic [ref=e569]: Mettevo
+              - generic [ref=e570]:
+                - generic [ref=e572]:
+                  - generic:
+                    - button [ref=e573] [cursor=pointer]:
+                      - img [ref=e574]
+                    - generic [ref=e576]: "5"
+                - generic [ref=e577]:
+                  - img [ref=e578]
+                  - generic [ref=e581]: 3k
+          - listitem [ref=e582]:
+            - generic [ref=e583]:
+              - figure [ref=e584]:
+                - img "Modern Retail Sale Social Media Templates 50 off big sale blue button call to action campaign discount tag ecommerce flyer minimal product promotion promotion banner retail social media store template text typography white" [ref=e585]
+              - link "View Modern Retail Sale Social Media Templates" [ref=e587] [cursor=pointer]:
+                - /url: /shots/27269591-Modern-Retail-Sale-Social-Media-Templates
+                - generic: View Modern Retail Sale Social Media Templates
+              - generic:
+                - generic:
+                  - generic: Modern Retail Sale Social Media Templates
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e588] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e589]
+                    - button [ref=e591] [cursor=pointer]:
+                      - img [ref=e592]
+            - generic [ref=e594]:
+              - link "Dendy Herlambang Dendy Herlambang" [ref=e596] [cursor=pointer]:
+                - /url: /dendysign-studio
+                - img "Dendy Herlambang" [ref=e597]
+                - generic [ref=e598]: Dendy Herlambang
+              - generic [ref=e599]:
+                - generic [ref=e601]:
+                  - generic:
+                    - button [ref=e602] [cursor=pointer]:
+                      - img [ref=e603]
+                    - generic [ref=e605]: "1"
+                - generic [ref=e606]:
+                  - img [ref=e607]
+                  - generic [ref=e610]: "62"
+          - listitem [ref=e611]:
+            - generic [ref=e612]:
+              - figure [ref=e613]:
+                - img "Fashion Sale Social Media Templates With Pink Promotional Banner big sale brand campaign discount ecommerce elegant graphic luxury marketing minimal mockup model online promotion banner retail shop shopping style template template set" [ref=e614]
+              - link "View Fashion Sale Social Media Templates With Pink Promotional Banner" [ref=e616] [cursor=pointer]:
+                - /url: /shots/27255124-Fashion-Sale-Social-Media-Templates-With-Pink-Promotional-Banner
+                - generic: View Fashion Sale Social Media Templates With Pink Promotional Banner
+              - generic:
+                - generic:
+                  - generic: Fashion Sale Social Media Templates With Pink Promotional Banner
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e617] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e618]
+                    - button [ref=e620] [cursor=pointer]:
+                      - img [ref=e621]
+            - generic [ref=e623]:
+              - link "Dendy Herlambang Dendy Herlambang" [ref=e625] [cursor=pointer]:
+                - /url: /dendysign-studio
+                - img "Dendy Herlambang" [ref=e626]
+                - generic [ref=e627]: Dendy Herlambang
+              - generic [ref=e628]:
+                - generic [ref=e630]:
+                  - generic:
+                    - button [ref=e631] [cursor=pointer]:
+                      - img [ref=e632]
+                    - generic [ref=e634]: "3"
+                - generic [ref=e635]:
+                  - img [ref=e636]
+                  - generic [ref=e639]: "115"
+          - listitem [ref=e640]:
+            - generic [ref=e641]:
+              - figure [ref=e642]:
+                - img "Fashion Sale Social Media Templates apparel buy now catalog clearance design discount flyer jeans marketing model new sale offer pink poster promotion sale seasonal social media special offer template" [ref=e643]
+              - link "View Fashion Sale Social Media Templates" [ref=e645] [cursor=pointer]:
+                - /url: /shots/27255117-Fashion-Sale-Social-Media-Templates
+                - generic: View Fashion Sale Social Media Templates
+              - generic:
+                - generic:
+                  - generic: Fashion Sale Social Media Templates
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e646] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e647]
+                    - button [ref=e649] [cursor=pointer]:
+                      - img [ref=e650]
+            - generic [ref=e652]:
+              - link "Dendy Herlambang Dendy Herlambang" [ref=e654] [cursor=pointer]:
+                - /url: /dendysign-studio
+                - img "Dendy Herlambang" [ref=e655]
+                - generic [ref=e656]: Dendy Herlambang
+              - generic [ref=e657]:
+                - generic [ref=e659]:
+                  - generic:
+                    - button [ref=e660] [cursor=pointer]:
+                      - img [ref=e661]
+                    - generic [ref=e663]: "4"
+                - generic [ref=e664]:
+                  - img [ref=e665]
+                  - generic [ref=e668]: 5.1k
+          - listitem [ref=e669]:
+            - generic [ref=e670]:
+              - figure [ref=e671]:
+                - img "Advertisement Illustrations ad advertise advertisement branding design design illustration discount doodle e commerce illustrations media news offer promotion sale shopping ui vector vector illustration website illustration" [ref=e672]
+              - link "View Advertisement Illustrations" [ref=e674] [cursor=pointer]:
+                - /url: /shots/24914341-Advertisement-Illustrations
+                - generic: View Advertisement Illustrations
+              - generic:
+                - generic:
+                  - generic: Advertisement Illustrations
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e675] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e676]
+                    - button [ref=e678] [cursor=pointer]:
+                      - img [ref=e679]
+            - generic [ref=e681]:
+              - generic [ref=e682]:
+                - link "Vectors Market Vectors Market" [ref=e683] [cursor=pointer]:
+                  - /url: /vectorsmarket
+                  - img "Vectors Market" [ref=e684]
+                  - generic [ref=e685]: Vectors Market
+                - link "Pro user" [ref=e687] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e688]:
+                - generic [ref=e690]:
+                  - generic:
+                    - button [ref=e691] [cursor=pointer]:
+                      - img [ref=e692]
+                    - generic [ref=e694]: "16"
+                - generic [ref=e695]:
+                  - img [ref=e696]
+                  - generic [ref=e699]: 7.5k
+          - listitem [ref=e700]:
+            - generic [ref=e701]:
+              - figure [ref=e702]:
+                - img "Dukan CMS Dashboard cms dasboardui dashboard design ecommerce flat icons logo pk userexperience userinterface ux webdesign" [ref=e703]
+              - link "View Dukan CMS Dashboard" [ref=e705] [cursor=pointer]:
+                - /url: /shots/24923184-Dukan-CMS-Dashboard
+                - generic: View Dukan CMS Dashboard
+              - generic:
+                - generic:
+                  - generic: Dukan CMS Dashboard
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e706] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e707]
+                    - button [ref=e709] [cursor=pointer]:
+                      - img [ref=e710]
+            - generic [ref=e712]:
+              - link "Jamshaid Saleem Jamshaid Saleem" [ref=e714] [cursor=pointer]:
+                - /url: /jamshaidsaleem
+                - img "Jamshaid Saleem" [ref=e715]
+                - generic [ref=e716]: Jamshaid Saleem
+              - generic [ref=e717]:
+                - generic [ref=e719]:
+                  - generic:
+                    - button [ref=e720] [cursor=pointer]:
+                      - img [ref=e721]
+                    - generic [ref=e723]: "8"
+                - generic [ref=e724]:
+                  - img [ref=e725]
+                  - generic [ref=e728]: 30.6k
+          - listitem [ref=e729]:
+            - generic [ref=e730]:
+              - figure [ref=e731]:
+                - img "GAGA - Fashion Retail Newsletter Email Template boutique campaign discount e newsletter ecommerce email fashion fashion store marketing newsletter online promotion retail sale shopping subscription template ui ux design website" [ref=e732]
+              - link "View GAGA - Fashion Retail Newsletter Email Template" [ref=e734] [cursor=pointer]:
+                - /url: /shots/20606226-GAGA-Fashion-Retail-Newsletter-Email-Template
+                - generic: View GAGA - Fashion Retail Newsletter Email Template
+              - generic:
+                - generic:
+                  - generic: GAGA - Fashion Retail Newsletter Email Template
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e735] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e736]
+                    - button [ref=e738] [cursor=pointer]:
+                      - img [ref=e739]
+            - generic [ref=e741]:
+              - link "WEBDUCK WEBDUCK" [ref=e743] [cursor=pointer]:
+                - /url: /webduckdesign
+                - img "WEBDUCK" [ref=e744]
+                - generic [ref=e745]: WEBDUCK
+              - generic [ref=e746]:
+                - generic [ref=e748]:
+                  - generic:
+                    - button [ref=e749] [cursor=pointer]:
+                      - img [ref=e750]
+                    - generic [ref=e752]: "25"
+                - generic [ref=e753]:
+                  - img [ref=e754]
+                  - generic [ref=e757]: 18.8k
+          - listitem [ref=e758]:
+            - generic [ref=e759]:
+              - figure [ref=e760]:
+                - img "Retail Email Newsletter Figma Design buy clothing discount ecommerce email emailer fashion figma mailchimp ready marketing newsletter offer online promotion retail sale shopping subscriptio template volume" [ref=e761]
+              - link "View Retail Email Newsletter Figma Design" [ref=e763] [cursor=pointer]:
+                - /url: /shots/22972861-Retail-Email-Newsletter-Figma-Design
+                - generic: View Retail Email Newsletter Figma Design
+              - generic:
+                - generic:
+                  - generic: Retail Email Newsletter Figma Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e764] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e765]
+                    - button [ref=e767] [cursor=pointer]:
+                      - img [ref=e768]
+            - generic [ref=e770]:
+              - link "WEBDUCK WEBDUCK" [ref=e772] [cursor=pointer]:
+                - /url: /webduckdesign
+                - img "WEBDUCK" [ref=e773]
+                - generic [ref=e774]: WEBDUCK
+              - generic [ref=e775]:
+                - generic [ref=e777]:
+                  - generic:
+                    - button [ref=e778] [cursor=pointer]:
+                      - img [ref=e779]
+                    - generic [ref=e781]: "82"
+                - generic [ref=e782]:
+                  - img [ref=e783]
+                  - generic [ref=e786]: 40.7k
+          - listitem [ref=e787]:
+            - generic [ref=e788]:
+              - figure [ref=e789]:
+                - img "She Beauty – Cosmetics Hero Banner beauty branding beauty sale banner brand campaign conversion design cosmetics promotion creative banner digital marketing design discount banner design ecommerce campaign hero section landing page banner luxury ui marketing design modern website product promotion skincare ui ui design web designer website header design website layout" [ref=e790]
+              - link "View She Beauty – Cosmetics Hero Banner" [ref=e792] [cursor=pointer]:
+                - /url: /shots/27137436-She-Beauty-Cosmetics-Hero-Banner
+                - generic: View She Beauty – Cosmetics Hero Banner
+              - generic:
+                - generic:
+                  - generic: She Beauty – Cosmetics Hero Banner
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e793] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e794]
+                    - button [ref=e796] [cursor=pointer]:
+                      - img [ref=e797]
+            - generic [ref=e799]:
+              - link "Mishal Eman Mishal Eman" [ref=e801] [cursor=pointer]:
+                - /url: /mishaljaved
+                - img "Mishal Eman" [ref=e802]
+                - generic [ref=e803]: Mishal Eman
+              - generic [ref=e804]:
+                - generic [ref=e806]:
+                  - generic:
+                    - button [ref=e807] [cursor=pointer]:
+                      - img [ref=e808]
+                    - generic [ref=e810]: "0"
+                - generic [ref=e811]:
+                  - img [ref=e812]
+                  - generic [ref=e815]: 1.2k
+          - listitem [ref=e816]:
+            - generic [ref=e817]:
+              - figure [ref=e818]:
+                - img "OrgaNuts Peanut Butter Project advertising brandidentity brandidentitydesign branding brandvisual clean ecommerce foodpackaging graphic design healthylifestyle logodesign minimaldesign mockup organicfood packagingdesign peanutbutter productshot socialmediadesign typography visualidentity" [ref=e819]
+              - link "View OrgaNuts Peanut Butter Project" [ref=e821] [cursor=pointer]:
+                - /url: /shots/26726152-OrgaNuts-Peanut-Butter-Project
+                - generic: View OrgaNuts Peanut Butter Project
+              - generic:
+                - generic:
+                  - generic: OrgaNuts Peanut Butter Project
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e822] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e823]
+                    - button [ref=e825] [cursor=pointer]:
+                      - img [ref=e826]
+            - generic [ref=e828]:
+              - link "Oluwatimileyin Ayinde Oluwatimileyin Ayinde" [ref=e830] [cursor=pointer]:
+                - /url: /oluwatimileyin-ayinde
+                - img "Oluwatimileyin Ayinde" [ref=e831]
+                - generic [ref=e832]: Oluwatimileyin Ayinde
+              - generic [ref=e833]:
+                - generic [ref=e835]:
+                  - generic:
+                    - button [ref=e836] [cursor=pointer]:
+                      - img [ref=e837]
+                    - generic [ref=e839]: "1"
+                - generic [ref=e840]:
+                  - img [ref=e841]
+                  - generic [ref=e844]: 1.8k
+          - listitem [ref=e845]:
+            - generic [ref=e846]:
+              - figure [ref=e847]:
+                - img "Black Friday Illustrations big sale black friday black friday flyer black friday sale blackfriday buy character design character illustration cyber monday digital illustration discount ecommerce illustration marketing product promo purchase sale shopper shopping" [ref=e848]
+              - link "View Black Friday Illustrations" [ref=e850] [cursor=pointer]:
+                - /url: /shots/25593078-Black-Friday-Illustrations
+                - generic: View Black Friday Illustrations
+              - generic:
+                - generic:
+                  - generic: Black Friday Illustrations
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e851] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e852]
+                    - button [ref=e854] [cursor=pointer]:
+                      - img [ref=e855]
+            - generic [ref=e857]:
+              - generic [ref=e858]:
+                - link "Vectors Market Vectors Market" [ref=e859] [cursor=pointer]:
+                  - /url: /vectorsmarket
+                  - img "Vectors Market" [ref=e860]
+                  - generic [ref=e861]: Vectors Market
+                - link "Pro user" [ref=e863] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e864]:
+                - generic [ref=e866]:
+                  - generic:
+                    - button [ref=e867] [cursor=pointer]:
+                      - img [ref=e868]
+                    - generic [ref=e870]: "11"
+                - generic [ref=e871]:
+                  - img [ref=e872]
+                  - generic [ref=e875]: 3.4k
+          - listitem [ref=e876]:
+            - generic [ref=e877]:
+              - figure [ref=e878]:
+                - img "Retail Web Ad Banners ad ads adsense advertising banner campaign clothes creative discount ecommerce google graphic design kids marketing promotion retail sale uiux wear web" [ref=e879]
+              - link "View Retail Web Ad Banners" [ref=e881] [cursor=pointer]:
+                - /url: /shots/23667789-Retail-Web-Ad-Banners
+                - generic: View Retail Web Ad Banners
+              - generic:
+                - generic:
+                  - generic: Retail Web Ad Banners
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e882] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e883]
+                    - button [ref=e885] [cursor=pointer]:
+                      - img [ref=e886]
+            - generic [ref=e888]:
+              - link "WEBDUCK WEBDUCK" [ref=e890] [cursor=pointer]:
+                - /url: /webduckdesign
+                - img "WEBDUCK" [ref=e891]
+                - generic [ref=e892]: WEBDUCK
+              - generic [ref=e893]:
+                - generic [ref=e895]:
+                  - generic:
+                    - button [ref=e896] [cursor=pointer]:
+                      - img [ref=e897]
+                    - generic [ref=e899]: "5"
+                - generic [ref=e900]:
+                  - img [ref=e901]
+                  - generic [ref=e904]: 7.3k
+          - listitem [ref=e905]:
+            - generic [ref=e906]:
+              - figure [ref=e907]:
+                - img "logo design for advertisement media branding creative design graphic design illustration logo logo design logodesign logotype" [ref=e908]
+              - link "View logo design for advertisement media" [ref=e910] [cursor=pointer]:
+                - /url: /shots/24151064-logo-design-for-advertisement-media
+                - generic: View logo design for advertisement media
+              - generic:
+                - generic:
+                  - generic: logo design for advertisement media
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e911] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e912]
+                    - button [ref=e914] [cursor=pointer]:
+                      - img [ref=e915]
+            - generic [ref=e917]:
+              - generic [ref=e918]:
+                - link "Workline Design Workline Design" [ref=e919] [cursor=pointer]:
+                  - /url: /vramarroy1
+                  - img "Workline Design" [ref=e920]
+                  - generic [ref=e921]: Workline Design
+                - link "Pro user" [ref=e923] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e924]:
+                - generic [ref=e926]:
+                  - generic:
+                    - button [ref=e927] [cursor=pointer]:
+                      - img [ref=e928]
+                    - generic [ref=e930]: "7"
+                - generic [ref=e931]:
+                  - img [ref=e932]
+                  - generic [ref=e935]: 23.9k
+          - listitem [ref=e936]:
+            - generic [ref=e937]:
+              - figure [ref=e938]:
+                - 'img "Sweet Success: Cake Bakery Website, SEO, & Local Marketing Tips bakery marketing plan bakery website design business marketing plan business plan marketing plan" [ref=e939]'
+              - 'link "View Sweet Success: Cake Bakery Website, SEO, & Local Marketing Tips" [ref=e941] [cursor=pointer]':
+                - /url: /shots/24804662-Sweet-Success-Cake-Bakery-Website-SEO-Local-Marketing-Tips
+                - generic: "View Sweet Success: Cake Bakery Website, SEO, & Local Marketing Tips"
+              - generic:
+                - generic:
+                  - generic: "Sweet Success: Cake Bakery Website, SEO, & Local Marketing Tips"
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e942] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e943]
+                    - button [ref=e945] [cursor=pointer]:
+                      - img [ref=e946]
+            - generic [ref=e948]:
+              - link "Themesrush Themesrush" [ref=e950] [cursor=pointer]:
+                - /url: /themesrush
+                - img "Themesrush" [ref=e951]
+                - generic [ref=e952]: Themesrush
+              - generic [ref=e953]:
+                - generic [ref=e955]:
+                  - generic:
+                    - button [ref=e956] [cursor=pointer]:
+                      - img [ref=e957]
+                    - generic [ref=e959]: "0"
+                - generic [ref=e960]:
+                  - img [ref=e961]
+                  - generic [ref=e964]: 8.5k
+          - listitem [ref=e965]:
+            - generic [ref=e966]:
+              - figure [ref=e967]:
+                - img "Promotional Materials for Genomelink cyber monday cyber monday sale design e commerce promotion genomelink holiday sale graphics illustration limited time deal marketing design online shopping banner pop up banner promotional materials sales campaign special offer design web promo" [ref=e968]
+              - link "View Promotional Materials for Genomelink" [ref=e970] [cursor=pointer]:
+                - /url: /shots/26601758-Promotional-Materials-for-Genomelink
+                - generic: View Promotional Materials for Genomelink
+              - generic:
+                - generic:
+                  - generic: Promotional Materials for Genomelink
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e971] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e972]
+                    - button [ref=e974] [cursor=pointer]:
+                      - img [ref=e975]
+            - generic [ref=e977]:
+              - generic [ref=e978]:
+                - link "Stas Kulesh 🥝 Stas Kulesh 🥝" [ref=e979] [cursor=pointer]:
+                  - /url: /stas_kulesh
+                  - img "Stas Kulesh 🥝" [ref=e980]
+                  - generic [ref=e981]: Stas Kulesh 🥝
+                - link "Pro user" [ref=e983] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e984]:
+                - generic [ref=e986]:
+                  - generic:
+                    - button [ref=e987] [cursor=pointer]:
+                      - img [ref=e988]
+                    - generic [ref=e990]: "2"
+                - generic [ref=e991]:
+                  - img [ref=e992]
+                  - generic [ref=e995]: 2.7k
+          - listitem [ref=e996]:
+            - generic [ref=e997]:
+              - figure [ref=e998]:
+                - img "Retro Christmas Promo Banner advertising artdirection bannerdesign branding christmas christmasdesign digitalillustration ecommerce graphicdesign holidaydesign illustration landingpage marketingdesign promoart retrodesign seasonaldesign vintagestyle visualdesign webdesign" [ref=e999]
+              - link "View Retro Christmas Promo Banner" [ref=e1001] [cursor=pointer]:
+                - /url: /shots/26902252-Retro-Christmas-Promo-Banner
+                - generic: View Retro Christmas Promo Banner
+              - generic:
+                - generic:
+                  - generic: Retro Christmas Promo Banner
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1002] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1003]
+                    - button [ref=e1005] [cursor=pointer]:
+                      - img [ref=e1006]
+            - generic [ref=e1008]:
+              - generic [ref=e1009]:
+                - link "Nina Marinenko Nina Marinenko" [ref=e1010] [cursor=pointer]:
+                  - /url: /NinaMarinenko
+                  - img "Nina Marinenko" [ref=e1011]
+                  - generic [ref=e1012]: Nina Marinenko
+                - link "Pro user" [ref=e1014] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1015]:
+                - generic [ref=e1017]:
+                  - generic:
+                    - button [ref=e1018] [cursor=pointer]:
+                      - img [ref=e1019]
+                    - generic [ref=e1021]: "164"
+                - generic [ref=e1022]:
+                  - img [ref=e1023]
+                  - generic [ref=e1026]: 14k
+          - listitem [ref=e1027]:
+            - generic [ref=e1028]:
+              - figure [ref=e1029]:
+                - img "Protein Store — E-Commerce Mobile App app design app screen dark ui e commerce figma fitness app interface design ios design logo mobile design mobile ui product design protein ui design uiux ux design" [ref=e1030]
+              - link "View Protein Store — E-Commerce Mobile App" [ref=e1032] [cursor=pointer]:
+                - /url: /shots/27200940-Protein-Store-E-Commerce-Mobile-App
+                - generic: View Protein Store — E-Commerce Mobile App
+              - generic:
+                - generic:
+                  - generic: Protein Store — E-Commerce Mobile App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1033] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1034]
+                    - button [ref=e1036] [cursor=pointer]:
+                      - img [ref=e1037]
+            - generic [ref=e1039]:
+              - link "UI Studio UI Studio" [ref=e1041] [cursor=pointer]:
+                - /url: /rayhan14721472
+                - img "UI Studio" [ref=e1042]
+                - generic [ref=e1043]: UI Studio
+              - generic [ref=e1044]:
+                - generic [ref=e1046]:
+                  - generic:
+                    - button [ref=e1047] [cursor=pointer]:
+                      - img [ref=e1048]
+                    - generic [ref=e1050]: "21"
+                - generic [ref=e1051]:
+                  - img [ref=e1052]
+                  - generic [ref=e1055]: 6.8k
+          - listitem [ref=e1056]:
+            - generic [ref=e1057]:
+              - figure [ref=e1058]:
+                - img "HBizz App Design app application dashboard designs ecommerce figma home page design home screens illustrations interaction ios marketplace mobile product design shop shopping screens ui ux web xd" [ref=e1059]
+              - link "View HBizz App Design" [ref=e1061] [cursor=pointer]:
+                - /url: /shots/16753142-HBizz-App-Design
+                - generic: View HBizz App Design
+              - generic:
+                - generic:
+                  - generic: HBizz App Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1062] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1063]
+                    - button [ref=e1065] [cursor=pointer]:
+                      - img [ref=e1066]
+            - generic [ref=e1068]:
+              - link "Kmphitech LLP Kmphitech LLP" [ref=e1070] [cursor=pointer]:
+                - /url: /KmphitechLLP
+                - img "Kmphitech LLP" [ref=e1071]
+                - generic [ref=e1072]: Kmphitech LLP
+              - generic [ref=e1073]:
+                - generic [ref=e1075]:
+                  - generic:
+                    - button [ref=e1076] [cursor=pointer]:
+                      - img [ref=e1077]
+                    - generic [ref=e1079]: "4"
+                - generic [ref=e1080]:
+                  - img [ref=e1081]
+                  - generic [ref=e1084]: 2.6k
+          - listitem [ref=e1085]:
+            - generic [ref=e1086]:
+              - figure [ref=e1087]:
+                - img "Luxury Wig Brand Email Design | Beauty Ecommerce Sale Newsletter branding design email design email marketing email promotion design graphic design hair care hair extensions hair wig illustration layout mailchimp design mailchimp template marketing marketing email design mockup responsive email design template website" [ref=e1088]
+              - img [ref=e1091]
+              - link "View Luxury Wig Brand Email Design | Beauty Ecommerce Sale Newsletter" [ref=e1093] [cursor=pointer]:
+                - /url: /shots/26534388-Luxury-Wig-Brand-Email-Design-Beauty-Ecommerce-Sale-Newsletter
+                - generic: View Luxury Wig Brand Email Design | Beauty Ecommerce Sale Newsletter
+              - generic:
+                - generic:
+                  - generic: Luxury Wig Brand Email Design | Beauty Ecommerce Sale Newsletter
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1094] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1095]
+                    - button [ref=e1097] [cursor=pointer]:
+                      - img [ref=e1098]
+            - generic [ref=e1100]:
+              - generic [ref=e1101]:
+                - link "SMPLY Studio SMPLY Studio" [ref=e1102] [cursor=pointer]:
+                  - /url: /SMPLY_Studio
+                  - img "SMPLY Studio" [ref=e1103]
+                  - generic [ref=e1104]: SMPLY Studio
+                - link "Pro user" [ref=e1106] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e1107]: +
+              - generic [ref=e1108]:
+                - generic [ref=e1110]:
+                  - generic:
+                    - button [ref=e1111] [cursor=pointer]:
+                      - img [ref=e1112]
+                    - generic [ref=e1114]: "15"
+                - generic [ref=e1115]:
+                  - img [ref=e1116]
+                  - generic [ref=e1119]: 14.1k
+          - listitem [ref=e1120]:
+            - generic [ref=e1121]:
+              - figure [ref=e1122]:
+                - img "Luxury Wig Brand Email Design | Beauty Ecommerce Sale Newsletter asa beauty branding branding email design email marketing expert emailer hair care email hair extensions illustration layout logo luxury email design mailchimp template mockup responsive email design template ui ux website wig marketing" [ref=e1123]
+              - generic [ref=e1125]:
+                - img [ref=e1126]
+                - generic [ref=e1128]: "1"
+              - link "View Luxury Wig Brand Email Design | Beauty Ecommerce Sale Newsletter" [ref=e1129] [cursor=pointer]:
+                - /url: /shots/25924056-Luxury-Wig-Brand-Email-Design-Beauty-Ecommerce-Sale-Newsletter
+                - generic: View Luxury Wig Brand Email Design | Beauty Ecommerce Sale Newsletter
+              - generic:
+                - generic:
+                  - generic: Luxury Wig Brand Email Design | Beauty Ecommerce Sale Newsletter
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1130] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1131]
+                    - button [ref=e1133] [cursor=pointer]:
+                      - img [ref=e1134]
+            - generic [ref=e1136]:
+              - generic [ref=e1137]:
+                - link "SMPLY Studio SMPLY Studio" [ref=e1138] [cursor=pointer]:
+                  - /url: /SMPLY_Studio
+                  - img "SMPLY Studio" [ref=e1139]
+                  - generic [ref=e1140]: SMPLY Studio
+                - link "Pro user" [ref=e1142] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e1143]: +
+              - generic [ref=e1144]:
+                - generic [ref=e1146]:
+                  - generic:
+                    - button [ref=e1147] [cursor=pointer]:
+                      - img [ref=e1148]
+                    - generic [ref=e1150]: "3"
+                - generic [ref=e1151]:
+                  - img [ref=e1152]
+                  - generic [ref=e1155]: 5.2k
+          - listitem [ref=e1156]:
+            - generic [ref=e1157]:
+              - figure [ref=e1158]:
+                - img "Valentine’s Day Email Template Design email email design email marketing email template emaildesign jew jewelry email newsletter valentine email valentines day" [ref=e1159]
+              - link "View Valentine’s Day Email Template Design" [ref=e1161] [cursor=pointer]:
+                - /url: /shots/27067078-Valentine-s-Day-Email-Template-Design
+                - generic: View Valentine’s Day Email Template Design
+              - generic:
+                - generic:
+                  - generic: Valentine’s Day Email Template Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1162] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1163]
+                    - button [ref=e1165] [cursor=pointer]:
+                      - img [ref=e1166]
+            - generic [ref=e1168]:
+              - link "Innovix Innovix" [ref=e1170] [cursor=pointer]:
+                - /url: /innovixagency
+                - img "Innovix" [ref=e1171]
+                - generic [ref=e1172]: Innovix
+              - generic [ref=e1173]:
+                - generic [ref=e1175]:
+                  - generic:
+                    - button [ref=e1176] [cursor=pointer]:
+                      - img [ref=e1177]
+                    - generic [ref=e1179]: "58"
+                - generic [ref=e1180]:
+                  - img [ref=e1181]
+                  - generic [ref=e1184]: 6.8k
+          - listitem [ref=e1185]:
+            - generic [ref=e1186]:
+              - figure [ref=e1187]:
+                - 'img "Dynamic Sale Tag: E-commerce Promotion animation clean cursor discount ecommerce graphics icons minimal motion mouse overlay pop promo retail sale shopping snappy sticker typography vector" [ref=e1188]'
+              - generic [ref=e1189]:
+                - img [ref=e1191]
+                - link "Shot Link":
+                  - /url: /shots/26801570-Dynamic-Sale-Tag-E-commerce-Promotion
+                  - generic: Shot Link
+              - 'link "View Dynamic Sale Tag: E-commerce Promotion" [ref=e1194] [cursor=pointer]':
+                - /url: /shots/26801570-Dynamic-Sale-Tag-E-commerce-Promotion
+                - generic: "View Dynamic Sale Tag: E-commerce Promotion"
+              - generic:
+                - generic:
+                  - generic: "Dynamic Sale Tag: E-commerce Promotion"
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1195] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1196]
+                    - button [ref=e1198] [cursor=pointer]:
+                      - img [ref=e1199]
+            - generic [ref=e1201]:
+              - link "Omar Patti Omar Patti" [ref=e1203] [cursor=pointer]:
+                - /url: /StudioYM
+                - img "Omar Patti" [ref=e1204]
+                - generic [ref=e1205]: Omar Patti
+              - generic [ref=e1206]:
+                - generic [ref=e1208]:
+                  - generic:
+                    - button [ref=e1209] [cursor=pointer]:
+                      - img [ref=e1210]
+                    - generic [ref=e1212]: "1"
+                - generic [ref=e1213]:
+                  - img [ref=e1214]
+                  - generic [ref=e1217]: "867"
+          - listitem [ref=e1218]:
+            - generic [ref=e1219]:
+              - figure [ref=e1220]:
+                - img "3D Discount & Offer Icon Set 3d branding design graphic design icons illustration ui ux" [ref=e1221]
+              - link "View 3D Discount & Offer Icon Set" [ref=e1223] [cursor=pointer]:
+                - /url: /shots/26475060-3D-Discount-Offer-Icon-Set
+                - generic: View 3D Discount & Offer Icon Set
+              - generic:
+                - generic:
+                  - generic: 3D Discount & Offer Icon Set
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1224] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1225]
+                    - button [ref=e1227] [cursor=pointer]:
+                      - img [ref=e1228]
+            - generic [ref=e1230]:
+              - generic [ref=e1231]:
+                - link "Krafted Krafted" [ref=e1232] [cursor=pointer]:
+                  - /url: /Krafted
+                  - img "Krafted" [ref=e1233]
+                  - generic [ref=e1234]: Krafted
+                - link "Pro user" [ref=e1236] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1237]:
+                - generic [ref=e1239]:
+                  - generic:
+                    - button [ref=e1240] [cursor=pointer]:
+                      - img [ref=e1241]
+                    - generic [ref=e1243]: "1"
+                - generic [ref=e1244]:
+                  - img [ref=e1245]
+                  - generic [ref=e1248]: 1.4k
+          - listitem [ref=e1249]:
+            - generic [ref=e1250]:
+              - figure [ref=e1251]:
+                - img "Animated Promotion Ad Design 3d ad advertising amazon ad animation branding cinema 4d google ad graphic design jar label motion graphics packaging redshift sale visualization web ad" [ref=e1252]
+              - link "View Animated Promotion Ad Design" [ref=e1254] [cursor=pointer]:
+                - /url: /shots/26857632-Animated-Promotion-Ad-Design
+                - generic: View Animated Promotion Ad Design
+              - generic:
+                - generic:
+                  - generic: Animated Promotion Ad Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1255] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1256]
+                    - button [ref=e1258] [cursor=pointer]:
+                      - img [ref=e1259]
+            - generic [ref=e1261]:
+              - generic [ref=e1262]:
+                - link "Mahmoud Shahin Mahmoud Shahin" [ref=e1263] [cursor=pointer]:
+                  - /url: /fenongenon
+                  - img "Mahmoud Shahin" [ref=e1264]
+                  - generic [ref=e1265]: Mahmoud Shahin
+                - link "Pro user" [ref=e1267] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1268]:
+                - generic [ref=e1270]:
+                  - generic:
+                    - button [ref=e1271] [cursor=pointer]:
+                      - img [ref=e1272]
+                    - generic [ref=e1274]: "0"
+                - generic [ref=e1275]:
+                  - img [ref=e1276]
+                  - generic [ref=e1279]: "389"
+          - listitem [ref=e1280]:
+            - generic [ref=e1281]:
+              - figure [ref=e1282]:
+                - img "Premium Watch Social Media Post Design bablagfx conversion design" [ref=e1283]
+              - link "View Premium Watch Social Media Post Design" [ref=e1285] [cursor=pointer]:
+                - /url: /shots/26541963-Premium-Watch-Social-Media-Post-Design
+                - generic: View Premium Watch Social Media Post Design
+              - generic:
+                - generic:
+                  - generic: Premium Watch Social Media Post Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1286] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1287]
+                    - button [ref=e1289] [cursor=pointer]:
+                      - img [ref=e1290]
+            - generic [ref=e1292]:
+              - link "Babla Hossan Babla Hossan" [ref=e1294] [cursor=pointer]:
+                - /url: /bablagfx
+                - img "Babla Hossan" [ref=e1295]
+                - generic [ref=e1296]: Babla Hossan
+              - generic [ref=e1297]:
+                - generic [ref=e1299]:
+                  - generic:
+                    - button [ref=e1300] [cursor=pointer]:
+                      - img [ref=e1301]
+                    - generic [ref=e1303]: "0"
+                - generic [ref=e1304]:
+                  - img [ref=e1305]
+                  - generic [ref=e1308]: "561"
+          - listitem [ref=e1309]:
+            - generic [ref=e1310]:
+              - figure [ref=e1311]:
+                - img "TechHive Store Design 3d animation branding design ecommerce ecommerce store ecommerce website graphic design illustration logo motion graphics shopify shopify store ui website designer" [ref=e1312]
+              - link "View TechHive Store Design" [ref=e1314] [cursor=pointer]:
+                - /url: /shots/25538153-TechHive-Store-Design
+                - generic: View TechHive Store Design
+              - generic:
+                - generic:
+                  - generic: TechHive Store Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1315] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1316]
+                    - button [ref=e1318] [cursor=pointer]:
+                      - img [ref=e1319]
+            - generic [ref=e1321]:
+              - link "Adewole Taiwo Adewole Taiwo" [ref=e1323] [cursor=pointer]:
+                - /url: /AdewoleTaiwo_001-
+                - img "Adewole Taiwo" [ref=e1324]
+                - generic [ref=e1325]: Adewole Taiwo
+              - generic [ref=e1326]:
+                - generic [ref=e1328]:
+                  - generic:
+                    - button [ref=e1329] [cursor=pointer]:
+                      - img [ref=e1330]
+                    - generic [ref=e1332]: "0"
+                - generic [ref=e1333]:
+                  - img [ref=e1334]
+                  - generic [ref=e1337]: 1.2k
+          - listitem [ref=e1338]:
+            - generic [ref=e1339]:
+              - figure [ref=e1340]:
+                - img "2026 New Year Sale Banner | Holiday Discount Promotion Flyer 2026 new year sale banner blue sale banner design clean minimal banner design digital marketing banner discount offer template ecommerce sale banner editable sale template festive sale advertisement holiday promotion design holiday sale banner modern sale flyer new year celebration banner new year marketing banner new year sale flyer promotional flyer template retail sale poster seasonal sale template special offer poster typography banner design winter sale promotion" [ref=e1341]
+              - link "View 2026 New Year Sale Banner | Holiday Discount Promotion Flyer" [ref=e1343] [cursor=pointer]:
+                - /url: /shots/26785573-2026-New-Year-Sale-Banner-Holiday-Discount-Promotion-Flyer
+                - generic: View 2026 New Year Sale Banner | Holiday Discount Promotion Flyer
+              - generic:
+                - generic:
+                  - generic: 2026 New Year Sale Banner | Holiday Discount Promotion Flyer
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1344] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1345]
+                    - button [ref=e1347] [cursor=pointer]:
+                      - img [ref=e1348]
+            - generic [ref=e1350]:
+              - link "Md. Salman Al Farsi Md. Salman Al Farsi" [ref=e1352] [cursor=pointer]:
+                - /url: /pixels9ninety9
+                - img "Md. Salman Al Farsi" [ref=e1353]
+                - generic [ref=e1354]: Md. Salman Al Farsi
+              - generic [ref=e1355]:
+                - generic [ref=e1357]:
+                  - generic:
+                    - button [ref=e1358] [cursor=pointer]:
+                      - img [ref=e1359]
+                    - generic [ref=e1361]: "1"
+                - generic [ref=e1362]:
+                  - img [ref=e1363]
+                  - generic [ref=e1366]: 2.8k
+          - listitem [ref=e1367]:
+            - generic [ref=e1368]:
+              - figure [ref=e1369]:
+                - img "Social Media Template for Sale Discount adobe photoshop canva digital marketing e commerce business online busine online marketing product promotion shopify social media design social media marketing social media marketing template social media promotion social media template" [ref=e1370]
+              - link "View Social Media Template for Sale Discount" [ref=e1372] [cursor=pointer]:
+                - /url: /shots/25300806-Social-Media-Template-for-Sale-Discount
+                - generic: View Social Media Template for Sale Discount
+              - generic:
+                - generic:
+                  - generic: Social Media Template for Sale Discount
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1373] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1374]
+                    - button [ref=e1376] [cursor=pointer]:
+                      - img [ref=e1377]
+            - generic [ref=e1379]:
+              - link "Md Jahurul Huque Galib Md Jahurul Huque Galib" [ref=e1381] [cursor=pointer]:
+                - /url: /jahurulgalib
+                - img "Md Jahurul Huque Galib" [ref=e1382]
+                - generic [ref=e1383]: Md Jahurul Huque Galib
+              - generic [ref=e1384]:
+                - generic [ref=e1386]:
+                  - generic:
+                    - button [ref=e1387] [cursor=pointer]:
+                      - img [ref=e1388]
+                    - generic [ref=e1390]: "0"
+                - generic [ref=e1391]:
+                  - img [ref=e1392]
+                  - generic [ref=e1395]: "341"
+          - listitem [ref=e1396]:
+            - generic [ref=e1397]:
+              - figure [ref=e1398]:
+                - img "Elegant Watch Promotion Banner Template advertising banner animation classic design clean layout discount ad ecommerce banner editable psd fashion accessories luxury watch marketing design modern design product showcase product template sale promotion social media ad watch ad watch banner watch store watch template web banner" [ref=e1399]
+              - link "View Elegant Watch Promotion Banner Template" [ref=e1401] [cursor=pointer]:
+                - /url: /shots/26718790-Elegant-Watch-Promotion-Banner-Template
+                - generic: View Elegant Watch Promotion Banner Template
+              - generic:
+                - generic:
+                  - generic: Elegant Watch Promotion Banner Template
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1402] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1403]
+                    - button [ref=e1405] [cursor=pointer]:
+                      - img [ref=e1406]
+            - generic [ref=e1408]:
+              - link "Designs By Mujtaba Assets Designs By Mujtaba Assets" [ref=e1410] [cursor=pointer]:
+                - /url: /designs-by-mujtaba-assets
+                - img "Designs By Mujtaba Assets" [ref=e1411]
+                - generic [ref=e1412]: Designs By Mujtaba Assets
+              - generic [ref=e1413]:
+                - generic [ref=e1415]:
+                  - generic:
+                    - button [ref=e1416] [cursor=pointer]:
+                      - img [ref=e1417]
+                    - generic [ref=e1419]: "0"
+                - generic [ref=e1420]:
+                  - img [ref=e1421]
+                  - generic [ref=e1424]: 2.4k
+          - listitem [ref=e1425]:
+            - generic [ref=e1426]:
+              - figure [ref=e1427]:
+                - img "Promotional Materials for Genomelink christmas sale banner conversion design design e commerce promotion festive graphics genomelink halloween marketing holiday campaign design holiday promotions illustration limited time offer design marketing creatives new year promotion pop up design sales banner seasonal sale design web promo materials" [ref=e1428]
+              - link "View Promotional Materials for Genomelink" [ref=e1430] [cursor=pointer]:
+                - /url: /shots/26601709-Promotional-Materials-for-Genomelink
+                - generic: View Promotional Materials for Genomelink
+              - generic:
+                - generic:
+                  - generic: Promotional Materials for Genomelink
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1431] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1432]
+                    - button [ref=e1434] [cursor=pointer]:
+                      - img [ref=e1435]
+            - generic [ref=e1437]:
+              - generic [ref=e1438]:
+                - link "Stas Kulesh 🥝 Stas Kulesh 🥝" [ref=e1439] [cursor=pointer]:
+                  - /url: /stas_kulesh
+                  - img "Stas Kulesh 🥝" [ref=e1440]
+                  - generic [ref=e1441]: Stas Kulesh 🥝
+                - link "Pro user" [ref=e1443] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1444]:
+                - generic [ref=e1446]:
+                  - generic:
+                    - button [ref=e1447] [cursor=pointer]:
+                      - img [ref=e1448]
+                    - generic [ref=e1450]: "0"
+                - generic [ref=e1451]:
+                  - img [ref=e1452]
+                  - generic [ref=e1455]: 2.5k
+          - listitem [ref=e1456]:
+            - generic [ref=e1457]:
+              - figure [ref=e1458]:
+                - img "Best Digital Marketing Services Packages business packages digitalmarketing leads generation online work promotion packages" [ref=e1459]
+              - link "View Best Digital Marketing Services Packages" [ref=e1461] [cursor=pointer]:
+                - /url: /shots/26533670-Best-Digital-Marketing-Services-Packages
+                - generic: View Best Digital Marketing Services Packages
+              - generic:
+                - generic:
+                  - generic: Best Digital Marketing Services Packages
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1462] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1463]
+                    - button [ref=e1465] [cursor=pointer]:
+                      - img [ref=e1466]
+            - generic [ref=e1468]:
+              - link "Harpal Singh Harpal Singh" [ref=e1470] [cursor=pointer]:
+                - /url: /Harpalsingh23
+                - img "Harpal Singh" [ref=e1471]
+                - generic [ref=e1472]: Harpal Singh
+              - generic [ref=e1473]:
+                - generic [ref=e1475]:
+                  - generic:
+                    - button [ref=e1476] [cursor=pointer]:
+                      - img [ref=e1477]
+                    - generic [ref=e1479]: "0"
+                - generic [ref=e1480]:
+                  - img [ref=e1481]
+                  - generic [ref=e1484]: 6.5k
+          - listitem [ref=e1485]:
+            - generic [ref=e1486]:
+              - figure [ref=e1487]:
+                - img "Tech Banners – UI Design for E-commerce Sales Campaign adobe photoshop advertising banner design creative direction digital advertising e commerce design e commerce marketing ecommerce graphic design listing design poster design product design product promotion promotional design social media ads social media post ui ui design ux design visual design" [ref=e1488]
+              - link "View Tech Banners – UI Design for E-commerce Sales Campaign" [ref=e1490] [cursor=pointer]:
+                - /url: /shots/26237356-Tech-Banners-UI-Design-for-E-commerce-Sales-Campaign
+                - generic: View Tech Banners – UI Design for E-commerce Sales Campaign
+              - generic:
+                - generic:
+                  - generic: Tech Banners – UI Design for E-commerce Sales Campaign
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1491] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1492]
+                    - button [ref=e1494] [cursor=pointer]:
+                      - img [ref=e1495]
+            - generic [ref=e1497]:
+              - link "Tanzeel Aamir Tanzeel Aamir" [ref=e1499] [cursor=pointer]:
+                - /url: /Lilford
+                - img "Tanzeel Aamir" [ref=e1500]
+                - generic [ref=e1501]: Tanzeel Aamir
+              - generic [ref=e1502]:
+                - generic [ref=e1504]:
+                  - generic:
+                    - button [ref=e1505] [cursor=pointer]:
+                      - img [ref=e1506]
+                    - generic [ref=e1508]: "3"
+                - generic [ref=e1509]:
+                  - img [ref=e1510]
+                  - generic [ref=e1513]: 2.7k
+          - listitem [ref=e1514]:
+            - generic [ref=e1515]:
+              - figure [ref=e1516]:
+                - img "Promotion Editing page - Ecommerce Admin page admindashboard branding dashboarddesign design ecommerce figmadesign ui uidesign" [ref=e1517]
+              - link "View Promotion Editing page - Ecommerce Admin page" [ref=e1519] [cursor=pointer]:
+                - /url: /shots/26728356-Promotion-Editing-page-Ecommerce-Admin-page
+                - generic: View Promotion Editing page - Ecommerce Admin page
+              - generic:
+                - generic:
+                  - generic: Promotion Editing page - Ecommerce Admin page
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1520] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1521]
+                    - button [ref=e1523] [cursor=pointer]:
+                      - img [ref=e1524]
+            - generic [ref=e1526]:
+              - link "Adesunloro Koye Adesunloro Koye" [ref=e1528] [cursor=pointer]:
+                - /url: /adesunloro-koye
+                - img "Adesunloro Koye" [ref=e1529]
+                - generic [ref=e1530]: Adesunloro Koye
+              - generic [ref=e1531]:
+                - generic [ref=e1533]:
+                  - generic:
+                    - button [ref=e1534] [cursor=pointer]:
+                      - img [ref=e1535]
+                    - generic [ref=e1537]: "4"
+                - generic [ref=e1538]:
+                  - img [ref=e1539]
+                  - generic [ref=e1542]: 6.9k
+        - link "Sign up to continue" [ref=e1544] [cursor=pointer]:
+          - /url: /signups/new
+  - contentinfo [ref=e1545]:
+    - generic [ref=e1548]:
+      - link "Product Design Product Design" [ref=e1549] [cursor=pointer]:
+        - /url: /shots/popular/product-design
+        - img "Product Design" [ref=e1552]
+        - generic [ref=e1553]: Product Design
+      - link "Web Design Web Design" [ref=e1554] [cursor=pointer]:
+        - /url: /shots/popular/web-design
+        - img "Web Design" [ref=e1557]
+        - generic [ref=e1558]: Web Design
+      - link "Typography Typography" [ref=e1559] [cursor=pointer]:
+        - /url: /shots/popular/typography
+        - img "Typography" [ref=e1562]
+        - generic [ref=e1563]: Typography
+      - link "Branding Branding" [ref=e1564] [cursor=pointer]:
+        - /url: /shots/popular/branding
+        - img "Branding" [ref=e1567]
+        - generic [ref=e1568]: Branding
+      - link "Mobile Mobile" [ref=e1569] [cursor=pointer]:
+        - /url: /shots/popular/mobile
+        - img "Mobile" [ref=e1572]
+        - generic [ref=e1573]: Mobile
+      - link "Illustration Illustration" [ref=e1574] [cursor=pointer]:
+        - /url: /shots/popular/illustration
+        - img "Illustration" [ref=e1577]
+        - generic [ref=e1578]: Illustration
+      - link "Animation Animation" [ref=e1579] [cursor=pointer]:
+        - /url: /shots/popular/animation
+        - img "Animation" [ref=e1582]
+        - generic [ref=e1583]: Animation
+      - link "Print Print" [ref=e1584] [cursor=pointer]:
+        - /url: /shots/popular/print
+        - img "Print" [ref=e1587]
+        - generic [ref=e1588]: Print
+      - link "Product Design Product Design" [ref=e1589] [cursor=pointer]:
+        - /url: /shots/popular/product-design
+        - img "Product Design" [ref=e1592]
+        - generic [ref=e1593]: Product Design
+      - link "Web Design Web Design" [ref=e1594] [cursor=pointer]:
+        - /url: /shots/popular/web-design
+        - img "Web Design" [ref=e1597]
+        - generic [ref=e1598]: Web Design
+      - link "Typography Typography" [ref=e1599] [cursor=pointer]:
+        - /url: /shots/popular/typography
+        - img "Typography" [ref=e1602]
+        - generic [ref=e1603]: Typography
+      - link "Branding Branding" [ref=e1604] [cursor=pointer]:
+        - /url: /shots/popular/branding
+        - img "Branding" [ref=e1607]
+        - generic [ref=e1608]: Branding
+      - link "Mobile Mobile" [ref=e1609] [cursor=pointer]:
+        - /url: /shots/popular/mobile
+        - img "Mobile" [ref=e1612]
+        - generic [ref=e1613]: Mobile
+      - link "Illustration Illustration" [ref=e1614] [cursor=pointer]:
+        - /url: /shots/popular/illustration
+        - img "Illustration" [ref=e1617]
+        - generic [ref=e1618]: Illustration
+      - link "Animation Animation" [ref=e1619] [cursor=pointer]:
+        - /url: /shots/popular/animation
+        - img "Animation" [ref=e1622]
+        - generic [ref=e1623]: Animation
+      - link "Print Print" [ref=e1624] [cursor=pointer]:
+        - /url: /shots/popular/print
+        - img "Print" [ref=e1627]
+        - generic [ref=e1628]: Print
+    - generic [ref=e1629]:
+      - generic [ref=e1630]:
+        - 'link "Dribbble: the community for graphic design Back to home page" [ref=e1631] [cursor=pointer]':
+          - /url: /
+          - 'img "Dribbble: the community for graphic design" [ref=e1632]'
+          - generic: Back to home page
+        - list [ref=e1634]:
+          - listitem [ref=e1635]:
+            - link "For designers" [ref=e1636] [cursor=pointer]:
+              - /url: /for-designers
+          - listitem [ref=e1637]:
+            - link "Hire talent" [ref=e1638] [cursor=pointer]:
+              - /url: /hiring
+          - listitem [ref=e1639]:
+            - link "Inspiration" [ref=e1640] [cursor=pointer]:
+              - /url: /shots/popular
+          - listitem [ref=e1641]:
+            - link "Advertising" [ref=e1642] [cursor=pointer]:
+              - /url: /advertise
+          - listitem [ref=e1643]:
+            - link "Blog" [ref=e1644] [cursor=pointer]:
+              - /url: /stories
+          - listitem [ref=e1645]:
+            - link "About" [ref=e1646] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e1647]:
+            - link "Careers" [ref=e1648] [cursor=pointer]:
+              - /url: /careers
+          - listitem [ref=e1649]:
+            - link "Support" [ref=e1650] [cursor=pointer]:
+              - /url: /contact
+        - generic [ref=e1651]:
+          - link "X" [ref=e1652] [cursor=pointer]:
+            - /url: http://x.com/dribbble
+            - img [ref=e1653]
+            - generic: X
+          - link "Facebook" [ref=e1655] [cursor=pointer]:
+            - /url: http://facebook.com/dribbble
+            - img [ref=e1656]
+            - generic: Facebook
+          - link "Instagram" [ref=e1658] [cursor=pointer]:
+            - /url: http://instagram.com/dribbble
+            - img [ref=e1659]
+            - generic: Instagram
+          - link "Pinterest" [ref=e1661] [cursor=pointer]:
+            - /url: http://www.pinterest.com/dribbble/
+            - img [ref=e1662]
+            - generic: Pinterest
+      - generic [ref=e1664]:
+        - list [ref=e1665]:
+          - listitem [ref=e1666]: © 2026 Dribbble
+          - listitem [ref=e1667]:
+            - link "Terms" [ref=e1668] [cursor=pointer]:
+              - /url: /terms
+          - listitem [ref=e1669]:
+            - link "Privacy" [ref=e1670] [cursor=pointer]:
+              - /url: /privacy
+          - listitem [ref=e1671]:
+            - link "Cookies" [ref=e1672] [cursor=pointer]:
+              - /url: /cookie-policy
+        - list [ref=e1673]:
+          - listitem [ref=e1674]:
+            - link "Jobs" [ref=e1675] [cursor=pointer]:
+              - /url: /directories/jobs
+          - listitem [ref=e1676]:
+            - link "Designers" [ref=e1677] [cursor=pointer]:
+              - /url: /directories/designers
+          - listitem [ref=e1678]:
+            - link "Freelancers" [ref=e1679] [cursor=pointer]:
+              - /url: /directories/freelance-designers
+          - listitem [ref=e1680]:
+            - link "Tags" [ref=e1681] [cursor=pointer]:
+              - /url: /tags
+          - listitem [ref=e1682]:
+            - link "Places" [ref=e1683] [cursor=pointer]:
+              - /url: /places
+          - listitem [ref=e1684]:
+            - link "Resources" [ref=e1685] [cursor=pointer]:
+              - /url: /resources
+  - generic:
+    - link "close":
+      - /url: "#"
+      - img

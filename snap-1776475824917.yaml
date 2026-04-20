@@ -1,0 +1,1758 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - paragraph [ref=e5]: "Streamline your search for the next agency. 🚀 See the teams behind this year’s most impactful work in “Dribbble Select: Best Shots of 2026.” 🙌 🥳"
+      - link "Explore Top Agency Shots" [ref=e6] [cursor=pointer]:
+        - /url: https://dribbble.com/resources/agencies/ultimate-dribbble-select-best-shots
+    - button "close" [ref=e7] [cursor=pointer]:
+      - img [ref=e8]
+  - generic [ref=e11]:
+    - link "Back to home page" [ref=e12] [cursor=pointer]:
+      - /url: /
+      - 'img "Dribbble: the community for graphic design" [ref=e13]'
+    - generic [ref=e16]:
+      - combobox "Submit" [ref=e18]:
+        - search [ref=e19]:
+          - searchbox "Submit" [ref=e21]: app monetization paywall subscription
+      - generic "Change search type" [ref=e22]:
+        - generic:
+          - generic:
+            - button "Shots" [ref=e23] [cursor=pointer]:
+              - generic [ref=e24]: Shots
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Shots
+                  - generic: Designers
+                  - generic: Services
+      - button "Search" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - navigation [ref=e28]:
+      - list [ref=e30]:
+        - listitem [ref=e31]:
+          - link "Explore" [ref=e32] [cursor=pointer]:
+            - /url: /shots/popular
+        - listitem [ref=e33]:
+          - link "Hire Talent" [ref=e34] [cursor=pointer]:
+            - /url: /designers
+        - listitem [ref=e35]:
+          - link "Get Hired" [ref=e36] [cursor=pointer]:
+            - /url: /browse-project-briefs
+        - listitem [ref=e37]:
+          - link "Community" [ref=e38] [cursor=pointer]:
+            - /url: /stories
+    - generic [ref=e39]:
+      - link "Sign up" [ref=e40] [cursor=pointer]:
+        - /url: /signups/new
+      - link "Log in" [ref=e41] [cursor=pointer]:
+        - /url: /session/new
+  - generic [ref=e42]:
+    - generic [ref=e44]:
+      - heading "app monetization paywall subscription" [level=1] [ref=e45]
+      - paragraph [ref=e46]: Inspiring app monetization paywall subscription designs
+      - list [ref=e47]:
+        - listitem [ref=e48]: "Related:"
+        - listitem [ref=e49]:
+          - link "designflows" [ref=e50] [cursor=pointer]:
+            - /url: /search/designflows
+        - listitem [ref=e51]:
+          - link "ios" [ref=e52] [cursor=pointer]:
+            - /url: /search/ios
+        - listitem [ref=e53]:
+          - link "ux" [ref=e54] [cursor=pointer]:
+            - /url: /search/ux
+        - listitem [ref=e55]:
+          - link "mobile" [ref=e56] [cursor=pointer]:
+            - /url: /search/mobile
+        - listitem [ref=e57]:
+          - link "ui" [ref=e58] [cursor=pointer]:
+            - /url: /search/ui
+        - listitem [ref=e59]:
+          - link "iphone" [ref=e60] [cursor=pointer]:
+            - /url: /search/iphone
+    - generic [ref=e62]:
+      - link "Popular" [ref=e65] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e66]
+        - generic [ref=e68]: Popular
+      - generic [ref=e69]:
+        - link [ref=e70] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e71]
+        - list [ref=e73]:
+          - listitem [ref=e74]:
+            - link "Discover" [ref=e75] [cursor=pointer]:
+              - /url: /search/shots/popular/?q=app+monetization+paywall+subscription
+          - listitem [ref=e76]:
+            - link "Animation" [ref=e77] [cursor=pointer]:
+              - /url: /search/shots/popular/animation?q=app+monetization+paywall+subscription
+          - listitem [ref=e78]:
+            - link "Branding" [ref=e79] [cursor=pointer]:
+              - /url: /search/shots/popular/branding?q=app+monetization+paywall+subscription
+          - listitem [ref=e80]:
+            - link "Illustration" [ref=e81] [cursor=pointer]:
+              - /url: /search/shots/popular/illustration?q=app+monetization+paywall+subscription
+          - listitem [ref=e82]:
+            - link "Mobile" [ref=e83] [cursor=pointer]:
+              - /url: /search/shots/popular/mobile?q=app+monetization+paywall+subscription
+          - listitem [ref=e84]:
+            - link "Print" [ref=e85] [cursor=pointer]:
+              - /url: /search/shots/popular/print?q=app+monetization+paywall+subscription
+          - listitem [ref=e86]:
+            - link "Product Design" [ref=e87] [cursor=pointer]:
+              - /url: /search/shots/popular/product-design?q=app+monetization+paywall+subscription
+          - listitem [ref=e88]:
+            - link "Typography" [ref=e89] [cursor=pointer]:
+              - /url: /search/shots/popular/typography?q=app+monetization+paywall+subscription
+          - listitem [ref=e90]:
+            - link "Web Design" [ref=e91] [cursor=pointer]:
+              - /url: /search/shots/popular/web-design?q=app+monetization+paywall+subscription
+      - link "Filters" [ref=e93] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e94]
+        - text: Filters
+    - main [ref=e97]:
+      - generic [ref=e98]:
+        - list [ref=e99]:
+          - listitem [ref=e100]:
+            - generic [ref=e101]:
+              - figure [ref=e102]:
+                - img "Best Paywall & Subscription UI for a lifestyle mobile app app app monetization app ui black freemium model growth design light theme mobile ui design mobile ux mobileapp paywall design pink pricing product design startup product subscription app subscription ui ux design violet white" [ref=e103]
+              - link "View Best Paywall & Subscription UI for a lifestyle mobile app" [ref=e105] [cursor=pointer]:
+                - /url: /shots/27188028-Best-Paywall-Subscription-UI-for-a-lifestyle-mobile-app
+                - generic: View Best Paywall & Subscription UI for a lifestyle mobile app
+              - generic:
+                - generic:
+                  - generic: Best Paywall & Subscription UI for a lifestyle mobile app
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e106] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e107]
+                    - button [ref=e109] [cursor=pointer]:
+                      - img [ref=e110]
+            - generic [ref=e112]:
+              - generic [ref=e113]:
+                - link "Iryna Strazhevich Iryna Strazhevich" [ref=e114] [cursor=pointer]:
+                  - /url: /irynastrazhevich
+                  - img "Iryna Strazhevich" [ref=e115]
+                  - generic [ref=e116]: Iryna Strazhevich
+                - link "Pro user" [ref=e118] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e119]:
+                - generic [ref=e121]:
+                  - generic:
+                    - button [ref=e122] [cursor=pointer]:
+                      - img [ref=e123]
+                    - generic [ref=e125]: "1"
+                - generic [ref=e126]:
+                  - img [ref=e127]
+                  - generic [ref=e130]: 1.1k
+          - listitem [ref=e131]:
+            - generic [ref=e132]:
+              - figure [ref=e133]:
+                - img "Premium Membership Paywall – Language Learning Mobile App app monetization paywall ui figma mobile paywall design ios paywall interface design mobile paywall ux design mobile premium plan selection ui obile subscription paywall ui premium membership screen ux premium upgrade screen design subscription modal mobile app ui" [ref=e134]
+              - link "View Premium Membership Paywall – Language Learning Mobile App" [ref=e136] [cursor=pointer]:
+                - /url: /shots/27165123-Premium-Membership-Paywall-Language-Learning-Mobile-App
+                - generic: View Premium Membership Paywall – Language Learning Mobile App
+              - generic:
+                - generic:
+                  - generic: Premium Membership Paywall – Language Learning Mobile App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e137] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e138]
+                    - button [ref=e140] [cursor=pointer]:
+                      - img [ref=e141]
+            - generic [ref=e143]:
+              - generic [ref=e144]:
+                - link "Diana Larussa Diana Larussa" [ref=e145] [cursor=pointer]:
+                  - /url: /Larussa
+                  - img "Diana Larussa" [ref=e146]
+                  - generic [ref=e147]: Diana Larussa
+                - link "Pro user" [ref=e149] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e150]:
+                - generic [ref=e152]:
+                  - generic:
+                    - button [ref=e153] [cursor=pointer]:
+                      - img [ref=e154]
+                    - generic [ref=e156]: "3"
+                - generic [ref=e157]:
+                  - img [ref=e158]
+                  - generic [ref=e161]: 4.6k
+          - listitem [ref=e162]:
+            - generic [ref=e163]:
+              - figure [ref=e164]:
+                - img "Noise Reducer App UI – Audio Cleaner Premium & Settings Screens app monetization design app pricing screen audio cleaner ui audio editing app audio recorder app creator tools app dark mode mobile app figma mobile ui mobile settings screen mobile subscription ui modern dark interface noise reducer app premium upgrade screen saas mobile ui startup mobile app subscription paywall ui ui ux case study voice enhancement app" [ref=e165]
+              - link "View Noise Reducer App UI – Audio Cleaner Premium & Settings Screens" [ref=e167] [cursor=pointer]:
+                - /url: /shots/27110638-Noise-Reducer-App-UI-Audio-Cleaner-Premium-Settings-Screens
+                - generic: View Noise Reducer App UI – Audio Cleaner Premium & Settings Screens
+              - generic:
+                - generic:
+                  - generic: Noise Reducer App UI – Audio Cleaner Premium & Settings Screens
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e168] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e169]
+                    - button [ref=e171] [cursor=pointer]:
+                      - img [ref=e172]
+            - generic [ref=e174]:
+              - generic [ref=e175]:
+                - link "Creliq UX/UI Design Agency Creliq UX/UI Design Agency" [ref=e176] [cursor=pointer]:
+                  - /url: /Creliq
+                  - img "Creliq UX/UI Design Agency" [ref=e177]
+                  - generic [ref=e178]: Creliq UX/UI Design Agency
+                - link "Pro user" [ref=e180] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e181]: +
+              - generic [ref=e182]:
+                - generic [ref=e184]:
+                  - generic:
+                    - button [ref=e185] [cursor=pointer]:
+                      - img [ref=e186]
+                    - generic [ref=e188]: "30"
+                - generic [ref=e189]:
+                  - img [ref=e190]
+                  - generic [ref=e193]: 10.9k
+          - listitem [ref=e194]:
+            - generic [ref=e195]:
+              - figure [ref=e196]
+              - link "View AI Skincare Cosmetologist Landing Page" [ref=e197] [cursor=pointer]:
+                - /url: https://dribbble.com/shots/27265179-AI-Skincare-Cosmetologist-Landing-Page
+                - generic: View AI Skincare Cosmetologist Landing Page
+              - generic:
+                - generic:
+                  - generic: AI Skincare Cosmetologist Landing Page
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e198] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e199]
+                    - button [ref=e201] [cursor=pointer]:
+                      - img [ref=e202]
+            - generic [ref=e204]:
+              - link "QClay QClay" [ref=e206] [cursor=pointer]:
+                - /url: /qclay
+                - img "QClay" [ref=e207]
+                - generic [ref=e208]: QClay
+              - generic [ref=e209]:
+                - link "Hide ads" [ref=e210] [cursor=pointer]:
+                  - /url: /pro
+                - generic [ref=e211]: ●
+                - link "Advertise" [ref=e212] [cursor=pointer]:
+                  - /url: /advertise
+          - listitem [ref=e213]:
+            - generic [ref=e214]:
+              - figure [ref=e215]:
+                - img "Video Editor App – Settings & Premium Subscription screen app design app monetization dark mode ui figma design iap in app purchase ios app ui mobile app design mobile ui paywall design pricing screen pro unlock ui product design settings screen subscription ui ui ux design user interface ux design video editor app" [ref=e216]
+              - link "View Video Editor App – Settings & Premium Subscription screen" [ref=e218] [cursor=pointer]:
+                - /url: /shots/26584288-Video-Editor-App-Settings-Premium-Subscription-screen
+                - generic: View Video Editor App – Settings & Premium Subscription screen
+              - generic:
+                - generic:
+                  - generic: Video Editor App – Settings & Premium Subscription screen
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e219] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e220]
+                    - button [ref=e222] [cursor=pointer]:
+                      - img [ref=e223]
+            - generic [ref=e225]:
+              - generic [ref=e226]:
+                - link "Creliq UX/UI Design Agency Creliq UX/UI Design Agency" [ref=e227] [cursor=pointer]:
+                  - /url: /Creliq
+                  - img "Creliq UX/UI Design Agency" [ref=e228]
+                  - generic [ref=e229]: Creliq UX/UI Design Agency
+                - link "Pro user" [ref=e231] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e232]: +
+              - generic [ref=e233]:
+                - generic [ref=e235]:
+                  - generic:
+                    - button [ref=e236] [cursor=pointer]:
+                      - img [ref=e237]
+                    - generic [ref=e239]: "61"
+                - generic [ref=e240]:
+                  - img [ref=e241]
+                  - generic [ref=e244]: 22.2k
+          - listitem [ref=e245]:
+            - generic [ref=e246]:
+              - figure [ref=e247]:
+                - img "Mobile App UI UX Design AI Horoscope App Subscription Paywall app design asol design astrology app dark ui figma first session growth design horoscope app ios app iosapp mobile app design mobile app ui mobile ui monetization ux onboarding paywall premium ui subscription tarot app uiuxdesign" [ref=e248]
+              - link "View Mobile App UI UX Design AI Horoscope App Subscription Paywall" [ref=e250] [cursor=pointer]:
+                - /url: /shots/26889647-Mobile-App-UI-UX-Design-AI-Horoscope-App-Subscription-Paywall
+                - generic: View Mobile App UI UX Design AI Horoscope App Subscription Paywall
+              - generic:
+                - generic:
+                  - generic: Mobile App UI UX Design AI Horoscope App Subscription Paywall
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e251] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e252]
+                    - button [ref=e254] [cursor=pointer]:
+                      - img [ref=e255]
+            - generic [ref=e257]:
+              - generic [ref=e258]:
+                - link "Anna (asol_design) Anna (asol_design)" [ref=e259] [cursor=pointer]:
+                  - /url: /asol_design
+                  - img "Anna (asol_design)" [ref=e260]
+                  - generic [ref=e261]: Anna (asol_design)
+                - link "Pro user" [ref=e263] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e264]:
+                - generic [ref=e266]:
+                  - generic:
+                    - button [ref=e267] [cursor=pointer]:
+                      - img [ref=e268]
+                    - generic [ref=e270]: "62"
+                - generic [ref=e271]:
+                  - img [ref=e272]
+                  - generic [ref=e275]: 17.8k
+          - listitem [ref=e276]:
+            - generic [ref=e277]:
+              - figure [ref=e278]:
+                - img "Fluento - Language Learning App UI Kit daily practice education education ui educational app flashcards app fluento grammar practice language app language learning language lessons learn languages quiz and tests quiz app study study app ui webnum" [ref=e279]
+              - link "View Fluento - Language Learning App UI Kit" [ref=e281] [cursor=pointer]:
+                - /url: /shots/26809915-Fluento-Language-Learning-App-UI-Kit
+                - generic: View Fluento - Language Learning App UI Kit
+              - generic:
+                - generic:
+                  - generic: Fluento - Language Learning App UI Kit
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e282] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e283]
+                    - button [ref=e285] [cursor=pointer]:
+                      - img [ref=e286]
+            - generic [ref=e288]:
+              - link "Webnum Webnum" [ref=e290] [cursor=pointer]:
+                - /url: /Webnum
+                - img "Webnum" [ref=e291]
+                - generic [ref=e292]: Webnum
+              - generic [ref=e293]:
+                - generic [ref=e295]:
+                  - generic:
+                    - button [ref=e296] [cursor=pointer]:
+                      - img [ref=e297]
+                    - generic [ref=e299]: "8"
+                - generic [ref=e300]:
+                  - img [ref=e301]
+                  - generic [ref=e304]: 10.1k
+          - listitem [ref=e305]:
+            - generic [ref=e306]:
+              - figure [ref=e307]:
+                - img "Premium Subscription – Dark Mode Paywall UI appmonetization cleanui darkmodeui figmadesign inapppurchase mobileappdesign paywall premiumscreen pricingdesign productdesign saasapp subscriptionui uxdesign" [ref=e308]
+              - link "View Premium Subscription – Dark Mode Paywall UI" [ref=e310] [cursor=pointer]:
+                - /url: /shots/25932734-Premium-Subscription-Dark-Mode-Paywall-UI
+                - generic: View Premium Subscription – Dark Mode Paywall UI
+              - generic:
+                - generic:
+                  - generic: Premium Subscription – Dark Mode Paywall UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e311] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e312]
+                    - button [ref=e314] [cursor=pointer]:
+                      - img [ref=e315]
+            - generic [ref=e317]:
+              - link "Muhammad Inam Muhammad Inam" [ref=e319] [cursor=pointer]:
+                - /url: /muhammadinam
+                - img "Muhammad Inam" [ref=e320]
+                - generic [ref=e321]: Muhammad Inam
+              - generic [ref=e322]:
+                - generic [ref=e324]:
+                  - generic:
+                    - button [ref=e325] [cursor=pointer]:
+                      - img [ref=e326]
+                    - generic [ref=e328]: "13"
+                - generic [ref=e329]:
+                  - img [ref=e330]
+                  - generic [ref=e333]: 8.1k
+          - listitem [ref=e334]:
+            - generic [ref=e335]:
+              - figure [ref=e336]:
+                - img "Subscription Paywalls for iOS Mood Tracker App - A/B Test Ready ab testing conversion rate habit tracking healthcare mobile app ios mental health app mobile app monetization mood tracker mvp payment paywall premium pricing page pricing plan product design subscription subscription funnel ui design wellness app" [ref=e337]
+              - generic [ref=e338]:
+                - img [ref=e340]
+                - link "Shot Link":
+                  - /url: /shots/27097054-Subscription-Paywalls-for-iOS-Mood-Tracker-App-A-B-Test-Ready
+                  - generic: Shot Link
+              - link "View Subscription Paywalls for iOS Mood Tracker App - A/B Test Ready" [ref=e343] [cursor=pointer]:
+                - /url: /shots/27097054-Subscription-Paywalls-for-iOS-Mood-Tracker-App-A-B-Test-Ready
+                - generic: View Subscription Paywalls for iOS Mood Tracker App - A/B Test Ready
+              - generic:
+                - generic:
+                  - generic: Subscription Paywalls for iOS Mood Tracker App - A/B Test Ready
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e344] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e345]
+                    - button [ref=e347] [cursor=pointer]:
+                      - img [ref=e348]
+            - generic [ref=e350]:
+              - link "Maria Shkrabo Maria Shkrabo" [ref=e352] [cursor=pointer]:
+                - /url: /mariashkrabo
+                - img "Maria Shkrabo" [ref=e353]
+                - generic [ref=e354]: Maria Shkrabo
+              - generic [ref=e355]:
+                - generic [ref=e357]:
+                  - generic:
+                    - button [ref=e358] [cursor=pointer]:
+                      - img [ref=e359]
+                    - generic [ref=e361]: "38"
+                - generic [ref=e362]:
+                  - img [ref=e363]
+                  - generic [ref=e366]: 3.9k
+          - listitem [ref=e367]:
+            - generic [ref=e368]:
+              - figure [ref=e369]:
+                - img "Best Paywall & Subscription UI for a sleep and meditation app app ui freemium model growth design light theme meditation app mobile app paywall mobile monetization mobile ui design paywall design paywall ux pink premium ui product design sleep app subscription app subscription ui violet white" [ref=e370]
+              - link "View Best Paywall & Subscription UI for a sleep and meditation app" [ref=e372] [cursor=pointer]:
+                - /url: /shots/27187074-Best-Paywall-Subscription-UI-for-a-sleep-and-meditation-app
+                - generic: View Best Paywall & Subscription UI for a sleep and meditation app
+              - generic:
+                - generic:
+                  - generic: Best Paywall & Subscription UI for a sleep and meditation app
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e373] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e374]
+                    - button [ref=e376] [cursor=pointer]:
+                      - img [ref=e377]
+            - generic [ref=e379]:
+              - generic [ref=e380]:
+                - link "Iryna Strazhevich Iryna Strazhevich" [ref=e381] [cursor=pointer]:
+                  - /url: /irynastrazhevich
+                  - img "Iryna Strazhevich" [ref=e382]
+                  - generic [ref=e383]: Iryna Strazhevich
+                - link "Pro user" [ref=e385] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e386]:
+                - generic [ref=e388]:
+                  - generic:
+                    - button [ref=e389] [cursor=pointer]:
+                      - img [ref=e390]
+                    - generic [ref=e392]: "1"
+                - generic [ref=e393]:
+                  - img [ref=e394]
+                  - generic [ref=e397]: 1.2k
+          - listitem [ref=e398]:
+            - generic [ref=e399]:
+              - figure [ref=e400]:
+                - img "abit Tracker Premium Paywall – Clean & Minimal Paywall Screen app interface app monetization clean ui habit tracker membership screen minimal design mobile app design mobile paywall modern ui paywall paywall design premium features premium screen pricing ui productivity app subscription ui ui design upgrade popup upgrade screen ux design" [ref=e401]
+              - link "View abit Tracker Premium Paywall – Clean & Minimal Paywall Screen" [ref=e403] [cursor=pointer]:
+                - /url: /shots/26822504-abit-Tracker-Premium-Paywall-Clean-Minimal-Paywall-Screen
+                - generic: View abit Tracker Premium Paywall – Clean & Minimal Paywall Screen
+              - generic:
+                - generic:
+                  - generic: abit Tracker Premium Paywall – Clean & Minimal Paywall Screen
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e404] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e405]
+                    - button [ref=e407] [cursor=pointer]:
+                      - img [ref=e408]
+            - generic [ref=e410]:
+              - link "Eren Koçak Eren Koçak" [ref=e412] [cursor=pointer]:
+                - /url: /erenkocak
+                - img "Eren Koçak" [ref=e413]
+                - generic [ref=e414]: Eren Koçak
+              - generic [ref=e415]:
+                - generic [ref=e417]:
+                  - generic:
+                    - button [ref=e418] [cursor=pointer]:
+                      - img [ref=e419]
+                    - generic [ref=e421]: "8"
+                - generic [ref=e422]:
+                  - img [ref=e423]
+                  - generic [ref=e426]: 4.8k
+          - listitem [ref=e427]:
+            - generic [ref=e428]:
+              - figure [ref=e429]:
+                - img "Brand Identity for Trading & Investment Analytics Platform analytical platform analytics analytics branding analytics identity analytics platform brand brand assets brand identity branding branding system data identity investment investment branding investment logo platform branding trading trading branding trading logo trading symbol" [ref=e430]
+              - link "View Brand Identity for Trading & Investment Analytics Platform" [ref=e431] [cursor=pointer]:
+                - /url: https://dribbble.com/shots/27193581-Brand-Identity-for-Trading-Investment-Analytics-Platform
+                - generic: View Brand Identity for Trading & Investment Analytics Platform
+              - generic:
+                - generic:
+                  - generic: Brand Identity for Trading & Investment Analytics Platform
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e432] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e433]
+                    - button [ref=e435] [cursor=pointer]:
+                      - img [ref=e436]
+            - generic [ref=e438]:
+              - link "Shakuro Shakuro" [ref=e440] [cursor=pointer]:
+                - /url: /shakuro
+                - img "Shakuro" [ref=e441]
+                - generic [ref=e442]: Shakuro
+              - generic [ref=e443]:
+                - link "Hide ads" [ref=e444] [cursor=pointer]:
+                  - /url: /pro
+                - generic [ref=e445]: ●
+                - link "Advertise" [ref=e446] [cursor=pointer]:
+                  - /url: /advertise
+          - listitem [ref=e447]:
+            - generic [ref=e448]:
+              - figure [ref=e449]:
+                - img "Premium Paywall · Dark Mode Astrology App app concept app monetization clean design dark mode ui editorial ui fintech ui ios app ui minimal ui mobile app mobile app design paywall design premium app design premium features product design saas design subscription screen ui ui design ux ux design" [ref=e450]
+              - link "View Premium Paywall · Dark Mode Astrology App" [ref=e452] [cursor=pointer]:
+                - /url: /shots/27025442-Premium-Paywall-Dark-Mode-Astrology-App
+                - generic: View Premium Paywall · Dark Mode Astrology App
+              - generic:
+                - generic:
+                  - generic: Premium Paywall · Dark Mode Astrology App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e453] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e454]
+                    - button [ref=e456] [cursor=pointer]:
+                      - img [ref=e457]
+            - generic [ref=e459]:
+              - generic [ref=e460]:
+                - link "Diana Larussa Diana Larussa" [ref=e461] [cursor=pointer]:
+                  - /url: /Larussa
+                  - img "Diana Larussa" [ref=e462]
+                  - generic [ref=e463]: Diana Larussa
+                - link "Pro user" [ref=e465] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e466]:
+                - generic [ref=e468]:
+                  - generic:
+                    - button [ref=e469] [cursor=pointer]:
+                      - img [ref=e470]
+                    - generic [ref=e472]: "3"
+                - generic [ref=e473]:
+                  - img [ref=e474]
+                  - generic [ref=e477]: 2.8k
+          - listitem [ref=e478]:
+            - generic [ref=e479]:
+              - figure [ref=e480]:
+                - 'img "Paywall Screen Mobile App Design: IOS UX/UI Designer appdesign appdevelopment appmonetization creativedesign digitalpayment inapppurchase interactiondesign iosdesign mobileappdesign mobileui monetization paymentgateway paymentscreen paywall screendesign subscription uianimation userexperience userinterface uxui" [ref=e481]'
+              - 'link "View Paywall Screen Mobile App Design: IOS UX/UI Designer" [ref=e483] [cursor=pointer]':
+                - /url: /shots/22485193-Paywall-Screen-Mobile-App-Design-IOS-UX-UI-Designer
+                - generic: "View Paywall Screen Mobile App Design: IOS UX/UI Designer"
+              - generic:
+                - generic:
+                  - generic: "Paywall Screen Mobile App Design: IOS UX/UI Designer"
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e484] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e485]
+                    - button [ref=e487] [cursor=pointer]:
+                      - img [ref=e488]
+            - generic [ref=e490]:
+              - generic [ref=e491]:
+                - link "Abell Vo ⌘ Abell Vo ⌘" [ref=e492] [cursor=pointer]:
+                  - /url: /abellvo
+                  - img "Abell Vo ⌘" [ref=e493]
+                  - generic [ref=e494]: Abell Vo ⌘
+                - link "Pro user" [ref=e496] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e497]:
+                - generic [ref=e499]:
+                  - generic:
+                    - button [ref=e500] [cursor=pointer]:
+                      - img [ref=e501]
+                    - generic [ref=e503]: "4"
+                - generic [ref=e504]:
+                  - img [ref=e505]
+                  - generic [ref=e508]: 4.6k
+          - listitem [ref=e509]:
+            - generic [ref=e510]:
+              - figure [ref=e511]:
+                - img "Paywall Design - Purchase Subscription add design ai app android app free trial ios app minimal mobile app monetization payment paywall premium pricing purchase saas subscription trial ui uidesign uiux ux" [ref=e512]
+              - link "View Paywall Design - Purchase Subscription" [ref=e514] [cursor=pointer]:
+                - /url: /shots/26852446-Paywall-Design-Purchase-Subscription
+                - generic: View Paywall Design - Purchase Subscription
+              - generic:
+                - generic:
+                  - generic: Paywall Design - Purchase Subscription
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e515] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e516]
+                    - button [ref=e518] [cursor=pointer]:
+                      - img [ref=e519]
+            - generic [ref=e521]:
+              - link "Manjurul Islam Manjurul Islam" [ref=e523] [cursor=pointer]:
+                - /url: /Sham33m
+                - img "Manjurul Islam" [ref=e524]
+                - generic [ref=e525]: Manjurul Islam
+              - generic [ref=e526]:
+                - generic [ref=e528]:
+                  - generic:
+                    - button [ref=e529] [cursor=pointer]:
+                      - img [ref=e530]
+                    - generic [ref=e532]: "21"
+                - generic [ref=e533]:
+                  - img [ref=e534]
+                  - generic [ref=e537]: 4.8k
+          - listitem [ref=e538]:
+            - generic [ref=e539]:
+              - figure [ref=e540]:
+                - img "Conversion-Optimized Paywall Redesign (Oxygen Tracker Health) app design conversion mobile app monetization paywall product design saas subscription ui design ux design" [ref=e541]
+              - link "View Conversion-Optimized Paywall Redesign (Oxygen Tracker Health)" [ref=e543] [cursor=pointer]:
+                - /url: /shots/27191695-Conversion-Optimized-Paywall-Redesign-Oxygen-Tracker-Health
+                - generic: View Conversion-Optimized Paywall Redesign (Oxygen Tracker Health)
+              - generic:
+                - generic:
+                  - generic: Conversion-Optimized Paywall Redesign (Oxygen Tracker Health)
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e544] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e545]
+                    - button [ref=e547] [cursor=pointer]:
+                      - img [ref=e548]
+            - generic [ref=e550]:
+              - link "YA Design YA Design" [ref=e552] [cursor=pointer]:
+                - /url: /pash_design
+                - img "YA Design" [ref=e553]
+                - generic [ref=e554]: YA Design
+              - generic [ref=e555]:
+                - generic [ref=e557]:
+                  - generic:
+                    - button [ref=e558] [cursor=pointer]:
+                      - img [ref=e559]
+                    - generic [ref=e561]: "1"
+                - generic [ref=e562]:
+                  - img [ref=e563]
+                  - generic [ref=e566]: "396"
+          - listitem [ref=e567]:
+            - generic [ref=e568]:
+              - figure [ref=e569]:
+                - img "Paywall Design ai app app design application dark figma interface ios iphone mobile mobile app design monetization paywall premium pricing product design subscription trial ui ux" [ref=e570]
+              - link "View Paywall Design" [ref=e572] [cursor=pointer]:
+                - /url: /shots/27092705-Paywall-Design
+                - generic: View Paywall Design
+              - generic:
+                - generic:
+                  - generic: Paywall Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e573] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e574]
+                    - button [ref=e576] [cursor=pointer]:
+                      - img [ref=e577]
+            - generic [ref=e579]:
+              - link "Michael N. Michael N." [ref=e581] [cursor=pointer]:
+                - /url: /mkare-design
+                - img "Michael N." [ref=e582]
+                - generic [ref=e583]: Michael N.
+              - generic [ref=e584]:
+                - generic [ref=e586]:
+                  - generic:
+                    - button [ref=e587] [cursor=pointer]:
+                      - img [ref=e588]
+                    - generic [ref=e590]: "1"
+                - generic [ref=e591]:
+                  - img [ref=e592]
+                  - generic [ref=e595]: 1.2k
+          - listitem [ref=e596]:
+            - generic [ref=e597]:
+              - figure [ref=e598]:
+                - img "News app - Short news - Tech news android app design article case study daily ui dark mode feed iphone journalism media app mobile news news app news paper news tech short news technews template ui website news" [ref=e599]
+              - link "View News app - Short news - Tech news" [ref=e601] [cursor=pointer]:
+                - /url: /shots/23719871-News-app-Short-news-Tech-news
+                - generic: View News app - Short news - Tech news
+              - generic:
+                - generic:
+                  - generic: News app - Short news - Tech news
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e602] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e603]
+                    - button [ref=e605] [cursor=pointer]:
+                      - img [ref=e606]
+            - generic [ref=e608]:
+              - generic [ref=e609]:
+                - link "Arjun A ✪ Arjun A ✪" [ref=e610] [cursor=pointer]:
+                  - /url: /arjunuiux
+                  - img "Arjun A ✪" [ref=e611]
+                  - generic [ref=e612]: Arjun A ✪
+                - link "Pro user" [ref=e614] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e615]:
+                - generic [ref=e617]:
+                  - generic:
+                    - button [ref=e618] [cursor=pointer]:
+                      - img [ref=e619]
+                    - generic [ref=e621]: "24"
+                - generic [ref=e622]:
+                  - img [ref=e623]
+                  - generic [ref=e626]: 28.1k
+          - listitem [ref=e627]:
+            - generic [ref=e628]:
+              - figure [ref=e629]:
+                - 'img "Paywalls UI Design #1 app app design free trial interface ios mobile monetization payment paywall paywalls premium prices pricing subscribe subscription trial ui upgrade ux" [ref=e630]'
+              - 'link "View Paywalls UI Design #1" [ref=e632] [cursor=pointer]':
+                - /url: /shots/25516782-Paywalls-UI-Design-1
+                - generic: "View Paywalls UI Design #1"
+              - generic:
+                - generic:
+                  - generic: "Paywalls UI Design #1"
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e633] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e634]
+                    - button [ref=e636] [cursor=pointer]:
+                      - img [ref=e637]
+            - generic [ref=e639]:
+              - link "Arina Dolzhikova Arina Dolzhikova" [ref=e641] [cursor=pointer]:
+                - /url: /ArinaD
+                - img "Arina Dolzhikova" [ref=e642]
+                - generic [ref=e643]: Arina Dolzhikova
+              - generic [ref=e644]:
+                - generic [ref=e646]:
+                  - generic:
+                    - button [ref=e647] [cursor=pointer]:
+                      - img [ref=e648]
+                    - generic [ref=e650]: "40"
+                - generic [ref=e651]:
+                  - img [ref=e652]
+                  - generic [ref=e655]: 11.8k
+          - listitem [ref=e656]:
+            - generic [ref=e657]:
+              - figure [ref=e658]:
+                - img "iOS Paywall UI app design campaign conversion ios marketing mobile ui monetization paywall promo subscription ui" [ref=e659]
+              - link "View iOS Paywall UI" [ref=e661] [cursor=pointer]:
+                - /url: /shots/26254936-iOS-Paywall-UI
+                - generic: View iOS Paywall UI
+              - generic:
+                - generic:
+                  - generic: iOS Paywall UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e662] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e663]
+                    - button [ref=e665] [cursor=pointer]:
+                      - img [ref=e666]
+            - generic [ref=e668]:
+              - link "Mari Chubina Mari Chubina" [ref=e670] [cursor=pointer]:
+                - /url: /design_awesome
+                - img "Mari Chubina" [ref=e671]
+                - generic [ref=e672]: Mari Chubina
+              - generic [ref=e673]:
+                - generic [ref=e675]:
+                  - generic:
+                    - button [ref=e676] [cursor=pointer]:
+                      - img [ref=e677]
+                    - generic [ref=e679]: "15"
+                - generic [ref=e680]:
+                  - img [ref=e681]
+                  - generic [ref=e684]: 5.9k
+          - listitem [ref=e685]:
+            - generic [ref=e686]:
+              - figure [ref=e687]:
+                - 'img "Paywalls UI Design #2 app app design free trial interface ios mobile monetization payment paywall paywalls premium price pricing subscribe subscription trial ui upgrade ux" [ref=e688]'
+              - 'link "View Paywalls UI Design #2" [ref=e690] [cursor=pointer]':
+                - /url: /shots/25516849-Paywalls-UI-Design-2
+                - generic: "View Paywalls UI Design #2"
+              - generic:
+                - generic:
+                  - generic: "Paywalls UI Design #2"
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e691] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e692]
+                    - button [ref=e694] [cursor=pointer]:
+                      - img [ref=e695]
+            - generic [ref=e697]:
+              - link "Arina Dolzhikova Arina Dolzhikova" [ref=e699] [cursor=pointer]:
+                - /url: /ArinaD
+                - img "Arina Dolzhikova" [ref=e700]
+                - generic [ref=e701]: Arina Dolzhikova
+              - generic [ref=e702]:
+                - generic [ref=e704]:
+                  - generic:
+                    - button [ref=e705] [cursor=pointer]:
+                      - img [ref=e706]
+                    - generic [ref=e708]: "29"
+                - generic [ref=e709]:
+                  - img [ref=e710]
+                  - generic [ref=e713]: 10.6k
+          - listitem [ref=e714]:
+            - generic [ref=e715]:
+              - figure [ref=e716]
+              - generic:
+                - generic:
+                  - img
+                  - generic: hellobonsai.com
+              - link "View Get more done with less effort, start your free trial" [ref=e717] [cursor=pointer]:
+                - /url: https://www.hellobonsai.com/partners/dribbble?fpr=dribbble
+                - generic: View Get more done with less effort, start your free trial
+              - generic:
+                - generic:
+                  - generic: Get more done with less effort, start your free trial
+            - generic [ref=e718]:
+              - link "Bonsai Bonsai" [ref=e720] [cursor=pointer]:
+                - /url: /hellobonsai-com
+                - img "Bonsai" [ref=e721]
+                - generic [ref=e722]: Bonsai
+              - generic [ref=e723]:
+                - link "Hide ads" [ref=e724] [cursor=pointer]:
+                  - /url: /pro
+                - generic [ref=e725]: ●
+                - link "Advertise" [ref=e726] [cursor=pointer]:
+                  - /url: /advertise
+          - listitem [ref=e727]:
+            - generic [ref=e728]:
+              - figure [ref=e729]:
+                - img "Monetizing an Anonymous Social Media App (Hood App) app design figma monetizing money product design social media app ui" [ref=e730]
+              - link "View Monetizing an Anonymous Social Media App (Hood App)" [ref=e732] [cursor=pointer]:
+                - /url: /shots/25415047-Monetizing-an-Anonymous-Social-Media-App-Hood-App
+                - generic: View Monetizing an Anonymous Social Media App (Hood App)
+              - generic:
+                - generic:
+                  - generic: Monetizing an Anonymous Social Media App (Hood App)
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e733] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e734]
+                    - button [ref=e736] [cursor=pointer]:
+                      - img [ref=e737]
+            - generic [ref=e739]:
+              - link "Sourav Srivastava Sourav Srivastava" [ref=e741] [cursor=pointer]:
+                - /url: /souravisuncool
+                - img "Sourav Srivastava" [ref=e742]
+                - generic [ref=e743]: Sourav Srivastava
+              - generic [ref=e744]:
+                - generic [ref=e746]:
+                  - generic:
+                    - button [ref=e747] [cursor=pointer]:
+                      - img [ref=e748]
+                    - generic [ref=e750]: "18"
+                - generic [ref=e751]:
+                  - img [ref=e752]
+                  - generic [ref=e755]: 33.2k
+          - listitem [ref=e756]:
+            - generic [ref=e757]:
+              - figure [ref=e758]:
+                - img "MentorAI Paywall Screen - Gateway to Growth ai colorful freemium gamification gamified gradient mentor mobile mobile app monetization motivation options packages payment paywall premium pricing trial ui ux" [ref=e759]
+              - link "View MentorAI Paywall Screen - Gateway to Growth" [ref=e761] [cursor=pointer]:
+                - /url: /shots/23117673-MentorAI-Paywall-Screen-Gateway-to-Growth
+                - generic: View MentorAI Paywall Screen - Gateway to Growth
+              - generic:
+                - generic:
+                  - generic: MentorAI Paywall Screen - Gateway to Growth
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e762] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e763]
+                    - button [ref=e765] [cursor=pointer]:
+                      - img [ref=e766]
+            - generic [ref=e768]:
+              - link "App Genie App Genie" [ref=e770] [cursor=pointer]:
+                - /url: /appg
+                - img "App Genie" [ref=e771]
+                - generic [ref=e772]: App Genie
+              - generic [ref=e773]:
+                - generic [ref=e775]:
+                  - generic:
+                    - button [ref=e776] [cursor=pointer]:
+                      - img [ref=e777]
+                    - generic [ref=e779]: "39"
+                - generic [ref=e780]:
+                  - img [ref=e781]
+                  - generic [ref=e784]: 23.5k
+          - listitem [ref=e785]:
+            - generic [ref=e786]:
+              - figure [ref=e787]:
+                - img "Paywall Collection v2.0 android app auto layout digital product free ios membership monetization paywall purchase responsive saas subscription" [ref=e788]
+              - link "View Paywall Collection v2.0" [ref=e790] [cursor=pointer]:
+                - /url: /shots/25665959-Paywall-Collection-v2-0
+                - generic: View Paywall Collection v2.0
+              - generic:
+                - generic:
+                  - generic: Paywall Collection v2.0
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e791] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e792]
+                    - button [ref=e794] [cursor=pointer]:
+                      - img [ref=e795]
+            - generic [ref=e797]:
+              - link "Phoneix Phoneix" [ref=e799] [cursor=pointer]:
+                - /url: /phoneixdesign
+                - img "Phoneix" [ref=e800]
+                - generic [ref=e801]: Phoneix
+              - generic [ref=e802]:
+                - generic [ref=e804]:
+                  - generic:
+                    - button [ref=e805] [cursor=pointer]:
+                      - img [ref=e806]
+                    - generic [ref=e808]: "3"
+                - generic [ref=e809]:
+                  - img [ref=e810]
+                  - generic [ref=e813]: 5.5k
+          - listitem [ref=e814]:
+            - generic [ref=e815]:
+              - figure [ref=e816]:
+                - img "Paywall & Free Trial UI Design app free trial ios mobile mobile app monetization payment paywall paywalls premium pricing subscribe subscription trial ui upgrade user interface ux" [ref=e817]
+              - link "View Paywall & Free Trial UI Design" [ref=e819] [cursor=pointer]:
+                - /url: /shots/24117857-Paywall-Free-Trial-UI-Design
+                - generic: View Paywall & Free Trial UI Design
+              - generic:
+                - generic:
+                  - generic: Paywall & Free Trial UI Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e820] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e821]
+                    - button [ref=e823] [cursor=pointer]:
+                      - img [ref=e824]
+            - generic [ref=e826]:
+              - link "Arina Dolzhikova Arina Dolzhikova" [ref=e828] [cursor=pointer]:
+                - /url: /ArinaD
+                - img "Arina Dolzhikova" [ref=e829]
+                - generic [ref=e830]: Arina Dolzhikova
+              - generic [ref=e831]:
+                - generic [ref=e833]:
+                  - generic:
+                    - button [ref=e834] [cursor=pointer]:
+                      - img [ref=e835]
+                    - generic [ref=e837]: "48"
+                - generic [ref=e838]:
+                  - img [ref=e839]
+                  - generic [ref=e842]: 14.6k
+          - listitem [ref=e843]:
+            - generic [ref=e844]:
+              - figure [ref=e845]:
+                - img "Fanverse – Creator Subscription App UI contentcreatorapp creatorplatform fanbaseapp figmadesign iosdesign mobileappdesign monetizationplatform of onlyfans premiumcontent subscriptionapp userinterface" [ref=e846]
+              - link "View Fanverse – Creator Subscription App UI" [ref=e848] [cursor=pointer]:
+                - /url: /shots/25934003-Fanverse-Creator-Subscription-App-UI
+                - generic: View Fanverse – Creator Subscription App UI
+              - generic:
+                - generic:
+                  - generic: Fanverse – Creator Subscription App UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e849] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e850]
+                    - button [ref=e852] [cursor=pointer]:
+                      - img [ref=e853]
+            - generic [ref=e855]:
+              - link "Sara Tahir Sara Tahir" [ref=e857] [cursor=pointer]:
+                - /url: /saratahir3
+                - img "Sara Tahir" [ref=e858]
+                - generic [ref=e859]: Sara Tahir
+              - generic [ref=e860]:
+                - generic [ref=e862]:
+                  - generic:
+                    - button [ref=e863] [cursor=pointer]:
+                      - img [ref=e864]
+                    - generic [ref=e866]: "2"
+                - generic [ref=e867]:
+                  - img [ref=e868]
+                  - generic [ref=e871]: 1.8k
+          - listitem [ref=e872]:
+            - generic [ref=e873]:
+              - figure [ref=e874]:
+                - img "Paywall Design - SaaS app design bento grid checkout conversion rate dark mode figma landing page mobile ui monetization paywall premium pricing pricing table saas subscription ui user experience user interface ux web design" [ref=e875]
+              - link "View Paywall Design - SaaS" [ref=e877] [cursor=pointer]:
+                - /url: /shots/27092015-Paywall-Design-SaaS
+                - generic: View Paywall Design - SaaS
+              - generic:
+                - generic:
+                  - generic: Paywall Design - SaaS
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e878] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e879]
+                    - button [ref=e881] [cursor=pointer]:
+                      - img [ref=e882]
+            - generic [ref=e884]:
+              - generic [ref=e885]:
+                - link "Umair Shoukat Umair Shoukat" [ref=e886] [cursor=pointer]:
+                  - /url: /Umairshoukat1
+                  - img "Umair Shoukat" [ref=e887]
+                  - generic [ref=e888]: Umair Shoukat
+                - link "Pro user" [ref=e890] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e891]:
+                - generic [ref=e893]:
+                  - generic:
+                    - button [ref=e894] [cursor=pointer]:
+                      - img [ref=e895]
+                    - generic [ref=e897]: "1"
+                - generic [ref=e898]:
+                  - img [ref=e899]
+                  - generic [ref=e902]: "631"
+          - listitem [ref=e903]:
+            - generic [ref=e904]:
+              - figure [ref=e905]:
+                - img "Paywall Design - SAAS app design bento grid checkout conversion rate dark mode figma landing page mobile ui monetization paywall premium pricing pricing table saas subscription ui user experience user interface ux web design" [ref=e906]
+              - link "View Paywall Design - SAAS" [ref=e908] [cursor=pointer]:
+                - /url: /shots/27091977-Paywall-Design-SAAS
+                - generic: View Paywall Design - SAAS
+              - generic:
+                - generic:
+                  - generic: Paywall Design - SAAS
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e909] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e910]
+                    - button [ref=e912] [cursor=pointer]:
+                      - img [ref=e913]
+            - generic [ref=e915]:
+              - generic [ref=e916]:
+                - link "Umair Shoukat Umair Shoukat" [ref=e917] [cursor=pointer]:
+                  - /url: /Umairshoukat1
+                  - img "Umair Shoukat" [ref=e918]
+                  - generic [ref=e919]: Umair Shoukat
+                - link "Pro user" [ref=e921] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e922]:
+                - generic [ref=e924]:
+                  - generic:
+                    - button [ref=e925] [cursor=pointer]:
+                      - img [ref=e926]
+                    - generic [ref=e928]: "1"
+                - generic [ref=e929]:
+                  - img [ref=e930]
+                  - generic [ref=e933]: "617"
+          - listitem [ref=e934]:
+            - generic [ref=e935]:
+              - figure [ref=e936]:
+                - 'img "Paywall design #3 - Focus animation app design graphic design illustration mobile app monetization paywall popup pricing product design subscription ui ux vector" [ref=e937]'
+              - generic [ref=e938]:
+                - img [ref=e940]
+                - link "Shot Link":
+                  - /url: /shots/26804293-Paywall-design-3-Focus
+                  - generic: Shot Link
+              - 'link "View Paywall design #3 - Focus" [ref=e943] [cursor=pointer]':
+                - /url: /shots/26804293-Paywall-design-3-Focus
+                - generic: "View Paywall design #3 - Focus"
+              - generic:
+                - generic:
+                  - generic: "Paywall design #3 - Focus"
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e944] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e945]
+                    - button [ref=e947] [cursor=pointer]:
+                      - img [ref=e948]
+            - generic [ref=e950]:
+              - link "Maite Maite" [ref=e952] [cursor=pointer]:
+                - /url: /Maitest
+                - img "Maite" [ref=e953]
+                - generic [ref=e954]: Maite
+              - generic [ref=e955]:
+                - generic [ref=e957]:
+                  - generic:
+                    - button [ref=e958] [cursor=pointer]:
+                      - img [ref=e959]
+                    - generic [ref=e961]: "0"
+                - generic [ref=e962]:
+                  - img [ref=e963]
+                  - generic [ref=e966]: 1k
+          - listitem [ref=e967]:
+            - generic [ref=e968]:
+              - figure [ref=e969]:
+                - img "Deliver projects" [ref=e970]
+              - generic:
+                - generic:
+                  - img
+                  - generic: hellobonsai.com
+              - link "View Deliver projects" [ref=e971] [cursor=pointer]:
+                - /url: https://www.hellobonsai.com/partners/dribbble?fpr=dribbble
+                - generic: View Deliver projects
+              - generic:
+                - generic:
+                  - generic: Bonsai takes the stress out of running your agency. Start free today!
+            - generic [ref=e972]:
+              - link "Bonsai Bonsai" [ref=e974] [cursor=pointer]:
+                - /url: /hellobonsai-com
+                - img "Bonsai" [ref=e975]
+                - generic [ref=e976]: Bonsai
+              - generic [ref=e977]:
+                - link "Hide ads" [ref=e978] [cursor=pointer]:
+                  - /url: /pro
+                - generic [ref=e979]: ●
+                - link "Advertise" [ref=e980] [cursor=pointer]:
+                  - /url: /advertise
+          - listitem [ref=e981]:
+            - generic [ref=e982]:
+              - figure [ref=e983]:
+                - img "Paywalls Design Samples mobile app design monetization paywall design paywalls product design ui ui design ux ux design" [ref=e984]
+              - link "View Paywalls Design Samples" [ref=e986] [cursor=pointer]:
+                - /url: /shots/21252896-Paywalls-Design-Samples
+                - generic: View Paywalls Design Samples
+              - generic:
+                - generic:
+                  - generic: Paywalls Design Samples
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e987] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e988]
+                    - button [ref=e990] [cursor=pointer]:
+                      - img [ref=e991]
+            - generic [ref=e993]:
+              - generic [ref=e994]:
+                - link "Konstantinos Anastasiou Konstantinos Anastasiou" [ref=e995] [cursor=pointer]:
+                  - /url: /anastako
+                  - img "Konstantinos Anastasiou" [ref=e996]
+                  - generic [ref=e997]: Konstantinos Anastasiou
+                - link "Pro user" [ref=e999] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1000]:
+                - generic [ref=e1002]:
+                  - generic:
+                    - button [ref=e1003] [cursor=pointer]:
+                      - img [ref=e1004]
+                    - generic [ref=e1006]: "4"
+                - generic [ref=e1007]:
+                  - img [ref=e1008]
+                  - generic [ref=e1011]: 8.9k
+          - listitem [ref=e1012]:
+            - generic [ref=e1013]:
+              - figure [ref=e1014]:
+                - img "Authenticator App Paywall - Subscription Screen 2fa app app store apple authenticator free trial iphone paywall premium recovery screen security subscription subscription screen yearly plan" [ref=e1015]
+              - link "View Authenticator App Paywall - Subscription Screen" [ref=e1017] [cursor=pointer]:
+                - /url: /shots/24979235-Authenticator-App-Paywall-Subscription-Screen
+                - generic: View Authenticator App Paywall - Subscription Screen
+              - generic:
+                - generic:
+                  - generic: Authenticator App Paywall - Subscription Screen
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1018] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1019]
+                    - button [ref=e1021] [cursor=pointer]:
+                      - img [ref=e1022]
+            - generic [ref=e1024]:
+              - link "Aries Ikel Aries Ikel" [ref=e1026] [cursor=pointer]:
+                - /url: /i40504
+                - img "Aries Ikel" [ref=e1027]
+                - generic [ref=e1028]: Aries Ikel
+              - generic [ref=e1029]:
+                - generic [ref=e1031]:
+                  - generic:
+                    - button [ref=e1032] [cursor=pointer]:
+                      - img [ref=e1033]
+                    - generic [ref=e1035]: "31"
+                - generic [ref=e1036]:
+                  - img [ref=e1037]
+                  - generic [ref=e1040]: 20.4k
+          - listitem [ref=e1041]:
+            - generic [ref=e1042]:
+              - figure [ref=e1043]:
+                - img "App paywall page with subscription options app design brand design daily ui dailyui product design ui design ux design" [ref=e1044]
+              - link "View App paywall page with subscription options" [ref=e1046] [cursor=pointer]:
+                - /url: /shots/23584775-App-paywall-page-with-subscription-options
+                - generic: View App paywall page with subscription options
+              - generic:
+                - generic:
+                  - generic: App paywall page with subscription options
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1047] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1048]
+                    - button [ref=e1050] [cursor=pointer]:
+                      - img [ref=e1051]
+            - generic [ref=e1053]:
+              - link "Ayush Singh Ayush Singh" [ref=e1055] [cursor=pointer]:
+                - /url: /ayush-singh
+                - img "Ayush Singh" [ref=e1056]
+                - generic [ref=e1057]: Ayush Singh
+              - generic [ref=e1058]:
+                - generic [ref=e1060]:
+                  - generic:
+                    - button [ref=e1061] [cursor=pointer]:
+                      - img [ref=e1062]
+                    - generic [ref=e1064]: "0"
+                - generic [ref=e1065]:
+                  - img [ref=e1066]
+                  - generic [ref=e1069]: 1.3k
+          - listitem [ref=e1070]:
+            - generic [ref=e1071]:
+              - figure [ref=e1072]:
+                - img "Premium AI App Subscription & Settings UI 3d robot ui ai app app app design credit system glassmorphism ios mobile mobile app paywall paywall design premium app pricing screen settings screen subscription subscription flow subscription ui ui" [ref=e1073]
+              - link "View Premium AI App Subscription & Settings UI" [ref=e1075] [cursor=pointer]:
+                - /url: /shots/26868389-Premium-AI-App-Subscription-Settings-UI
+                - generic: View Premium AI App Subscription & Settings UI
+              - generic:
+                - generic:
+                  - generic: Premium AI App Subscription & Settings UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1076] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1077]
+                    - button [ref=e1079] [cursor=pointer]:
+                      - img [ref=e1080]
+            - generic [ref=e1082]:
+              - generic [ref=e1083]:
+                - link "Kites Design Kites Design" [ref=e1084] [cursor=pointer]:
+                  - /url: /kitesdesign
+                  - img "Kites Design" [ref=e1085]
+                  - generic [ref=e1086]: Kites Design
+                - link "Pro user" [ref=e1088] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1089]:
+                - generic [ref=e1091]:
+                  - generic:
+                    - button [ref=e1092] [cursor=pointer]:
+                      - img [ref=e1093]
+                    - generic [ref=e1095]: "173"
+                - generic [ref=e1096]:
+                  - img [ref=e1097]
+                  - generic [ref=e1100]: 24.6k
+          - listitem [ref=e1101]:
+            - generic [ref=e1102]:
+              - figure [ref=e1103]:
+                - img "Live Streaming App Mobile Design 🎥 best app development firm best ui design company custom app development company hire dedicated developers live streaming app design mobile app design mobile app development agency mobile app development company ui design company ui ux app design ux design company" [ref=e1104]
+              - link "View Live Streaming App Mobile Design 🎥" [ref=e1106] [cursor=pointer]:
+                - /url: /shots/25535492-Live-Streaming-App-Mobile-Design
+                - generic: View Live Streaming App Mobile Design 🎥
+              - generic:
+                - generic:
+                  - generic: Live Streaming App Mobile Design 🎥
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1107] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1108]
+                    - button [ref=e1110] [cursor=pointer]:
+                      - img [ref=e1111]
+            - generic [ref=e1113]:
+              - link "Glasier Inc.⭐ Glasier Inc.⭐" [ref=e1115] [cursor=pointer]:
+                - /url: /glasierinc
+                - img "Glasier Inc.⭐" [ref=e1116]
+                - generic [ref=e1117]: Glasier Inc.⭐
+              - generic [ref=e1118]:
+                - generic [ref=e1120]:
+                  - generic:
+                    - button [ref=e1121] [cursor=pointer]:
+                      - img [ref=e1122]
+                    - generic [ref=e1124]: "2"
+                - generic [ref=e1125]:
+                  - img [ref=e1126]
+                  - generic [ref=e1129]: 1.6k
+          - listitem [ref=e1130]:
+            - generic [ref=e1131]:
+              - figure [ref=e1132]:
+                - img "Planner App — Mobile UI Design, Mascot, Paywall, Subscription app branding design ios logo mascot mobile paywall subscription ui ui design uiux ux ux design uxui" [ref=e1133]
+              - link "View Planner App — Mobile UI Design, Mascot, Paywall, Subscription" [ref=e1135] [cursor=pointer]:
+                - /url: /shots/26200231-Planner-App-Mobile-UI-Design-Mascot-Paywall-Subscription
+                - generic: View Planner App — Mobile UI Design, Mascot, Paywall, Subscription
+              - generic:
+                - generic:
+                  - generic: Planner App — Mobile UI Design, Mascot, Paywall, Subscription
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1136] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1137]
+                    - button [ref=e1139] [cursor=pointer]:
+                      - img [ref=e1140]
+            - generic [ref=e1142]:
+              - link "Natalie Usevych 🇺🇦 Natalie Usevych 🇺🇦" [ref=e1144] [cursor=pointer]:
+                - /url: /natalieusevych
+                - img "Natalie Usevych 🇺🇦" [ref=e1145]
+                - generic [ref=e1146]: Natalie Usevych 🇺🇦
+              - generic [ref=e1147]:
+                - generic [ref=e1149]:
+                  - generic:
+                    - button [ref=e1150] [cursor=pointer]:
+                      - img [ref=e1151]
+                    - generic [ref=e1153]: "14"
+                - generic [ref=e1154]:
+                  - img [ref=e1155]
+                  - generic [ref=e1158]: 7.9k
+          - listitem [ref=e1159]:
+            - generic [ref=e1160]:
+              - figure [ref=e1161]:
+                - img "Subscription Paywall UI – Mobile App app design dark ui figma mobile design paywell product design subscription ui ui design ux design" [ref=e1162]
+              - link "View Subscription Paywall UI – Mobile App" [ref=e1164] [cursor=pointer]:
+                - /url: /shots/27197518-Subscription-Paywall-UI-Mobile-App
+                - generic: View Subscription Paywall UI – Mobile App
+              - generic:
+                - generic:
+                  - generic: Subscription Paywall UI – Mobile App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1165] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1166]
+                    - button [ref=e1168] [cursor=pointer]:
+                      - img [ref=e1169]
+            - generic [ref=e1171]:
+              - link "Kavita Rana Kavita Rana" [ref=e1173] [cursor=pointer]:
+                - /url: /kaviii0506
+                - img "Kavita Rana" [ref=e1174]
+                - generic [ref=e1175]: Kavita Rana
+              - generic [ref=e1176]:
+                - generic [ref=e1178]:
+                  - generic:
+                    - button [ref=e1179] [cursor=pointer]:
+                      - img [ref=e1180]
+                    - generic [ref=e1182]: "0"
+                - generic [ref=e1183]:
+                  - img [ref=e1184]
+                  - generic [ref=e1187]: "248"
+          - listitem [ref=e1188]:
+            - generic [ref=e1189]:
+              - figure [ref=e1190]:
+                - img "Fitness App Development | Strivemindz fitness app fitness app development hire mobile app developers mobile app development mobile application uiux design" [ref=e1191]
+              - link "View Fitness App Development | Strivemindz" [ref=e1193] [cursor=pointer]:
+                - /url: /shots/24384008-Fitness-App-Development-Strivemindz
+                - generic: View Fitness App Development | Strivemindz
+              - generic:
+                - generic:
+                  - generic: Fitness App Development | Strivemindz
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1194] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1195]
+                    - button [ref=e1197] [cursor=pointer]:
+                      - img [ref=e1198]
+            - generic [ref=e1200]:
+              - link "strivemindz strivemindz" [ref=e1202] [cursor=pointer]:
+                - /url: /strivemindz
+                - img "strivemindz" [ref=e1203]
+                - generic [ref=e1204]: strivemindz
+              - generic [ref=e1205]:
+                - generic [ref=e1207]:
+                  - generic:
+                    - button [ref=e1208] [cursor=pointer]:
+                      - img [ref=e1209]
+                    - generic [ref=e1211]: "4"
+                - generic [ref=e1212]:
+                  - img [ref=e1213]
+                  - generic [ref=e1216]: 6.8k
+          - listitem [ref=e1217]:
+            - generic [ref=e1218]:
+              - figure [ref=e1219]:
+                - img "ZEE5- Video Streaming Platform app design app developers software development company ui video streaming app" [ref=e1220]
+              - link "View ZEE5- Video Streaming Platform" [ref=e1222] [cursor=pointer]:
+                - /url: /shots/26377063-ZEE5-Video-Streaming-Platform
+                - generic: View ZEE5- Video Streaming Platform
+              - generic:
+                - generic:
+                  - generic: ZEE5- Video Streaming Platform
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1223] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1224]
+                    - button [ref=e1226] [cursor=pointer]:
+                      - img [ref=e1227]
+            - generic [ref=e1229]:
+              - link "Octal IT Solution Octal IT Solution" [ref=e1231] [cursor=pointer]:
+                - /url: /octalitsolution
+                - img "Octal IT Solution" [ref=e1232]
+                - generic [ref=e1233]: Octal IT Solution
+              - generic [ref=e1234]:
+                - generic [ref=e1236]:
+                  - generic:
+                    - button [ref=e1237] [cursor=pointer]:
+                      - img [ref=e1238]
+                    - generic [ref=e1240]: "2"
+                - generic [ref=e1241]:
+                  - img [ref=e1242]
+                  - generic [ref=e1245]: 3.6k
+          - listitem [ref=e1246]:
+            - generic [ref=e1247]:
+              - figure [ref=e1248]:
+                - img "Premium Subscription Paywall UI - IOS Keyboard App ai keyboard ai writing app design custom keyboard emojis fonts ios app keyboard app mobile app paywall premium pricing smart keyboard stickers subscription text input typography ui design ux design writing tools" [ref=e1249]
+              - link "View Premium Subscription Paywall UI - IOS Keyboard App" [ref=e1251] [cursor=pointer]:
+                - /url: /shots/27008074-Premium-Subscription-Paywall-UI-IOS-Keyboard-App
+                - generic: View Premium Subscription Paywall UI - IOS Keyboard App
+              - generic:
+                - generic:
+                  - generic: Premium Subscription Paywall UI - IOS Keyboard App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1252] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1253]
+                    - button [ref=e1255] [cursor=pointer]:
+                      - img [ref=e1256]
+            - generic [ref=e1258]:
+              - generic [ref=e1259]:
+                - link "Mohammad Ali Mohammad Ali" [ref=e1260] [cursor=pointer]:
+                  - /url: /mohammadali11211
+                  - img "Mohammad Ali" [ref=e1261]
+                  - generic [ref=e1262]: Mohammad Ali
+                - link "Pro user" [ref=e1264] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1265]:
+                - generic [ref=e1267]:
+                  - generic:
+                    - button [ref=e1268] [cursor=pointer]:
+                      - img [ref=e1269]
+                    - generic [ref=e1271]: "90"
+                - generic [ref=e1272]:
+                  - img [ref=e1273]
+                  - generic [ref=e1276]: 6.7k
+          - listitem [ref=e1277]:
+            - generic [ref=e1278]:
+              - figure [ref=e1279]:
+                - img "Fintech Mobile App UI – Subscription Flow, Paywall call to action choose a plan cta finance finance app finance mobile app fintech gradients mobile app paywall plan plan selection subscription subscription flow ui ux" [ref=e1280]
+              - link "View Fintech Mobile App UI – Subscription Flow, Paywall" [ref=e1282] [cursor=pointer]:
+                - /url: /shots/25929295-Fintech-Mobile-App-UI-Subscription-Flow-Paywall
+                - generic: View Fintech Mobile App UI – Subscription Flow, Paywall
+              - generic:
+                - generic:
+                  - generic: Fintech Mobile App UI – Subscription Flow, Paywall
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1283] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1284]
+                    - button [ref=e1286] [cursor=pointer]:
+                      - img [ref=e1287]
+            - generic [ref=e1289]:
+              - generic [ref=e1290]:
+                - link "Diana Larussa Diana Larussa" [ref=e1291] [cursor=pointer]:
+                  - /url: /Larussa
+                  - img "Diana Larussa" [ref=e1292]
+                  - generic [ref=e1293]: Diana Larussa
+                - link "Pro user" [ref=e1295] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1296]:
+                - generic [ref=e1298]:
+                  - generic:
+                    - button [ref=e1299] [cursor=pointer]:
+                      - img [ref=e1300]
+                    - generic [ref=e1302]: "2"
+                - generic [ref=e1303]:
+                  - img [ref=e1304]
+                  - generic [ref=e1307]: 9.1k
+          - listitem [ref=e1308]:
+            - generic [ref=e1309]:
+              - figure [ref=e1310]:
+                - img "Sylora — A Real, Shipped AI-Powered Styling App ai app fashion tech ios mobile app product design react native saas startup ui ux design" [ref=e1311]
+              - generic [ref=e1312]:
+                - img [ref=e1314]
+                - link "Shot Link":
+                  - /url: /shots/27059956-Sylora-A-Real-Shipped-AI-Powered-Styling-App
+                  - generic: Shot Link
+              - link "View Sylora — A Real, Shipped AI-Powered Styling App" [ref=e1317] [cursor=pointer]:
+                - /url: /shots/27059956-Sylora-A-Real-Shipped-AI-Powered-Styling-App
+                - generic: View Sylora — A Real, Shipped AI-Powered Styling App
+              - generic:
+                - generic:
+                  - generic: Sylora — A Real, Shipped AI-Powered Styling App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1318] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1319]
+                    - button [ref=e1321] [cursor=pointer]:
+                      - img [ref=e1322]
+            - generic [ref=e1324]:
+              - link "Gizem Sayar Gizem Sayar" [ref=e1326] [cursor=pointer]:
+                - /url: /gizem-sayar
+                - img "Gizem Sayar" [ref=e1327]
+                - generic [ref=e1328]: Gizem Sayar
+              - generic [ref=e1329]:
+                - generic [ref=e1331]:
+                  - generic:
+                    - button [ref=e1332] [cursor=pointer]:
+                      - img [ref=e1333]
+                    - generic [ref=e1335]: "1"
+                - generic [ref=e1336]:
+                  - img [ref=e1337]
+                  - generic [ref=e1340]: "950"
+          - listitem [ref=e1341]:
+            - generic [ref=e1342]:
+              - figure [ref=e1343]:
+                - img "Subscription UI Design | Pricing & Paywall Mobile App appdesign designinspiration dribbble figma mobileappdesign paywall pricingpage productdesign saasdesign subscriptiondesign uidesign uiux uxdesign uxui" [ref=e1344]
+              - link "View Subscription UI Design | Pricing & Paywall Mobile App" [ref=e1346] [cursor=pointer]:
+                - /url: /shots/27223016-Subscription-UI-Design-Pricing-Paywall-Mobile-App
+                - generic: View Subscription UI Design | Pricing & Paywall Mobile App
+              - generic:
+                - generic:
+                  - generic: Subscription UI Design | Pricing & Paywall Mobile App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1347] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1348]
+                    - button [ref=e1350] [cursor=pointer]:
+                      - img [ref=e1351]
+            - generic [ref=e1353]:
+              - link "Nirjona Akter Nirjona Akter" [ref=e1355] [cursor=pointer]:
+                - /url: /nirjonaakter96
+                - img "Nirjona Akter" [ref=e1356]
+                - generic [ref=e1357]: Nirjona Akter
+              - generic [ref=e1358]:
+                - generic [ref=e1360]:
+                  - generic:
+                    - button [ref=e1361] [cursor=pointer]:
+                      - img [ref=e1362]
+                    - generic [ref=e1364]: "2"
+                - generic [ref=e1365]:
+                  - img [ref=e1366]
+                  - generic [ref=e1369]: "365"
+          - listitem [ref=e1370]:
+            - generic [ref=e1371]:
+              - figure [ref=e1372]:
+                - img "Paywall & Subscription UI from Clearful iOS App graphic design ui" [ref=e1373]
+              - link "View Paywall & Subscription UI from Clearful iOS App" [ref=e1375] [cursor=pointer]:
+                - /url: /shots/26403248-Paywall-Subscription-UI-from-Clearful-iOS-App
+                - generic: View Paywall & Subscription UI from Clearful iOS App
+              - generic:
+                - generic:
+                  - generic: Paywall & Subscription UI from Clearful iOS App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1376] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1377]
+                    - button [ref=e1379] [cursor=pointer]:
+                      - img [ref=e1380]
+            - generic [ref=e1382]:
+              - link "Momin Sheikh Momin Sheikh" [ref=e1384] [cursor=pointer]:
+                - /url: /momin-sheikh
+                - img "Momin Sheikh" [ref=e1385]
+                - generic [ref=e1386]: Momin Sheikh
+              - generic [ref=e1387]:
+                - generic [ref=e1389]:
+                  - generic:
+                    - button [ref=e1390] [cursor=pointer]:
+                      - img [ref=e1391]
+                    - generic [ref=e1393]: "1"
+                - generic [ref=e1394]:
+                  - img [ref=e1395]
+                  - generic [ref=e1398]: 1.9k
+          - listitem [ref=e1399]:
+            - generic [ref=e1400]:
+              - figure [ref=e1401]:
+                - img "Podcasts - Mobile App Concept agency app design audiobooks concept dark design dark ui episodes figma app design figma design focotik media player podcast podcast app radio sound spotify track ui ux" [ref=e1402]
+              - link "View Podcasts - Mobile App Concept" [ref=e1404] [cursor=pointer]:
+                - /url: /shots/24820021-Podcasts-Mobile-App-Concept
+                - generic: View Podcasts - Mobile App Concept
+              - generic:
+                - generic:
+                  - generic: Podcasts - Mobile App Concept
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1405] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1406]
+                    - button [ref=e1408] [cursor=pointer]:
+                      - img [ref=e1409]
+            - generic [ref=e1411]:
+              - generic [ref=e1412]:
+                - link "FocoTik FocoTik" [ref=e1413] [cursor=pointer]:
+                  - /url: /focotikagency
+                  - img "FocoTik" [ref=e1414]
+                  - generic [ref=e1415]: FocoTik
+                - link "Pro user" [ref=e1417] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e1418]: +
+              - generic [ref=e1419]:
+                - generic [ref=e1421]:
+                  - generic:
+                    - button [ref=e1422] [cursor=pointer]:
+                      - img [ref=e1423]
+                    - generic [ref=e1425]: "98"
+                - generic [ref=e1426]:
+                  - img [ref=e1427]
+                  - generic [ref=e1430]: 15.8k
+        - link "Sign up to continue" [ref=e1432] [cursor=pointer]:
+          - /url: /signups/new
+        - link "Back to top" [ref=e1575] [cursor=pointer]:
+          - /url: "#"
+          - img "Back to top" [ref=e1576]
+  - contentinfo [ref=e1433]:
+    - generic [ref=e1436]:
+      - link "Print Print" [ref=e1437] [cursor=pointer]:
+        - /url: /shots/popular/print
+        - img "Print" [ref=e1440]
+        - generic [ref=e1441]: Print
+      - link "Branding Branding" [ref=e1442] [cursor=pointer]:
+        - /url: /shots/popular/branding
+        - img "Branding" [ref=e1445]
+        - generic [ref=e1446]: Branding
+      - link "Illustration Illustration" [ref=e1447] [cursor=pointer]:
+        - /url: /shots/popular/illustration
+        - img "Illustration" [ref=e1450]
+        - generic [ref=e1451]: Illustration
+      - link "Product Design Product Design" [ref=e1452] [cursor=pointer]:
+        - /url: /shots/popular/product-design
+        - img "Product Design" [ref=e1455]
+        - generic [ref=e1456]: Product Design
+      - link "Web Design Web Design" [ref=e1457] [cursor=pointer]:
+        - /url: /shots/popular/web-design
+        - img "Web Design" [ref=e1460]
+        - generic [ref=e1461]: Web Design
+      - link "Mobile Mobile" [ref=e1462] [cursor=pointer]:
+        - /url: /shots/popular/mobile
+        - img "Mobile" [ref=e1465]
+        - generic [ref=e1466]: Mobile
+      - link "Animation Animation" [ref=e1467] [cursor=pointer]:
+        - /url: /shots/popular/animation
+        - img "Animation" [ref=e1470]
+        - generic [ref=e1471]: Animation
+      - link "Typography Typography" [ref=e1472] [cursor=pointer]:
+        - /url: /shots/popular/typography
+        - img "Typography" [ref=e1475]
+        - generic [ref=e1476]: Typography
+      - link "Print Print" [ref=e1477] [cursor=pointer]:
+        - /url: /shots/popular/print
+        - img "Print" [ref=e1480]
+        - generic [ref=e1481]: Print
+      - link "Branding Branding" [ref=e1482] [cursor=pointer]:
+        - /url: /shots/popular/branding
+        - img "Branding" [ref=e1485]
+        - generic [ref=e1486]: Branding
+      - link "Illustration Illustration" [ref=e1487] [cursor=pointer]:
+        - /url: /shots/popular/illustration
+        - img "Illustration" [ref=e1490]
+        - generic [ref=e1491]: Illustration
+      - link "Product Design Product Design" [ref=e1492] [cursor=pointer]:
+        - /url: /shots/popular/product-design
+        - img "Product Design" [ref=e1495]
+        - generic [ref=e1496]: Product Design
+      - link "Web Design Web Design" [ref=e1497] [cursor=pointer]:
+        - /url: /shots/popular/web-design
+        - img "Web Design" [ref=e1500]
+        - generic [ref=e1501]: Web Design
+      - link "Mobile Mobile" [ref=e1502] [cursor=pointer]:
+        - /url: /shots/popular/mobile
+        - img "Mobile" [ref=e1505]
+        - generic [ref=e1506]: Mobile
+      - link "Animation Animation" [ref=e1507] [cursor=pointer]:
+        - /url: /shots/popular/animation
+        - img "Animation" [ref=e1510]
+        - generic [ref=e1511]: Animation
+      - link "Typography Typography" [ref=e1512] [cursor=pointer]:
+        - /url: /shots/popular/typography
+        - img "Typography" [ref=e1515]
+        - generic [ref=e1516]: Typography
+    - generic [ref=e1517]:
+      - generic [ref=e1518]:
+        - 'link "Dribbble: the community for graphic design Back to home page" [ref=e1519] [cursor=pointer]':
+          - /url: /
+          - 'img "Dribbble: the community for graphic design" [ref=e1520]'
+          - generic: Back to home page
+        - list [ref=e1522]:
+          - listitem [ref=e1523]:
+            - link "For designers" [ref=e1524] [cursor=pointer]:
+              - /url: /for-designers
+          - listitem [ref=e1525]:
+            - link "Hire talent" [ref=e1526] [cursor=pointer]:
+              - /url: /hiring
+          - listitem [ref=e1527]:
+            - link "Inspiration" [ref=e1528] [cursor=pointer]:
+              - /url: /shots/popular
+          - listitem [ref=e1529]:
+            - link "Advertising" [ref=e1530] [cursor=pointer]:
+              - /url: /advertise
+          - listitem [ref=e1531]:
+            - link "Blog" [ref=e1532] [cursor=pointer]:
+              - /url: /stories
+          - listitem [ref=e1533]:
+            - link "About" [ref=e1534] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e1535]:
+            - link "Careers" [ref=e1536] [cursor=pointer]:
+              - /url: /careers
+          - listitem [ref=e1537]:
+            - link "Support" [ref=e1538] [cursor=pointer]:
+              - /url: /contact
+        - generic [ref=e1539]:
+          - link "X" [ref=e1540] [cursor=pointer]:
+            - /url: http://x.com/dribbble
+            - img [ref=e1541]
+            - generic: X
+          - link "Facebook" [ref=e1543] [cursor=pointer]:
+            - /url: http://facebook.com/dribbble
+            - img [ref=e1544]
+            - generic: Facebook
+          - link "Instagram" [ref=e1546] [cursor=pointer]:
+            - /url: http://instagram.com/dribbble
+            - img [ref=e1547]
+            - generic: Instagram
+          - link "Pinterest" [ref=e1549] [cursor=pointer]:
+            - /url: http://www.pinterest.com/dribbble/
+            - img [ref=e1550]
+            - generic: Pinterest
+      - generic [ref=e1552]:
+        - list [ref=e1553]:
+          - listitem [ref=e1554]: © 2026 Dribbble
+          - listitem [ref=e1555]:
+            - link "Terms" [ref=e1556] [cursor=pointer]:
+              - /url: /terms
+          - listitem [ref=e1557]:
+            - link "Privacy" [ref=e1558] [cursor=pointer]:
+              - /url: /privacy
+          - listitem [ref=e1559]:
+            - link "Cookies" [ref=e1560] [cursor=pointer]:
+              - /url: /cookie-policy
+        - list [ref=e1561]:
+          - listitem [ref=e1562]:
+            - link "Jobs" [ref=e1563] [cursor=pointer]:
+              - /url: /directories/jobs
+          - listitem [ref=e1564]:
+            - link "Designers" [ref=e1565] [cursor=pointer]:
+              - /url: /directories/designers
+          - listitem [ref=e1566]:
+            - link "Freelancers" [ref=e1567] [cursor=pointer]:
+              - /url: /directories/freelance-designers
+          - listitem [ref=e1568]:
+            - link "Tags" [ref=e1569] [cursor=pointer]:
+              - /url: /tags
+          - listitem [ref=e1570]:
+            - link "Places" [ref=e1571] [cursor=pointer]:
+              - /url: /places
+          - listitem [ref=e1572]:
+            - link "Resources" [ref=e1573] [cursor=pointer]:
+              - /url: /resources
+  - generic:
+    - link "close":
+      - /url: "#"
+      - img

@@ -1,0 +1,1889 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - paragraph [ref=e5]: "Streamline your search for the next agency. 🚀 See the teams behind this year’s most impactful work in “Dribbble Select: Best Shots of 2026.” 🙌 🥳"
+      - link "Explore Top Agency Shots" [ref=e6] [cursor=pointer]:
+        - /url: https://dribbble.com/resources/agencies/ultimate-dribbble-select-best-shots
+    - button "close" [ref=e7] [cursor=pointer]:
+      - img [ref=e8]
+  - generic [ref=e11]:
+    - link "Back to home page" [ref=e12] [cursor=pointer]:
+      - /url: /
+      - 'img "Dribbble: the community for graphic design" [ref=e13]'
+    - generic [ref=e16]:
+      - combobox "Submit" [ref=e18]:
+        - search [ref=e19]:
+          - searchbox "Submit" [ref=e21]: gamification reward mobile UI
+      - generic "Change search type" [ref=e22]:
+        - generic:
+          - generic:
+            - button "Shots" [ref=e23] [cursor=pointer]:
+              - generic [ref=e24]: Shots
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Shots
+                  - generic: Designers
+                  - generic: Services
+      - button "Search" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - navigation [ref=e28]:
+      - list [ref=e30]:
+        - listitem [ref=e31]:
+          - link "Explore" [ref=e32] [cursor=pointer]:
+            - /url: /shots/popular
+        - listitem [ref=e33]:
+          - link "Hire Talent" [ref=e34] [cursor=pointer]:
+            - /url: /designers
+        - listitem [ref=e35]:
+          - link "Get Hired" [ref=e36] [cursor=pointer]:
+            - /url: /browse-project-briefs
+        - listitem [ref=e37]:
+          - link "Community" [ref=e38] [cursor=pointer]:
+            - /url: /stories
+    - generic [ref=e39]:
+      - link "Sign up" [ref=e40] [cursor=pointer]:
+        - /url: /signups/new
+      - link "Log in" [ref=e41] [cursor=pointer]:
+        - /url: /session/new
+  - generic [ref=e42]:
+    - generic [ref=e44]:
+      - heading "gamification reward mobile UI" [level=1] [ref=e45]
+      - paragraph [ref=e46]: Browse gamification reward mobile UI designs, illustrations, and graphic elements
+      - list [ref=e47]:
+        - listitem [ref=e48]: "Related:"
+        - listitem [ref=e49]:
+          - link "ios" [ref=e50] [cursor=pointer]:
+            - /url: /search/ios
+        - listitem [ref=e51]:
+          - link "app" [ref=e52] [cursor=pointer]:
+            - /url: /search/app
+        - listitem [ref=e53]:
+          - link "iphone" [ref=e54] [cursor=pointer]:
+            - /url: /search/iphone
+        - listitem [ref=e55]:
+          - link "android" [ref=e56] [cursor=pointer]:
+            - /url: /search/android
+        - listitem [ref=e57]:
+          - link "ux" [ref=e58] [cursor=pointer]:
+            - /url: /search/ux
+        - listitem [ref=e59]:
+          - link "interface" [ref=e60] [cursor=pointer]:
+            - /url: /search/interface
+    - generic [ref=e62]:
+      - link "Popular" [ref=e65] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e66]
+        - generic [ref=e68]: Popular
+      - generic [ref=e69]:
+        - link [ref=e70] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e71]
+        - list [ref=e73]:
+          - listitem [ref=e74]:
+            - link "Discover" [ref=e75] [cursor=pointer]:
+              - /url: /search/shots/popular/?q=gamification+reward+mobile+UI
+          - listitem [ref=e76]:
+            - link "Animation" [ref=e77] [cursor=pointer]:
+              - /url: /search/shots/popular/animation?q=gamification+reward+mobile+UI
+          - listitem [ref=e78]:
+            - link "Branding" [ref=e79] [cursor=pointer]:
+              - /url: /search/shots/popular/branding?q=gamification+reward+mobile+UI
+          - listitem [ref=e80]:
+            - link "Illustration" [ref=e81] [cursor=pointer]:
+              - /url: /search/shots/popular/illustration?q=gamification+reward+mobile+UI
+          - listitem [ref=e82]:
+            - link "Mobile" [ref=e83] [cursor=pointer]:
+              - /url: /search/shots/popular/mobile?q=gamification+reward+mobile+UI
+          - listitem [ref=e84]:
+            - link "Print" [ref=e85] [cursor=pointer]:
+              - /url: /search/shots/popular/print?q=gamification+reward+mobile+UI
+          - listitem [ref=e86]:
+            - link "Product Design" [ref=e87] [cursor=pointer]:
+              - /url: /search/shots/popular/product-design?q=gamification+reward+mobile+UI
+          - listitem [ref=e88]:
+            - link "Typography" [ref=e89] [cursor=pointer]:
+              - /url: /search/shots/popular/typography?q=gamification+reward+mobile+UI
+          - listitem [ref=e90]:
+            - link "Web Design" [ref=e91] [cursor=pointer]:
+              - /url: /search/shots/popular/web-design?q=gamification+reward+mobile+UI
+      - link "Filters" [ref=e93] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e94]
+        - text: Filters
+    - main [ref=e97]:
+      - generic [ref=e98]:
+        - list [ref=e99]:
+          - listitem [ref=e100]:
+            - generic [ref=e101]:
+              - figure [ref=e102]:
+                - img "Gamified Quiz App – Play & Earn Learning Mobile UI 3d illustration app dashboard clean education app game app design gamification kids app leaderboard ui learn learning app mobile app design mobile ui play to earn quiz quiz app reward system study teaching ui ux" [ref=e103]
+              - link "View Gamified Quiz App – Play & Earn Learning Mobile UI" [ref=e105] [cursor=pointer]:
+                - /url: /shots/27146143-Gamified-Quiz-App-Play-Earn-Learning-Mobile-UI
+                - generic: View Gamified Quiz App – Play & Earn Learning Mobile UI
+              - generic:
+                - generic:
+                  - generic: Gamified Quiz App – Play & Earn Learning Mobile UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e106] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e107]
+                    - button [ref=e109] [cursor=pointer]:
+                      - img [ref=e110]
+            - generic [ref=e112]:
+              - link "SHIMUL BILLAH SHIMUL BILLAH" [ref=e114] [cursor=pointer]:
+                - /url: /BILLAHSB0505
+                - img "SHIMUL BILLAH" [ref=e115]
+                - generic [ref=e116]: SHIMUL BILLAH
+              - generic [ref=e117]:
+                - generic [ref=e119]:
+                  - generic:
+                    - button [ref=e120] [cursor=pointer]:
+                      - img [ref=e121]
+                    - generic [ref=e123]: "81"
+                - generic [ref=e124]:
+                  - img [ref=e125]
+                  - generic [ref=e128]: 6.4k
+          - listitem [ref=e129]:
+            - generic [ref=e130]:
+              - figure [ref=e131]:
+                - img "Daily Streak Reward – Gamification UI, Daily Learning Streak daily reward screen ui daily streak ui figma mobile ui component gamification ui design habit tracker streak interface habit tracking interface design learning app achievement screen learning motivation ui design mobile gamification design productivity app gamification reward popup ui design streak achievement ui component" [ref=e132]
+              - link "View Daily Streak Reward – Gamification UI, Daily Learning Streak" [ref=e134] [cursor=pointer]:
+                - /url: /shots/27183632-Daily-Streak-Reward-Gamification-UI-Daily-Learning-Streak
+                - generic: View Daily Streak Reward – Gamification UI, Daily Learning Streak
+              - generic:
+                - generic:
+                  - generic: Daily Streak Reward – Gamification UI, Daily Learning Streak
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e135] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e136]
+                    - button [ref=e138] [cursor=pointer]:
+                      - img [ref=e139]
+            - generic [ref=e141]:
+              - generic [ref=e142]:
+                - link "Diana Larussa Diana Larussa" [ref=e143] [cursor=pointer]:
+                  - /url: /Larussa
+                  - img "Diana Larussa" [ref=e144]
+                  - generic [ref=e145]: Diana Larussa
+                - link "Pro user" [ref=e147] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e148]:
+                - generic [ref=e150]:
+                  - generic:
+                    - button [ref=e151] [cursor=pointer]:
+                      - img [ref=e152]
+                    - generic [ref=e154]: "5"
+                - generic [ref=e155]:
+                  - img [ref=e156]
+                  - generic [ref=e159]: 2.6k
+          - listitem [ref=e160]:
+            - generic [ref=e161]:
+              - figure [ref=e162]:
+                - img "UI/UX Mobile App Design for a Gamified Diary | Notes App diary figma gamification illustration iosapp jo mobile app mobile app design mobile app ui mobile ui notes ui uiuxdesign user flow ux" [ref=e163]
+              - link "View UI/UX Mobile App Design for a Gamified Diary | Notes App" [ref=e165] [cursor=pointer]:
+                - /url: /shots/24129545-UI-UX-Mobile-App-Design-for-a-Gamified-Diary-Notes-App
+                - generic: View UI/UX Mobile App Design for a Gamified Diary | Notes App
+              - generic:
+                - generic:
+                  - generic: UI/UX Mobile App Design for a Gamified Diary | Notes App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e166] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e167]
+                    - button [ref=e169] [cursor=pointer]:
+                      - img [ref=e170]
+            - generic [ref=e172]:
+              - generic [ref=e173]:
+                - link "Anna (asol_design) Anna (asol_design)" [ref=e174] [cursor=pointer]:
+                  - /url: /asol_design
+                  - img "Anna (asol_design)" [ref=e175]
+                  - generic [ref=e176]: Anna (asol_design)
+                - link "Pro user" [ref=e178] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e179]:
+                - generic [ref=e181]:
+                  - generic:
+                    - button [ref=e182] [cursor=pointer]:
+                      - img [ref=e183]
+                    - generic [ref=e185]: "215"
+                - generic [ref=e186]:
+                  - img [ref=e187]
+                  - generic [ref=e190]: 43.5k
+          - listitem [ref=e191]:
+            - generic [ref=e192]:
+              - figure [ref=e193]:
+                - img "Personal Finance | Crypto Wallet app design app uiux bitcoin app bitcoin wallet crypto finance crypto wallet finance app finances fintech mobile mobile app mobile app design mobile app redesign mobile design mobile ui money managment personal finance ui design ux design wallet app" [ref=e194]
+              - link "View Personal Finance | Crypto Wallet" [ref=e196] [cursor=pointer]:
+                - /url: /shots/26649128-Personal-Finance-Crypto-Wallet
+                - generic: View Personal Finance | Crypto Wallet
+              - generic:
+                - generic:
+                  - generic: Personal Finance | Crypto Wallet
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e197] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e198]
+                    - button [ref=e200] [cursor=pointer]:
+                      - img [ref=e201]
+            - generic [ref=e203]:
+              - link "Mr Abadul Mr Abadul" [ref=e205] [cursor=pointer]:
+                - /url: /mememint-lab
+                - img "Mr Abadul" [ref=e206]
+                - generic [ref=e207]: Mr Abadul
+              - generic [ref=e208]:
+                - generic [ref=e210]:
+                  - generic:
+                    - button [ref=e211] [cursor=pointer]:
+                      - img [ref=e212]
+                    - generic [ref=e214]: "71"
+                - generic [ref=e215]:
+                  - img [ref=e216]
+                  - generic [ref=e219]: 3.5k
+          - listitem [ref=e220]:
+            - generic [ref=e221]:
+              - figure [ref=e222]:
+                - img "Women-Only Professional Social App career app clean ui job search mentorship minimal ui mobile ui networking app product design ui design wellness women app" [ref=e223]
+              - link "View Women-Only Professional Social App" [ref=e225] [cursor=pointer]:
+                - /url: /shots/26798593-Women-Only-Professional-Social-App
+                - generic: View Women-Only Professional Social App
+              - generic:
+                - generic:
+                  - generic: Women-Only Professional Social App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e226] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e227]
+                    - button [ref=e229] [cursor=pointer]:
+                      - img [ref=e230]
+            - generic [ref=e232]:
+              - link "Parvathy S Kumar Parvathy S Kumar" [ref=e234] [cursor=pointer]:
+                - /url: /parvathy_s_kumar
+                - img "Parvathy S Kumar" [ref=e235]
+                - generic [ref=e236]: Parvathy S Kumar
+              - generic [ref=e237]:
+                - generic [ref=e239]:
+                  - generic:
+                    - button [ref=e240] [cursor=pointer]:
+                      - img [ref=e241]
+                    - generic [ref=e243]: "2"
+                - generic [ref=e244]:
+                  - img [ref=e245]
+                  - generic [ref=e248]: 1.6k
+          - listitem [ref=e249]:
+            - generic [ref=e250]:
+              - figure [ref=e251]:
+                - img "Mobile Gamification Reward System🎮 coin design game illustration interaction design mobile ui ux" [ref=e252]
+              - link "View Mobile Gamification Reward System🎮" [ref=e254] [cursor=pointer]:
+                - /url: /shots/25605819-Mobile-Gamification-Reward-System
+                - generic: View Mobile Gamification Reward System🎮
+              - generic:
+                - generic:
+                  - generic: Mobile Gamification Reward System🎮
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e255] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e256]
+                    - button [ref=e258] [cursor=pointer]:
+                      - img [ref=e259]
+            - generic [ref=e261]:
+              - link "Laluasa Creative Studio Laluasa Creative Studio" [ref=e263] [cursor=pointer]:
+                - /url: /laluasastudio
+                - img "Laluasa Creative Studio" [ref=e264]
+                - generic [ref=e265]: Laluasa Creative Studio
+              - generic [ref=e266]:
+                - generic [ref=e268]:
+                  - generic:
+                    - button [ref=e269] [cursor=pointer]:
+                      - img [ref=e270]
+                    - generic [ref=e272]: "51"
+                - generic [ref=e273]:
+                  - img [ref=e274]
+                  - generic [ref=e277]: 7k
+          - listitem [ref=e278]:
+            - generic [ref=e279]:
+              - figure [ref=e280]:
+                - img "Brilliant Learning Mobile App UI app brilliant course design ebook education elearning habit illustration learning learning platform math mobile mobile app onboarding online education redesign school syudy ui ux" [ref=e281]
+              - link "View Brilliant Learning Mobile App UI" [ref=e283] [cursor=pointer]:
+                - /url: /shots/27235820-Brilliant-Learning-Mobile-App-UI
+                - generic: View Brilliant Learning Mobile App UI
+              - generic:
+                - generic:
+                  - generic: Brilliant Learning Mobile App UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e284] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e285]
+                    - button [ref=e287] [cursor=pointer]:
+                      - img [ref=e288]
+            - generic [ref=e290]:
+              - link "Rubel Rahel Rubel Rahel" [ref=e292] [cursor=pointer]:
+                - /url: /uiuxrubel
+                - img "Rubel Rahel" [ref=e293]
+                - generic [ref=e294]: Rubel Rahel
+              - generic [ref=e295]:
+                - generic [ref=e297]:
+                  - generic:
+                    - button [ref=e298] [cursor=pointer]:
+                      - img [ref=e299]
+                    - generic [ref=e301]: "69"
+                - generic [ref=e302]:
+                  - img [ref=e303]
+                  - generic [ref=e306]: 7.5k
+          - listitem [ref=e307]:
+            - generic [ref=e308]:
+              - figure [ref=e309]:
+                - img "Kids Habit Tracker & Reward System Mobile App UI Design app design daily habits daily routine education app gamification habit app habit tracker illustration ui kids app kids interface kids learning mobile app progress tracker reward coins reward system self improvement task management task tracker ui design ux design" [ref=e310]
+              - link "View Kids Habit Tracker & Reward System Mobile App UI Design" [ref=e312] [cursor=pointer]:
+                - /url: /shots/27156728-Kids-Habit-Tracker-Reward-System-Mobile-App-UI-Design
+                - generic: View Kids Habit Tracker & Reward System Mobile App UI Design
+              - generic:
+                - generic:
+                  - generic: Kids Habit Tracker & Reward System Mobile App UI Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e313] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e314]
+                    - button [ref=e316] [cursor=pointer]:
+                      - img [ref=e317]
+            - generic [ref=e319]:
+              - generic [ref=e320]:
+                - link "Mohammad Ali Mohammad Ali" [ref=e321] [cursor=pointer]:
+                  - /url: /mohammadali11211
+                  - img "Mohammad Ali" [ref=e322]
+                  - generic [ref=e323]: Mohammad Ali
+                - link "Pro user" [ref=e325] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e326]:
+                - generic [ref=e328]:
+                  - generic:
+                    - button [ref=e329] [cursor=pointer]:
+                      - img [ref=e330]
+                    - generic [ref=e332]: "135"
+                - generic [ref=e333]:
+                  - img [ref=e334]
+                  - generic [ref=e337]: 5.9k
+          - listitem [ref=e338]:
+            - generic [ref=e339]:
+              - figure [ref=e340]:
+                - img "Kiqro Earn Rewards Task Mobile App UI/UX Design by Beew Studio app ui case study dark mode design earning app futuristic gamification kiqro light mode mobile app design rewards app task app ui design ux design" [ref=e341]
+              - link "View Kiqro Earn Rewards Task Mobile App UI/UX Design by Beew Studio" [ref=e343] [cursor=pointer]:
+                - /url: /shots/27137142-Kiqro-Earn-Rewards-Task-Mobile-App-UI-UX-Design-by-Beew-Studio
+                - generic: View Kiqro Earn Rewards Task Mobile App UI/UX Design by Beew Studio
+              - generic:
+                - generic:
+                  - generic: Kiqro Earn Rewards Task Mobile App UI/UX Design by Beew Studio
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e344] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e345]
+                    - button [ref=e347] [cursor=pointer]:
+                      - img [ref=e348]
+            - generic [ref=e350]:
+              - generic [ref=e351]:
+                - link "Beew Studio Beew Studio" [ref=e352] [cursor=pointer]:
+                  - /url: /beewstudio
+                  - img "Beew Studio" [ref=e353]
+                  - generic [ref=e354]: Beew Studio
+                - link "Pro user" [ref=e356] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e357]:
+                - generic [ref=e359]:
+                  - generic:
+                    - button [ref=e360] [cursor=pointer]:
+                      - img [ref=e361]
+                    - generic [ref=e363]: "2"
+                - generic [ref=e364]:
+                  - img [ref=e365]
+                  - generic [ref=e368]: 1.1k
+          - listitem [ref=e369]:
+            - generic [ref=e370]:
+              - figure [ref=e371]:
+                - img "Mobile App Design | UI UX Redesign ECOS Scooter Gamification App app design app user experience badges booking app design figma gamification growth design iosapp logistic mobile app design mobile ui mobility app paywall product design mobile retention scooter sharing app subscription taxi app uiuxdesign urban mobility app" [ref=e372]
+              - img [ref=e375]
+              - link "View Mobile App Design | UI UX Redesign ECOS Scooter Gamification App" [ref=e377] [cursor=pointer]:
+                - /url: /shots/27234145-Mobile-App-Design-UI-UX-Redesign-ECOS-Scooter-Gamification-App
+                - generic: View Mobile App Design | UI UX Redesign ECOS Scooter Gamification App
+              - generic:
+                - generic:
+                  - generic: Mobile App Design | UI UX Redesign ECOS Scooter Gamification App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e378] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e379]
+                    - button [ref=e381] [cursor=pointer]:
+                      - img [ref=e382]
+            - generic [ref=e384]:
+              - generic [ref=e385]:
+                - link "Anna (asol_design) Anna (asol_design)" [ref=e386] [cursor=pointer]:
+                  - /url: /asol_design
+                  - img "Anna (asol_design)" [ref=e387]
+                  - generic [ref=e388]: Anna (asol_design)
+                - link "Pro user" [ref=e390] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e391]:
+                - generic [ref=e393]:
+                  - generic:
+                    - button [ref=e394] [cursor=pointer]:
+                      - img [ref=e395]
+                    - generic [ref=e397]: "48"
+                - generic [ref=e398]:
+                  - img [ref=e399]
+                  - generic [ref=e402]: 8k
+          - listitem [ref=e403]:
+            - generic [ref=e404]:
+              - figure [ref=e405]:
+                - img "Wizard’s Arcana - Enchanting Casual Game UI/UX & Asset Design 2d game art app design behance design casual gaming character design digital illustration fantasy design figma game design game assets game design game interface gamification icon design magic game mobile app ui mobile game ui potion icons uiux ux design wizard ui" [ref=e406]
+              - link "View Wizard’s Arcana - Enchanting Casual Game UI/UX & Asset Design" [ref=e408] [cursor=pointer]:
+                - /url: /shots/27154859-Wizard-s-Arcana-Enchanting-Casual-Game-UI-UX-Asset-Design
+                - generic: View Wizard’s Arcana - Enchanting Casual Game UI/UX & Asset Design
+              - generic:
+                - generic:
+                  - generic: Wizard’s Arcana - Enchanting Casual Game UI/UX & Asset Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e409] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e410]
+                    - button [ref=e412] [cursor=pointer]:
+                      - img [ref=e413]
+            - generic [ref=e415]:
+              - link "ALI HAMZA ALI HAMZA" [ref=e417] [cursor=pointer]:
+                - /url: /alihamzaa
+                - img "ALI HAMZA" [ref=e418]
+                - generic [ref=e419]: ALI HAMZA
+              - generic [ref=e420]:
+                - generic [ref=e422]:
+                  - generic:
+                    - button [ref=e423] [cursor=pointer]:
+                      - img [ref=e424]
+                    - generic [ref=e426]: "0"
+                - generic [ref=e427]:
+                  - img [ref=e428]
+                  - generic [ref=e431]: 1.5k
+          - listitem [ref=e432]:
+            - generic [ref=e433]:
+              - figure [ref=e434]:
+                - img "EdTech App Onboarding & Reward Flow UI appdesign darkui edtech gamification learninigapp mobileapp onboarding rewardui studentapp uidesign uxdesign" [ref=e435]
+              - link "View EdTech App Onboarding & Reward Flow UI" [ref=e437] [cursor=pointer]:
+                - /url: /shots/27008045-EdTech-App-Onboarding-Reward-Flow-UI
+                - generic: View EdTech App Onboarding & Reward Flow UI
+              - generic:
+                - generic:
+                  - generic: EdTech App Onboarding & Reward Flow UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e438] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e439]
+                    - button [ref=e441] [cursor=pointer]:
+                      - img [ref=e442]
+            - generic [ref=e444]:
+              - link "Khaleel Rahman Khaleel Rahman" [ref=e446] [cursor=pointer]:
+                - /url: /khaleelurahman
+                - img "Khaleel Rahman" [ref=e447]
+                - generic [ref=e448]: Khaleel Rahman
+              - generic [ref=e449]:
+                - generic [ref=e451]:
+                  - generic:
+                    - button [ref=e452] [cursor=pointer]:
+                      - img [ref=e453]
+                    - generic [ref=e455]: "3"
+                - generic [ref=e456]:
+                  - img [ref=e457]
+                  - generic [ref=e460]: 2.2k
+          - listitem [ref=e461]:
+            - generic [ref=e462]:
+              - figure [ref=e463]:
+                - img "Fox Farming Game App UI 3d style ui android app ui app dashboard design character app ui coin farming ui cute mascot design dark theme ui farming game ui game app ui gamification app ui ios app ui mobile app ui mobile game design onboarding screen rewards dashboard" [ref=e464]
+              - link "View Fox Farming Game App UI" [ref=e466] [cursor=pointer]:
+                - /url: /shots/26563601-Fox-Farming-Game-App-UI
+                - generic: View Fox Farming Game App UI
+              - generic:
+                - generic:
+                  - generic: Fox Farming Game App UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e467] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e468]
+                    - button [ref=e470] [cursor=pointer]:
+                      - img [ref=e471]
+            - generic [ref=e473]:
+              - generic [ref=e474]:
+                - link "Abu Musa ✪ Abu Musa ✪" [ref=e475] [cursor=pointer]:
+                  - /url: /musa30
+                  - img "Abu Musa ✪" [ref=e476]
+                  - generic [ref=e477]: Abu Musa ✪
+                - link "Pro user" [ref=e479] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e480]:
+                - generic [ref=e482]:
+                  - generic:
+                    - button [ref=e483] [cursor=pointer]:
+                      - img [ref=e484]
+                    - generic [ref=e486]: "89"
+                - generic [ref=e487]:
+                  - img [ref=e488]
+                  - generic [ref=e491]: 14.4k
+          - listitem [ref=e492]:
+            - generic [ref=e493]:
+              - figure [ref=e494]:
+                - img "Mobile App UI/UX Design - Gamification Saving Money App | Wallet achievements character figma finance gamification illustration iosapp mobile app mobile app design mobile ui money savings ui ui design uiuxdesign ux" [ref=e495]
+              - link "View Mobile App UI/UX Design - Gamification Saving Money App | Wallet" [ref=e497] [cursor=pointer]:
+                - /url: /shots/24935045-Mobile-App-UI-UX-Design-Gamification-Saving-Money-App-Wallet
+                - generic: View Mobile App UI/UX Design - Gamification Saving Money App | Wallet
+              - generic:
+                - generic:
+                  - generic: Mobile App UI/UX Design - Gamification Saving Money App | Wallet
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e498] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e499]
+                    - button [ref=e501] [cursor=pointer]:
+                      - img [ref=e502]
+            - generic [ref=e504]:
+              - generic [ref=e505]:
+                - link "Anna (asol_design) Anna (asol_design)" [ref=e506] [cursor=pointer]:
+                  - /url: /asol_design
+                  - img "Anna (asol_design)" [ref=e507]
+                  - generic [ref=e508]: Anna (asol_design)
+                - link "Pro user" [ref=e510] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e511]:
+                - generic [ref=e513]:
+                  - generic:
+                    - button [ref=e514] [cursor=pointer]:
+                      - img [ref=e515]
+                    - generic [ref=e517]: "49"
+                - generic [ref=e518]:
+                  - img [ref=e519]
+                  - generic [ref=e522]: 13.1k
+          - listitem [ref=e523]:
+            - generic [ref=e524]:
+              - figure [ref=e525]:
+                - img "Loyalify - Loyalty App UI Kit app app design application design design system figma interface loyalty app mobile mobile app mockup points app portfolio project rewards app template ui ui design ui kit uiux" [ref=e526]
+              - link "View Loyalify - Loyalty App UI Kit" [ref=e528] [cursor=pointer]:
+                - /url: /shots/23384402-Loyalify-Loyalty-App-UI-Kit
+                - generic: View Loyalify - Loyalty App UI Kit
+              - generic:
+                - generic:
+                  - generic: Loyalify - Loyalty App UI Kit
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e529] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e530]
+                    - button [ref=e532] [cursor=pointer]:
+                      - img [ref=e533]
+            - generic [ref=e535]:
+              - generic [ref=e536]:
+                - link "Sobakhul Munir Siroj Sobakhul Munir Siroj" [ref=e537] [cursor=pointer]:
+                  - /url: /munirsr
+                  - img "Sobakhul Munir Siroj" [ref=e538]
+                  - generic [ref=e539]: Sobakhul Munir Siroj
+                - link "Pro user" [ref=e541] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e542]:
+                - generic [ref=e544]:
+                  - generic:
+                    - button [ref=e545] [cursor=pointer]:
+                      - img [ref=e546]
+                    - generic [ref=e548]: "90"
+                - generic [ref=e549]:
+                  - img [ref=e550]
+                  - generic [ref=e553]: 76k
+          - listitem [ref=e554]:
+            - generic [ref=e555]:
+              - figure [ref=e556]:
+                - img "Cashly - Online Loan App UI Kit app app design application cash app design design system digital loan app figma finance app interface mobile money app online loan app portfolio project template ui ui design ui kit uiux" [ref=e557]
+              - link "View Cashly - Online Loan App UI Kit" [ref=e559] [cursor=pointer]:
+                - /url: /shots/24633370-Cashly-Online-Loan-App-UI-Kit
+                - generic: View Cashly - Online Loan App UI Kit
+              - generic:
+                - generic:
+                  - generic: Cashly - Online Loan App UI Kit
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e560] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e561]
+                    - button [ref=e563] [cursor=pointer]:
+                      - img [ref=e564]
+            - generic [ref=e566]:
+              - generic [ref=e567]:
+                - link "Sobakhul Munir Siroj Sobakhul Munir Siroj" [ref=e568] [cursor=pointer]:
+                  - /url: /munirsr
+                  - img "Sobakhul Munir Siroj" [ref=e569]
+                  - generic [ref=e570]: Sobakhul Munir Siroj
+                - link "Pro user" [ref=e572] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e573]:
+                - generic [ref=e575]:
+                  - generic:
+                    - button [ref=e576] [cursor=pointer]:
+                      - img [ref=e577]
+                    - generic [ref=e579]: "60"
+                - generic [ref=e580]:
+                  - img [ref=e581]
+                  - generic [ref=e584]: 74.4k
+          - listitem [ref=e585]:
+            - generic [ref=e586]:
+              - figure [ref=e587]:
+                - img "Starnet - Internet Provider App UI Kit app app design application case study design design system figma interface internet app internet provider app internet service provider mobile portfolio project speed test template ui ui design ui kit uiux" [ref=e588]
+              - link "View Starnet - Internet Provider App UI Kit" [ref=e590] [cursor=pointer]:
+                - /url: /shots/24546908-Starnet-Internet-Provider-App-UI-Kit
+                - generic: View Starnet - Internet Provider App UI Kit
+              - generic:
+                - generic:
+                  - generic: Starnet - Internet Provider App UI Kit
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e591] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e592]
+                    - button [ref=e594] [cursor=pointer]:
+                      - img [ref=e595]
+            - generic [ref=e597]:
+              - generic [ref=e598]:
+                - link "Sobakhul Munir Siroj Sobakhul Munir Siroj" [ref=e599] [cursor=pointer]:
+                  - /url: /munirsr
+                  - img "Sobakhul Munir Siroj" [ref=e600]
+                  - generic [ref=e601]: Sobakhul Munir Siroj
+                - link "Pro user" [ref=e603] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e604]:
+                - generic [ref=e606]:
+                  - generic:
+                    - button [ref=e607] [cursor=pointer]:
+                      - img [ref=e608]
+                    - generic [ref=e610]: "52"
+                - generic [ref=e611]:
+                  - img [ref=e612]
+                  - generic [ref=e615]: 65.1k
+          - listitem [ref=e616]:
+            - generic [ref=e617]:
+              - figure [ref=e618]:
+                - img "Telegram Bot | Casino Mobile App 3d mobile app bot casino casino app casino game casino mobile app crypto game farming game game game app game design gaming mobile app mobile app mobile game reward tap game telegram mini app virtual game" [ref=e619]
+              - link "View Telegram Bot | Casino Mobile App" [ref=e621] [cursor=pointer]:
+                - /url: /shots/26600176-Telegram-Bot-Casino-Mobile-App
+                - generic: View Telegram Bot | Casino Mobile App
+              - generic:
+                - generic:
+                  - generic: Telegram Bot | Casino Mobile App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e622] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e623]
+                    - button [ref=e625] [cursor=pointer]:
+                      - img [ref=e626]
+            - generic [ref=e628]:
+              - generic [ref=e629]:
+                - link "Abu Musa ✪ Abu Musa ✪" [ref=e630] [cursor=pointer]:
+                  - /url: /musa30
+                  - img "Abu Musa ✪" [ref=e631]
+                  - generic [ref=e632]: Abu Musa ✪
+                - link "Pro user" [ref=e634] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e635]:
+                - generic [ref=e637]:
+                  - generic:
+                    - button [ref=e638] [cursor=pointer]:
+                      - img [ref=e639]
+                    - generic [ref=e641]: "80"
+                - generic [ref=e642]:
+                  - img [ref=e643]
+                  - generic [ref=e646]: 10.2k
+          - listitem [ref=e647]:
+            - generic [ref=e648]:
+              - figure [ref=e649]:
+                - img "Loyalty Rewards App UI – Casino,Bet Gamification & Dark Mode 3d animation casinoapp cleanui darkmodeui gamification graphic design hotelappui inapprewards levelupsystem logo loyaltyapp mobileui motion graphics rewardsprogram ui uidesign uiinspiration userprofiledesign uxdesign" [ref=e650]
+              - link "View Loyalty Rewards App UI – Casino,Bet Gamification & Dark Mode" [ref=e652] [cursor=pointer]:
+                - /url: /shots/26296120-Loyalty-Rewards-App-UI-Casino-Bet-Gamification-Dark-Mode
+                - generic: View Loyalty Rewards App UI – Casino,Bet Gamification & Dark Mode
+              - generic:
+                - generic:
+                  - generic: Loyalty Rewards App UI – Casino,Bet Gamification & Dark Mode
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e653] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e654]
+                    - button [ref=e656] [cursor=pointer]:
+                      - img [ref=e657]
+            - generic [ref=e659]:
+              - generic [ref=e660]:
+                - link "Idealink Idealink" [ref=e661] [cursor=pointer]:
+                  - /url: /idealink
+                  - img "Idealink" [ref=e662]
+                  - generic [ref=e663]: Idealink
+                - link "Pro user" [ref=e665] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e666]:
+                - generic [ref=e668]:
+                  - generic:
+                    - button [ref=e669] [cursor=pointer]:
+                      - img [ref=e670]
+                    - generic [ref=e672]: "82"
+                - generic [ref=e673]:
+                  - img [ref=e674]
+                  - generic [ref=e677]: 30k
+          - listitem [ref=e678]:
+            - generic [ref=e679]:
+              - figure [ref=e680]:
+                - img "Step Tracking App – Concept UI Exploration app design ui ux" [ref=e681]
+              - link "View Step Tracking App – Concept UI Exploration" [ref=e683] [cursor=pointer]:
+                - /url: /shots/26881742-Step-Tracking-App-Concept-UI-Exploration
+                - generic: View Step Tracking App – Concept UI Exploration
+              - generic:
+                - generic:
+                  - generic: Step Tracking App – Concept UI Exploration
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e684] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e685]
+                    - button [ref=e687] [cursor=pointer]:
+                      - img [ref=e688]
+            - generic [ref=e690]:
+              - link "Serkan Serkan" [ref=e692] [cursor=pointer]:
+                - /url: /SerkanKivanc
+                - img "Serkan" [ref=e693]
+                - generic [ref=e694]: Serkan
+              - generic [ref=e695]:
+                - generic [ref=e697]:
+                  - generic:
+                    - button [ref=e698] [cursor=pointer]:
+                      - img [ref=e699]
+                    - generic [ref=e701]: "0"
+                - generic [ref=e702]:
+                  - img [ref=e703]
+                  - generic [ref=e706]: 1.8k
+          - listitem [ref=e707]:
+            - generic [ref=e708]:
+              - figure [ref=e709]:
+                - img "CostWiz – Reward-Based Grocery App UI/UX Design figma mobile app design ui web design" [ref=e710]
+              - link "View CostWiz – Reward-Based Grocery App UI/UX Design" [ref=e712] [cursor=pointer]:
+                - /url: /shots/27131592-CostWiz-Reward-Based-Grocery-App-UI-UX-Design
+                - generic: View CostWiz – Reward-Based Grocery App UI/UX Design
+              - generic:
+                - generic:
+                  - generic: CostWiz – Reward-Based Grocery App UI/UX Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e713] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e714]
+                    - button [ref=e716] [cursor=pointer]:
+                      - img [ref=e717]
+            - generic [ref=e719]:
+              - link "Utam Shingala Utam Shingala" [ref=e721] [cursor=pointer]:
+                - /url: /utamshingala
+                - img "Utam Shingala" [ref=e722]
+                - generic [ref=e723]: Utam Shingala
+              - generic [ref=e724]:
+                - generic [ref=e726]:
+                  - generic:
+                    - button [ref=e727] [cursor=pointer]:
+                      - img [ref=e728]
+                    - generic [ref=e730]: "0"
+                - generic [ref=e731]:
+                  - img [ref=e732]
+                  - generic [ref=e735]: "424"
+          - listitem [ref=e736]:
+            - generic [ref=e737]:
+              - figure [ref=e738]:
+                - img "Mobile App Gamification UI app design app ui avatar design character design digital product game app game ui gamification ios design leader board mobile app design mobile ui product design startup design ui inspiration ui ux design user engagement user interface ux design" [ref=e739]
+              - link "View Mobile App Gamification UI" [ref=e741] [cursor=pointer]:
+                - /url: /shots/27236942-Mobile-App-Gamification-UI
+                - generic: View Mobile App Gamification UI
+              - generic:
+                - generic:
+                  - generic: Mobile App Gamification UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e742] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e743]
+                    - button [ref=e745] [cursor=pointer]:
+                      - img [ref=e746]
+            - generic [ref=e748]:
+              - generic [ref=e749]:
+                - link "Nixtio Nixtio" [ref=e750] [cursor=pointer]:
+                  - /url: /Nixtio
+                  - img "Nixtio" [ref=e751]
+                  - generic [ref=e752]: Nixtio
+                - link "Pro user" [ref=e754] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e755]: +
+              - generic [ref=e756]:
+                - generic [ref=e758]:
+                  - generic:
+                    - button [ref=e759] [cursor=pointer]:
+                      - img [ref=e760]
+                    - generic [ref=e762]: "248"
+                - generic [ref=e763]:
+                  - img [ref=e764]
+                  - generic [ref=e767]: 42.2k
+          - listitem [ref=e768]:
+            - generic [ref=e769]:
+              - figure [ref=e770]:
+                - img "Kids Learning App — Gamified Mobile UI Design 3d illustration android app concept app design app interface character design design trends edtech education app gamification interaction design ios kids app learning app mobile app mobile app design mobile ui playful design product design ui inspiration" [ref=e771]
+              - link "View Kids Learning App — Gamified Mobile UI Design" [ref=e773] [cursor=pointer]:
+                - /url: /shots/26988547-Kids-Learning-App-Gamified-Mobile-UI-Design
+                - generic: View Kids Learning App — Gamified Mobile UI Design
+              - generic:
+                - generic:
+                  - generic: Kids Learning App — Gamified Mobile UI Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e774] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e775]
+                    - button [ref=e777] [cursor=pointer]:
+                      - img [ref=e778]
+            - generic [ref=e780]:
+              - generic [ref=e781]:
+                - link "Nixtio Nixtio" [ref=e782] [cursor=pointer]:
+                  - /url: /Nixtio
+                  - img "Nixtio" [ref=e783]
+                  - generic [ref=e784]: Nixtio
+                - link "Pro user" [ref=e786] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e787]: +
+              - generic [ref=e788]:
+                - generic [ref=e790]:
+                  - generic:
+                    - button [ref=e791] [cursor=pointer]:
+                      - img [ref=e792]
+                    - generic [ref=e794]: "249"
+                - generic [ref=e795]:
+                  - img [ref=e796]
+                  - generic [ref=e799]: 34.3k
+          - listitem [ref=e800]:
+            - generic [ref=e801]:
+              - figure [ref=e802]:
+                - img "Scan & Earn — Rewards App UI cashback app coins digital wallet earn rewards fintech gamification gamified app habit building loyalty app mobile ui product design receipt scanning reward system rewards scan earn scan receipt streaks ui ux" [ref=e803]
+              - link "View Scan & Earn — Rewards App UI" [ref=e805] [cursor=pointer]:
+                - /url: /shots/27023975-Scan-Earn-Rewards-App-UI
+                - generic: View Scan & Earn — Rewards App UI
+              - generic:
+                - generic:
+                  - generic: Scan & Earn — Rewards App UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e806] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e807]
+                    - button [ref=e809] [cursor=pointer]:
+                      - img [ref=e810]
+            - generic [ref=e812]:
+              - generic [ref=e813]:
+                - link "Mahima Mahajan Mahima Mahajan" [ref=e814] [cursor=pointer]:
+                  - /url: /mahima
+                  - img "Mahima Mahajan" [ref=e815]
+                  - generic [ref=e816]: Mahima Mahajan
+                - link "Pro user" [ref=e818] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e819]: +
+              - generic [ref=e820]:
+                - generic [ref=e822]:
+                  - generic:
+                    - button [ref=e823] [cursor=pointer]:
+                      - img [ref=e824]
+                    - generic [ref=e826]: "33"
+                - generic [ref=e827]:
+                  - img [ref=e828]
+                  - generic [ref=e831]: 10.7k
+          - listitem [ref=e832]:
+            - generic [ref=e833]:
+              - figure [ref=e834]:
+                - img "Gigcep Branding, Landing Page & Mobile App UI/UX by Beew Studio branding clean design design system earn money app earning gamification gaming hero section landing page logo design mobile app design modern design rewards app task app ui design" [ref=e835]
+              - link "View Gigcep Branding, Landing Page & Mobile App UI/UX by Beew Studio" [ref=e837] [cursor=pointer]:
+                - /url: /shots/27136969-Gigcep-Branding-Landing-Page-Mobile-App-UI-UX-by-Beew-Studio
+                - generic: View Gigcep Branding, Landing Page & Mobile App UI/UX by Beew Studio
+              - generic:
+                - generic:
+                  - generic: Gigcep Branding, Landing Page & Mobile App UI/UX by Beew Studio
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e838] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e839]
+                    - button [ref=e841] [cursor=pointer]:
+                      - img [ref=e842]
+            - generic [ref=e844]:
+              - generic [ref=e845]:
+                - link "Beew Studio Beew Studio" [ref=e846] [cursor=pointer]:
+                  - /url: /beewstudio
+                  - img "Beew Studio" [ref=e847]
+                  - generic [ref=e848]: Beew Studio
+                - link "Pro user" [ref=e850] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e851]:
+                - generic [ref=e853]:
+                  - generic:
+                    - button [ref=e854] [cursor=pointer]:
+                      - img [ref=e855]
+                    - generic [ref=e857]: "6"
+                - generic [ref=e858]:
+                  - img [ref=e859]
+                  - generic [ref=e862]: 3.5k
+          - listitem [ref=e863]:
+            - generic [ref=e864]:
+              - figure [ref=e865]:
+                - img "Loyalty & Rewards Mobile App app branding clean design minimal ui ui ux website" [ref=e866]
+              - link "View Loyalty & Rewards Mobile App" [ref=e868] [cursor=pointer]:
+                - /url: /shots/27153991-Loyalty-Rewards-Mobile-App
+                - generic: View Loyalty & Rewards Mobile App
+              - generic:
+                - generic:
+                  - generic: Loyalty & Rewards Mobile App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e869] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e870]
+                    - button [ref=e872] [cursor=pointer]:
+                      - img [ref=e873]
+            - generic [ref=e875]:
+              - link "Pham Huy Pham Huy" [ref=e877] [cursor=pointer]:
+                - /url: /pnhathuy09
+                - img "Pham Huy" [ref=e878]
+                - generic [ref=e879]: Pham Huy
+              - generic [ref=e880]:
+                - generic [ref=e882]:
+                  - generic:
+                    - button [ref=e883] [cursor=pointer]:
+                      - img [ref=e884]
+                    - generic [ref=e886]: "10"
+                - generic [ref=e887]:
+                  - img [ref=e888]
+                  - generic [ref=e891]: 4.7k
+          - listitem [ref=e892]:
+            - generic [ref=e893]:
+              - figure [ref=e894]:
+                - 'img "Energy Rewards: Loyalty Case Study app app design app ui card dark theme dark ui darkmode design gamification mobile app mobile ui mobile ux modern ui payment product design ui ui design ui ux user interface ux" [ref=e895]'
+              - 'link "View Energy Rewards: Loyalty Case Study" [ref=e897] [cursor=pointer]':
+                - /url: /shots/26919042-Energy-Rewards-Loyalty-Case-Study
+                - generic: "View Energy Rewards: Loyalty Case Study"
+              - generic:
+                - generic:
+                  - generic: "Energy Rewards: Loyalty Case Study"
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e898] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e899]
+                    - button [ref=e901] [cursor=pointer]:
+                      - img [ref=e902]
+            - generic [ref=e904]:
+              - link "Yana Semenenko Yana Semenenko" [ref=e906] [cursor=pointer]:
+                - /url: /yana_semenenko
+                - img "Yana Semenenko" [ref=e907]
+                - generic [ref=e908]: Yana Semenenko
+              - generic [ref=e909]:
+                - generic [ref=e911]:
+                  - generic:
+                    - button [ref=e912] [cursor=pointer]:
+                      - img [ref=e913]
+                    - generic [ref=e915]: "39"
+                - generic [ref=e916]:
+                  - img [ref=e917]
+                  - generic [ref=e920]: 3.5k
+          - listitem [ref=e921]:
+            - generic [ref=e922]:
+              - figure [ref=e923]:
+                - img "UI DESIGN RECYBANK" [ref=e924]
+              - link "View UI DESIGN RECYBANK" [ref=e926] [cursor=pointer]:
+                - /url: /shots/26836163-UI-DESIGN-RECYBANK
+                - generic: View UI DESIGN RECYBANK
+              - generic:
+                - generic:
+                  - generic: UI DESIGN RECYBANK
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e927] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e928]
+                    - button [ref=e930] [cursor=pointer]:
+                      - img [ref=e931]
+            - generic [ref=e933]:
+              - link "Vanza radeya Vanza radeya" [ref=e935] [cursor=pointer]:
+                - /url: /vanzaradeya2807
+                - img "Vanza radeya" [ref=e936]
+                - generic [ref=e937]: Vanza radeya
+              - generic [ref=e938]:
+                - generic [ref=e940]:
+                  - generic:
+                    - button [ref=e941] [cursor=pointer]:
+                      - img [ref=e942]
+                    - generic [ref=e944]: "1"
+                - generic [ref=e945]:
+                  - img [ref=e946]
+                  - generic [ref=e949]: 2.3k
+          - listitem [ref=e950]:
+            - generic [ref=e951]:
+              - figure [ref=e952]:
+                - 'img "bKash App Redesign: Home & Rewards appinterface appredesign bangladesh bkash fintech gamification mfs mobileappdesign mobilefinancialservices mobileui productdesign rewardsprogram userexperience userinterface uxdesign" [ref=e953]'
+              - 'link "View bKash App Redesign: Home & Rewards" [ref=e955] [cursor=pointer]':
+                - /url: /shots/27159319-bKash-App-Redesign-Home-Rewards
+                - generic: "View bKash App Redesign: Home & Rewards"
+              - generic:
+                - generic:
+                  - generic: "bKash App Redesign: Home & Rewards"
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e956] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e957]
+                    - button [ref=e959] [cursor=pointer]:
+                      - img [ref=e960]
+            - generic [ref=e962]:
+              - link "Tasfia Barshat Tasfia Barshat" [ref=e964] [cursor=pointer]:
+                - /url: /tasfiabarshat
+                - img "Tasfia Barshat" [ref=e965]
+                - generic [ref=e966]: Tasfia Barshat
+              - generic [ref=e967]:
+                - generic [ref=e969]:
+                  - generic:
+                    - button [ref=e970] [cursor=pointer]:
+                      - img [ref=e971]
+                    - generic [ref=e973]: "0"
+                - generic [ref=e974]:
+                  - img [ref=e975]
+                  - generic [ref=e978]: "608"
+          - listitem [ref=e979]:
+            - generic [ref=e980]:
+              - figure [ref=e981]:
+                - img "Kids Learning App UI – Gamified Education app design app ui cartoon ui digital product ed tech education app game ui gamification interaction design ios design kids app mobile app mobile app design mobile ui product design startup design ui inspiration ui ux design ux design" [ref=e982]
+              - link "View Kids Learning App UI – Gamified Education" [ref=e984] [cursor=pointer]:
+                - /url: /shots/27203122-Kids-Learning-App-UI-Gamified-Education
+                - generic: View Kids Learning App UI – Gamified Education
+              - generic:
+                - generic:
+                  - generic: Kids Learning App UI – Gamified Education
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e985] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e986]
+                    - button [ref=e988] [cursor=pointer]:
+                      - img [ref=e989]
+            - generic [ref=e991]:
+              - generic [ref=e992]:
+                - link "Nixtio Nixtio" [ref=e993] [cursor=pointer]:
+                  - /url: /Nixtio
+                  - img "Nixtio" [ref=e994]
+                  - generic [ref=e995]: Nixtio
+                - link "Pro user" [ref=e997] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e998]: +
+              - generic [ref=e999]:
+                - generic [ref=e1001]:
+                  - generic:
+                    - button [ref=e1002] [cursor=pointer]:
+                      - img [ref=e1003]
+                    - generic [ref=e1005]: "415"
+                - generic [ref=e1006]:
+                  - img [ref=e1007]
+                  - generic [ref=e1010]: 74k
+          - listitem [ref=e1011]:
+            - generic [ref=e1012]:
+              - figure [ref=e1013]:
+                - img "AI Learning Mobile App — Kids Education UI 3d character ai app design chat app concept education gamification illustration kids app learning mobile app mobile ui modern ui onboarding product design saas startup ui design ui ux user interface" [ref=e1014]
+              - link "View AI Learning Mobile App — Kids Education UI" [ref=e1016] [cursor=pointer]:
+                - /url: /shots/27068193-AI-Learning-Mobile-App-Kids-Education-UI
+                - generic: View AI Learning Mobile App — Kids Education UI
+              - generic:
+                - generic:
+                  - generic: AI Learning Mobile App — Kids Education UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1017] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1018]
+                    - button [ref=e1020] [cursor=pointer]:
+                      - img [ref=e1021]
+            - generic [ref=e1023]:
+              - generic [ref=e1024]:
+                - link "Nixtio Nixtio" [ref=e1025] [cursor=pointer]:
+                  - /url: /Nixtio
+                  - img "Nixtio" [ref=e1026]
+                  - generic [ref=e1027]: Nixtio
+                - link "Pro user" [ref=e1029] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e1030]: +
+              - generic [ref=e1031]:
+                - generic [ref=e1033]:
+                  - generic:
+                    - button [ref=e1034] [cursor=pointer]:
+                      - img [ref=e1035]
+                    - generic [ref=e1037]: "307"
+                - generic [ref=e1038]:
+                  - img [ref=e1039]
+                  - generic [ref=e1042]: 75.5k
+          - listitem [ref=e1043]:
+            - generic [ref=e1044]:
+              - figure [ref=e1045]:
+                - img "Gamified Kids Learning Mobile App UI ai chat app design avatar cartoon character character design edtech education app game ui gamification interface design kids app learning app mobile app mobile design mobile ui product design reward system ui design ui ux ux design" [ref=e1046]
+              - link "View Gamified Kids Learning Mobile App UI" [ref=e1048] [cursor=pointer]:
+                - /url: /shots/27159508-Gamified-Kids-Learning-Mobile-App-UI
+                - generic: View Gamified Kids Learning Mobile App UI
+              - generic:
+                - generic:
+                  - generic: Gamified Kids Learning Mobile App UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1049] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1050]
+                    - button [ref=e1052] [cursor=pointer]:
+                      - img [ref=e1053]
+            - generic [ref=e1055]:
+              - generic [ref=e1056]:
+                - link "Nixtio Nixtio" [ref=e1057] [cursor=pointer]:
+                  - /url: /Nixtio
+                  - img "Nixtio" [ref=e1058]
+                  - generic [ref=e1059]: Nixtio
+                - link "Pro user" [ref=e1061] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e1062]: +
+              - generic [ref=e1063]:
+                - generic [ref=e1065]:
+                  - generic:
+                    - button [ref=e1066] [cursor=pointer]:
+                      - img [ref=e1067]
+                    - generic [ref=e1069]: "242"
+                - generic [ref=e1070]:
+                  - img [ref=e1071]
+                  - generic [ref=e1074]: 32.8k
+          - listitem [ref=e1075]:
+            - generic [ref=e1076]:
+              - figure [ref=e1077]:
+                - img "Kids Learning Mobile App UI ai assiatant app design app ui bright colors cartoon character character design edtech education app game ui gamification homework app interface interface design kids app learning app mobile app mobile ui product design ui ux" [ref=e1078]
+              - link "View Kids Learning Mobile App UI" [ref=e1080] [cursor=pointer]:
+                - /url: /shots/27184516-Kids-Learning-Mobile-App-UI
+                - generic: View Kids Learning Mobile App UI
+              - generic:
+                - generic:
+                  - generic: Kids Learning Mobile App UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1081] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1082]
+                    - button [ref=e1084] [cursor=pointer]:
+                      - img [ref=e1085]
+            - generic [ref=e1087]:
+              - generic [ref=e1088]:
+                - link "Nixtio Nixtio" [ref=e1089] [cursor=pointer]:
+                  - /url: /Nixtio
+                  - img "Nixtio" [ref=e1090]
+                  - generic [ref=e1091]: Nixtio
+                - link "Pro user" [ref=e1093] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e1094]: +
+              - generic [ref=e1095]:
+                - generic [ref=e1097]:
+                  - generic:
+                    - button [ref=e1098] [cursor=pointer]:
+                      - img [ref=e1099]
+                    - generic [ref=e1101]: "233"
+                - generic [ref=e1102]:
+                  - img [ref=e1103]
+                  - generic [ref=e1106]: 26.6k
+          - listitem [ref=e1107]:
+            - generic [ref=e1108]:
+              - figure [ref=e1109]:
+                - img "Telegram App - Gift Boxes app design case opening casino crypto crypto app fintech design gambling gaming app gaming application gift boxes interaction design lootbox mobile ui product design telegram telegram app telegram gifts ton ui ux" [ref=e1110]
+              - link "View Telegram App - Gift Boxes" [ref=e1112] [cursor=pointer]:
+                - /url: /shots/27227057-Telegram-App-Gift-Boxes
+                - generic: View Telegram App - Gift Boxes
+              - generic:
+                - generic:
+                  - generic: Telegram App - Gift Boxes
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1113] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1114]
+                    - button [ref=e1116] [cursor=pointer]:
+                      - img [ref=e1117]
+            - generic [ref=e1119]:
+              - generic [ref=e1120]:
+                - link "Bang Studio ✪ Bang Studio ✪" [ref=e1121] [cursor=pointer]:
+                  - /url: /Bangdesign
+                  - img "Bang Studio ✪" [ref=e1122]
+                  - generic [ref=e1123]: Bang Studio ✪
+                - link "Pro user" [ref=e1125] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e1126]: +
+              - generic [ref=e1127]:
+                - generic [ref=e1129]:
+                  - generic:
+                    - button [ref=e1130] [cursor=pointer]:
+                      - img [ref=e1131]
+                    - generic [ref=e1133]: "275"
+                - generic [ref=e1134]:
+                  - img [ref=e1135]
+                  - generic [ref=e1138]: 50.5k
+          - listitem [ref=e1139]:
+            - generic [ref=e1140]:
+              - figure [ref=e1141]:
+                - img "Gamified Rewards Marketplace Mobile App app app design clean design figma gamification gamified app interface marketplace mobile mobile app rewards ui ui design ux design" [ref=e1142]
+              - link "View Gamified Rewards Marketplace Mobile App" [ref=e1144] [cursor=pointer]:
+                - /url: /shots/27172565-Gamified-Rewards-Marketplace-Mobile-App
+                - generic: View Gamified Rewards Marketplace Mobile App
+              - generic:
+                - generic:
+                  - generic: Gamified Rewards Marketplace Mobile App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1145] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1146]
+                    - button [ref=e1148] [cursor=pointer]:
+                      - img [ref=e1149]
+            - generic [ref=e1151]:
+              - generic [ref=e1152]:
+                - link "Digcy Digcy" [ref=e1153] [cursor=pointer]:
+                  - /url: /Digcy
+                  - img "Digcy" [ref=e1154]
+                  - generic [ref=e1155]: Digcy
+                - link "Pro user" [ref=e1157] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e1158]: +
+              - generic [ref=e1159]:
+                - generic [ref=e1161]:
+                  - generic:
+                    - button [ref=e1162] [cursor=pointer]:
+                      - img [ref=e1163]
+                    - generic [ref=e1165]: "189"
+                - generic [ref=e1166]:
+                  - img [ref=e1167]
+                  - generic [ref=e1170]: 12.6k
+          - listitem [ref=e1171]:
+            - generic [ref=e1172]:
+              - figure [ref=e1173]:
+                - img "Mobile Game Social Features | Void Conqueror 2d game casual game clicker game game assets game design game ui gamification idle game invite friends leaderboard mobile game mobile ui referral referral system rewards social features telegram game telegram mini app ui design ux design" [ref=e1174]
+              - img [ref=e1177]
+              - link "View Mobile Game Social Features | Void Conqueror" [ref=e1179] [cursor=pointer]:
+                - /url: /shots/27276302-Mobile-Game-Social-Features-Void-Conqueror
+                - generic: View Mobile Game Social Features | Void Conqueror
+              - generic:
+                - generic:
+                  - generic: Mobile Game Social Features | Void Conqueror
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1180] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1181]
+                    - button [ref=e1183] [cursor=pointer]:
+                      - img [ref=e1184]
+            - generic [ref=e1186]:
+              - generic [ref=e1187]:
+                - link "Neomodeon Neomodeon" [ref=e1188] [cursor=pointer]:
+                  - /url: /neomodeon
+                  - img "Neomodeon" [ref=e1189]
+                  - generic [ref=e1190]: Neomodeon
+                - link "Pro user" [ref=e1192] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e1193]: +
+              - generic [ref=e1194]:
+                - generic [ref=e1196]:
+                  - generic:
+                    - button [ref=e1197] [cursor=pointer]:
+                      - img [ref=e1198]
+                    - generic [ref=e1200]: "13"
+                - generic [ref=e1201]:
+                  - img [ref=e1202]
+                  - generic [ref=e1205]: 4.3k
+          - listitem [ref=e1206]:
+            - generic [ref=e1207]:
+              - figure [ref=e1208]:
+                - img "Rewards - Gamified App Showreel app design coins consumer app engagement design gamification gamified app gen z habit forming loyalty app mobile mobile app playful product design reward system rewards app streaks ui user engagement ux xp level" [ref=e1209]
+              - generic [ref=e1210]:
+                - img [ref=e1212]
+                - link "Shot Link":
+                  - /url: /shots/27133878-Rewards-Gamified-App-Showreel
+                  - generic: Shot Link
+              - link "View Rewards - Gamified App Showreel" [ref=e1215] [cursor=pointer]:
+                - /url: /shots/27133878-Rewards-Gamified-App-Showreel
+                - generic: View Rewards - Gamified App Showreel
+              - generic:
+                - generic:
+                  - generic: Rewards - Gamified App Showreel
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1216] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1217]
+                    - button [ref=e1219] [cursor=pointer]:
+                      - img [ref=e1220]
+            - generic [ref=e1222]:
+              - generic [ref=e1223]:
+                - link "Mahima Mahajan Mahima Mahajan" [ref=e1224] [cursor=pointer]:
+                  - /url: /mahima
+                  - img "Mahima Mahajan" [ref=e1225]
+                  - generic [ref=e1226]: Mahima Mahajan
+                - link "Pro user" [ref=e1228] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e1229]: +
+              - generic [ref=e1230]:
+                - generic [ref=e1232]:
+                  - generic:
+                    - button [ref=e1233] [cursor=pointer]:
+                      - img [ref=e1234]
+                    - generic [ref=e1236]: "54"
+                - generic [ref=e1237]:
+                  - img [ref=e1238]
+                  - generic [ref=e1241]: 234k
+          - listitem [ref=e1242]:
+            - generic [ref=e1243]:
+              - figure [ref=e1244]:
+                - img "Mobile App UI/UX EdTech Language Learning | Gamified Italian badges city map progression cultural immersion edtech app education figma gamification growth design italian language learning app lessons mobile app design mobile ui quests quiz streaks travel trip uiuxdesign" [ref=e1245]
+              - generic [ref=e1247]:
+                - img [ref=e1248]
+                - generic [ref=e1250]: "1"
+              - link "View Mobile App UI/UX EdTech Language Learning | Gamified Italian" [ref=e1251] [cursor=pointer]:
+                - /url: /shots/26400853-Mobile-App-UI-UX-EdTech-Language-Learning-Gamified-Italian
+                - generic: View Mobile App UI/UX EdTech Language Learning | Gamified Italian
+              - generic:
+                - generic:
+                  - generic: Mobile App UI/UX EdTech Language Learning | Gamified Italian
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1252] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1253]
+                    - button [ref=e1255] [cursor=pointer]:
+                      - img [ref=e1256]
+            - generic [ref=e1258]:
+              - generic [ref=e1259]:
+                - link "Anna (asol_design) Anna (asol_design)" [ref=e1260] [cursor=pointer]:
+                  - /url: /asol_design
+                  - img "Anna (asol_design)" [ref=e1261]
+                  - generic [ref=e1262]: Anna (asol_design)
+                - link "Pro user" [ref=e1264] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1265]:
+                - generic [ref=e1267]:
+                  - generic:
+                    - button [ref=e1268] [cursor=pointer]:
+                      - img [ref=e1269]
+                    - generic [ref=e1271]: "197"
+                - generic [ref=e1272]:
+                  - img [ref=e1273]
+                  - generic [ref=e1276]: 23.5k
+          - listitem [ref=e1277]:
+            - generic [ref=e1278]:
+              - figure [ref=e1279]:
+                - img "Mobile App Design UI UX Design Gamified Gamified Diary Note App asol design diary app figma gamification growth design illustration iosapp journaling app mascot mental health app mobile app design mobile ui mood tracker app note app onboarding productivity app self care app strategy design uiuxdesign wellness app" [ref=e1280]
+              - img [ref=e1283]
+              - link "View Mobile App Design UI UX Design Gamified Gamified Diary Note App" [ref=e1285] [cursor=pointer]:
+                - /url: /shots/26795359-Mobile-App-Design-UI-UX-Design-Gamified-Gamified-Diary-Note-App
+                - generic: View Mobile App Design UI UX Design Gamified Gamified Diary Note App
+              - generic:
+                - generic:
+                  - generic: Mobile App Design UI UX Design Gamified Gamified Diary Note App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1286] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1287]
+                    - button [ref=e1289] [cursor=pointer]:
+                      - img [ref=e1290]
+            - generic [ref=e1292]:
+              - link "Asol Design Unicorn Agency Asol Design Unicorn Agency" [ref=e1294] [cursor=pointer]:
+                - /url: /asol_design_agency
+                - img "Asol Design Unicorn Agency" [ref=e1295]
+                - generic [ref=e1296]: Asol Design Unicorn Agency
+              - generic [ref=e1297]:
+                - generic [ref=e1299]:
+                  - generic:
+                    - button [ref=e1300] [cursor=pointer]:
+                      - img [ref=e1301]
+                    - generic [ref=e1303]: "167"
+                - generic [ref=e1304]:
+                  - img [ref=e1305]
+                  - generic [ref=e1308]: 15.3k
+          - listitem [ref=e1309]:
+            - generic [ref=e1310]:
+              - figure [ref=e1311]:
+                - img "Tactical Gear E-Commerce app app design army e commerce ecommerce military mobile app mobile app design mobile design mobile ui online shop shop tactical gear" [ref=e1312]
+              - link "View Tactical Gear E-Commerce" [ref=e1314] [cursor=pointer]:
+                - /url: /shots/25975300-Tactical-Gear-E-Commerce
+                - generic: View Tactical Gear E-Commerce
+              - generic:
+                - generic:
+                  - generic: Tactical Gear E-Commerce
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1315] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1316]
+                    - button [ref=e1318] [cursor=pointer]:
+                      - img [ref=e1319]
+            - generic [ref=e1321]:
+              - generic [ref=e1322]:
+                - link "Tino Tino" [ref=e1323] [cursor=pointer]:
+                  - /url: /tino-design
+                  - img "Tino" [ref=e1324]
+                  - generic [ref=e1325]: Tino
+                - link "Pro user" [ref=e1327] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e1328]: +
+              - generic [ref=e1329]:
+                - generic [ref=e1331]:
+                  - generic:
+                    - button [ref=e1332] [cursor=pointer]:
+                      - img [ref=e1333]
+                    - generic [ref=e1335]: "421"
+                - generic [ref=e1336]:
+                  - img [ref=e1337]
+                  - generic [ref=e1340]: 43.2k
+          - listitem [ref=e1341]:
+            - generic [ref=e1342]:
+              - figure [ref=e1343]:
+                - img "Mobile App Design | Habit Tracker UI UX Dashboard for Retention app design figma gamification goal app growth design habit tracker app ios app design iosapp mobile app design mobile dashboard mobile ui motivation app planner app routine tracker self care app sport app streaks ui uiuxdesign wellness app" [ref=e1344]
+              - link "View Mobile App Design | Habit Tracker UI UX Dashboard for Retention" [ref=e1346] [cursor=pointer]:
+                - /url: /shots/27257586-Mobile-App-Design-Habit-Tracker-UI-UX-Dashboard-for-Retention
+                - generic: View Mobile App Design | Habit Tracker UI UX Dashboard for Retention
+              - generic:
+                - generic:
+                  - generic: Mobile App Design | Habit Tracker UI UX Dashboard for Retention
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1347] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1348]
+                    - button [ref=e1350] [cursor=pointer]:
+                      - img [ref=e1351]
+            - generic [ref=e1353]:
+              - generic [ref=e1354]:
+                - link "Anna (asol_design) Anna (asol_design)" [ref=e1355] [cursor=pointer]:
+                  - /url: /asol_design
+                  - img "Anna (asol_design)" [ref=e1356]
+                  - generic [ref=e1357]: Anna (asol_design)
+                - link "Pro user" [ref=e1359] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1360]:
+                - generic [ref=e1362]:
+                  - generic:
+                    - button [ref=e1363] [cursor=pointer]:
+                      - img [ref=e1364]
+                    - generic [ref=e1366]: "35"
+                - generic [ref=e1367]:
+                  - img [ref=e1368]
+                  - generic [ref=e1371]: 1.9k
+          - listitem [ref=e1372]:
+            - generic [ref=e1373]:
+              - figure [ref=e1374]:
+                - img "Fitness Mobile App Design — Ready Player Fit activity tracker animation app interfaces app landing page fitness landing page fitness logo fitness website game ui gym website habit tracker healthcare app mobile app design mobile app ui mobile ui design personal trainer website phenomenon studio sport font ui ux design wellness app" [ref=e1375]
+              - generic [ref=e1376]:
+                - generic [ref=e1377]:
+                  - img [ref=e1378]
+                  - generic [ref=e1380]: "3"
+                - img [ref=e1382]
+                - link "Shot Link":
+                  - /url: /shots/26826332-Fitness-Mobile-App-Design-Ready-Player-Fit
+                  - generic: Shot Link
+              - link "View Fitness Mobile App Design — Ready Player Fit" [ref=e1385] [cursor=pointer]:
+                - /url: /shots/26826332-Fitness-Mobile-App-Design-Ready-Player-Fit
+                - generic: View Fitness Mobile App Design — Ready Player Fit
+              - generic:
+                - generic:
+                  - generic: Fitness Mobile App Design — Ready Player Fit
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1386] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1387]
+                    - button [ref=e1389] [cursor=pointer]:
+                      - img [ref=e1390]
+            - generic [ref=e1392]:
+              - generic [ref=e1393]:
+                - link "Phenomenon Studio Phenomenon Studio" [ref=e1394] [cursor=pointer]:
+                  - /url: /phenomenonstudio
+                  - img "Phenomenon Studio" [ref=e1395]
+                  - generic [ref=e1396]: Phenomenon Studio
+                - link "Pro user" [ref=e1398] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e1399]: +
+              - generic [ref=e1400]:
+                - generic [ref=e1402]:
+                  - generic:
+                    - button [ref=e1403] [cursor=pointer]:
+                      - img [ref=e1404]
+                    - generic [ref=e1406]: "311"
+                - generic [ref=e1407]:
+                  - img [ref=e1408]
+                  - generic [ref=e1411]: 79.7k
+          - listitem [ref=e1412]:
+            - generic [ref=e1413]:
+              - figure [ref=e1414]:
+                - img "Stamp Collection Mobile App app concept app design clean ui digital collectibles gamification app illustration design ios app design mobile app mobile app design mobile ui modern app product design reward system stamp app stamp collection travel app ui design ui ux user interface ux design" [ref=e1415]
+              - link "View Stamp Collection Mobile App" [ref=e1417] [cursor=pointer]:
+                - /url: /shots/27127532-Stamp-Collection-Mobile-App
+                - generic: View Stamp Collection Mobile App
+              - generic:
+                - generic:
+                  - generic: Stamp Collection Mobile App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1418] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1419]
+                    - button [ref=e1421] [cursor=pointer]:
+                      - img [ref=e1422]
+            - generic [ref=e1424]:
+              - generic [ref=e1425]:
+                - link "Blend wrk Blend wrk" [ref=e1426] [cursor=pointer]:
+                  - /url: /blendwrkteam
+                  - img "Blend wrk" [ref=e1427]
+                  - generic [ref=e1428]: Blend wrk
+                - link "Pro user" [ref=e1430] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1431]:
+                - generic [ref=e1433]:
+                  - generic:
+                    - button [ref=e1434] [cursor=pointer]:
+                      - img [ref=e1435]
+                    - generic [ref=e1437]: "80"
+                - generic [ref=e1438]:
+                  - img [ref=e1439]
+                  - generic [ref=e1442]: 3k
+          - listitem [ref=e1443]:
+            - generic [ref=e1444]:
+              - figure [ref=e1445]:
+                - img "App Store Screenshots - UI/UX Mobile App - Gamified Cleaning ai app design asol design clean cleaning design figma gamification illustration iosapp manager mascot mobile app design mobile ui poppy productivity task taskmanager ui uiuxdesign" [ref=e1446]
+              - link "View App Store Screenshots - UI/UX Mobile App - Gamified Cleaning" [ref=e1448] [cursor=pointer]:
+                - /url: /shots/25743469-App-Store-Screenshots-UI-UX-Mobile-App-Gamified-Cleaning
+                - generic: View App Store Screenshots - UI/UX Mobile App - Gamified Cleaning
+              - generic:
+                - generic:
+                  - generic: App Store Screenshots - UI/UX Mobile App - Gamified Cleaning
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1449] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1450]
+                    - button [ref=e1452] [cursor=pointer]:
+                      - img [ref=e1453]
+            - generic [ref=e1455]:
+              - generic [ref=e1456]:
+                - link "Anna (asol_design) Anna (asol_design)" [ref=e1457] [cursor=pointer]:
+                  - /url: /asol_design
+                  - img "Anna (asol_design)" [ref=e1458]
+                  - generic [ref=e1459]: Anna (asol_design)
+                - link "Pro user" [ref=e1461] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1462]:
+                - generic [ref=e1464]:
+                  - generic:
+                    - button [ref=e1465] [cursor=pointer]:
+                      - img [ref=e1466]
+                    - generic [ref=e1468]: "187"
+                - generic [ref=e1469]:
+                  - img [ref=e1470]
+                  - generic [ref=e1473]: 36.1k
+          - listitem [ref=e1474]:
+            - generic [ref=e1475]:
+              - figure [ref=e1476]:
+                - img "Gamified Learning Quiz Game App UI UX Design app app design app ui edtech education education app gamification kids app kids education app leaderboard learning learning app mobile app mobile ui quiz app quiz game trivia app ui ux" [ref=e1477]
+              - link "View Gamified Learning Quiz Game App UI UX Design" [ref=e1479] [cursor=pointer]:
+                - /url: /shots/27183863-Gamified-Learning-Quiz-Game-App-UI-UX-Design
+                - generic: View Gamified Learning Quiz Game App UI UX Design
+              - generic:
+                - generic:
+                  - generic: Gamified Learning Quiz Game App UI UX Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1480] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1481]
+                    - button [ref=e1483] [cursor=pointer]:
+                      - img [ref=e1484]
+            - generic [ref=e1486]:
+              - generic [ref=e1487]:
+                - link "Tonmoy Das Tonmoy Das" [ref=e1488] [cursor=pointer]:
+                  - /url: /luminar-workshop
+                  - img "Tonmoy Das" [ref=e1489]
+                  - generic [ref=e1490]: Tonmoy Das
+                - link "Pro user" [ref=e1492] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1493]:
+                - generic [ref=e1495]:
+                  - generic:
+                    - button [ref=e1496] [cursor=pointer]:
+                      - img [ref=e1497]
+                    - generic [ref=e1499]: "60"
+                - generic [ref=e1500]:
+                  - img [ref=e1501]
+                  - generic [ref=e1504]: 3.7k
+          - listitem [ref=e1505]:
+            - generic [ref=e1506]:
+              - figure [ref=e1507]:
+                - img "Language Learning App Design app design edtech education app gamification graphic design ios app design language learning app mobile app mobile app design mobile app ui mobile ui progress tracking rewards system streak system trendy app ui design uiux user flow ux design voice learning" [ref=e1508]
+              - link "View Language Learning App Design" [ref=e1510] [cursor=pointer]:
+                - /url: /shots/27026886-Language-Learning-App-Design
+                - generic: View Language Learning App Design
+              - generic:
+                - generic:
+                  - generic: Language Learning App Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1511] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1512]
+                    - button [ref=e1514] [cursor=pointer]:
+                      - img [ref=e1515]
+            - generic [ref=e1517]:
+              - generic [ref=e1518]:
+                - link "Musemind Musemind" [ref=e1519] [cursor=pointer]:
+                  - /url: /musemindagency
+                  - img "Musemind" [ref=e1520]
+                  - generic [ref=e1521]: Musemind
+                - link "Pro user" [ref=e1523] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e1524]: +
+              - generic [ref=e1525]:
+                - generic [ref=e1527]:
+                  - generic:
+                    - button [ref=e1528] [cursor=pointer]:
+                      - img [ref=e1529]
+                    - generic [ref=e1531]: "124"
+                - generic [ref=e1532]:
+                  - img [ref=e1533]
+                  - generic [ref=e1536]: 12.2k
+          - listitem [ref=e1537]:
+            - generic [ref=e1538]:
+              - figure [ref=e1539]:
+                - img "Achievement Badges System for Food Rating App achievement system app design badge design clean ui design system figma food app food rating app gamification icon design ios app minimal design mobile app product design ui design ui kit ux design" [ref=e1540]
+              - link "View Achievement Badges System for Food Rating App" [ref=e1542] [cursor=pointer]:
+                - /url: /shots/26983882-Achievement-Badges-System-for-Food-Rating-App
+                - generic: View Achievement Badges System for Food Rating App
+              - generic:
+                - generic:
+                  - generic: Achievement Badges System for Food Rating App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1543] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1544]
+                    - button [ref=e1546] [cursor=pointer]:
+                      - img [ref=e1547]
+            - generic [ref=e1549]:
+              - generic [ref=e1550]:
+                - link "Tedi Kurniadi Tedi Kurniadi" [ref=e1551] [cursor=pointer]:
+                  - /url: /tedikurniadi
+                  - img "Tedi Kurniadi" [ref=e1552]
+                  - generic [ref=e1553]: Tedi Kurniadi
+                - link "Pro user" [ref=e1555] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1556]:
+                - generic [ref=e1558]:
+                  - generic:
+                    - button [ref=e1559] [cursor=pointer]:
+                      - img [ref=e1560]
+                    - generic [ref=e1562]: "8"
+                - generic [ref=e1563]:
+                  - img [ref=e1564]
+                  - generic [ref=e1567]: 4.5k
+        - link "Sign up to continue" [ref=e1569] [cursor=pointer]:
+          - /url: /signups/new
+  - contentinfo [ref=e1570]:
+    - generic [ref=e1573]:
+      - link "Product Design Product Design" [ref=e1574] [cursor=pointer]:
+        - /url: /shots/popular/product-design
+        - img "Product Design" [ref=e1577]
+        - generic [ref=e1578]: Product Design
+      - link "Web Design Web Design" [ref=e1579] [cursor=pointer]:
+        - /url: /shots/popular/web-design
+        - img "Web Design" [ref=e1582]
+        - generic [ref=e1583]: Web Design
+      - link "Mobile Mobile" [ref=e1584] [cursor=pointer]:
+        - /url: /shots/popular/mobile
+        - img "Mobile" [ref=e1587]
+        - generic [ref=e1588]: Mobile
+      - link "Animation Animation" [ref=e1589] [cursor=pointer]:
+        - /url: /shots/popular/animation
+        - img "Animation" [ref=e1592]
+        - generic [ref=e1593]: Animation
+      - link "Print Print" [ref=e1594] [cursor=pointer]:
+        - /url: /shots/popular/print
+        - img "Print" [ref=e1597]
+        - generic [ref=e1598]: Print
+      - link "Branding Branding" [ref=e1599] [cursor=pointer]:
+        - /url: /shots/popular/branding
+        - img "Branding" [ref=e1602]
+        - generic [ref=e1603]: Branding
+      - link "Typography Typography" [ref=e1604] [cursor=pointer]:
+        - /url: /shots/popular/typography
+        - img "Typography" [ref=e1607]
+        - generic [ref=e1608]: Typography
+      - link "Illustration Illustration" [ref=e1609] [cursor=pointer]:
+        - /url: /shots/popular/illustration
+        - img "Illustration" [ref=e1612]
+        - generic [ref=e1613]: Illustration
+      - link "Product Design Product Design" [ref=e1614] [cursor=pointer]:
+        - /url: /shots/popular/product-design
+        - img "Product Design" [ref=e1617]
+        - generic [ref=e1618]: Product Design
+      - link "Web Design Web Design" [ref=e1619] [cursor=pointer]:
+        - /url: /shots/popular/web-design
+        - img "Web Design" [ref=e1622]
+        - generic [ref=e1623]: Web Design
+      - link "Mobile Mobile" [ref=e1624] [cursor=pointer]:
+        - /url: /shots/popular/mobile
+        - img "Mobile" [ref=e1627]
+        - generic [ref=e1628]: Mobile
+      - link "Animation Animation" [ref=e1629] [cursor=pointer]:
+        - /url: /shots/popular/animation
+        - img "Animation" [ref=e1632]
+        - generic [ref=e1633]: Animation
+      - link "Print Print" [ref=e1634] [cursor=pointer]:
+        - /url: /shots/popular/print
+        - img "Print" [ref=e1637]
+        - generic [ref=e1638]: Print
+      - link "Branding Branding" [ref=e1639] [cursor=pointer]:
+        - /url: /shots/popular/branding
+        - img "Branding" [ref=e1642]
+        - generic [ref=e1643]: Branding
+      - link "Typography Typography" [ref=e1644] [cursor=pointer]:
+        - /url: /shots/popular/typography
+        - img "Typography" [ref=e1647]
+        - generic [ref=e1648]: Typography
+      - link "Illustration Illustration" [ref=e1649] [cursor=pointer]:
+        - /url: /shots/popular/illustration
+        - img "Illustration" [ref=e1652]
+        - generic [ref=e1653]: Illustration
+    - generic [ref=e1654]:
+      - generic [ref=e1655]:
+        - 'link "Dribbble: the community for graphic design Back to home page" [ref=e1656] [cursor=pointer]':
+          - /url: /
+          - 'img "Dribbble: the community for graphic design" [ref=e1657]'
+          - generic: Back to home page
+        - list [ref=e1659]:
+          - listitem [ref=e1660]:
+            - link "For designers" [ref=e1661] [cursor=pointer]:
+              - /url: /for-designers
+          - listitem [ref=e1662]:
+            - link "Hire talent" [ref=e1663] [cursor=pointer]:
+              - /url: /hiring
+          - listitem [ref=e1664]:
+            - link "Inspiration" [ref=e1665] [cursor=pointer]:
+              - /url: /shots/popular
+          - listitem [ref=e1666]:
+            - link "Advertising" [ref=e1667] [cursor=pointer]:
+              - /url: /advertise
+          - listitem [ref=e1668]:
+            - link "Blog" [ref=e1669] [cursor=pointer]:
+              - /url: /stories
+          - listitem [ref=e1670]:
+            - link "About" [ref=e1671] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e1672]:
+            - link "Careers" [ref=e1673] [cursor=pointer]:
+              - /url: /careers
+          - listitem [ref=e1674]:
+            - link "Support" [ref=e1675] [cursor=pointer]:
+              - /url: /contact
+        - generic [ref=e1676]:
+          - link "X" [ref=e1677] [cursor=pointer]:
+            - /url: http://x.com/dribbble
+            - img [ref=e1678]
+            - generic: X
+          - link "Facebook" [ref=e1680] [cursor=pointer]:
+            - /url: http://facebook.com/dribbble
+            - img [ref=e1681]
+            - generic: Facebook
+          - link "Instagram" [ref=e1683] [cursor=pointer]:
+            - /url: http://instagram.com/dribbble
+            - img [ref=e1684]
+            - generic: Instagram
+          - link "Pinterest" [ref=e1686] [cursor=pointer]:
+            - /url: http://www.pinterest.com/dribbble/
+            - img [ref=e1687]
+            - generic: Pinterest
+      - generic [ref=e1689]:
+        - list [ref=e1690]:
+          - listitem [ref=e1691]: © 2026 Dribbble
+          - listitem [ref=e1692]:
+            - link "Terms" [ref=e1693] [cursor=pointer]:
+              - /url: /terms
+          - listitem [ref=e1694]:
+            - link "Privacy" [ref=e1695] [cursor=pointer]:
+              - /url: /privacy
+          - listitem [ref=e1696]:
+            - link "Cookies" [ref=e1697] [cursor=pointer]:
+              - /url: /cookie-policy
+        - list [ref=e1698]:
+          - listitem [ref=e1699]:
+            - link "Jobs" [ref=e1700] [cursor=pointer]:
+              - /url: /directories/jobs
+          - listitem [ref=e1701]:
+            - link "Designers" [ref=e1702] [cursor=pointer]:
+              - /url: /directories/designers
+          - listitem [ref=e1703]:
+            - link "Freelancers" [ref=e1704] [cursor=pointer]:
+              - /url: /directories/freelance-designers
+          - listitem [ref=e1705]:
+            - link "Tags" [ref=e1706] [cursor=pointer]:
+              - /url: /tags
+          - listitem [ref=e1707]:
+            - link "Places" [ref=e1708] [cursor=pointer]:
+              - /url: /places
+          - listitem [ref=e1709]:
+            - link "Resources" [ref=e1710] [cursor=pointer]:
+              - /url: /resources
+  - generic:
+    - link "close":
+      - /url: "#"
+      - img

@@ -1,0 +1,11 @@
+[    3991ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://dribbble.com/favicon.ico:0
+[    7709ms] [ERROR] Access to fetch at 'https://cdn-cookieyes.com/client_data/780c76971bc38ef14edcd798/audit-table/N8I3677Y.json' from origin 'https://dribbble.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://dribbble.com/search/shots/popular/mobile?q=gamification+reward+mobile+UI+2025:0
+[    7710ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://cdn-cookieyes.com/client_data/780c76971bc38ef14edcd798/audit-table/N8I3677Y.json:0
+[    7710ms] [ERROR] TypeError: Failed to fetch
+    at c (https://cdn-cookieyes.com/client_data/780c76971bc38ef14edcd798/banner.js:1:1183)
+    at te (https://cdn-cookieyes.com/client_data/780c76971bc38ef14edcd798/banner.js:1:18613)
+    at ne (https://cdn-cookieyes.com/client_data/780c76971bc38ef14edcd798/banner.js:1:19217)
+    at oe (https://cdn-cookieyes.com/client_data/780c76971bc38ef14edcd798/banner.js:1:19588)
+    at HTMLDocument.ae (https://cdn-cookieyes.com/client_data/780c76971bc38ef14edcd798/banner.js:1:24138) @ https://cdn-cookieyes.com/client_data/780c76971bc38ef14edcd798/banner.js:0
+[   14700ms] [ERROR] Provider's accounts list is empty. @ https://dribbble.com/search/shots/popular/mobile?q=gamification+reward+mobile+UI+2025:0
+[   14869ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://accounts.google.com/gsi/client:85

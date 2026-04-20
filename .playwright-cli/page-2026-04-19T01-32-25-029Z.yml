@@ -1,0 +1,1867 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - paragraph [ref=e5]: "Streamline your search for the next agency. 🚀 See the teams behind this year’s most impactful work in “Dribbble Select: Best Shots of 2026.” 🙌 🥳"
+      - link "Explore Top Agency Shots" [ref=e6] [cursor=pointer]:
+        - /url: https://dribbble.com/resources/agencies/ultimate-dribbble-select-best-shots
+    - button "close" [ref=e7] [cursor=pointer]:
+      - img [ref=e8]
+  - generic [ref=e11]:
+    - link "Back to home page" [ref=e12] [cursor=pointer]:
+      - /url: /
+      - 'img "Dribbble: the community for graphic design" [ref=e13]'
+    - generic [ref=e16]:
+      - combobox "Submit" [ref=e18]:
+        - search [ref=e19]:
+          - searchbox "Submit" [ref=e21]: social referral invite reward growth
+      - generic "Change search type" [ref=e22]:
+        - generic:
+          - generic:
+            - button "Shots" [ref=e23] [cursor=pointer]:
+              - generic [ref=e24]: Shots
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Shots
+                  - generic: Designers
+                  - generic: Services
+      - button "Search" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - navigation [ref=e28]:
+      - list [ref=e30]:
+        - listitem [ref=e31]:
+          - link "Explore" [ref=e32] [cursor=pointer]:
+            - /url: /shots/popular
+        - listitem [ref=e33]:
+          - link "Hire Talent" [ref=e34] [cursor=pointer]:
+            - /url: /designers
+        - listitem [ref=e35]:
+          - link "Get Hired" [ref=e36] [cursor=pointer]:
+            - /url: /browse-project-briefs
+        - listitem [ref=e37]:
+          - link "Community" [ref=e38] [cursor=pointer]:
+            - /url: /stories
+    - generic [ref=e39]:
+      - link "Sign up" [ref=e40] [cursor=pointer]:
+        - /url: /signups/new
+      - link "Log in" [ref=e41] [cursor=pointer]:
+        - /url: /session/new
+  - generic [ref=e42]:
+    - generic [ref=e44]:
+      - heading "social referral invite reward growth" [level=1] [ref=e45]
+      - paragraph [ref=e46]: Unique social referral invite reward growth designs
+      - list [ref=e47]:
+        - listitem [ref=e48]: "Related:"
+        - listitem [ref=e49]:
+          - link "refer" [ref=e50] [cursor=pointer]:
+            - /url: /search/refer
+        - listitem [ref=e51]:
+          - link "giveaway" [ref=e52] [cursor=pointer]:
+            - /url: /search/giveaway
+        - listitem [ref=e53]:
+          - link "draft" [ref=e54] [cursor=pointer]:
+            - /url: /search/draft
+        - listitem [ref=e55]:
+          - link "referrals" [ref=e56] [cursor=pointer]:
+            - /url: /search/referrals
+        - listitem [ref=e57]:
+          - link "dribbble" [ref=e58] [cursor=pointer]:
+            - /url: /search/dribbble
+        - listitem [ref=e59]:
+          - link "thanks" [ref=e60] [cursor=pointer]:
+            - /url: /search/thanks
+    - generic [ref=e62]:
+      - link "Popular" [ref=e65] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e66]
+        - generic [ref=e68]: Popular
+      - generic [ref=e69]:
+        - link [ref=e70] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e71]
+        - list [ref=e73]:
+          - listitem [ref=e74]:
+            - link "Discover" [ref=e75] [cursor=pointer]:
+              - /url: /search/shots/popular/?q=social+referral+invite+reward+growth
+          - listitem [ref=e76]:
+            - link "Animation" [ref=e77] [cursor=pointer]:
+              - /url: /search/shots/popular/animation?q=social+referral+invite+reward+growth
+          - listitem [ref=e78]:
+            - link "Branding" [ref=e79] [cursor=pointer]:
+              - /url: /search/shots/popular/branding?q=social+referral+invite+reward+growth
+          - listitem [ref=e80]:
+            - link "Illustration" [ref=e81] [cursor=pointer]:
+              - /url: /search/shots/popular/illustration?q=social+referral+invite+reward+growth
+          - listitem [ref=e82]:
+            - link "Mobile" [ref=e83] [cursor=pointer]:
+              - /url: /search/shots/popular/mobile?q=social+referral+invite+reward+growth
+          - listitem [ref=e84]:
+            - link "Print" [ref=e85] [cursor=pointer]:
+              - /url: /search/shots/popular/print?q=social+referral+invite+reward+growth
+          - listitem [ref=e86]:
+            - link "Product Design" [ref=e87] [cursor=pointer]:
+              - /url: /search/shots/popular/product-design?q=social+referral+invite+reward+growth
+          - listitem [ref=e88]:
+            - link "Typography" [ref=e89] [cursor=pointer]:
+              - /url: /search/shots/popular/typography?q=social+referral+invite+reward+growth
+          - listitem [ref=e90]:
+            - link "Web Design" [ref=e91] [cursor=pointer]:
+              - /url: /search/shots/popular/web-design?q=social+referral+invite+reward+growth
+      - link "Filters" [ref=e93] [cursor=pointer]:
+        - /url: "#"
+        - img [ref=e94]
+        - text: Filters
+    - main [ref=e97]:
+      - generic [ref=e98]:
+        - list [ref=e99]:
+          - listitem [ref=e100]:
+            - generic [ref=e101]:
+              - figure [ref=e102]:
+                - img "Referrals UI widget component design system mobile design referral ui ux" [ref=e103]
+              - link "View Referrals UI widget" [ref=e105] [cursor=pointer]:
+                - /url: /shots/25952393-Referrals-UI-widget
+                - generic: View Referrals UI widget
+              - generic:
+                - generic:
+                  - generic: Referrals UI widget
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e106] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e107]
+                    - button [ref=e109] [cursor=pointer]:
+                      - img [ref=e110]
+            - generic [ref=e112]:
+              - link "Abubakri Adesina Abubakri Adesina" [ref=e114] [cursor=pointer]:
+                - /url: /helloabubakri
+                - img "Abubakri Adesina" [ref=e115]
+                - generic [ref=e116]: Abubakri Adesina
+              - generic [ref=e117]:
+                - generic [ref=e119]:
+                  - generic:
+                    - button [ref=e120] [cursor=pointer]:
+                      - img [ref=e121]
+                    - generic [ref=e123]: "13"
+                - generic [ref=e124]:
+                  - img [ref=e125]
+                  - generic [ref=e128]: 7.4k
+          - listitem [ref=e129]:
+            - generic [ref=e130]:
+              - figure [ref=e131]:
+                - img "Gupi App | TikShot Clone | Short Video + Earn Model app clone app design app development service case study figma graphic design mobile app design mobile ui social media app ui uiux ux" [ref=e132]
+              - link "View Gupi App | TikShot Clone | Short Video + Earn Model" [ref=e134] [cursor=pointer]:
+                - /url: /shots/26135585-Gupi-App-TikShot-Clone-Short-Video-Earn-Model
+                - generic: View Gupi App | TikShot Clone | Short Video + Earn Model
+              - generic:
+                - generic:
+                  - generic: Gupi App | TikShot Clone | Short Video + Earn Model
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e135] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e136]
+                    - button [ref=e138] [cursor=pointer]:
+                      - img [ref=e139]
+            - generic [ref=e141]:
+              - generic [ref=e142]:
+                - link "vativeApps vativeApps" [ref=e143] [cursor=pointer]:
+                  - /url: /vativeapps
+                  - img "vativeApps" [ref=e144]
+                  - generic [ref=e145]: vativeApps
+                - link "Pro user" [ref=e147] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e148]:
+                - generic [ref=e150]:
+                  - generic:
+                    - button [ref=e151] [cursor=pointer]:
+                      - img [ref=e152]
+                    - generic [ref=e154]: "0"
+                - generic [ref=e155]:
+                  - img [ref=e156]
+                  - generic [ref=e159]: 2.9k
+          - listitem [ref=e160]:
+            - generic [ref=e161]:
+              - figure [ref=e162]:
+                - img "Fitness Mobile App Design – VibeMove animation booking mobile app fitness logos fitness website free app gym logo gym web design health app mobile app design mobile app landing page mobile app onboarding screens mobile app ui mobile ux modern ui mood tracker app phenomenon studio sports booking app web app webdesign workout design" [ref=e163]
+              - generic [ref=e164]:
+                - generic [ref=e165]:
+                  - img [ref=e166]
+                  - generic [ref=e168]: "1"
+                - img [ref=e170]
+                - link "Shot Link":
+                  - /url: /shots/27013671-Fitness-Mobile-App-Design-VibeMove
+                  - generic: Shot Link
+              - link "View Fitness Mobile App Design – VibeMove" [ref=e173] [cursor=pointer]:
+                - /url: /shots/27013671-Fitness-Mobile-App-Design-VibeMove
+                - generic: View Fitness Mobile App Design – VibeMove
+              - generic:
+                - generic:
+                  - generic: Fitness Mobile App Design – VibeMove
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e174] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e175]
+                    - button [ref=e177] [cursor=pointer]:
+                      - img [ref=e178]
+            - generic [ref=e180]:
+              - generic [ref=e181]:
+                - link "Phenomenon Studio Phenomenon Studio" [ref=e182] [cursor=pointer]:
+                  - /url: /phenomenonstudio
+                  - img "Phenomenon Studio" [ref=e183]
+                  - generic [ref=e184]: Phenomenon Studio
+                - link "Pro user" [ref=e186] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e187]: +
+              - generic [ref=e188]:
+                - generic [ref=e190]:
+                  - generic:
+                    - button [ref=e191] [cursor=pointer]:
+                      - img [ref=e192]
+                    - generic [ref=e194]: "406"
+                - generic [ref=e195]:
+                  - img [ref=e196]
+                  - generic [ref=e199]: 87.6k
+          - listitem [ref=e200]:
+            - generic [ref=e201]:
+              - figure [ref=e202]:
+                - img "Cineplex" [ref=e203]
+              - link "View Cineplex" [ref=e205] [cursor=pointer]:
+                - /url: /shots/25597967-Cineplex
+                - generic: View Cineplex
+              - generic:
+                - generic:
+                  - generic: Cineplex
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e206] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e207]
+                    - button [ref=e209] [cursor=pointer]:
+                      - img [ref=e210]
+            - generic [ref=e212]:
+              - link "Michael Kemper Michael Kemper" [ref=e214] [cursor=pointer]:
+                - /url: /kempersolid
+                - img "Michael Kemper" [ref=e215]
+                - generic [ref=e216]: Michael Kemper
+              - generic [ref=e217]:
+                - generic [ref=e219]:
+                  - generic:
+                    - button [ref=e220] [cursor=pointer]:
+                      - img [ref=e221]
+                    - generic [ref=e223]: "0"
+                - generic [ref=e224]:
+                  - img [ref=e225]
+                  - generic [ref=e228]: 6.6k
+          - listitem [ref=e229]:
+            - generic [ref=e230]:
+              - figure [ref=e231]:
+                - img "Finance - mobile app app design interface product service startup ui ux web" [ref=e232]
+              - link "View Finance - mobile app" [ref=e234] [cursor=pointer]:
+                - /url: /shots/27135377-Finance-mobile-app
+                - generic: View Finance - mobile app
+              - generic:
+                - generic:
+                  - generic: Finance - mobile app
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e235] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e236]
+                    - button [ref=e238] [cursor=pointer]:
+                      - img [ref=e239]
+            - generic [ref=e241]:
+              - generic [ref=e242]:
+                - link "Zain's Studio Zain's Studio" [ref=e243] [cursor=pointer]:
+                  - /url: /zaindesignstudio
+                  - img "Zain's Studio" [ref=e244]
+                  - generic [ref=e245]: Zain's Studio
+                - link "Pro user" [ref=e247] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e248]:
+                - generic [ref=e250]:
+                  - generic:
+                    - button [ref=e251] [cursor=pointer]:
+                      - img [ref=e252]
+                    - generic [ref=e254]: "144"
+                - generic [ref=e255]:
+                  - img [ref=e256]
+                  - generic [ref=e259]: 12.3k
+          - listitem [ref=e260]:
+            - generic [ref=e261]:
+              - figure [ref=e262]:
+                - img "Mobile Game Social Features | Void Conqueror 2d game casual game clicker game game assets game design game ui gamification idle game invite friends leaderboard mobile game mobile ui referral referral system rewards social features telegram game telegram mini app ui design ux design" [ref=e263]
+              - img [ref=e266]
+              - link "View Mobile Game Social Features | Void Conqueror" [ref=e268] [cursor=pointer]:
+                - /url: /shots/27276302-Mobile-Game-Social-Features-Void-Conqueror
+                - generic: View Mobile Game Social Features | Void Conqueror
+              - generic:
+                - generic:
+                  - generic: Mobile Game Social Features | Void Conqueror
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e269] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e270]
+                    - button [ref=e272] [cursor=pointer]:
+                      - img [ref=e273]
+            - generic [ref=e275]:
+              - generic [ref=e276]:
+                - link "Neomodeon Neomodeon" [ref=e277] [cursor=pointer]:
+                  - /url: /neomodeon
+                  - img "Neomodeon" [ref=e278]
+                  - generic [ref=e279]: Neomodeon
+                - link "Pro user" [ref=e281] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e282]: +
+              - generic [ref=e283]:
+                - generic [ref=e285]:
+                  - generic:
+                    - button [ref=e286] [cursor=pointer]:
+                      - img [ref=e287]
+                    - generic [ref=e289]: "13"
+                - generic [ref=e290]:
+                  - img [ref=e291]
+                  - generic [ref=e294]: 4.2k
+          - listitem [ref=e295]:
+            - generic [ref=e296]:
+              - figure [ref=e297]:
+                - img "Finova – Finance Dashboard UI product ui ux web website" [ref=e298]
+              - link "View Finova – Finance Dashboard UI" [ref=e300] [cursor=pointer]:
+                - /url: /shots/26452009-Finova-Finance-Dashboard-UI
+                - generic: View Finova – Finance Dashboard UI
+              - generic:
+                - generic:
+                  - generic: Finova – Finance Dashboard UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e301] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e302]
+                    - button [ref=e304] [cursor=pointer]:
+                      - img [ref=e305]
+            - generic [ref=e307]:
+              - generic [ref=e308]:
+                - link "Rashedul Islam 🔥 Rashedul Islam 🔥" [ref=e309] [cursor=pointer]:
+                  - /url: /uirashed
+                  - img "Rashedul Islam 🔥" [ref=e310]
+                  - generic [ref=e311]: Rashedul Islam 🔥
+                - link "Pro user" [ref=e313] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e314]:
+                - generic [ref=e316]:
+                  - generic:
+                    - button [ref=e317] [cursor=pointer]:
+                      - img [ref=e318]
+                    - generic [ref=e320]: "184"
+                - generic [ref=e321]:
+                  - img [ref=e322]
+                  - generic [ref=e325]: 43.3k
+          - listitem [ref=e326]:
+            - generic [ref=e327]:
+              - figure [ref=e328]:
+                - img "Crypto Trading Web Design banking bitcoin blockchain crypto crypto art cryptocurrency defi digital banking fintech invest investment investment app payment gateway trading trading app trading website web design web3 webapp websitedesign" [ref=e329]
+              - link "View Crypto Trading Web Design" [ref=e331] [cursor=pointer]:
+                - /url: /shots/26342223-Crypto-Trading-Web-Design
+                - generic: View Crypto Trading Web Design
+              - generic:
+                - generic:
+                  - generic: Crypto Trading Web Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e332] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e333]
+                    - button [ref=e335] [cursor=pointer]:
+                      - img [ref=e336]
+            - generic [ref=e338]:
+              - generic [ref=e339]:
+                - link "Md Abadul Biswas 🔥 Md Abadul Biswas 🔥" [ref=e340] [cursor=pointer]:
+                  - /url: /abadul21
+                  - img "Md Abadul Biswas 🔥" [ref=e341]
+                  - generic [ref=e342]: Md Abadul Biswas 🔥
+                - link "Pro user" [ref=e344] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e345]:
+                - generic [ref=e347]:
+                  - generic:
+                    - button [ref=e348] [cursor=pointer]:
+                      - img [ref=e349]
+                    - generic [ref=e351]: "66"
+                - generic [ref=e352]:
+                  - img [ref=e353]
+                  - generic [ref=e356]: 11k
+          - listitem [ref=e357]:
+            - generic [ref=e358]:
+              - figure [ref=e359]:
+                - img "Redesign Hamster Kombat app design graphic design typography ui ux" [ref=e360]
+              - link "View Redesign Hamster Kombat" [ref=e362] [cursor=pointer]:
+                - /url: /shots/26592762-Redesign-Hamster-Kombat
+                - generic: View Redesign Hamster Kombat
+              - generic:
+                - generic:
+                  - generic: Redesign Hamster Kombat
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e363] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e364]
+                    - button [ref=e366] [cursor=pointer]:
+                      - img [ref=e367]
+            - generic [ref=e369]:
+              - link "Ali Aghaz Ali Aghaz" [ref=e371] [cursor=pointer]:
+                - /url: /Ali-Aghaz
+                - img "Ali Aghaz" [ref=e372]
+                - generic [ref=e373]: Ali Aghaz
+              - generic [ref=e374]:
+                - generic [ref=e376]:
+                  - generic:
+                    - button [ref=e377] [cursor=pointer]:
+                      - img [ref=e378]
+                    - generic [ref=e380]: "2"
+                - generic [ref=e381]:
+                  - img [ref=e382]
+                  - generic [ref=e385]: 4.6k
+          - listitem [ref=e386]:
+            - generic [ref=e387]:
+              - figure [ref=e388]:
+                - img "International money transfer app ai app app app concept banking app currency digital wallet finance fintech app international ios light mode minimal mobile mobile design money transfer popular product design ui ui ux unique app" [ref=e389]
+              - link "View International money transfer app" [ref=e391] [cursor=pointer]:
+                - /url: /shots/26689552-International-money-transfer-app
+                - generic: View International money transfer app
+              - generic:
+                - generic:
+                  - generic: International money transfer app
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e392] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e393]
+                    - button [ref=e395] [cursor=pointer]:
+                      - img [ref=e396]
+            - generic [ref=e398]:
+              - generic [ref=e399]:
+                - link "Shahruk Ahmed Shahruk Ahmed" [ref=e400] [cursor=pointer]:
+                  - /url: /shahrukahmed
+                  - img "Shahruk Ahmed" [ref=e401]
+                  - generic [ref=e402]: Shahruk Ahmed
+                - link "Pro user" [ref=e404] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e405]:
+                - generic [ref=e407]:
+                  - generic:
+                    - button [ref=e408] [cursor=pointer]:
+                      - img [ref=e409]
+                    - generic [ref=e411]: "39"
+                - generic [ref=e412]:
+                  - img [ref=e413]
+                  - generic [ref=e416]: 31.7k
+          - listitem [ref=e417]:
+            - generic [ref=e418]:
+              - figure [ref=e419]:
+                - img "Telegram Tap2Earn Mini-Game UI/UX Design app design hamster combat design notcoin design telegram game design telegram mini app design uiux design" [ref=e420]
+              - link "View Telegram Tap2Earn Mini-Game UI/UX Design" [ref=e422] [cursor=pointer]:
+                - /url: /shots/25606100-Telegram-Tap2Earn-Mini-Game-UI-UX-Design
+                - generic: View Telegram Tap2Earn Mini-Game UI/UX Design
+              - generic:
+                - generic:
+                  - generic: Telegram Tap2Earn Mini-Game UI/UX Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e423] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e424]
+                    - button [ref=e426] [cursor=pointer]:
+                      - img [ref=e427]
+            - generic [ref=e429]:
+              - link "OmiSoft OmiSoft" [ref=e431] [cursor=pointer]:
+                - /url: /omisoft
+                - img "OmiSoft" [ref=e432]
+                - generic [ref=e433]: OmiSoft
+              - generic [ref=e434]:
+                - generic [ref=e436]:
+                  - generic:
+                    - button [ref=e437] [cursor=pointer]:
+                      - img [ref=e438]
+                    - generic [ref=e440]: "4"
+                - generic [ref=e441]:
+                  - img [ref=e442]
+                  - generic [ref=e445]: 6.2k
+          - listitem [ref=e446]:
+            - generic [ref=e447]:
+              - figure [ref=e448]:
+                - img "Buzztime GO Trivia App Design app concept app design appdesign buzztimego design designinspo dribbbledesign dribbbleshots funwithtrivia gameappdesign playtolearn quizappdesign triviaapp triviagame ui uidesign ux uxdesign" [ref=e449]
+              - link "View Buzztime GO Trivia App Design" [ref=e451] [cursor=pointer]:
+                - /url: /shots/26027984-Buzztime-GO-Trivia-App-Design
+                - generic: View Buzztime GO Trivia App Design
+              - generic:
+                - generic:
+                  - generic: Buzztime GO Trivia App Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e452] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e453]
+                    - button [ref=e455] [cursor=pointer]:
+                      - img [ref=e456]
+            - generic [ref=e458]:
+              - link "Idea Usher Idea Usher" [ref=e460] [cursor=pointer]:
+                - /url: /Idea-usher
+                - img "Idea Usher" [ref=e461]
+                - generic [ref=e462]: Idea Usher
+              - generic [ref=e463]:
+                - generic [ref=e465]:
+                  - generic:
+                    - button [ref=e466] [cursor=pointer]:
+                      - img [ref=e467]
+                    - generic [ref=e469]: "0"
+                - generic [ref=e470]:
+                  - img [ref=e471]
+                  - generic [ref=e474]: 3.5k
+          - listitem [ref=e475]:
+            - generic [ref=e476]:
+              - figure [ref=e477]:
+                - img "Referral Invite UI design gamification invite mobileapp mobileui productdesign share ui uidesign uiux userexperience userinterface ux visualdesign" [ref=e478]
+              - link "View Referral Invite UI" [ref=e480] [cursor=pointer]:
+                - /url: /shots/27089370-Referral-Invite-UI
+                - generic: View Referral Invite UI
+              - generic:
+                - generic:
+                  - generic: Referral Invite UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e481] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e482]
+                    - button [ref=e484] [cursor=pointer]:
+                      - img [ref=e485]
+            - generic [ref=e487]:
+              - link "Esther Inontah Esther Inontah" [ref=e489] [cursor=pointer]:
+                - /url: /Esther_Inontah
+                - img "Esther Inontah" [ref=e490]
+                - generic [ref=e491]: Esther Inontah
+              - generic [ref=e492]:
+                - generic [ref=e494]:
+                  - generic:
+                    - button [ref=e495] [cursor=pointer]:
+                      - img [ref=e496]
+                    - generic [ref=e498]: "1"
+                - generic [ref=e499]:
+                  - img [ref=e500]
+                  - generic [ref=e503]: "491"
+          - listitem [ref=e504]:
+            - generic [ref=e505]:
+              - figure [ref=e506]:
+                - img "Free Fire Free Diamond – The Ultimate Guide home screen" [ref=e507]
+              - link "View Free Fire Free Diamond – The Ultimate Guide" [ref=e509] [cursor=pointer]:
+                - /url: /shots/26167232-Free-Fire-Free-Diamond-The-Ultimate-Guide
+                - generic: View Free Fire Free Diamond – The Ultimate Guide
+              - generic:
+                - generic:
+                  - generic: Free Fire Free Diamond – The Ultimate Guide
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e510] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e511]
+                    - button [ref=e513] [cursor=pointer]:
+                      - img [ref=e514]
+            - generic [ref=e516]:
+              - link "Popy Tr. Dennis Popy Tr. Dennis" [ref=e518] [cursor=pointer]:
+                - /url: /popy-tr--dennis
+                - img "Popy Tr. Dennis" [ref=e519]
+                - generic [ref=e520]: Popy Tr. Dennis
+              - generic [ref=e521]:
+                - generic [ref=e523]:
+                  - generic:
+                    - button [ref=e524] [cursor=pointer]:
+                      - img [ref=e525]
+                    - generic [ref=e527]: "14"
+                - generic [ref=e528]:
+                  - img [ref=e529]
+                  - generic [ref=e532]: 21.9k
+          - listitem [ref=e533]:
+            - generic [ref=e534]:
+              - figure [ref=e535]:
+                - img "Project Management & Talent Admin Dashboard 👨‍💼📊 admin dashboard career growth client intake community events creative jobs creator economy design news dribbble freelance dashboard freelance tools job matching learning resources networking pro upgrade project management social promotion talent platform talent referral ui workflow" [ref=e536]
+              - link "View Project Management & Talent Admin Dashboard 👨‍💼📊" [ref=e538] [cursor=pointer]:
+                - /url: /shots/27278573-Project-Management-Talent-Admin-Dashboard
+                - generic: View Project Management & Talent Admin Dashboard 👨‍💼📊
+              - generic:
+                - generic:
+                  - generic: Project Management & Talent Admin Dashboard 👨‍💼📊
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e539] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e540]
+                    - button [ref=e542] [cursor=pointer]:
+                      - img [ref=e543]
+            - generic [ref=e545]:
+              - generic [ref=e546]:
+                - link "Nexila - Products Nexila - Products" [ref=e547] [cursor=pointer]:
+                  - /url: /Nexila_Products
+                  - img "Nexila - Products" [ref=e548]
+                  - generic [ref=e549]: Nexila - Products
+                - link "Pro user" [ref=e551] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e552]:
+                - generic [ref=e554]:
+                  - generic:
+                    - button [ref=e555] [cursor=pointer]:
+                      - img [ref=e556]
+                    - generic [ref=e558]: "1"
+                - generic [ref=e559]:
+                  - img [ref=e560]
+                  - generic [ref=e563]: "255"
+          - listitem [ref=e564]:
+            - generic [ref=e565]:
+              - figure [ref=e566]:
+                - img "Dashboard Design for Referral Program admin adminpanel agency card clean ui coupon dashboard data design finance fintech icon inspiration referral saas software table ui ux web app" [ref=e567]
+              - link "View Dashboard Design for Referral Program" [ref=e569] [cursor=pointer]:
+                - /url: /shots/27035439-Dashboard-Design-for-Referral-Program
+                - generic: View Dashboard Design for Referral Program
+              - generic:
+                - generic:
+                  - generic: Dashboard Design for Referral Program
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e570] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e571]
+                    - button [ref=e573] [cursor=pointer]:
+                      - img [ref=e574]
+            - generic [ref=e576]:
+              - generic [ref=e577]:
+                - link "Visiobyte Visiobyte" [ref=e578] [cursor=pointer]:
+                  - /url: /visiobyte
+                  - img "Visiobyte" [ref=e579]
+                  - generic [ref=e580]: Visiobyte
+                - link "Pro user" [ref=e582] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e583]:
+                - generic [ref=e585]:
+                  - generic:
+                    - button [ref=e586] [cursor=pointer]:
+                      - img [ref=e587]
+                    - generic [ref=e589]: "11"
+                - generic [ref=e590]:
+                  - img [ref=e591]
+                  - generic [ref=e594]: 2.4k
+          - listitem [ref=e595]:
+            - generic [ref=e596]:
+              - figure [ref=e597]:
+                - img "Rapyd Gaming App – Quick Play, Quick Wins! gamingapp mobileapp rapydapp uiuxdesign useronboarding" [ref=e598]
+              - generic [ref=e599]:
+                - img [ref=e601]
+                - link "Shot Link":
+                  - /url: /shots/25040802-Rapyd-Gaming-App-Quick-Play-Quick-Wins
+                  - generic: Shot Link
+              - link "View Rapyd Gaming App – Quick Play, Quick Wins!" [ref=e604] [cursor=pointer]:
+                - /url: /shots/25040802-Rapyd-Gaming-App-Quick-Play-Quick-Wins
+                - generic: View Rapyd Gaming App – Quick Play, Quick Wins!
+              - generic:
+                - generic:
+                  - generic: Rapyd Gaming App – Quick Play, Quick Wins!
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e605] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e606]
+                    - button [ref=e608] [cursor=pointer]:
+                      - img [ref=e609]
+            - generic [ref=e611]:
+              - link "Naveen T Naveen T" [ref=e613] [cursor=pointer]:
+                - /url: /Nivin151
+                - img "Naveen T" [ref=e614]
+                - generic [ref=e615]: Naveen T
+              - generic [ref=e616]:
+                - generic [ref=e618]:
+                  - generic:
+                    - button [ref=e619] [cursor=pointer]:
+                      - img [ref=e620]
+                    - generic [ref=e622]: "1"
+                - generic [ref=e623]:
+                  - img [ref=e624]
+                  - generic [ref=e627]: 5.2k
+          - listitem [ref=e628]:
+            - generic [ref=e629]:
+              - figure [ref=e630]:
+                - img "SaaS Landing Page Hero Design for QueueForm hero design landing page design referral marketing saas saas website design website design" [ref=e631]
+              - link "View SaaS Landing Page Hero Design for QueueForm" [ref=e633] [cursor=pointer]:
+                - /url: /shots/26125491-SaaS-Landing-Page-Hero-Design-for-QueueForm
+                - generic: View SaaS Landing Page Hero Design for QueueForm
+              - generic:
+                - generic:
+                  - generic: SaaS Landing Page Hero Design for QueueForm
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e634] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e635]
+                    - button [ref=e637] [cursor=pointer]:
+                      - img [ref=e638]
+            - generic [ref=e640]:
+              - generic [ref=e641]:
+                - link "Porush / 24Seven Design Porush / 24Seven Design" [ref=e642] [cursor=pointer]:
+                  - /url: /Porush-24SevenDesign
+                  - img "Porush / 24Seven Design" [ref=e643]
+                  - generic [ref=e644]: Porush / 24Seven Design
+                - link "Pro user" [ref=e646] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e647]:
+                - generic [ref=e649]:
+                  - generic:
+                    - button [ref=e650] [cursor=pointer]:
+                      - img [ref=e651]
+                    - generic [ref=e653]: "7"
+                - generic [ref=e654]:
+                  - img [ref=e655]
+                  - generic [ref=e658]: 9.3k
+          - listitem [ref=e659]:
+            - generic [ref=e660]:
+              - figure [ref=e661]:
+                - img "Monetizing an Anonymous Social Media App (Hood App) app design figma monetizing money product design social media app ui" [ref=e662]
+              - link "View Monetizing an Anonymous Social Media App (Hood App)" [ref=e664] [cursor=pointer]:
+                - /url: /shots/25415047-Monetizing-an-Anonymous-Social-Media-App-Hood-App
+                - generic: View Monetizing an Anonymous Social Media App (Hood App)
+              - generic:
+                - generic:
+                  - generic: Monetizing an Anonymous Social Media App (Hood App)
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e665] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e666]
+                    - button [ref=e668] [cursor=pointer]:
+                      - img [ref=e669]
+            - generic [ref=e671]:
+              - link "Sourav Srivastava Sourav Srivastava" [ref=e673] [cursor=pointer]:
+                - /url: /souravisuncool
+                - img "Sourav Srivastava" [ref=e674]
+                - generic [ref=e675]: Sourav Srivastava
+              - generic [ref=e676]:
+                - generic [ref=e678]:
+                  - generic:
+                    - button [ref=e679] [cursor=pointer]:
+                      - img [ref=e680]
+                    - generic [ref=e682]: "18"
+                - generic [ref=e683]:
+                  - img [ref=e684]
+                  - generic [ref=e687]: 33.2k
+          - listitem [ref=e688]:
+            - generic [ref=e689]:
+              - figure [ref=e690]:
+                - img "Invite Friends UI androidui cleanui community invite invitefriendsui iosui mobileapp moderdesign newdesign newui" [ref=e691]
+              - link "View Invite Friends UI" [ref=e693] [cursor=pointer]:
+                - /url: /shots/27036292-Invite-Friends-UI
+                - generic: View Invite Friends UI
+              - generic:
+                - generic:
+                  - generic: Invite Friends UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e694] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e695]
+                    - button [ref=e697] [cursor=pointer]:
+                      - img [ref=e698]
+            - generic [ref=e700]:
+              - link "UI Ants UI Ants" [ref=e702] [cursor=pointer]:
+                - /url: /uiantsco
+                - img "UI Ants" [ref=e703]
+                - generic [ref=e704]: UI Ants
+              - generic [ref=e705]:
+                - generic [ref=e707]:
+                  - generic:
+                    - button [ref=e708] [cursor=pointer]:
+                      - img [ref=e709]
+                    - generic [ref=e711]: "1"
+                - generic [ref=e712]:
+                  - img [ref=e713]
+                  - generic [ref=e716]: "737"
+          - listitem [ref=e717]:
+            - generic [ref=e718]:
+              - figure [ref=e719]:
+                - img "Wayfe App Design appdesign design ui ux" [ref=e720]
+              - link "View Wayfe App Design" [ref=e722] [cursor=pointer]:
+                - /url: /shots/26634961-Wayfe-App-Design
+                - generic: View Wayfe App Design
+              - generic:
+                - generic:
+                  - generic: Wayfe App Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e723] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e724]
+                    - button [ref=e726] [cursor=pointer]:
+                      - img [ref=e727]
+            - generic [ref=e729]:
+              - link "Logan Bunelle Logan Bunelle" [ref=e731] [cursor=pointer]:
+                - /url: /loganbunelle
+                - img "Logan Bunelle" [ref=e732]
+                - generic [ref=e733]: Logan Bunelle
+              - generic [ref=e734]:
+                - generic [ref=e736]:
+                  - generic:
+                    - button [ref=e737] [cursor=pointer]:
+                      - img [ref=e738]
+                    - generic [ref=e740]: "4"
+                - generic [ref=e741]:
+                  - img [ref=e742]
+                  - generic [ref=e745]: 9.6k
+          - listitem [ref=e746]:
+            - generic [ref=e747]:
+              - figure [ref=e748]:
+                - 'img "Hand cricket: Bringing childhood fun back app coupon cricket dashboad game gamification gratification gratify handcricket illustration play promo ui ux visual webdesign website" [ref=e749]'
+              - 'link "View Hand cricket: Bringing childhood fun back" [ref=e751] [cursor=pointer]':
+                - /url: /shots/24918652-Hand-cricket-Bringing-childhood-fun-back
+                - generic: "View Hand cricket: Bringing childhood fun back"
+              - generic:
+                - generic:
+                  - generic: "Hand cricket: Bringing childhood fun back"
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e752] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e753]
+                    - button [ref=e755] [cursor=pointer]:
+                      - img [ref=e756]
+            - generic [ref=e758]:
+              - link "Bhavna Kashyap Bhavna Kashyap" [ref=e760] [cursor=pointer]:
+                - /url: /bhavnakashyap
+                - img "Bhavna Kashyap" [ref=e761]
+                - generic [ref=e762]: Bhavna Kashyap
+              - generic [ref=e763]:
+                - generic [ref=e765]:
+                  - generic:
+                    - button [ref=e766] [cursor=pointer]:
+                      - img [ref=e767]
+                    - generic [ref=e769]: "14"
+                - generic [ref=e770]:
+                  - img [ref=e771]
+                  - generic [ref=e774]: 8.2k
+          - listitem [ref=e775]:
+            - generic [ref=e776]:
+              - figure [ref=e777]:
+                - img "My Favourites UI collection favorites favourites mycollection myfavorite myfavourites" [ref=e778]
+              - link "View My Favourites UI" [ref=e780] [cursor=pointer]:
+                - /url: /shots/27036258-My-Favourites-UI
+                - generic: View My Favourites UI
+              - generic:
+                - generic:
+                  - generic: My Favourites UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e781] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e782]
+                    - button [ref=e784] [cursor=pointer]:
+                      - img [ref=e785]
+            - generic [ref=e787]:
+              - link "UI Ants UI Ants" [ref=e789] [cursor=pointer]:
+                - /url: /uiantsco
+                - img "UI Ants" [ref=e790]
+                - generic [ref=e791]: UI Ants
+              - generic [ref=e792]:
+                - generic [ref=e794]:
+                  - generic:
+                    - button [ref=e795] [cursor=pointer]:
+                      - img [ref=e796]
+                    - generic [ref=e798]: "0"
+                - generic [ref=e799]:
+                  - img [ref=e800]
+                  - generic [ref=e803]: "583"
+          - listitem [ref=e804]:
+            - generic [ref=e805]:
+              - figure [ref=e806]:
+                - img "👾 UI/UX Designer | Game Mobile App - WassieHub | Figma avatar design cartoon style colorful ui dark mode design systems figma game dashboard game ui gamification ios app leaderboard mobile app mobile ux nft style playful design product design quests ui ui design uiux designer ux design" [ref=e807]
+              - link "View 👾 UI/UX Designer | Game Mobile App - WassieHub | Figma" [ref=e809] [cursor=pointer]:
+                - /url: /shots/26290434--UI-UX-Designer-Game-Mobile-App-WassieHub-Figma
+                - generic: View 👾 UI/UX Designer | Game Mobile App - WassieHub | Figma
+              - generic:
+                - generic:
+                  - generic: 👾 UI/UX Designer | Game Mobile App - WassieHub | Figma
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e810] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e811]
+                    - button [ref=e813] [cursor=pointer]:
+                      - img [ref=e814]
+            - generic [ref=e816]:
+              - link "Solomiia Ohloblin Solomiia Ohloblin" [ref=e818] [cursor=pointer]:
+                - /url: /Ohloblin
+                - img "Solomiia Ohloblin" [ref=e819]
+                - generic [ref=e820]: Solomiia Ohloblin
+              - generic [ref=e821]:
+                - generic [ref=e823]:
+                  - generic:
+                    - button [ref=e824] [cursor=pointer]:
+                      - img [ref=e825]
+                    - generic [ref=e827]: "0"
+                - generic [ref=e828]:
+                  - img [ref=e829]
+                  - generic [ref=e832]: 7.2k
+          - listitem [ref=e833]:
+            - generic [ref=e834]:
+              - figure [ref=e835]:
+                - 'img "Striking Gold: Creating a 24k Referral Campaign. 3d animation branding c4d growth refer a friend referrals ui ux design" [ref=e836]'
+              - generic [ref=e837]:
+                - img [ref=e839]
+                - link "Shot Link":
+                  - /url: /shots/26585968-Striking-Gold-Creating-a-24k-Referral-Campaign
+                  - generic: Shot Link
+              - 'link "View Striking Gold: Creating a 24k Referral Campaign." [ref=e842] [cursor=pointer]':
+                - /url: /shots/26585968-Striking-Gold-Creating-a-24k-Referral-Campaign
+                - generic: "View Striking Gold: Creating a 24k Referral Campaign."
+              - generic:
+                - generic:
+                  - generic: "Striking Gold: Creating a 24k Referral Campaign."
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e843] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e844]
+                    - button [ref=e846] [cursor=pointer]:
+                      - img [ref=e847]
+            - generic [ref=e849]:
+              - link "James Scott James Scott" [ref=e851] [cursor=pointer]:
+                - /url: /jamesscott96
+                - img "James Scott" [ref=e852]
+                - generic [ref=e853]: James Scott
+              - generic [ref=e854]:
+                - generic [ref=e856]:
+                  - generic:
+                    - button [ref=e857] [cursor=pointer]:
+                      - img [ref=e858]
+                    - generic [ref=e860]: "4"
+                - generic [ref=e861]:
+                  - img [ref=e862]
+                  - generic [ref=e865]: 4.6k
+          - listitem [ref=e866]:
+            - generic [ref=e867]:
+              - figure [ref=e868]:
+                - img "Affiliate Program Landing Page UI – Earn with Referrals affiliate affiliate landing page earn with referrals landing page product design refer refer and earn referral referral marketing referral program ui travel rewards ui ux design web design website" [ref=e869]
+              - link "View Affiliate Program Landing Page UI – Earn with Referrals" [ref=e871] [cursor=pointer]:
+                - /url: /shots/26062614-Affiliate-Program-Landing-Page-UI-Earn-with-Referrals
+                - generic: View Affiliate Program Landing Page UI – Earn with Referrals
+              - generic:
+                - generic:
+                  - generic: Affiliate Program Landing Page UI – Earn with Referrals
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e872] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e873]
+                    - button [ref=e875] [cursor=pointer]:
+                      - img [ref=e876]
+            - generic [ref=e878]:
+              - generic [ref=e879]:
+                - link "Nishar Multani Nishar Multani" [ref=e880] [cursor=pointer]:
+                  - /url: /nishar
+                  - img "Nishar Multani" [ref=e881]
+                  - generic [ref=e882]: Nishar Multani
+                - link "Pro user" [ref=e884] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e885]:
+                - generic [ref=e887]:
+                  - generic:
+                    - button [ref=e888] [cursor=pointer]:
+                      - img [ref=e889]
+                    - generic [ref=e891]: "46"
+                - generic [ref=e892]:
+                  - img [ref=e893]
+                  - generic [ref=e896]: 21.8k
+          - listitem [ref=e897]:
+            - generic [ref=e898]:
+              - figure [ref=e899]:
+                - img "Milestone Rewards UI for Viral Referral SaaS badge design form builder milestones viral viral form builder web design" [ref=e900]
+              - link "View Milestone Rewards UI for Viral Referral SaaS" [ref=e902] [cursor=pointer]:
+                - /url: /shots/26117840-Milestone-Rewards-UI-for-Viral-Referral-SaaS
+                - generic: View Milestone Rewards UI for Viral Referral SaaS
+              - generic:
+                - generic:
+                  - generic: Milestone Rewards UI for Viral Referral SaaS
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e903] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e904]
+                    - button [ref=e906] [cursor=pointer]:
+                      - img [ref=e907]
+            - generic [ref=e909]:
+              - generic [ref=e910]:
+                - link "Porush / 24Seven Design Porush / 24Seven Design" [ref=e911] [cursor=pointer]:
+                  - /url: /Porush-24SevenDesign
+                  - img "Porush / 24Seven Design" [ref=e912]
+                  - generic [ref=e913]: Porush / 24Seven Design
+                - link "Pro user" [ref=e915] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e916]:
+                - generic [ref=e918]:
+                  - generic:
+                    - button [ref=e919] [cursor=pointer]:
+                      - img [ref=e920]
+                    - generic [ref=e922]: "17"
+                - generic [ref=e923]:
+                  - img [ref=e924]
+                  - generic [ref=e927]: 26.3k
+          - listitem [ref=e928]:
+            - generic [ref=e929]:
+              - figure [ref=e930]:
+                - img "Referral Program - Achieving 7 Million Invites in 30 Days animation graphic design motion graphics product design refer referral ui" [ref=e931]
+              - link "View Referral Program - Achieving 7 Million Invites in 30 Days" [ref=e933] [cursor=pointer]:
+                - /url: /shots/24770199-Referral-Program-Achieving-7-Million-Invites-in-30-Days
+                - generic: View Referral Program - Achieving 7 Million Invites in 30 Days
+              - generic:
+                - generic:
+                  - generic: Referral Program - Achieving 7 Million Invites in 30 Days
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e934] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e935]
+                    - button [ref=e937] [cursor=pointer]:
+                      - img [ref=e938]
+            - generic [ref=e940]:
+              - link "Sourav Srivastava Sourav Srivastava" [ref=e942] [cursor=pointer]:
+                - /url: /souravisuncool
+                - img "Sourav Srivastava" [ref=e943]
+                - generic [ref=e944]: Sourav Srivastava
+              - generic [ref=e945]:
+                - generic [ref=e947]:
+                  - generic:
+                    - button [ref=e948] [cursor=pointer]:
+                      - img [ref=e949]
+                    - generic [ref=e951]: "21"
+                - generic [ref=e952]:
+                  - img [ref=e953]
+                  - generic [ref=e956]: 10.2k
+          - listitem [ref=e957]:
+            - generic [ref=e958]:
+              - figure [ref=e959]:
+                - img "\"Scratch The Prize\" Growth Feature for Friend Referrals 3d animation app card cards crypto gradient lottery mobile mobile app mobile application mobile ui motion graphics reward scratch sweatcoin trophy ui ux win" [ref=e960]
+              - generic [ref=e961]:
+                - img [ref=e963]
+                - img [ref=e966]
+                - link "Shot Link":
+                  - /url: /shots/20429784--Scratch-The-Prize-Growth-Feature-for-Friend-Referrals
+                  - generic: Shot Link
+              - link "View \"Scratch The Prize\" Growth Feature for Friend Referrals" [ref=e969] [cursor=pointer]:
+                - /url: /shots/20429784--Scratch-The-Prize-Growth-Feature-for-Friend-Referrals
+                - generic: View "Scratch The Prize" Growth Feature for Friend Referrals
+              - generic:
+                - generic:
+                  - generic: "\"Scratch The Prize\" Growth Feature for Friend Referrals"
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e970] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e971]
+                    - button [ref=e973] [cursor=pointer]:
+                      - img [ref=e974]
+            - generic [ref=e976]:
+              - generic [ref=e977]:
+                - link "Kristina Volchek Kristina Volchek" [ref=e978] [cursor=pointer]:
+                  - /url: /kristi-digital
+                  - img "Kristina Volchek" [ref=e979]
+                  - generic [ref=e980]: Kristina Volchek
+                - link "Pro user" [ref=e982] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e983]:
+                - generic [ref=e985]:
+                  - generic:
+                    - button [ref=e986] [cursor=pointer]:
+                      - img [ref=e987]
+                    - generic [ref=e989]: "159"
+                - generic [ref=e990]:
+                  - img [ref=e991]
+                  - generic [ref=e994]: 80.1k
+          - listitem [ref=e995]:
+            - generic [ref=e996]:
+              - figure [ref=e997]:
+                - img "Viral Waitlist UI Design for Form Builder SaaS design form builder leaderboard material design queueform viral app waitist web app" [ref=e998]
+              - link "View Viral Waitlist UI Design for Form Builder SaaS" [ref=e1000] [cursor=pointer]:
+                - /url: /shots/26166036-Viral-Waitlist-UI-Design-for-Form-Builder-SaaS
+                - generic: View Viral Waitlist UI Design for Form Builder SaaS
+              - generic:
+                - generic:
+                  - generic: Viral Waitlist UI Design for Form Builder SaaS
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1001] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1002]
+                    - button [ref=e1004] [cursor=pointer]:
+                      - img [ref=e1005]
+            - generic [ref=e1007]:
+              - generic [ref=e1008]:
+                - link "Porush / 24Seven Design Porush / 24Seven Design" [ref=e1009] [cursor=pointer]:
+                  - /url: /Porush-24SevenDesign
+                  - img "Porush / 24Seven Design" [ref=e1010]
+                  - generic [ref=e1011]: Porush / 24Seven Design
+                - link "Pro user" [ref=e1013] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1014]:
+                - generic [ref=e1016]:
+                  - generic:
+                    - button [ref=e1017] [cursor=pointer]:
+                      - img [ref=e1018]
+                    - generic [ref=e1020]: "30"
+                - generic [ref=e1021]:
+                  - img [ref=e1022]
+                  - generic [ref=e1025]: 25k
+          - listitem [ref=e1026]:
+            - generic [ref=e1027]:
+              - figure [ref=e1028]:
+                - img "Smart Finance Mobile App Design app design clean ui design digital finance finance finance app finance ui financial technology fintech design fintech ui investment app mobile app design mobile app ui money management saas design ui uiux design user interface ux design wealth management" [ref=e1029]
+              - link "View Smart Finance Mobile App Design" [ref=e1031] [cursor=pointer]:
+                - /url: /shots/26097772-Smart-Finance-Mobile-App-Design
+                - generic: View Smart Finance Mobile App Design
+              - generic:
+                - generic:
+                  - generic: Smart Finance Mobile App Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1032] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1033]
+                    - button [ref=e1035] [cursor=pointer]:
+                      - img [ref=e1036]
+            - generic [ref=e1038]:
+              - link "Zencraf Zencraf" [ref=e1040] [cursor=pointer]:
+                - /url: /zencrafagency
+                - img "Zencraf" [ref=e1041]
+                - generic [ref=e1042]: Zencraf
+              - generic [ref=e1043]:
+                - generic [ref=e1045]:
+                  - generic:
+                    - button [ref=e1046] [cursor=pointer]:
+                      - img [ref=e1047]
+                    - generic [ref=e1049]: "7"
+                - generic [ref=e1050]:
+                  - img [ref=e1051]
+                  - generic [ref=e1054]: 6.7k
+          - listitem [ref=e1055]:
+            - generic [ref=e1056]:
+              - figure [ref=e1057]:
+                - img "Refer, Reward, Repeat – Hoppyn Membership Flow app design invitation invite link mobile promotion qr reedem refer refer a friend referance referral code scan ui ux" [ref=e1058]
+              - link "View Refer, Reward, Repeat – Hoppyn Membership Flow" [ref=e1060] [cursor=pointer]:
+                - /url: /shots/26140488-Refer-Reward-Repeat-Hoppyn-Membership-Flow
+                - generic: View Refer, Reward, Repeat – Hoppyn Membership Flow
+              - generic:
+                - generic:
+                  - generic: Refer, Reward, Repeat – Hoppyn Membership Flow
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1061] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1062]
+                    - button [ref=e1064] [cursor=pointer]:
+                      - img [ref=e1065]
+            - generic [ref=e1067]:
+              - generic [ref=e1068]:
+                - link "Qala Studio Qala Studio" [ref=e1069] [cursor=pointer]:
+                  - /url: /qala_design
+                  - img "Qala Studio" [ref=e1070]
+                  - generic [ref=e1071]: Qala Studio
+                - link "Pro user" [ref=e1073] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1074]:
+                - generic [ref=e1076]:
+                  - generic:
+                    - button [ref=e1077] [cursor=pointer]:
+                      - img [ref=e1078]
+                    - generic [ref=e1080]: "12"
+                - generic [ref=e1081]:
+                  - img [ref=e1082]
+                  - generic [ref=e1085]: 12.4k
+          - listitem [ref=e1086]:
+            - generic [ref=e1087]:
+              - figure [ref=e1088]:
+                - img "Mobile App Design Gamified Learning App Activation With Lopps aarrr app growth asol design edtech education app design figma gamification gamified iosapp learning app levels mobile app design mobile ui product design product strategy subscription task trial to paid ui uiuxdesign" [ref=e1089]
+              - link "View Mobile App Design Gamified Learning App Activation With Lopps" [ref=e1091] [cursor=pointer]:
+                - /url: /shots/26822203-Mobile-App-Design-Gamified-Learning-App-Activation-With-Lopps
+                - generic: View Mobile App Design Gamified Learning App Activation With Lopps
+              - generic:
+                - generic:
+                  - generic: Mobile App Design Gamified Learning App Activation With Lopps
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1092] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1093]
+                    - button [ref=e1095] [cursor=pointer]:
+                      - img [ref=e1096]
+            - generic [ref=e1098]:
+              - generic [ref=e1099]:
+                - link "Anna (asol_design) Anna (asol_design)" [ref=e1100] [cursor=pointer]:
+                  - /url: /asol_design
+                  - img "Anna (asol_design)" [ref=e1101]
+                  - generic [ref=e1102]: Anna (asol_design)
+                - link "Pro user" [ref=e1104] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1105]:
+                - generic [ref=e1107]:
+                  - generic:
+                    - button [ref=e1108] [cursor=pointer]:
+                      - img [ref=e1109]
+                    - generic [ref=e1111]: "43"
+                - generic [ref=e1112]:
+                  - img [ref=e1113]
+                  - generic [ref=e1116]: 8.2k
+          - listitem [ref=e1117]:
+            - generic [ref=e1118]:
+              - figure [ref=e1119]:
+                - img "QuickAid Social Awareness App Design app app design app interface food invite friends ios app design mobile mobile app mobile app ui modern app interface order points history product design referral link rewards rewards app service travel ui ux" [ref=e1120]
+              - link "View QuickAid Social Awareness App Design" [ref=e1122] [cursor=pointer]:
+                - /url: /shots/26753983-QuickAid-Social-Awareness-App-Design
+                - generic: View QuickAid Social Awareness App Design
+              - generic:
+                - generic:
+                  - generic: QuickAid Social Awareness App Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1123] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1124]
+                    - button [ref=e1126] [cursor=pointer]:
+                      - img [ref=e1127]
+            - generic [ref=e1129]:
+              - generic [ref=e1130]:
+                - link "Orbix Studio LLC Orbix Studio LLC" [ref=e1131] [cursor=pointer]:
+                  - /url: /OrbixstudioLLC
+                  - img "Orbix Studio LLC" [ref=e1132]
+                  - generic [ref=e1133]: Orbix Studio LLC
+                - link "Pro user" [ref=e1135] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+                  - generic [ref=e1136]: +
+              - generic [ref=e1137]:
+                - generic [ref=e1139]:
+                  - generic:
+                    - button [ref=e1140] [cursor=pointer]:
+                      - img [ref=e1141]
+                    - generic [ref=e1143]: "100"
+                - generic [ref=e1144]:
+                  - img [ref=e1145]
+                  - generic [ref=e1148]: 17.5k
+          - listitem [ref=e1149]:
+            - generic [ref=e1150]:
+              - figure [ref=e1151]:
+                - 'img "Hallo: Invite Friends character design characters cute flat friends hiwow illustration invite referral rewards share social media vector" [ref=e1152]'
+              - img [ref=e1155]
+              - 'link "View Hallo: Invite Friends" [ref=e1157] [cursor=pointer]':
+                - /url: /shots/7528654-Hallo-Invite-Friends
+                - generic: "View Hallo: Invite Friends"
+              - generic:
+                - generic:
+                  - generic: "Hallo: Invite Friends"
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1158] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1159]
+                    - button [ref=e1161] [cursor=pointer]:
+                      - img [ref=e1162]
+            - generic [ref=e1164]:
+              - link "Hiwow Hiwow" [ref=e1166] [cursor=pointer]:
+                - /url: /Hiwow
+                - img "Hiwow" [ref=e1167]
+                - generic [ref=e1168]: Hiwow
+              - generic [ref=e1169]:
+                - generic [ref=e1171]:
+                  - generic:
+                    - button [ref=e1172] [cursor=pointer]:
+                      - img [ref=e1173]
+                    - generic [ref=e1175]: "291"
+                - generic [ref=e1176]:
+                  - img [ref=e1177]
+                  - generic [ref=e1180]: 93.6k
+          - listitem [ref=e1181]:
+            - generic [ref=e1182]:
+              - figure [ref=e1183]:
+                - img "Social Mobile App - Event & Concert dashboard events mobile app social app ui ux design visual design" [ref=e1184]
+              - link "View Social Mobile App - Event & Concert" [ref=e1186] [cursor=pointer]:
+                - /url: /shots/23677760-Social-Mobile-App-Event-Concert
+                - generic: View Social Mobile App - Event & Concert
+              - generic:
+                - generic:
+                  - generic: Social Mobile App - Event & Concert
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1187] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1188]
+                    - button [ref=e1190] [cursor=pointer]:
+                      - img [ref=e1191]
+            - generic [ref=e1193]:
+              - link "Karthik Raja Karthik Raja" [ref=e1195] [cursor=pointer]:
+                - /url: /kruxdesign
+                - img "Karthik Raja" [ref=e1196]
+                - generic [ref=e1197]: Karthik Raja
+              - generic [ref=e1198]:
+                - generic [ref=e1200]:
+                  - generic:
+                    - button [ref=e1201] [cursor=pointer]:
+                      - img [ref=e1202]
+                    - generic [ref=e1204]: "2"
+                - generic [ref=e1205]:
+                  - img [ref=e1206]
+                  - generic [ref=e1209]: 1.7k
+          - listitem [ref=e1210]:
+            - generic [ref=e1211]:
+              - figure [ref=e1212]:
+                - img "Referrals to reward users for posting Youtube videos information architecture referral strategy referrals rewards seo boost ui ux" [ref=e1213]
+              - link "View Referrals to reward users for posting Youtube videos" [ref=e1215] [cursor=pointer]:
+                - /url: /shots/23399661-Referrals-to-reward-users-for-posting-Youtube-videos
+                - generic: View Referrals to reward users for posting Youtube videos
+              - generic:
+                - generic:
+                  - generic: Referrals to reward users for posting Youtube videos
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1216] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1217]
+                    - button [ref=e1219] [cursor=pointer]:
+                      - img [ref=e1220]
+            - generic [ref=e1222]:
+              - link "Surbhit Varma Surbhit Varma" [ref=e1224] [cursor=pointer]:
+                - /url: /Svarma
+                - img "Surbhit Varma" [ref=e1225]
+                - generic [ref=e1226]: Surbhit Varma
+              - generic [ref=e1227]:
+                - generic [ref=e1229]:
+                  - generic:
+                    - button [ref=e1230] [cursor=pointer]:
+                      - img [ref=e1231]
+                    - generic [ref=e1233]: "0"
+                - generic [ref=e1234]:
+                  - img [ref=e1235]
+                  - generic [ref=e1238]: 1.4k
+          - listitem [ref=e1239]:
+            - generic [ref=e1240]:
+              - figure [ref=e1241]:
+                - img "Refer & Earn Mobile App Ui Design app engagement clean ui fintech app growth feature invite friends loyalty program mobile dashboard mobile interaction modern ui refer and earn referral program referral ui reward system rewards app ui inspiration user experience" [ref=e1242]
+              - link "View Refer & Earn Mobile App Ui Design" [ref=e1244] [cursor=pointer]:
+                - /url: /shots/27143538-Refer-Earn-Mobile-App-Ui-Design
+                - generic: View Refer & Earn Mobile App Ui Design
+              - generic:
+                - generic:
+                  - generic: Refer & Earn Mobile App Ui Design
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1245] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1246]
+                    - button [ref=e1248] [cursor=pointer]:
+                      - img [ref=e1249]
+            - generic [ref=e1251]:
+              - generic [ref=e1252]:
+                - link "DesignUs Agency DesignUs Agency" [ref=e1253] [cursor=pointer]:
+                  - /url: /DesignUsAgency
+                  - img "DesignUs Agency" [ref=e1254]
+                  - generic [ref=e1255]: DesignUs Agency
+                - link "Pro user" [ref=e1257] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1258]:
+                - generic [ref=e1260]:
+                  - generic:
+                    - button [ref=e1261] [cursor=pointer]:
+                      - img [ref=e1262]
+                    - generic [ref=e1264]: "0"
+                - generic [ref=e1265]:
+                  - img [ref=e1266]
+                  - generic [ref=e1269]: "940"
+          - listitem [ref=e1270]:
+            - generic [ref=e1271]:
+              - figure [ref=e1272]:
+                - img "WinWinKit Aesthetics affiliate dashboard marketing mobile platform preview link referral referral code saas winwinkit" [ref=e1273]
+              - link "View WinWinKit Aesthetics" [ref=e1275] [cursor=pointer]:
+                - /url: /shots/26207557-WinWinKit-Aesthetics
+                - generic: View WinWinKit Aesthetics
+              - generic:
+                - generic:
+                  - generic: WinWinKit Aesthetics
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1276] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1277]
+                    - button [ref=e1279] [cursor=pointer]:
+                      - img [ref=e1280]
+            - generic [ref=e1282]:
+              - link "Oleh Oleh" [ref=e1284] [cursor=pointer]:
+                - /url: /endore8
+                - img "Oleh" [ref=e1285]
+                - generic [ref=e1286]: Oleh
+              - generic [ref=e1287]:
+                - generic [ref=e1289]:
+                  - generic:
+                    - button [ref=e1290] [cursor=pointer]:
+                      - img [ref=e1291]
+                    - generic [ref=e1293]: "3"
+                - generic [ref=e1294]:
+                  - img [ref=e1295]
+                  - generic [ref=e1298]: 2k
+          - listitem [ref=e1299]:
+            - generic [ref=e1300]:
+              - figure [ref=e1301]:
+                - img "Dating Mobile App app app design bumble chat chatting dating dating app dating mobile app ios live voice chat love app messenger app mobile app mobile dating online dating profile relationship tinder ux voice chat" [ref=e1302]
+              - link "View Dating Mobile App" [ref=e1304] [cursor=pointer]:
+                - /url: /shots/26253970-Dating-Mobile-App
+                - generic: View Dating Mobile App
+              - generic:
+                - generic:
+                  - generic: Dating Mobile App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1305] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1306]
+                    - button [ref=e1308] [cursor=pointer]:
+                      - img [ref=e1309]
+            - generic [ref=e1311]:
+              - link "Munna Khan 🔥 Munna Khan 🔥" [ref=e1313] [cursor=pointer]:
+                - /url: /uimunna
+                - img "Munna Khan 🔥" [ref=e1314]
+                - generic [ref=e1315]: Munna Khan 🔥
+              - generic [ref=e1316]:
+                - generic [ref=e1318]:
+                  - generic:
+                    - button [ref=e1319] [cursor=pointer]:
+                      - img [ref=e1320]
+                    - generic [ref=e1322]: "61"
+                - generic [ref=e1323]:
+                  - img [ref=e1324]
+                  - generic [ref=e1327]: 13.7k
+          - listitem [ref=e1328]:
+            - generic [ref=e1329]:
+              - figure [ref=e1330]:
+                - img "Payz I Fintech Mobile App animation app branding card creative design finance fintech interaction landing page mobile app mockup motion graphics product design ui user interface ux wallet" [ref=e1331]
+              - link "View Payz I Fintech Mobile App" [ref=e1333] [cursor=pointer]:
+                - /url: /shots/25278687-Payz-I-Fintech-Mobile-App
+                - generic: View Payz I Fintech Mobile App
+              - generic:
+                - generic:
+                  - generic: Payz I Fintech Mobile App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1334] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1335]
+                    - button [ref=e1337] [cursor=pointer]:
+                      - img [ref=e1338]
+            - generic [ref=e1340]:
+              - link "Ashfak Ahmed Sayem Ashfak Ahmed Sayem" [ref=e1342] [cursor=pointer]:
+                - /url: /ashfaksayem
+                - img "Ashfak Ahmed Sayem" [ref=e1343]
+                - generic [ref=e1344]: Ashfak Ahmed Sayem
+              - generic [ref=e1345]:
+                - generic [ref=e1347]:
+                  - generic:
+                    - button [ref=e1348] [cursor=pointer]:
+                      - img [ref=e1349]
+                    - generic [ref=e1351]: "31"
+                - generic [ref=e1352]:
+                  - img [ref=e1353]
+                  - generic [ref=e1356]: 20.2k
+          - listitem [ref=e1357]:
+            - generic [ref=e1358]:
+              - figure [ref=e1359]:
+                - img "DogX - Airdrop Crypto airdrop coin crypto dog game mobile telegram x" [ref=e1360]
+              - link "View DogX - Airdrop Crypto" [ref=e1362] [cursor=pointer]:
+                - /url: /shots/25794892-DogX-Airdrop-Crypto
+                - generic: View DogX - Airdrop Crypto
+              - generic:
+                - generic:
+                  - generic: DogX - Airdrop Crypto
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1363] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1364]
+                    - button [ref=e1366] [cursor=pointer]:
+                      - img [ref=e1367]
+            - generic [ref=e1369]:
+              - link "Tran Thanh Lam Tran Thanh Lam" [ref=e1371] [cursor=pointer]:
+                - /url: /im_lancel
+                - img "Tran Thanh Lam" [ref=e1372]
+                - generic [ref=e1373]: Tran Thanh Lam
+              - generic [ref=e1374]:
+                - generic [ref=e1376]:
+                  - generic:
+                    - button [ref=e1377] [cursor=pointer]:
+                      - img [ref=e1378]
+                    - generic [ref=e1380]: "16"
+                - generic [ref=e1381]:
+                  - img [ref=e1382]
+                  - generic [ref=e1385]: 5.6k
+          - listitem [ref=e1386]:
+            - generic [ref=e1387]:
+              - figure [ref=e1388]:
+                - img "Why Every Business Needs a Mobile App or Website in 2025? android app development company blog elitemcommerce grocery mobile app groceryapp grocerydeliveryapp grocerymobileapp meatdeliveryapp" [ref=e1389]
+              - link "View Why Every Business Needs a Mobile App or Website in 2025?" [ref=e1391] [cursor=pointer]:
+                - /url: /shots/26163072-Why-Every-Business-Needs-a-Mobile-App-or-Website-in-2025
+                - generic: View Why Every Business Needs a Mobile App or Website in 2025?
+              - generic:
+                - generic:
+                  - generic: Why Every Business Needs a Mobile App or Website in 2025?
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1392] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1393]
+                    - button [ref=e1395] [cursor=pointer]:
+                      - img [ref=e1396]
+            - generic [ref=e1398]:
+              - link "archana archana" [ref=e1400] [cursor=pointer]:
+                - /url: /Gurunathan
+                - img "archana" [ref=e1401]
+                - generic [ref=e1402]: archana
+              - generic [ref=e1403]:
+                - generic [ref=e1405]:
+                  - generic:
+                    - button [ref=e1406] [cursor=pointer]:
+                      - img [ref=e1407]
+                    - generic [ref=e1409]: "1"
+                - generic [ref=e1410]:
+                  - img [ref=e1411]
+                  - generic [ref=e1414]: 21.6k
+          - listitem [ref=e1415]:
+            - generic [ref=e1416]:
+              - figure [ref=e1417]:
+                - img "I will complate laravel multivendor ecommerce website app codecanyon ecommerce fiverr hrm inventory management inventory management codecanyon laravel development logo php shop store upwork web" [ref=e1418]
+              - link "View I will complate laravel multivendor ecommerce website" [ref=e1420] [cursor=pointer]:
+                - /url: /shots/16804740-I-will-complate-laravel-multivendor-ecommerce-website
+                - generic: View I will complate laravel multivendor ecommerce website
+              - generic:
+                - generic:
+                  - generic: I will complate laravel multivendor ecommerce website
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1421] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1422]
+                    - button [ref=e1424] [cursor=pointer]:
+                      - img [ref=e1425]
+            - generic [ref=e1427]:
+              - link "Monir Uzzaman Monir Uzzaman" [ref=e1429] [cursor=pointer]:
+                - /url: /moniruzzaman97m
+                - img "Monir Uzzaman" [ref=e1430]
+                - generic [ref=e1431]: Monir Uzzaman
+              - generic [ref=e1432]:
+                - generic [ref=e1434]:
+                  - generic:
+                    - button [ref=e1435] [cursor=pointer]:
+                      - img [ref=e1436]
+                    - generic [ref=e1438]: "0"
+                - generic [ref=e1439]:
+                  - img [ref=e1440]
+                  - generic [ref=e1443]: 8.1k
+          - listitem [ref=e1444]:
+            - generic [ref=e1445]:
+              - figure [ref=e1446]:
+                - img "International Money Transfer Mobile App app app design app ui banking finance finance app finance app design finance mobile app fintech international ios mobile app mobile app design money money transfer screen send money transfer ui worldwide" [ref=e1447]
+              - generic [ref=e1449]:
+                - img [ref=e1450]
+                - generic [ref=e1452]: "1"
+              - link "View International Money Transfer Mobile App" [ref=e1453] [cursor=pointer]:
+                - /url: /shots/26563788-International-Money-Transfer-Mobile-App
+                - generic: View International Money Transfer Mobile App
+              - generic:
+                - generic:
+                  - generic: International Money Transfer Mobile App
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1454] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1455]
+                    - button [ref=e1457] [cursor=pointer]:
+                      - img [ref=e1458]
+            - generic [ref=e1460]:
+              - generic [ref=e1461]:
+                - link "MD Mostahid MD Mostahid" [ref=e1462] [cursor=pointer]:
+                  - /url: /MDMOSTAHID9
+                  - img "MD Mostahid" [ref=e1463]
+                  - generic [ref=e1464]: MD Mostahid
+                - link "Pro user" [ref=e1466] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1467]:
+                - generic [ref=e1469]:
+                  - generic:
+                    - button [ref=e1470] [cursor=pointer]:
+                      - img [ref=e1471]
+                    - generic [ref=e1473]: "95"
+                - generic [ref=e1474]:
+                  - img [ref=e1475]
+                  - generic [ref=e1478]: 5.2k
+          - listitem [ref=e1479]:
+            - generic [ref=e1480]:
+              - figure [ref=e1481]:
+                - img "iungo App Redesign - Login & Registration Process android animation app design earn flat interface ios login login form material mobile redesign referral registration reward social ui uikit ux" [ref=e1482]
+              - link "View iungo App Redesign - Login & Registration Process" [ref=e1484] [cursor=pointer]:
+                - /url: /shots/7332641-iungo-App-Redesign-Login-Registration-Process
+                - generic: View iungo App Redesign - Login & Registration Process
+              - generic:
+                - generic:
+                  - generic: iungo App Redesign - Login & Registration Process
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1485] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1486]
+                    - button [ref=e1488] [cursor=pointer]:
+                      - img [ref=e1489]
+            - generic [ref=e1491]:
+              - link "Md. Faisal Hossain Md. Faisal Hossain" [ref=e1493] [cursor=pointer]:
+                - /url: /mdfhossain005
+                - img "Md. Faisal Hossain" [ref=e1494]
+                - generic [ref=e1495]: Md. Faisal Hossain
+              - generic [ref=e1496]:
+                - generic [ref=e1498]:
+                  - generic:
+                    - button [ref=e1499] [cursor=pointer]:
+                      - img [ref=e1500]
+                    - generic [ref=e1502]: "14"
+                - generic [ref=e1503]:
+                  - img [ref=e1504]
+                  - generic [ref=e1507]: 5.3k
+          - listitem [ref=e1508]:
+            - generic [ref=e1509]:
+              - figure [ref=e1510]:
+                - img "iungo App Redesign - Splash & Onboarding android animation app design earn interface ios material mobile onboarding screen referral reward sharing social splashscreen ui uikit ux" [ref=e1511]
+              - link "View iungo App Redesign - Splash & Onboarding" [ref=e1513] [cursor=pointer]:
+                - /url: /shots/7319329-iungo-App-Redesign-Splash-Onboarding
+                - generic: View iungo App Redesign - Splash & Onboarding
+              - generic:
+                - generic:
+                  - generic: iungo App Redesign - Splash & Onboarding
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1514] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1515]
+                    - button [ref=e1517] [cursor=pointer]:
+                      - img [ref=e1518]
+            - generic [ref=e1520]:
+              - link "Md. Faisal Hossain Md. Faisal Hossain" [ref=e1522] [cursor=pointer]:
+                - /url: /mdfhossain005
+                - img "Md. Faisal Hossain" [ref=e1523]
+                - generic [ref=e1524]: Md. Faisal Hossain
+              - generic [ref=e1525]:
+                - generic [ref=e1527]:
+                  - generic:
+                    - button [ref=e1528] [cursor=pointer]:
+                      - img [ref=e1529]
+                    - generic [ref=e1531]: "17"
+                - generic [ref=e1532]:
+                  - img [ref=e1533]
+                  - generic [ref=e1536]: 5.6k
+          - listitem [ref=e1537]:
+            - generic [ref=e1538]:
+              - figure [ref=e1539]:
+                - img "Premium NFT Marketplace & Crypto Wallet UI app design appdesign blockchain creative cryptowallet dark ui darkinterface digitalcollectibles ethereum figma figma app design figma ui fintechui minimal mobileappdesign nftmarketplace uiux userexperience visualdesign web3" [ref=e1540]
+              - link "View Premium NFT Marketplace & Crypto Wallet UI" [ref=e1542] [cursor=pointer]:
+                - /url: /shots/27250147-Premium-NFT-Marketplace-Crypto-Wallet-UI
+                - generic: View Premium NFT Marketplace & Crypto Wallet UI
+              - generic:
+                - generic:
+                  - generic: Premium NFT Marketplace & Crypto Wallet UI
+                  - list:
+                    - listitem:
+                      - link "Save shot" [ref=e1543] [cursor=pointer]:
+                        - /url: /signups/new
+                        - img [ref=e1544]
+                    - button [ref=e1546] [cursor=pointer]:
+                      - img [ref=e1547]
+            - generic [ref=e1549]:
+              - generic [ref=e1550]:
+                - link "Airzon Agency Airzon Agency" [ref=e1551] [cursor=pointer]:
+                  - /url: /airzonagency
+                  - img "Airzon Agency" [ref=e1552]
+                  - generic [ref=e1553]: Airzon Agency
+                - link "Pro user" [ref=e1555] [cursor=pointer]:
+                  - /url: /pro
+                  - text: PRO
+              - generic [ref=e1556]:
+                - generic [ref=e1558]:
+                  - generic:
+                    - button [ref=e1559] [cursor=pointer]:
+                      - img [ref=e1560]
+                    - generic [ref=e1562]: "1"
+                - generic [ref=e1563]:
+                  - img [ref=e1564]
+                  - generic [ref=e1567]: "121"
+        - link "Sign up to continue" [ref=e1569] [cursor=pointer]:
+          - /url: /signups/new
+  - contentinfo [ref=e1570]:
+    - generic [ref=e1573]:
+      - link "Illustration Illustration" [ref=e1574] [cursor=pointer]:
+        - /url: /shots/popular/illustration
+        - img "Illustration" [ref=e1577]
+        - generic [ref=e1578]: Illustration
+      - link "Web Design Web Design" [ref=e1579] [cursor=pointer]:
+        - /url: /shots/popular/web-design
+        - img "Web Design" [ref=e1582]
+        - generic [ref=e1583]: Web Design
+      - link "Print Print" [ref=e1584] [cursor=pointer]:
+        - /url: /shots/popular/print
+        - img "Print" [ref=e1587]
+        - generic [ref=e1588]: Print
+      - link "Branding Branding" [ref=e1589] [cursor=pointer]:
+        - /url: /shots/popular/branding
+        - img "Branding" [ref=e1592]
+        - generic [ref=e1593]: Branding
+      - link "Typography Typography" [ref=e1594] [cursor=pointer]:
+        - /url: /shots/popular/typography
+        - img "Typography" [ref=e1597]
+        - generic [ref=e1598]: Typography
+      - link "Mobile Mobile" [ref=e1599] [cursor=pointer]:
+        - /url: /shots/popular/mobile
+        - img "Mobile" [ref=e1602]
+        - generic [ref=e1603]: Mobile
+      - link "Animation Animation" [ref=e1604] [cursor=pointer]:
+        - /url: /shots/popular/animation
+        - img "Animation" [ref=e1607]
+        - generic [ref=e1608]: Animation
+      - link "Product Design Product Design" [ref=e1609] [cursor=pointer]:
+        - /url: /shots/popular/product-design
+        - img "Product Design" [ref=e1612]
+        - generic [ref=e1613]: Product Design
+      - link "Illustration Illustration" [ref=e1614] [cursor=pointer]:
+        - /url: /shots/popular/illustration
+        - img "Illustration" [ref=e1617]
+        - generic [ref=e1618]: Illustration
+      - link "Web Design Web Design" [ref=e1619] [cursor=pointer]:
+        - /url: /shots/popular/web-design
+        - img "Web Design" [ref=e1622]
+        - generic [ref=e1623]: Web Design
+      - link "Print Print" [ref=e1624] [cursor=pointer]:
+        - /url: /shots/popular/print
+        - img "Print" [ref=e1627]
+        - generic [ref=e1628]: Print
+      - link "Branding Branding" [ref=e1629] [cursor=pointer]:
+        - /url: /shots/popular/branding
+        - img "Branding" [ref=e1632]
+        - generic [ref=e1633]: Branding
+      - link "Typography Typography" [ref=e1634] [cursor=pointer]:
+        - /url: /shots/popular/typography
+        - img "Typography" [ref=e1637]
+        - generic [ref=e1638]: Typography
+      - link "Mobile Mobile" [ref=e1639] [cursor=pointer]:
+        - /url: /shots/popular/mobile
+        - img "Mobile" [ref=e1642]
+        - generic [ref=e1643]: Mobile
+      - link "Animation Animation" [ref=e1644] [cursor=pointer]:
+        - /url: /shots/popular/animation
+        - img "Animation" [ref=e1647]
+        - generic [ref=e1648]: Animation
+      - link "Product Design Product Design" [ref=e1649] [cursor=pointer]:
+        - /url: /shots/popular/product-design
+        - img "Product Design" [ref=e1652]
+        - generic [ref=e1653]: Product Design
+    - generic [ref=e1654]:
+      - generic [ref=e1655]:
+        - 'link "Dribbble: the community for graphic design Back to home page" [ref=e1656] [cursor=pointer]':
+          - /url: /
+          - 'img "Dribbble: the community for graphic design" [ref=e1657]'
+          - generic: Back to home page
+        - list [ref=e1659]:
+          - listitem [ref=e1660]:
+            - link "For designers" [ref=e1661] [cursor=pointer]:
+              - /url: /for-designers
+          - listitem [ref=e1662]:
+            - link "Hire talent" [ref=e1663] [cursor=pointer]:
+              - /url: /hiring
+          - listitem [ref=e1664]:
+            - link "Inspiration" [ref=e1665] [cursor=pointer]:
+              - /url: /shots/popular
+          - listitem [ref=e1666]:
+            - link "Advertising" [ref=e1667] [cursor=pointer]:
+              - /url: /advertise
+          - listitem [ref=e1668]:
+            - link "Blog" [ref=e1669] [cursor=pointer]:
+              - /url: /stories
+          - listitem [ref=e1670]:
+            - link "About" [ref=e1671] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e1672]:
+            - link "Careers" [ref=e1673] [cursor=pointer]:
+              - /url: /careers
+          - listitem [ref=e1674]:
+            - link "Support" [ref=e1675] [cursor=pointer]:
+              - /url: /contact
+        - generic [ref=e1676]:
+          - link "X" [ref=e1677] [cursor=pointer]:
+            - /url: http://x.com/dribbble
+            - img [ref=e1678]
+            - generic: X
+          - link "Facebook" [ref=e1680] [cursor=pointer]:
+            - /url: http://facebook.com/dribbble
+            - img [ref=e1681]
+            - generic: Facebook
+          - link "Instagram" [ref=e1683] [cursor=pointer]:
+            - /url: http://instagram.com/dribbble
+            - img [ref=e1684]
+            - generic: Instagram
+          - link "Pinterest" [ref=e1686] [cursor=pointer]:
+            - /url: http://www.pinterest.com/dribbble/
+            - img [ref=e1687]
+            - generic: Pinterest
+      - generic [ref=e1689]:
+        - list [ref=e1690]:
+          - listitem [ref=e1691]: © 2026 Dribbble
+          - listitem [ref=e1692]:
+            - link "Terms" [ref=e1693] [cursor=pointer]:
+              - /url: /terms
+          - listitem [ref=e1694]:
+            - link "Privacy" [ref=e1695] [cursor=pointer]:
+              - /url: /privacy
+          - listitem [ref=e1696]:
+            - link "Cookies" [ref=e1697] [cursor=pointer]:
+              - /url: /cookie-policy
+        - list [ref=e1698]:
+          - listitem [ref=e1699]:
+            - link "Jobs" [ref=e1700] [cursor=pointer]:
+              - /url: /directories/jobs
+          - listitem [ref=e1701]:
+            - link "Designers" [ref=e1702] [cursor=pointer]:
+              - /url: /directories/designers
+          - listitem [ref=e1703]:
+            - link "Freelancers" [ref=e1704] [cursor=pointer]:
+              - /url: /directories/freelance-designers
+          - listitem [ref=e1705]:
+            - link "Tags" [ref=e1706] [cursor=pointer]:
+              - /url: /tags
+          - listitem [ref=e1707]:
+            - link "Places" [ref=e1708] [cursor=pointer]:
+              - /url: /places
+          - listitem [ref=e1709]:
+            - link "Resources" [ref=e1710] [cursor=pointer]:
+              - /url: /resources
+  - generic:
+    - link "close":
+      - /url: "#"
+      - img
