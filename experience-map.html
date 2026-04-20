@@ -84,58 +84,59 @@
     .hero-title { font-size: 3.75rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1.05; color: var(--text); }
     .hero-subtitle { margin-top: 16px; font-size: 1rem; color: var(--text-2); max-width: 720px; line-height: 1.65; }
 
-    /* CATEGORY NAV — 居中 */
+    /* TWO-COLUMN LAYOUT: 左侧竖向定位器 + 右侧内容 */
+    .content-wrap {
+      max-width: var(--max-w); margin: 0 auto; padding: 40px 24px 80px;
+      display: grid; grid-template-columns: 200px 1fr; gap: 56px;
+      align-items: start;
+    }
+
+    /* 左侧竖向定位器（三大商业化类别） */
     .cat-nav {
-      max-width: var(--max-w); margin: 0 auto; padding: 40px 24px 0;
-      display: flex; justify-content: center; align-items: center; gap: 8px;
+      display: flex; flex-direction: column; gap: 2px;
+      position: sticky; top: 88px;
+    }
+    .cat-nav-title {
+      font-size: 0.6875rem; font-weight: 600; color: var(--text-4);
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0 16px 14px;
     }
     .cat-link {
-      position: relative; padding: 11px 22px; border: none; background: none;
+      position: relative; padding: 11px 16px; border: none; background: none;
       font-family: var(--font); font-size: 0.9375rem; font-weight: 500;
-      color: var(--text-3); cursor: pointer; transition: all 250ms var(--ease);
-      white-space: nowrap; display: flex; align-items: center;
-      border-radius: var(--radius-full);
+      color: var(--text-2); cursor: pointer; transition: all 250ms var(--ease);
+      white-space: nowrap; display: flex; align-items: center; gap: 10px;
+      border-radius: var(--radius); text-align: left;
     }
     .cat-link:hover { color: var(--text); background: var(--bg-surface); }
     .cat-link.active {
-      color: #fff; background: var(--text); font-weight: 600;
+      color: var(--text); font-weight: 700; background: var(--bg-surface);
     }
-    .cat-link.active:hover { background: var(--text); color: #fff; }
-    .cat-link .cat-dot { display: none; }
-    .cat-sep { display: none; }
-
-    /* TWO-COLUMN LAYOUT (Sidebar + Report list) */
-    .content-wrap {
-      max-width: var(--max-w); margin: 0 auto; padding: 32px 24px 40px;
-      display: grid; grid-template-columns: 180px 1fr; gap: 40px;
+    .cat-link.active::before {
+      content: ''; position: absolute; left: -12px; top: 12px; bottom: 12px;
+      width: 3px; background: var(--text); border-radius: 0 2px 2px 0;
     }
-    .content-wrap.full { grid-template-columns: 1fr; }
 
-    /* SUB-CATEGORY SIDEBAR */
+    /* 右侧内容区 */
+    .content-main { min-width: 0; }
+
+    /* 内容顶部子分类横向标签（装扮/会员/陪伴/内容货仓） */
     .sub-nav {
-      display: none; flex-direction: column; gap: 2px;
-      padding-top: 4px;
+      display: none; align-items: center; gap: 8px;
+      margin-bottom: 28px; flex-wrap: wrap;
+      padding-bottom: 20px; border-bottom: 1px solid var(--border-light);
     }
     .sub-nav.visible { display: flex; }
-    .sub-nav-title {
-      font-size: 0.6875rem; font-weight: 600; color: var(--text-4);
-      letter-spacing: 0.08em; text-transform: uppercase;
-      padding: 0 14px 10px; margin-bottom: 4px;
-    }
     .sub-link {
-      position: relative; padding: 9px 14px; border: none; background: none;
+      position: relative; padding: 7px 16px; border: 1px solid var(--border);
+      background: var(--bg);
       font-family: var(--font); font-size: 0.8125rem; font-weight: 500;
       color: var(--text-2); cursor: pointer; transition: all 200ms var(--ease);
-      white-space: nowrap; border-radius: var(--radius); text-align: left;
-      display: flex; align-items: center;
+      white-space: nowrap; border-radius: var(--radius-full);
     }
-    .sub-link:hover { color: var(--text); background: var(--bg-surface); }
+    .sub-link:hover { color: var(--text); border-color: var(--text-4); }
     .sub-link.active {
-      color: var(--text); font-weight: 600; background: var(--bg-surface);
-    }
-    .sub-link.active::before {
-      content: ''; position: absolute; left: 0; top: 8px; bottom: 8px;
-      width: 3px; background: var(--text); border-radius: 0 2px 2px 0;
+      color: #fff; background: var(--text); border-color: var(--text); font-weight: 600;
     }
 
     /* EMPTY */
@@ -277,16 +278,18 @@
     <p class="hero-subtitle">深度剖析竞品产品体验链路、用户需求和设计策略，基于 Figma 设计稿和用户行为调研的一手分析报告</p>
   </header>
 
-  <!-- Category Nav (居中) -->
-  <div class="cat-nav" id="catNav"></div>
-
-  <!-- Two-column layout: Sidebar + Report List -->
+  <!-- Two-column layout: Left category nav + Right content -->
   <div class="content-wrap" id="contentWrap">
-    <!-- Sub-category Sidebar -->
-    <aside class="sub-nav" id="subNav"></aside>
+    <!-- 左侧竖向定位器：三大商业化类别 -->
+    <aside class="cat-nav" id="catNav"></aside>
 
-    <!-- Report List View -->
-    <div class="report-list" id="reportList"></div>
+    <!-- 右侧内容区 -->
+    <main class="content-main">
+      <!-- 内容区顶部子分类标签 -->
+      <div class="sub-nav" id="subNav"></div>
+      <!-- 报告列表 -->
+      <div class="report-list" id="reportList"></div>
+    </main>
   </div>
 
   <!-- AI Skin Report Detail -->
@@ -612,7 +615,7 @@ function countReports(cat, sub) {
 
 function renderFilters() {
   const el = document.getElementById('catNav');
-  el.innerHTML = CATEGORIES.map(c => {
+  el.innerHTML = '<div class="cat-nav-title">商业化分类</div>' + CATEGORIES.map(c => {
     const isActive = activeCategory === c.key;
     return `<button class="cat-link ${isActive ? 'active' : ''}" onclick="setCategory(${c.key === null ? 'null' : "'" + c.key + "'"})">${c.label}</button>`;
   }).join('');
@@ -620,18 +623,15 @@ function renderFilters() {
 
 function renderSubFilters() {
   const subEl = document.getElementById('subNav');
-  const wrap = document.getElementById('contentWrap');
   const subs = activeCategory ? SUB_CATEGORIES[activeCategory] : null;
 
   if (!subs) {
     subEl.classList.remove('visible');
-    wrap.classList.add('full');
     return;
   }
 
   subEl.classList.add('visible');
-  wrap.classList.remove('full');
-  subEl.innerHTML = `<div class="sub-nav-title">${activeCategory}</div>` + subs.map(s => {
+  subEl.innerHTML = subs.map(s => {
     const isActive = activeSubCategory === s.key;
     return `<button class="sub-link ${isActive ? 'active' : ''}" onclick="setSubCategory(${s.key === null ? 'null' : "'" + s.key + "'"})">${s.label}</button>`;
   }).join('');
