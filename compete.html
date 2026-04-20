@@ -1291,20 +1291,6 @@ function renderGallery() {
 
 renderFilters();
 renderGallery();
-        <div class="gallery-desc">${c.desc}</div>
-        <div class="gallery-meta">
-          <div class="gallery-tags">
-            ${c.tags.map(t => `<span class="gallery-tag" onclick="filterTag('${t}')">${t}</span>`).join('')}
-          </div>
-          <span class="gallery-source">${c.source}</span>
-        </div>
-      </div>
-    </div>
-  `).join('');
-}
-
-renderFilters();
-renderGallery();
 </script>
 </body>
 </html>
