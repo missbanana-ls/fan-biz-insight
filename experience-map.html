@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAN商业化行业洞察 — 体验地图</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --font: 'Noto Sans SC', 'Segoe UI', system-ui, sans-serif;
+      --bg: #ffffff;
+      --bg-surface: #f8f9fa;
+      --bg-hover: #f1f3f4;
+      --text: #202124;
+      --text-2: #5f6368;
+      --text-3: #80868b;
+      --text-4: #bdc1c6;
+      --border: #dadce0;
+      --border-light: #e8eaed;
+      --blue: #1a73e8;
+      --blue-light: #e8f0fe;
+      --shadow-hover: 0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
+      --radius: 8px;
+      --radius-lg: 12px;
+      --radius-full: 100px;
+      --ease: cubic-bezier(0.2, 0, 0, 1);
+      --max-w: 1080px;
+      /* report colors */
+      --m:#3ECFAC;--ml:#E8FBF5;--md:#2BA88A;--r:#FF5A5F;--rl:#FFF0F0;--o:#FF9F43;--ol:#FFF8F0;--b:#4A90D9;--bl:#EFF5FC;--p:#8B5CF6;--pl:#F3EFFE;--f:#971230;--fl:#FDF0F3;
+      --g50:#FAFAFA;--g100:#F5F5F5;--g200:#EEE;--g400:#BDBDBD;--g600:#757575;--g800:#333;--g900:#1A1A1A;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+    /* NAV — 与index.html/compete.html保持一致 */
+    .topnav {
+      position: sticky; top: 0; z-index: 100;
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-light); height: 64px;
+    }
+    .topnav-inner {
+      max-width: var(--max-w); margin: 0 auto; padding: 0 24px;
+      height: 100%; display: flex; align-items: center; gap: 24px;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
+    .brand-name { font-size: 1.125rem; font-weight: 500; color: var(--text); letter-spacing: -0.01em; }
+    .topnav-right { display: flex; align-items: center; gap: 0; flex-shrink: 0; margin-left: auto; }
+    .nav-tabs { display: flex; align-items: center; gap: 0; height: 100%; }
+    .nav-tab {
+      height: 64px; padding: 0 20px; border: none; background: transparent;
+      color: var(--text-3); font-size: 0.875rem; font-weight: 500;
+      font-family: var(--font); cursor: pointer; position: relative;
+      transition: color 200ms var(--ease); display: flex; align-items: center;
+      text-decoration: none;
+    }
+    .nav-tab:hover { color: var(--text); }
+    .nav-tab.active { color: var(--text); }
+    .nav-tab.active::after {
+      content: ''; position: absolute; bottom: 0; left: 20px; right: 20px;
+      height: 2px; background: var(--text); border-radius: 1px 1px 0 0;
+    }
+
+    /* HERO */
+    .hero {
+      max-width: var(--max-w); margin: 0 auto; padding: 48px 24px 0; text-align: left;
+    }
+    .hero-title { font-size: 2.75rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; color: var(--text); }
+    .hero-subtitle { margin-top: 12px; font-size: 1rem; color: var(--text-2); max-width: 720px; }
+
+    /* REPORT LIST */
+    .report-list { max-width: var(--max-w); margin: 0 auto; padding: 32px 24px 20px; }
+    .report-card {
+      display: flex; align-items: stretch; gap: 0;
+      border: 1px solid var(--border-light); border-radius: var(--radius-lg);
+      overflow: hidden; background: var(--bg); margin-bottom: 20px;
+      transition: box-shadow 200ms var(--ease), border-color 200ms var(--ease);
+      text-decoration: none; color: inherit; cursor: pointer;
+    }
+    .report-card:hover { box-shadow: var(--shadow-hover); border-color: var(--border); }
+    .report-accent { width: 6px; flex-shrink: 0; }
+    .report-body { padding: 24px 28px; flex: 1; }
+    .report-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+    .report-date { font-size: 0.75rem; color: var(--text-3); }
+    .report-tag {
+      padding: 2px 10px; border-radius: var(--radius-full);
+      font-size: 0.6875rem; font-weight: 600; white-space: nowrap;
+    }
+    .report-title { font-size: 1.125rem; font-weight: 700; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
+    .report-desc { font-size: 0.8125rem; color: var(--text-2); line-height: 1.7; }
+    .report-stats { display: flex; gap: 20px; margin-top: 14px; flex-wrap: wrap; }
+    .report-stat { font-size: 0.75rem; color: var(--text-3); display: flex; align-items: center; gap: 4px; }
+    .report-stat strong { color: var(--text); font-weight: 600; }
+
+    /* EMBEDDED REPORT */
+    .report-embed { max-width: var(--max-w); margin: 0 auto; padding: 0 24px 80px; display: none; }
+    .report-embed.active { display: block; }
+    .report-back {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.8125rem; color: var(--text-3); text-decoration: none;
+      padding: 8px 0; margin-bottom: 20px; cursor: pointer; border: none; background: none;
+      font-family: var(--font); transition: color 200ms;
+    }
+    .report-back:hover { color: var(--text); }
+    .report-frame {
+      border: 1px solid var(--border-light); border-radius: var(--radius-lg);
+      overflow: hidden; background: var(--bg);
+    }
+    .report-frame iframe { width: 100%; border: none; min-height: 80vh; }
+
+    /* Inline report styles (from ai-skin-maker) */
+    .rpt-hero{background:linear-gradient(135deg,#0f0c29 0%,#1a1a2e 40%,#302b63 100%);color:#fff;padding:40px 28px 36px;text-align:center;position:relative;overflow:hidden;border-radius:var(--radius-lg) var(--radius-lg) 0 0}
+    .rpt-hero::before{content:'';position:absolute;inset:-50%;width:200%;height:200%;background:radial-gradient(circle at 25% 45%,rgba(62,207,172,.12) 0%,transparent 50%),radial-gradient(circle at 75% 35%,rgba(139,92,246,.1) 0%,transparent 50%)}
+    .rpt-hero h2{font-size:22px;font-weight:800;position:relative;line-height:1.4}
+    .rpt-hero .sub{font-size:12px;opacity:.6;position:relative;margin-top:8px}
+    .rpt-hero .tags{margin-top:14px;display:flex;justify-content:center;gap:8px;flex-wrap:wrap;position:relative}
+    .rpt-hero .tag{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:3px 12px;font-size:11px}
+    .rpt-ct{padding:28px 24px 40px}
+    .ph{display:flex;align-items:center;gap:10px;margin:36px 0 18px}.ph:first-child{margin-top:0}
+    .pn{background:var(--g900);color:#fff;font-size:10px;font-weight:700;letter-spacing:2.5px;padding:4px 12px;border-radius:4px}
+    .pt{font-size:18px;font-weight:700;color:var(--g900)}
+    .cd{background:#fff;border-radius:12px;padding:22px;margin-bottom:14px;border:1px solid var(--border-light)}
+    .cd h3{font-size:14px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+    .tg{padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;white-space:nowrap;display:inline-block}
+    .tg-g{background:var(--ml);color:var(--md)}.tg-r{background:var(--rl);color:var(--r)}.tg-o{background:var(--ol);color:var(--o)}.tg-b{background:var(--bl);color:var(--b)}.tg-p{background:var(--pl);color:var(--p)}.tg-f{background:var(--fl);color:var(--f)}
+    .tb{width:100%;border-collapse:collapse;font-size:12.5px}
+    .tb th{background:var(--g100);padding:9px 12px;text-align:left;font-weight:600;font-size:11.5px;color:var(--g600);border-bottom:2px solid var(--g200)}
+    .tb td{padding:10px 12px;border-bottom:1px solid var(--g200);vertical-align:top}.tb tr:last-child td{border-bottom:none}
+    .fl{display:flex;align-items:stretch;gap:0;overflow-x:auto;padding:14px 0;flex-wrap:wrap;justify-content:center}
+    .fs{background:#fff;border:2px solid var(--g200);border-radius:10px;padding:10px 12px;min-width:100px;max-width:140px;text-align:center;transition:all .2s}
+    .fs:hover{border-color:var(--m);transform:translateY(-2px)}
+    .fs .sn{font-size:10px;color:var(--g400);font-weight:700}.fs .sm{font-size:11.5px;font-weight:700;color:var(--g900);margin:2px 0}.fs .sd{font-size:10px;color:var(--g600);line-height:1.4}
+    .fa{font-size:16px;color:var(--g400);padding:0 2px;display:flex;align-items:center}
+    .ins{border-left:4px solid var(--p);border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0}
+    .ins.ins-p{background:linear-gradient(135deg,var(--pl),var(--bl))}.ins.ins-f{background:linear-gradient(135deg,var(--fl),#fff5f7);border-left-color:var(--f)}.ins.ins-g{background:linear-gradient(135deg,var(--ml),#f0fef8);border-left-color:var(--md)}
+    .ins h4{font-size:12.5px;font-weight:700;margin-bottom:5px}.ins p{font-size:12.5px;line-height:1.75}
+    .sb{background:linear-gradient(135deg,#0f0c29,#1a1a2e,#302b63);color:#fff;border-radius:12px;padding:24px;text-align:center;margin:18px 0}
+    .sb .bs{font-size:48px;font-weight:800;background:linear-gradient(135deg,var(--m),var(--p));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .sb .bl{font-size:11px;opacity:.55}.sb .vt{font-size:15px;font-weight:600;margin-top:10px}.sb .vs{font-size:12px;opacity:.65;margin-top:8px;max-width:600px;margin-left:auto;margin-right:auto}
+    .ct2{width:100%;border-collapse:collapse;font-size:11.5px}
+    .ct2 th{background:var(--g900);color:#fff;padding:9px 10px;text-align:center;font-weight:600;font-size:10.5px}
+    .ct2 th:first-child{text-align:left;border-radius:8px 0 0 0}.ct2 th:last-child{border-radius:0 8px 0 0}
+    .ct2 td{padding:9px 10px;border-bottom:1px solid var(--g200);text-align:center;vertical-align:middle}
+    .ct2 td:first-child{text-align:left;font-weight:600;color:var(--g900)}.ct2 tr:last-child td{border-bottom:none}
+    .ct2 .hl{background:rgba(62,207,172,.05)}
+    .gl{list-style:none;padding:0}
+    .gi{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--g200);align-items:flex-start}.gi:last-child{border-bottom:none}
+    .gic{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
+    .gic.cr{background:var(--rl)}.gic.im{background:var(--ol)}.gic.ni{background:var(--bl)}
+    .git h4{font-size:12.5px;font-weight:600;margin-bottom:2px}.git p{font-size:11.5px;color:var(--g600)}
+    .sc{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;font-weight:700;font-size:11.5px;color:#fff}.sc-r{background:var(--r)}.sc-o{background:var(--o)}.sc-g{background:var(--m)}
+    .fan-hero{background:linear-gradient(135deg,#971230,#c41e3a,#d4374a);color:#fff;border-radius:12px;padding:24px;text-align:center;margin-bottom:14px;position:relative;overflow:hidden}
+    .fan-hero::before{content:'';position:absolute;inset:-50%;width:200%;height:200%;background:radial-gradient(circle at 40% 40%,rgba(255,255,255,.08) 0%,transparent 50%)}
+    .fan-hero h3{font-size:18px;font-weight:800;position:relative}.fan-hero .fi{display:flex;justify-content:center;gap:14px;margin-top:10px;font-size:11.5px;opacity:.85;position:relative;flex-wrap:wrap}
+    .sw{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:middle;margin-right:3px}
+    .stars{color:#FFD700;font-size:13px;letter-spacing:1px}
+
+    /* FOOTER */
+    .footer { max-width: var(--max-w); margin: 0 auto; padding: 0 24px 40px; text-align: center; }
+    .footer-line { width: 40px; height: 1px; background: var(--border); margin: 0 auto 20px; }
+    .footer-text { font-size: 0.75rem; color: var(--text-4); }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero { padding: 32px 16px 0; }
+      .hero-title { font-size: 2rem; }
+      .report-list { padding: 24px 16px 16px; }
+      .report-body { padding: 20px; }
+      .rpt-ct { padding: 20px 16px 32px; }
+    }
+    @media (max-width: 480px) {
+      .nav-tab { padding: 0 12px; font-size: 0.8125rem; }
+      .hero-title { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="index.html" class="brand"><span class="brand-name">FAN商业化行业洞察</span></a>
+      <div class="topnav-right">
+        <nav class="nav-tabs">
+          <a class="nav-tab" href="index.html">洞察</a>
+          <a class="nav-tab active" href="experience-map.html">体验地图</a>
+          <a class="nav-tab" href="compete.html">竞品沉淀</a>
+        </nav>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1 class="hero-title">体验地图</h1>
+    <p class="hero-subtitle">深度剖析竞品产品体验链路、用户需求和设计策略，基于 Figma 设计稿和用户行为调研的一手分析报告</p>
+  </header>
+
+  <!-- Report List View -->
+  <div class="report-list" id="reportList">
+    <div class="report-card" onclick="showReport('ai-skin')">
+      <div class="report-accent" style="background:linear-gradient(180deg,#3ECFAC,#8B5CF6)"></div>
+      <div class="report-body">
+        <div class="report-meta">
+          <span class="report-date">2026.04.17</span>
+          <span class="report-tag" style="background:#E8FBF5;color:#2BA88A">竞品体验</span>
+          <span class="report-tag" style="background:#F3EFFE;color:#8B5CF6">AI生成</span>
+          <span class="report-tag" style="background:#FDF0F3;color:#971230">粉丝经济</span>
+        </div>
+        <div class="report-title">搜狗 AI 皮肤制造机 · 基于 Figma 设计稿的深度评估</div>
+        <div class="report-desc">基于 Figma API 实际读取的 12 张设计截图逐帧分析，深入评估搜狗 AI 皮肤制造机的产品链路、AI生成能力、竞品对标，并从张凌赫粉丝「小核桃」视角深挖追星用户的真实需求与现有方案的方向性差距。</div>
+        <div class="report-stats">
+          <span class="report-stat">📱 <strong>12</strong> 张设计截图</span>
+          <span class="report-stat">🆚 <strong>4</strong> 款竞品对标</span>
+          <span class="report-stat">📊 综合评分 <strong>4.0/10</strong></span>
+          <span class="report-stat">🌰 粉丝需求 <strong>6</strong> 层深挖</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Skin Report Detail -->
+  <div class="report-embed" id="report-ai-skin">
+    <button class="report-back" onclick="hideReport()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      返回报告列表
+    </button>
+
+    <div class="report-frame" style="border:none">
+      <!-- Report Hero -->
+      <div class="rpt-hero">
+        <h2>🎨 搜狗 AI 皮肤制造机<br>基于 Figma 设计稿的深度评估</h2>
+        <div class="sub">Figma 实际设计稿读取 · 12张关键页面逐帧分析 · 竞品对标 · 张凌赫粉丝视角</div>
+        <div class="tags">
+          <span class="tag">✅ Figma API 实际读取</span>
+          <span class="tag">📱 12张设计截图分析</span>
+          <span class="tag">🆚 竞品对标</span>
+          <span class="tag">🌰 小核桃视角</span>
+          <span class="tag">📅 2026.04.17</span>
+        </div>
+      </div>
+
+      <div class="rpt-ct">
+
+        <!-- PART 1 -->
+        <div class="ph"><span class="pn">PART 01</span><span class="pt">Figma 设计稿结构与真实链路还原</span></div>
+
+        <div class="cd">
+          <h3>📂 文件结构（Figma API 读取）</h3>
+          <table class="tb">
+            <tr><th>项目</th><th>内容</th></tr>
+            <tr><td><strong>文件名</strong></td><td>sogou商业化设计【2026】</td></tr>
+            <tr><td><strong>页面1</strong></td><td>AI皮肤prompt工程 — prompt模板矩阵（风格×表情×角度的组合设计）</td></tr>
+            <tr><td><strong>页面2</strong></td><td>UGC AI生产皮肤 — 完整用户体验链路（12张手机截图，540×1170px）</td></tr>
+            <tr><td><strong>最后修改</strong></td><td>2026-04-17 03:15 UTC</td></tr>
+            <tr><td><strong>总节点数</strong></td><td>页面2 含 12 个关键截图节点（6:2 ~ 6:17）</td></tr>
+          </table>
+        </div>
+
+        <div class="cd">
+          <h3>📱 实际产品链路（基于 12 张设计截图逐帧还原）</h3>
+          <div class="fl">
+            <div class="fs" style="border-color:var(--p);background:var(--pl)"><div class="sn">① 入口</div><div class="sm">装扮商城</div><div class="sd">皮肤制造机<br>入口卡片</div></div>
+            <div class="fa">→</div>
+            <div class="fs" style="border-color:var(--m);background:var(--ml)"><div class="sn">② AI皮肤</div><div class="sm">选风格</div><div class="sd">复古男孩/玫瑰少年<br>日系胶片/甜美少女<br>等 10+ 风格模板</div></div>
+            <div class="fa">→</div>
+            <div class="fs"><div class="sn">③ 上传照片</div><div class="sm">拍照/相册</div><div class="sd">调用系统相机<br>或从相册选取</div></div>
+            <div class="fa">→</div>
+            <div class="fs"><div class="sn">④ 图片裁切</div><div class="sm">手动裁切</div><div class="sd">双指缩放<br>选择区域</div></div>
+            <div class="fa">→</div>
+            <div class="fs" style="border-color:var(--b)"><div class="sn">⑤ 确认风格</div><div class="sm">皮肤选择</div><div class="sd">预览图 + 热度<br>"立即生成"</div></div>
+            <div class="fa">→</div>
+            <div class="fs" style="border-color:var(--o)"><div class="sn">⑥ AI生成中</div><div class="sm">排队等待</div><div class="sd">"实际处理时长<br>与网络状态<br>及排队人数有关"</div></div>
+            <div class="fa">→</div>
+            <div class="fs" style="border-color:var(--m);background:var(--ml)"><div class="sn">⑦ 生成结果</div><div class="sm">继续编辑</div><div class="sd">预览皮肤效果<br>继续编辑/分享</div></div>
+            <div class="fa">→</div>
+            <div class="fs"><div class="sn">⑧ 精细编辑</div><div class="sm">7大Tab</div><div class="sd">背景/模板/按钮<br>字体/贴纸/音效</div></div>
+          </div>
+        </div>
+
+        <div class="ins ins-g">
+          <h4>🔍 关键发现：设计稿比公开信息完善得多！</h4>
+          <p>对比之前基于公开教程的还原，实际设计稿显示搜狗<strong>已经接入了大模型生成能力</strong>：
+          <br>• AI皮肤 Tab — 用户选择风格模板（如"复古男孩""玫瑰少年"）→ 上传照片 → AI基于大模型生成带有人物面部的完整皮肤
+          <br>• "皮肤效果由大模型生成"的明确标注
+          <br>• 生成结果可多张变体选择
+          <br>• 背景 Tab 内"本次生成内容"区域保留AI生成的多个变体
+          <br>• <strong>已有丰富的模板库（推荐模板页面有 30+ 款按钮/装饰模板）</strong>
+          <br>• 支持贴纸（NEW 标签）— 这是新增能力
+          <br><br>
+          <strong>但核心问题依然存在：AI生成的是"风格化人脸融合"，而非"从描述生成完整皮肤背景"。</strong>这意味着用户不能用文字描述想要什么皮肤，只能选预设风格。</p>
+        </div>
+
+        <div class="cd">
+          <h3>⚙️ 7大编辑Tab能力矩阵（设计稿实际情况）</h3>
+          <table class="tb">
+            <tr><th>Tab</th><th>能力</th><th>评估</th></tr>
+            <tr><td><strong>AI皮肤</strong></td><td>10+ AI风格模板 + 上传照片 → 大模型生成人脸融合皮肤</td><td><span class="tg tg-g">✅ 已有AI能力</span> 但仅限预设风格</td></tr>
+            <tr><td><strong>背景</strong></td><td>相册上传（支持动图）/ 相机拍照 / AI生成变体选择 / 热门背景库 / 亮度调节滑块</td><td><span class="tg tg-g">✅ 较完善</span></td></tr>
+            <tr><td><strong>模板</strong></td><td>推荐模板 30+款（含猫咪/花朵/萌物/极简/暗黑等风格）</td><td><span class="tg tg-g">✅ 有模板库</span> 但缺少追星/IP场景</td></tr>
+            <tr><td><strong>按钮</strong></td><td>按钮样式选择</td><td><span class="tg tg-o">⚠️ 基础</span></td></tr>
+            <tr><td><strong>字体</strong></td><td>字体样式选择 <span class="tg tg-p">NEW</span></td><td><span class="tg tg-o">⚠️ 基础</span></td></tr>
+            <tr><td><strong>贴纸</strong></td><td>贴纸装饰 <span class="tg tg-p">NEW</span></td><td><span class="tg tg-g">✅ 新增能力</span></td></tr>
+            <tr><td><strong>音效</strong></td><td>打字音效选择</td><td><span class="tg tg-o">⚠️ 基础</span></td></tr>
+          </table>
+        </div>
+
+        <!-- PART 2 -->
+        <div class="ph"><span class="pn">PART 02</span><span class="pt">方案评估：能否满足定制化皮肤自动生产？</span></div>
+
+        <div class="cd">
+          <h3>📊 基于Figma实际设计的重新评分</h3>
+          <table class="tb">
+            <tr><th style="width:24%">评估维度</th><th style="width:8%">得分</th><th style="width:33%">实际情况（Figma验证）</th><th style="width:35%">差距分析</th></tr>
+            <tr><td><strong>🤖 AI生成能力</strong></td><td><div class="sc sc-o">5</div></td><td>✅ 已接入大模型，支持10+风格模板生成人脸融合皮肤</td><td><span class="tg tg-o">部分满足</span> 只能"选风格+传人脸"，不支持文字描述生成</td></tr>
+            <tr><td><strong>🖼️ 图片适配智能化</strong></td><td><div class="sc sc-o">4</div></td><td>✅ 有裁切+亮度调节滑块，AI生成自动适配</td><td><span class="tg tg-o">不足</span> 手动裁切为主，无按键可读性自动优化</td></tr>
+            <tr><td><strong>🎨 配色自由度</strong></td><td><div class="sc sc-r">3</div></td><td>仅有亮度滑块，无颜色/配色选择</td><td><span class="tg tg-r">严重不足</span> 不支持HEX色号输入、无应援色匹配</td></tr>
+            <tr><td><strong>📐 模板丰富度</strong></td><td><div class="sc sc-o">6</div></td><td>✅ AI风格模板10+，按钮装饰模板30+</td><td><span class="tg tg-o">中等</span> 模板以萌系/日系为主，缺少追星/IP场景</td></tr>
+            <tr><td><strong>✏️ 编辑自由度</strong></td><td><div class="sc sc-o">6</div></td><td>✅ 7大Tab：AI皮肤+背景+模板+按钮+字体+贴纸+音效</td><td><span class="tg tg-g">较好</span> 新增贴纸是亮点</td></tr>
+            <tr><td><strong>🔄 换图保布局</strong></td><td><div class="sc sc-r">2</div></td><td>AI生成路径每次需完整重走流程</td><td><span class="tg tg-r">缺失</span> 无"我的模板"概念</td></tr>
+            <tr><td><strong>📤 分享 & 社交</strong></td><td><div class="sc sc-o">5</div></td><td>✅ "分享免费使用"按钮已有</td><td><span class="tg tg-o">基础</span> 缺少预览卡生成</td></tr>
+            <tr><td><strong>📅 情感化/时效性</strong></td><td><div class="sc sc-r">1</div></td><td>有"元宵佳节"等节日模板，无动态时效功能</td><td><span class="tg tg-r">缺失</span> 无倒计时/限定机制</td></tr>
+          </table>
+        </div>
+
+        <div class="sb">
+          <div class="bs">4.0 / 10</div>
+          <div class="bl">定制化皮肤自动生产能力（修正评分）</div>
+          <div class="vt">⬆️ 比之前估计的 1.7 分高出不少，但距离理想状态仍有明显差距</div>
+          <div class="vs">好消息：AI大模型生成能力已接入，基础框架完整。<br>主要差距：① 只能选预设风格不能自由描述 ② 无应援色/配色系统 ③ 无换图保布局 ④ 追星/IP场景模板缺失</div>
+        </div>
+
+        <!-- PART 3 -->
+        <div class="ph"><span class="pn">PART 03</span><span class="pt">竞品对标分析（修正版）</span></div>
+
+        <div class="cd" style="overflow-x:auto">
+          <h3>🆚 基于实际产品能力的竞品对标</h3>
+          <table class="ct2">
+            <tr><th>能力维度</th><th class="hl">搜狗 AI皮肤制造机<br>（Figma 实际）</th><th>百度输入法</th><th>讯飞输入法</th><th>Kika Keyboard</th></tr>
+            <tr><td>AI生成方式</td><td class="hl"><span class="tg tg-g">✅ 风格模板+人脸融合</span></td><td><span class="tg tg-g">✅ 文字描述生成</span></td><td><span class="tg tg-o">⚠️ 有限</span></td><td><span class="tg tg-g">✅ 关键词生成</span></td></tr>
+            <tr><td>文字描述→皮肤</td><td class="hl"><span class="tg tg-r">❌ 不支持</span></td><td><span class="tg tg-g">✅ 支持</span></td><td><span class="tg tg-r">❌</span></td><td><span class="tg tg-g">✅ 支持</span></td></tr>
+            <tr><td>人脸融合/风格化</td><td class="hl"><span class="tg tg-g">✅ 核心能力</span></td><td><span class="tg tg-o">⚠️ 有限</span></td><td><span class="tg tg-r">❌</span></td><td><span class="tg tg-r">❌</span></td></tr>
+            <tr><td>风格模板数量</td><td class="hl"><span class="tg tg-g">10+ AI风格</span></td><td><span class="tg tg-g">多种风格</span></td><td><span class="tg tg-o">较少</span></td><td><span class="tg tg-g">9000+ 主题</span></td></tr>
+            <tr><td>配色自定义</td><td class="hl"><span class="tg tg-r">❌ 仅亮度</span></td><td><span class="tg tg-g">✅ 智能换肤</span></td><td><span class="tg tg-r">❌</span></td><td><span class="tg tg-o">⚠️ 基础</span></td></tr>
+            <tr><td>贴纸功能</td><td class="hl"><span class="tg tg-g">✅ NEW</span></td><td><span class="tg tg-o">⚠️ 有限</span></td><td><span class="tg tg-r">❌</span></td><td><span class="tg tg-g">✅ 丰富</span></td></tr>
+            <tr><td>粉丝/应援场景</td><td class="hl"><span class="tg tg-r">❌ 无</span></td><td><span class="tg tg-r">❌ 无</span></td><td><span class="tg tg-r">❌ 无</span></td><td><span class="tg tg-r">❌ 无</span></td></tr>
+          </table>
+        </div>
+
+        <div class="ins ins-p">
+          <h4>💡 修正后的竞品结论</h4>
+          <p>搜狗的"人脸融合+风格化"生成是独特优势，但缺少"文字描述→生成"的开放式创作能力。<br><strong>关键洞察：整个行业目前都没有做"粉丝/应援场景"——谁先做，谁就是蓝海。</strong></p>
+        </div>
+
+        <!-- PART 4 -->
+        <div class="ph"><span class="pn">PART 04</span><span class="pt">优化建议（基于实际设计稿的精准建议）</span></div>
+
+        <div class="cd">
+          <h3>🔴 P0 — 在现有框架上快速增强</h3>
+          <ul class="gl">
+            <li class="gi"><div class="gic cr">1</div><div class="git"><h4>新增"文生皮肤"入口（混元生图接入）</h4><p>在 AI皮肤 Tab 中新增"描述你想要的皮肤"文本框 → 混元生图生成纯背景皮肤。两条路径并存：人脸融合 + 纯背景生成。</p><div style="margin-top:4px"><span class="tg tg-r">P0</span> <span class="tg tg-p">1-2 sprint</span></div></div></li>
+            <li class="gi"><div class="gic cr">2</div><div class="git"><h4>应援色配色系统</h4><p>在「背景」Tab 的亮度滑块旁新增「配色」功能：支持HEX色号输入 / 预置热门偶像应援色库 → AI基于应援色自动调整按键/字体/边框颜色。</p><div style="margin-top:4px"><span class="tg tg-r">P0</span> <span class="tg tg-p">1 sprint</span> <span class="tg tg-f">粉丝经济差异化</span></div></div></li>
+            <li class="gi"><div class="gic cr">3</div><div class="git"><h4>追星/IP场景模板补充</h4><p>在「模板」Tab 中新增"应援风""古装风""赛博风"等模板分类，支持按键颜色跟随应援色变化。</p><div style="margin-top:4px"><span class="tg tg-r">P0</span> <span class="tg tg-p">1-2 sprint</span></div></div></li>
+          </ul>
+        </div>
+
+        <div class="cd">
+          <h3>🟠 P1 — 体验深化</h3>
+          <ul class="gl">
+            <li class="gi"><div class="gic im">4</div><div class="git"><h4>「换图保布局」+ 我的模板</h4><p>新增"保存为我的模板"功能，下次只替换照片即可复用全套设置。</p></div></li>
+            <li class="gi"><div class="gic im">5</div><div class="git"><h4>按键可读性智能优化</h4><p>生成后自动检测对比度，不达标时自动调整按键透明度/描边。</p></div></li>
+            <li class="gi"><div class="gic im">6</div><div class="git"><h4>分享预览卡 + 社交裂变链路</h4><p>自动生成带皮肤效果+二维码的分享卡 → 一键发送微信/小红书/微博。</p></div></li>
+            <li class="gi"><div class="gic im">7</div><div class="git"><h4>贴纸Tab中添加文字贴纸</h4><p>增加"自定义文字贴纸"：输入"凌霄之上 赫然有声" → 生成可拖拽的装饰文字。</p></div></li>
+          </ul>
+        </div>
+
+        <div class="cd">
+          <h3>🟢 P2 — 生态建设</h3>
+          <ul class="gl">
+            <li class="gi"><div class="gic ni">8</div><div class="git"><h4>AI风格自定义（用户可训练/描述风格）</h4><p>允许用户上传参考图→AI学习风格→生成同风格皮肤。</p></div></li>
+            <li class="gi"><div class="gic ni">9</div><div class="git"><h4>UGC社区 + 创作者分成体系</h4><p>优秀的AI皮肤作品可上架→被下载→创作者获得收益/荣誉。</p></div></li>
+            <li class="gi"><div class="gic ni">10</div><div class="git"><h4>倒计时/限定/收集机制</h4><p>偶像生日限定皮肤、系列收集等。</p></div></li>
+          </ul>
+        </div>
+
+        <!-- PART 5 -->
+        <div class="ph"><span class="pn">PART 05</span><span class="pt">深挖张凌赫粉丝「小核桃」的真实需求 & 皮肤效果审视</span></div>
+
+        <div class="fan-hero">
+          <h3>🌰 小核桃的真实需求图谱</h3>
+          <div class="fi">
+            <span>🎭 张凌赫 · "古偶颜值天花板""生图战神"</span>
+            <span>🌰 粉丝名：小核桃</span>
+            <span><span class="sw" style="background:#971230"></span>凌赫红 #971230</span>
+            <span>🔥 《逐玉》谢征 · 2026现象级角色</span>
+          </div>
+        </div>
+
+        <div class="cd">
+          <h3>🔍 小核桃的 6 层真实需求</h3>
+          <table class="tb">
+            <tr><th style="width:5%">#</th><th style="width:20%">真实需求</th><th style="width:42%">行为证据 & 心理动机</th><th style="width:33%">优先级</th></tr>
+            <tr><td><strong>1</strong></td><td><strong>保留赫赫"生图级"颜值</strong></td><td>张凌赫被称为"生图战神"。颜值核心在于面部折叠度、眉骨立体感。<strong>任何降低五官精致度的处理 = "丑化"。</strong></td><td><span class="tg tg-r">🔴 底线</span></td></tr>
+            <tr><td><strong>2</strong></td><td><strong>拒绝AI"改造"偶像面部</strong></td><td>2025年饭圈大规模抵制AI生成偶像内容。核心共识：<strong>"追星是对真实的人的信仰，AI在消解这种真实性"</strong></td><td><span class="tg tg-r">🔴 红线</span></td></tr>
+            <tr><td><strong>3</strong></td><td><strong>用偶像原图做皮肤</strong></td><td>抖音搜索行为显示搜的是"下载"而非"AI皮肤"。<strong>照片不需要被AI改变，键盘要适配照片。</strong></td><td><span class="tg tg-r">🔴 核心</span></td></tr>
+            <tr><td><strong>4</strong></td><td><strong>应援色 = 身份图腾</strong></td><td>应援色不是装饰色，是<strong>圈层密码和身份标识</strong>。凌赫红 #971230。</td><td><span class="tg tg-o">🟠 强需求</span></td></tr>
+            <tr><td><strong>5</strong></td><td><strong>跟着物料走的高频换图</strong></td><td>《逐玉》播出期间每天都有新物料。<strong>需求是每天换图保留好看的样式。</strong></td><td><span class="tg tg-o">🟠 高频</span></td></tr>
+            <tr><td><strong>6</strong></td><td><strong>"能晒"的社交货币</strong></td><td>做完皮肤→截图发超话/小红书。<strong>质感不够 = 不好意思晒 = 传播断裂。</strong></td><td><span class="tg tg-b">🔵 附加</span></td></tr>
+          </table>
+        </div>
+
+        <div class="ins ins-f" style="border-left-color:#c00">
+          <h4>⚠️ 饭圈 AI 红线（这不是小问题）</h4>
+          <p>2025年起，饭圈形成了<strong>对AI生成偶像内容的系统性抵制</strong>。粉丝认为AI融合 = 对偶像真实性的消解。<strong>AI人脸融合功能用在追星场景上，天然就站在饭圈的对立面。</strong></p>
+        </div>
+
+        <div class="cd">
+          <h3>📊 真实需求 vs 现有方案：差距全景</h3>
+          <table class="tb">
+            <tr><th style="width:25%">真实需求</th><th style="width:10%">满足度</th><th style="width:30%">现有方案</th><th style="width:35%">核心问题</th></tr>
+            <tr><td><strong>保留生图级颜值</strong></td><td><span class="tg tg-r">❌ 30%</span></td><td>AI风格化重绘面部</td><td>风格化过程损失骨相细节</td></tr>
+            <tr><td><strong>不被AI改造</strong></td><td><span class="tg tg-r">❌ 0%</span></td><td>AI融合是核心链路</td><td><strong>方向性冲突</strong></td></tr>
+            <tr><td><strong>原图做皮肤</strong></td><td><span class="tg tg-o">⚠️ 50%</span></td><td>背景Tab可上传原图</td><td>缺智能裁切、配色、人脸避让</td></tr>
+            <tr><td><strong>应援色身份认同</strong></td><td><span class="tg tg-r">❌ 5%</span></td><td>仅亮度滑块</td><td>无HEX输入、无应援色库</td></tr>
+            <tr><td><strong>高频换图</strong></td><td><span class="tg tg-r">❌ 10%</span></td><td>每次重走完整流程</td><td>无"换图保布局"</td></tr>
+            <tr><td><strong>能晒的社交货币</strong></td><td><span class="tg tg-o">⚠️ 40%</span></td><td>有分享按钮</td><td>皮肤质感达不到"能晒"标准</td></tr>
+          </table>
+        </div>
+
+        <div class="cd">
+          <h3>✅ 什么效果的皮肤才会被小核桃真正采用？</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px">
+            <div style="background:var(--rl);padding:16px;border-radius:10px">
+              <div style="font-size:12.5px;font-weight:700;color:var(--r);margin-bottom:8px">❌ 绝对不会采用（雷区）</div>
+              <ul style="font-size:11.5px;padding-left:16px;line-height:2">
+                <li>AI融合后五官变形、失去骨相立体感</li>
+                <li>肤质变成"AI塑料脸"（对生图战神是侮辱）</li>
+                <li>人脸被按键大面积覆盖</li>
+                <li>配色与凌赫红无关</li>
+                <li>萌系/花朵风格（与谢征"战神"形象不符）</li>
+              </ul>
+            </div>
+            <div style="background:var(--ml);padding:16px;border-radius:10px">
+              <div style="font-size:12.5px;font-weight:700;color:var(--md);margin-bottom:8px">✅ 会采用 + 会主动安利</div>
+              <ul style="font-size:11.5px;padding-left:16px;line-height:2">
+                <li><strong>赫赫的真实高清照片</strong>（不做AI改造）</li>
+                <li>照片在键盘上半部完整展示，五官不被遮挡</li>
+                <li>整套配色是<strong>凌赫红 #971230 色系</strong></li>
+                <li>有粉丝标识文字</li>
+                <li>整体质感高级，截图发超话有面子</li>
+                <li>能快速换图</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="sb" style="background:linear-gradient(135deg,#971230,#302b63)">
+          <div style="font-size:14px;opacity:.6;margin-bottom:6px">基于 Figma 设计稿 + 粉丝需求深度调研的最终结论</div>
+          <div style="font-size:18px;font-weight:700;line-height:1.5">
+            AI人脸融合对追星场景是<span style="text-decoration:underline">方向错误</span><br>
+            粉丝要的是「原图 + 好看的框」不是「AI画的偶像」
+          </div>
+          <div style="margin-top:14px;font-size:12px;opacity:.8;max-width:620px;margin-left:auto;margin-right:auto;line-height:1.8">
+            <strong>正确的方向：</strong>AI 应该服务于「让键盘适配照片」而非「改造照片适配键盘」<br>
+            ① 原图智能适配（AI裁切+人脸避让+按键不盖脸）<br>
+            ② 应援色一键配色（HEX输入+偶像色库）<br>
+            ③ 粉丝身份贴纸（文字口号+粉丝名+标识）<br>
+            ④ 换图保布局（一键换图不改样式）
+          </div>
+        </div>
+
+      </div><!-- /rpt-ct -->
+    </div><!-- /report-frame -->
+  </div><!-- /report-embed -->
+
+  <footer class="footer">
+    <div class="footer-line"></div>
+    <p class="footer-text">FAN商业化行业洞察 — 体验地图 · 竞品产品体验深度分析</p>
+  </footer>
+
+<script>
+function showReport(id) {
+  document.getElementById('reportList').style.display = 'none';
+  document.getElementById('report-' + id).classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+function hideReport() {
+  document.querySelectorAll('.report-embed').forEach(el => el.classList.remove('active'));
+  document.getElementById('reportList').style.display = 'block';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Check URL hash for direct report link
+if (location.hash === '#ai-skin') showReport('ai-skin');
+</script>
+</body>
+</html>
