@@ -116,6 +116,12 @@
       content: ''; position: absolute; left: -12px; top: 12px; bottom: 12px;
       width: 3px; background: var(--text); border-radius: 0 2px 2px 0;
     }
+    /* 全局定位标签（第一项）与下方三大类之间加一条分隔 */
+    .cat-link.cat-global { margin-bottom: 10px; }
+    .cat-link.cat-global::after {
+      content: ''; position: absolute; left: 16px; right: 16px; bottom: -6px;
+      height: 1px; background: var(--border-light);
+    }
 
     /* 右侧内容区 */
     .content-main { min-width: 0; }
@@ -558,6 +564,26 @@
 // ============================================================
 const REPORTS = [
   {
+    id: 'sogou-biz-expert',
+    title: '搜狗输入法商业化布局专家诊断 · 终版',
+    desc: '以商业化专家视角系统性审视搜狗输入法移动端与PC端共 38+ 个广告点位，覆盖六条移动链路与四条PC链路的深度诊断；横向对标 6 家输入法竞品，拆解系统性问题、输入法×生态联动四家深度对比，并提出三阶段战略建议与写给老板的四句话。',
+    date: '2026.04.18',
+    category: '全局',
+    subCategory: null,
+    link: 'sogou-commercialization-expert-view.html',
+    tags: [
+      { text: '战略诊断', bg: '#fff0e5', color: '#d96b1f' },
+      { text: '广告点位', bg: '#edf3ff', color: '#2a6fd8' },
+      { text: '竞品对标', bg: '#e6faf3', color: '#007a5e' }
+    ],
+    stats: [
+      { icon: '📱', label: '移动点位', value: '22' },
+      { icon: '💻', label: 'PC点位', value: '16+' },
+      { icon: '🆚', label: '竞品对标', value: '6' },
+      { icon: '🎯', label: '战略阶段', value: '3' }
+    ]
+  },
+  {
     id: 'ai-skin',
     title: '搜狗 AI 皮肤制造机 · 基于 Figma 设计稿的深度评估',
     desc: '基于 Figma API 实际读取的 12 张设计截图逐帧分析，深入评估搜狗 AI 皮肤制造机的产品链路、AI生成能力、竞品对标，并从张凌赫粉丝「小核桃」视角深挖追星用户的真实需求与现有方案的方向性差距。',
@@ -585,6 +611,7 @@ const REPORTS = [
 // CATEGORY DEFINITIONS
 // ============================================================
 const CATEGORIES = [
+  { key: '全局', label: '全局', icon: '🌐' },
   { key: '流量商业化', label: '流量商业化', icon: '📈' },
   { key: '应用商业化', label: '应用商业化', icon: '📱' },
   { key: '内容商业化', label: '内容商业化', icon: '🎨' }
@@ -599,7 +626,7 @@ const SUB_CATEGORIES = {
   ]
 };
 
-let activeCategory = '内容商业化';
+let activeCategory = '全局';
 let activeSubCategory = null;
 
 // ============================================================
@@ -615,9 +642,10 @@ function countReports(cat, sub) {
 
 function renderFilters() {
   const el = document.getElementById('catNav');
-  el.innerHTML = '<div class="cat-nav-title">商业化分类</div>' + CATEGORIES.map(c => {
+  el.innerHTML = CATEGORIES.map(c => {
     const isActive = activeCategory === c.key;
-    return `<button class="cat-link ${isActive ? 'active' : ''}" onclick="setCategory(${c.key === null ? 'null' : "'" + c.key + "'"})">${c.label}</button>`;
+    const isGlobal = c.key === '全局';
+    return `<button class="cat-link ${isActive ? 'active' : ''} ${isGlobal ? 'cat-global' : ''}" onclick="setCategory(${c.key === null ? 'null' : "'" + c.key + "'"})">${c.label}</button>`;
   }).join('');
 }
 
@@ -654,11 +682,22 @@ function renderReportList() {
     return;
   }
 
-  el.innerHTML = filtered.map(r => `
-    <div class="report-card" onclick="showReport('${r.id}')">
+  el.innerHTML = filtered.map(r => {
+    const catColor = r.category === '全局'
+      ? { bg: '#fff0e5', color: '#d96b1f' }
+      : r.category === '内容商业化'
+        ? { bg: '#f0eaff', color: '#6a3dd6' }
+        : r.category === '流量商业化'
+          ? { bg: '#edf3ff', color: '#2a6fd8' }
+          : { bg: '#e6faf3', color: '#007a5e' };
+    const handler = r.link
+      ? `onclick="window.open('${r.link}','_blank')"`
+      : `onclick="showReport('${r.id}')"`;
+    return `
+    <div class="report-card" ${handler}>
       <div class="report-meta">
         <span class="report-date">${r.date}</span>
-        <span class="report-tag" style="background:${r.category === '内容商业化' ? '#f0eaff' : r.category === '流量商业化' ? '#edf3ff' : '#e6faf3'};color:${r.category === '内容商业化' ? '#6a3dd6' : r.category === '流量商业化' ? '#2a6fd8' : '#007a5e'}">${r.category}</span>
+        <span class="report-tag" style="background:${catColor.bg};color:${catColor.color}">${r.category}</span>
         ${r.subCategory ? `<span class="report-tag" style="background:#fff0e5;color:#d96b1f">${r.subCategory}</span>` : ''}
         ${r.tags.map(t => `<span class="report-tag" style="background:${t.bg};color:${t.color}">${t.text}</span>`).join('')}
       </div>
@@ -668,7 +707,7 @@ function renderReportList() {
         ${r.stats.map(s => `<span class="report-stat">${s.icon} <strong>${s.value}</strong> ${s.label}</span>`).join('')}
       </div>
     </div>
-  `).join('');
+  `;}).join('');
 }
 
 function setCategory(cat) {

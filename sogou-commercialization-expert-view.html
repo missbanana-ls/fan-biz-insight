@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>搜狗输入法商业化布局专家诊断 · 终版</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+  background: #FFFCF7;
+  color: #2C2C2C;
+  line-height: 1.7;
+  padding: 40px 20px;
+}
+.container { max-width: 1180px; margin: 0 auto; }
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #FF6B1A 0%, #FF9940 100%);
+  color: #fff; padding: 44px 40px; border-radius: 16px; margin-bottom: 28px;
+  box-shadow: 0 8px 28px rgba(255,107,26,0.18);
+}
+.header h1 { font-size: 30px; margin-bottom: 10px; letter-spacing: 0.3px; }
+.header .subtitle { font-size: 17px; opacity: 0.95; font-weight: 300; }
+.header .meta { margin-top: 18px; font-size: 13px; opacity: 0.85; display: flex; gap: 22px; flex-wrap: wrap; }
+
+/* Verdict Banner */
+.verdict-banner {
+  background: linear-gradient(135deg, #FFF4E6 0%, #FFE8CC 100%);
+  border-left: 6px solid #FF6B1A;
+  padding: 28px 32px; border-radius: 12px; margin-bottom: 28px;
+}
+.verdict-banner h2 { color: #FF6B1A; font-size: 20px; margin-bottom: 14px; }
+.verdict-banner .big {
+  font-size: 19px; font-weight: 600; color: #1F1F1F;
+  margin: 10px 0 14px; line-height: 1.55;
+}
+.verdict-banner p { color: #3a3a3a; font-size: 14.5px; margin: 8px 0; }
+
+/* TL;DR Cards */
+.tldr-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 14px; margin-bottom: 32px;
+}
+.tldr-card {
+  background: #fff; border: 1px solid #FFD9B8; border-radius: 10px;
+  padding: 18px 16px; text-align: center;
+}
+.tldr-card .num { font-size: 28px; font-weight: 700; color: #FF6B1A; }
+.tldr-card .label { font-size: 13px; color: #555; margin-top: 4px; }
+.tldr-card .sub { font-size: 11px; color: #999; margin-top: 2px; }
+
+/* Section */
+.section { background: #fff; border-radius: 14px; padding: 32px 36px; margin-bottom: 24px; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
+.section-title {
+  font-size: 22px; color: #FF6B1A; font-weight: 700;
+  padding-bottom: 12px; margin-bottom: 20px;
+  border-bottom: 2px solid #FFD9B8;
+}
+.section-subtitle { font-size: 13.5px; color: #777; margin-top: -12px; margin-bottom: 22px; }
+
+/* Part Divider (移动 / PC) */
+.part-divider {
+  background: #1F1F1F; color: #FFB578;
+  padding: 20px 32px; border-radius: 12px;
+  margin: 36px 0 20px; display: flex; align-items: center; gap: 16px;
+}
+.part-divider .part-num { font-size: 36px; font-weight: 700; color: #FF9940; }
+.part-divider .part-text h2 { font-size: 22px; color: #fff; margin-bottom: 4px; }
+.part-divider .part-text p { font-size: 13px; opacity: 0.7; }
+
+/* Inventory Grid */
+.inventory-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 16px 0; }
+.inv-card { background: #FFFCF7; border: 1px solid #FFE0C0; border-radius: 10px; padding: 16px 18px; }
+.inv-card h4 { color: #FF6B1A; font-size: 14px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
+.inv-card h4 .count { background: #FF6B1A; color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 10px; font-weight: 500; }
+.inv-card ul { list-style: none; }
+.inv-card li { font-size: 12.5px; color: #3a3a3a; padding: 4px 0; border-bottom: 1px dashed #F0E5D5; }
+.inv-card li:last-child { border-bottom: none; }
+.inv-card li strong { color: #1F1F1F; }
+
+.channel-insight { background: #FFF8F0; border-left: 3px solid #FF6B1A; padding: 14px 18px; margin-top: 14px; border-radius: 6px; font-size: 13.5px; color: #3a3a3a; line-height: 1.75; }
+
+/* Channel Card */
+.channel { background: #FDFDFD; border: 1px solid #E8E8E8; border-radius: 12px; margin-bottom: 22px; overflow: hidden; }
+.channel-header {
+  padding: 16px 22px; background: linear-gradient(90deg, #FFF4E6 0%, #FFFCF7 100%);
+  border-bottom: 1px solid #FFE0C0;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.channel-header h3 { font-size: 16px; color: #1F1F1F; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.badge { padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.badge-green { background: #E6F7E6; color: #2B8A2B; }
+.badge-yellow { background: #FFF4D4; color: #B88800; }
+.badge-orange { background: #FFE4CC; color: #D95E0B; }
+.badge-red { background: #FEE2E2; color: #C92B2B; }
+.channel-body { padding: 22px; }
+.ad-positions { margin-bottom: 14px; font-size: 13px; }
+.ad-positions strong { color: #FF6B1A; margin-right: 8px; }
+.ad-tag { display: inline-block; background: #FFF4E6; border: 1px solid #FFD9B8; padding: 3px 10px; border-radius: 12px; font-size: 12px; color: #A84B10; margin: 3px 4px 3px 0; }
+
+.flow-chain { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0; }
+.flow-step { background: #fff; border: 1px solid #E8E8E8; border-radius: 8px; padding: 12px 14px; font-size: 12px; }
+.flow-step.ok { border-left: 3px solid #4CAF50; }
+.flow-step.warn { border-left: 3px solid #FFA726; }
+.flow-step.broken { border-left: 3px solid #E53935; }
+.flow-step .step-name { font-weight: 600; color: #1F1F1F; margin-bottom: 4px; }
+.flow-step .step-issue { color: #666; line-height: 1.55; }
+
+/* Deep Insight Block */
+.deep-insight {
+  background: #1F1F1F; color: #fff;
+  padding: 18px 22px; border-radius: 8px; margin-top: 14px;
+}
+.deep-insight .label { color: #FF9940; font-size: 12px; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 8px; }
+.deep-insight .body { font-size: 13.5px; line-height: 1.75; color: #E8E8E8; }
+.deep-insight .body strong { color: #FFB578; }
+
+/* Competitor Table */
+table.comp-table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 13px; }
+table.comp-table th { background: #FF6B1A; color: #fff; padding: 12px 14px; text-align: left; font-weight: 600; }
+table.comp-table td { padding: 12px 14px; border-bottom: 1px solid #F0E5D5; vertical-align: top; }
+table.comp-table tr:nth-child(even) td { background: #FFFCF7; }
+table.comp-table td.good { color: #2B8A2B; font-weight: 600; }
+table.comp-table td.bad { color: #C92B2B; font-weight: 600; }
+table.comp-table td.mid { color: #D95E0B; font-weight: 600; }
+
+/* Problem / Strategy Cards */
+.problem-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.problem-card { background: #FFFCF7; border-top: 4px solid #FF6B1A; padding: 22px 20px; border-radius: 10px; position: relative; }
+.problem-card .num { position: absolute; top: -18px; left: 20px; background: #FF6B1A; color: #fff; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; }
+.problem-card h3 { color: #FF6B1A; font-size: 15px; margin: 10px 0 10px; }
+.problem-card p { font-size: 13px; color: #3a3a3a; line-height: 1.7; margin-bottom: 8px; }
+.problem-card .tag { display: inline-block; background: #FFE0C0; color: #A84B10; padding: 2px 8px; font-size: 11px; border-radius: 10px; margin-bottom: 4px; }
+.problem-card .key { font-size: 12.5px; color: #B35300; margin-top: 8px; padding-top: 10px; border-top: 1px dashed #E0CDB8; }
+
+.rec-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 14px; }
+.rec-card { background: #fff; border: 1px solid #FFD9B8; border-radius: 12px; padding: 22px; position: relative; }
+.rec-card.phase-1 { border-top: 4px solid #4CAF50; }
+.rec-card.phase-2 { border-top: 4px solid #FFA726; }
+.rec-card.phase-3 { border-top: 4px solid #FF6B1A; }
+.rec-card .phase { font-size: 12px; color: #888; margin-bottom: 6px; }
+.rec-card h3 { font-size: 16px; color: #1F1F1F; margin-bottom: 12px; }
+.rec-card ol { margin-left: 18px; }
+.rec-card li { font-size: 13px; color: #3a3a3a; margin-bottom: 8px; line-height: 1.7; }
+.rec-card li strong { color: #FF6B1A; }
+
+.boss-letter { background: #FFF4E6; border-left: 6px solid #FF6B1A; padding: 20px 24px; margin-bottom: 14px; border-radius: 8px; }
+.boss-letter strong { color: #FF6B1A; font-size: 15px; display: block; margin-bottom: 6px; }
+.boss-letter span { font-size: 14px; color: #555; line-height: 1.7; }
+
+.footer { text-align: center; padding: 28px; color: #999; font-size: 12px; margin-top: 28px; }
+.footer strong { color: #FF6B1A; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- Header -->
+<div class="header">
+  <h1>搜狗输入法商业化布局专家诊断 · 终版</h1>
+  <div class="subtitle">移动 / PC 分治 · 链路深度拆解 · 竞品横向对标 · 资深商业化专家视角</div>
+  <div class="meta">
+    <span>视角：资深商业化专家</span>
+    <span>方法论：位置清单 × 链路审视 × 漏斗效率 × 竞品对标</span>
+    <span>广告位：基于真实业务截图核对</span>
+    <span>更新：2026-04-19</span>
+  </div>
+</div>
+
+<!-- One-page Verdict -->
+<div class="verdict-banner">
+  <h2>一页结论</h2>
+  <p class="big">搜狗输入法的真问题不是"粗暴打扰"，而是——<strong>把一份"体面的克制"和一堆"低效的非标"捆在了一起，又没给任何一边讲出故事</strong>。</p>
+  <p>在键盘输入主态（打字过程、候选区、回填区、IME 中间态）这个最关键的战场，搜狗守住了——广告只出现在用户主动唤起的二级面板。这是业内合格的克制答卷，但从未被明说，白白承担了放弃主态广告位的成本。</p>
+  <p>真正出问题的是两块：① <strong>PC 非标老用户侧</strong>—— 200 万曝光换 1440 装机（万分之 0.72）、100 万曝光换 3000（万分之 3）是"大流量堆微转化"的典型样板；② <strong>三个最有差异化想象力的位置（词服务发送后联想 / 这厢有礼 / 任务中心）全被当成边角料在卖</strong>，任何一个做成"发消息→原地完成任务→回填"的闭环，都是搜狗跑赢豆包/微信/百度的差异化主武器。</p>
+</div>
+
+<!-- TL;DR -->
+<div class="tldr-grid">
+  <div class="tldr-card">
+    <div class="num">38+</div>
+    <div class="label">商业化点位</div>
+    <div class="sub">移动 22 · PC 16+</div>
+  </div>
+  <div class="tldr-card">
+    <div class="num">0</div>
+    <div class="label">主态广告</div>
+    <div class="sub">打字/候选/回填全干净</div>
+  </div>
+  <div class="tldr-card">
+    <div class="num">0.72‱</div>
+    <div class="label">PC 系统弹窗成功率</div>
+    <div class="sub">已到"不做比做更好"</div>
+  </div>
+  <div class="tldr-card">
+    <div class="num">3</div>
+    <div class="label">被浪费的差异化位置</div>
+    <div class="sub">发送后联想/这厢有礼/任务中心</div>
+  </div>
+</div>
+
+<!-- ================================================== -->
+<!-- PART 1: 移动端 -->
+<!-- ================================================== -->
+<div class="part-divider">
+  <div class="part-num">01</div>
+  <div class="part-text">
+    <h2>移动端 · 22 个商业化点位</h2>
+    <p>键盘端 6 类非标 + 面板标广 4 类 + APP 内 5 类 + 任务中心 + 这厢有礼固定入口 + 消息通道</p>
+  </div>
+</div>
+
+<!-- 移动端清单 -->
+<div class="section">
+  <div class="section-title">一、移动端广告位全清单</div>
+  <div class="inventory-grid">
+    <div class="inv-card">
+      <h4>键盘非标 <span class="count">6位</span></h4>
+      <ul>
+        <li>CNY 弹图（春节激活）</li>
+        <li>拜年场地冠名</li>
+        <li>倒计时迷你卡</li>
+        <li>皮肤迷你卡</li>
+        <li>键盘运营位</li>
+        <li><strong>词服务发送后联想</strong>（★被低估位置）</li>
+      </ul>
+    </div>
+    <div class="inv-card">
+      <h4>键盘面板标广 <span class="count">4位</span></h4>
+      <ul>
+        <li>表情面板</li>
+        <li>语录面板</li>
+        <li>双栏面板</li>
+        <li>负一屏 / 激励皮肤面板</li>
+      </ul>
+    </div>
+    <div class="inv-card">
+      <h4>这厢有礼 · 固定入口 <span class="count">1位</span></h4>
+      <ul>
+        <li>键盘工具栏倒数第二位固定 icon</li>
+        <li>APP 内固定入口</li>
+        <li>与输入内容无关</li>
+        <li>合作品牌：美团/希尔顿/老乡鸡/携程/同程/瑞幸/小说VIP</li>
+      </ul>
+    </div>
+    <div class="inv-card">
+      <h4>APP 内运营位 <span class="count">5位</span></h4>
+      <ul>
+        <li>"我的"页 Banner</li>
+        <li>"我的"页拍脸图</li>
+        <li>首页运营位</li>
+        <li>工具中心推荐位</li>
+        <li>皮肤商城首页</li>
+      </ul>
+    </div>
+    <div class="inv-card">
+      <h4>任务中心 <span class="count">1套</span></h4>
+      <ul>
+        <li>激励视频（看广告换积分）</li>
+        <li>签到 / 做任务得积分</li>
+        <li>积分兑换（皮肤/会员/第三方权益）</li>
+      </ul>
+    </div>
+    <div class="inv-card">
+      <h4>消息通道 <span class="count">3位</span></h4>
+      <ul>
+        <li>Push 消息</li>
+        <li>APP 启动拍脸图</li>
+        <li>应用内红点触达</li>
+      </ul>
+    </div>
+  </div>
+  <div class="channel-insight">
+    <strong>移动端的基本盘是健康的：</strong>22 个位置里没有一个侵入打字主态/候选区/回填区/IME 中间态。广告全部位于"用户主动唤起的二级场景"或"发送动作完成后"——这是搜狗移动端多年积累的"输入场景主权"意识，是真正的底层护城河。<strong>但问题在于：这件事对外从没讲过，用户只知道"搜狗广告多"。</strong>
+  </div>
+</div>
+
+<!-- 移动端链路深度诊断 -->
+<div class="section">
+  <div class="section-title">二、移动端六条链路 · 深度诊断</div>
+  <div class="section-subtitle">按"触发→打扰→转化→回流"四环节审视，附结构性洞察</div>
+
+  <!-- Channel M1: 键盘面板标广 -->
+  <div class="channel">
+    <div class="channel-header">
+      <h3>M1 · 键盘面板标广（表情/语录/双栏/负一屏） <span class="badge badge-green">绿灯（合格）</span></h3>
+      <span style="font-size:12px;color:#888;">用户主动唤起才出现</span>
+    </div>
+    <div class="channel-body">
+      <div class="ad-positions">
+        <strong>真实广告位</strong>
+        <span class="ad-tag">表情面板 banner/开屏</span>
+        <span class="ad-tag">语录面板品牌话术</span>
+        <span class="ad-tag">双栏面板信息流</span>
+        <span class="ad-tag">负一屏激励皮肤</span>
+      </div>
+      <div class="flow-chain">
+        <div class="flow-step ok"><div class="step-name">触发时机</div><div class="step-issue">用户点开面板才出现，不打扰打字主流程</div></div>
+        <div class="flow-step ok"><div class="step-name">打扰程度</div><div class="step-issue">用户已有"这是营销场景"的心理预期</div></div>
+        <div class="flow-step warn"><div class="step-name">转化路径</div><div class="step-issue">广告主类型与面板场景相关性弱（服饰广告插进语录面板）</div></div>
+        <div class="flow-step broken"><div class="step-name">回流设计</div><div class="step-issue">点击广告跳浏览器/APP，用户不回对话</div></div>
+      </div>
+      <div class="deep-insight">
+        <div class="label">结构性洞察</div>
+        <div class="body">这一类的"合格"只停留在<strong>"位置对"</strong>——位置放对了（用户主动场景），但<strong>"匹配"没做</strong>：一个打开表情面板想找"可爱猫咪贴纸"的用户，收到的是"某新车款 2026 款上市"，相关性归零。<br><br>面板广告真正的机会是<strong>垂类化匹配</strong>：表情面板接服饰/美妆/二次元 IP；语录面板接图书/网文/音乐；双栏面板按输入上下文推荐。这需要<strong>"面板-广告主-用户三方匹配"的新型广告中台</strong>，不是 DSP 通卖。对标小红书信息流的"兴趣圈层"模型，搜狗有同样的结构性可能但没做。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Channel M2: 词服务发送后联想 (★) -->
+  <div class="channel">
+    <div class="channel-header">
+      <h3>M2 · 词服务发送后联想 <span class="badge badge-orange">★ 最被低估</span></h3>
+      <span style="font-size:12px;color:#888;">发送消息后基于内容的弱推荐</span>
+    </div>
+    <div class="channel-body">
+      <div class="ad-positions">
+        <strong>真实形态</strong>
+        <span class="ad-tag">用户发送一条消息后</span>
+        <span class="ad-tag">基于消息内容的联想推荐条</span>
+        <span class="ad-tag">当前仅做轻量跳转</span>
+      </div>
+      <div class="flow-chain">
+        <div class="flow-step ok"><div class="step-name">触发时机</div><div class="step-issue">发送动作完成后——用户注意力刚释放的黄金窗口</div></div>
+        <div class="flow-step ok"><div class="step-name">打扰程度</div><div class="step-issue">弱提示、可忽略、不插输入流</div></div>
+        <div class="flow-step warn"><div class="step-name">转化路径</div><div class="step-issue">当前只做浅跳转，没做"原地完成任务"</div></div>
+        <div class="flow-step broken"><div class="step-name">回流设计</div><div class="step-issue">跳走后回不来、也不能回填到输入框</div></div>
+      </div>
+      <div class="deep-insight">
+        <div class="label">这是搜狗原生跑差异化的第一主武器</div>
+        <div class="body">这个位置同时具备四个稀有属性：<strong>① 时机精准</strong>（用户刚发完消息，需求还热着）<strong>② 相关性天然强</strong>（基于真实发送内容，不是行为画像拟合）<strong>③ 不打扰输入</strong>（不侵占主态）<strong>④ 可承载闭环</strong>（半浮层可挂美团/点评/飞猪等 MCP）。<br><br>当前做法只是"联想广告"——轻量的品牌曝光，<strong>等于把一把 M4 当鱼叉在使</strong>。真正应该做的是<strong>"消息发送后的原地服务闭环"</strong>：用户发"今晚一起吃饭"→ 半浮层出老乡鸡/海底捞推荐 → 选品下单 → 订单成功后文案回填到输入框（"订好啦，21:00 老乡鸡望京店"）→ 用户自己发出去。<br><br>对标物只有一个——<strong>Wispr Flow 的 Code Mode</strong>（语音输入完成后原地出工作流建议）。搜狗在中文社交场景做这件事的原生能力，远超 Wispr Flow 在英文工作场景的积累。<strong>这个位置不升级，等于让"搜狗 vs 豆包"的差异化战争提前半场结束。</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Channel M3: 这厢有礼 -->
+  <div class="channel">
+    <div class="channel-header">
+      <h3>M3 · 这厢有礼（键盘工具栏倒数第二位固定入口） <span class="badge badge-yellow">黄灯（定位错位）</span></h3>
+      <span style="font-size:12px;color:#888;">固定 icon · 与输入内容无关</span>
+    </div>
+    <div class="channel-body">
+      <div class="ad-positions">
+        <strong>真实形态</strong>
+        <span class="ad-tag">键盘工具栏倒数第二位固定 icon</span>
+        <span class="ad-tag">APP 内固定入口</span>
+        <span class="ad-tag">合作品牌 7+</span>
+        <span class="ad-tag">与用户当下输入无关</span>
+      </div>
+      <div class="flow-chain">
+        <div class="flow-step warn"><div class="step-name">触发时机</div><div class="step-issue">固定入口，靠用户主动点开——与当下需求脱钩</div></div>
+        <div class="flow-step ok"><div class="step-name">打扰程度</div><div class="step-issue">入口位固定、不打扰，打开后才是品牌页</div></div>
+        <div class="flow-step broken"><div class="step-name">转化路径</div><div class="step-issue">键盘→跳 APP 专题页→品牌详情页，多跳断链</div></div>
+        <div class="flow-step broken"><div class="step-name">回流设计</div><div class="step-issue">跳出后回不到原对话</div></div>
+      </div>
+      <div class="deep-insight">
+        <div class="label">黄灯的深层原因：它占了一个金位置，却做成了金箔</div>
+        <div class="body">"倒数第二位固定 icon"在键盘工具栏里是<strong>极高价值的位置</strong>——顶级位置本应是"表情/语音/切换布局"这类高频刚需。把这个位置做成一个"与输入内容无关的品牌商城"，有三层问题：<br><br>① <strong>错配用户心智</strong>：用户点工具栏是"我要做事"，不是"我要逛品牌"；② <strong>抛弃原生优势</strong>：搜狗唯一的稀缺资产是"懂用户正在聊什么"，一个"与输入解耦的商城"完全没用上这个资产；③ <strong>放弃闭环能力</strong>：跳到 APP 专题页等于回到"搜狗是个 APP"的老叙事，丢掉"键盘即服务"的新叙事。<br><br><strong>升级路径：把"这厢有礼"从"固定商城"变成"情境化品牌服务入口"</strong>——识别到用户输入"今晚去吃"，工具栏这厢有礼图标变色提示"老乡鸡有推荐"，点开是半浮层直接下单+回填。<strong>这样同一个位置从"闲置流量位"变成"情境化变现位"，eCPM 可数量级提升</strong>，同时和 M2 形成双引擎（M2 主动联想 + M3 入口显形）。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Channel M4: 任务中心 -->
+  <div class="channel">
+    <div class="channel-header">
+      <h3>M4 · 任务中心（激励视频 + 积分兑换） <span class="badge badge-yellow">黄灯（契约模糊）</span></h3>
+      <span style="font-size:12px;color:#888;">唯一"看广告换权益"的明确契约场景</span>
+    </div>
+    <div class="channel-body">
+      <div class="ad-positions">
+        <strong>真实形态</strong>
+        <span class="ad-tag">激励视频广告</span>
+        <span class="ad-tag">签到积分</span>
+        <span class="ad-tag">做任务换皮肤/会员/权益</span>
+      </div>
+      <div class="flow-chain">
+        <div class="flow-step ok"><div class="step-name">触发时机</div><div class="step-issue">用户主动进入任务中心</div></div>
+        <div class="flow-step ok"><div class="step-name">打扰程度</div><div class="step-issue">用户明确知道"看广告是为了赚积分"</div></div>
+        <div class="flow-step warn"><div class="step-name">转化路径</div><div class="step-issue">兑换内容薄弱——皮肤/小权益的吸引力有限</div></div>
+        <div class="flow-step warn"><div class="step-name">回流设计</div><div class="step-issue">积分→权益→用户留存的闭环没完全打通</div></div>
+      </div>
+      <div class="deep-insight">
+        <div class="label">黄灯的根因：契约对了但货不够</div>
+        <div class="body">任务中心是搜狗移动端<strong>唯一</strong>做到了"明示契约"的商业化位置——用户清楚地知道自己在做什么交换。这已经是健康模型，但价值链条断在兑换端：<strong>积分能换的东西太薄</strong>，导致激励循环跑不起来。<br><br>对标拼多多/抖音的激励中台：他们的兑换池里装的是<strong>"真的想要的东西"</strong>——实物、红包、视频会员、外卖券。搜狗现在装的是<strong>"皮肤"</strong>——一个本来就应该免费的数字装饰品。<br><br><strong>升级路径</strong>：把"任务中心"和"Pro 订阅"挂钩——<strong>看够 N 条广告 = 1 天 Pro 体验（全去广告 + Agent 能力）</strong>。这既解决了兑换池价值问题（体验 Pro 有真实价值），又为 Pro 订阅做低门槛教育（用户先用 1 天，再决定 28 元/月）。任务中心从"积分场"变成"订阅漏斗前端"。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Channel M5: APP 内运营位 -->
+  <div class="channel">
+    <div class="channel-header">
+      <h3>M5 · APP 内运营位（"我的"页 Banner / 拍脸图 / 首页 / 工具中心） <span class="badge badge-orange">橙灯（密度偏高）</span></h3>
+      <span style="font-size:12px;color:#888;">APP 端 5 个位置叠加</span>
+    </div>
+    <div class="channel-body">
+      <div class="ad-positions">
+        <strong>真实广告位</strong>
+        <span class="ad-tag">"我的"页 Banner</span>
+        <span class="ad-tag">"我的"页拍脸图</span>
+        <span class="ad-tag">首页运营位</span>
+        <span class="ad-tag">工具中心推荐位</span>
+        <span class="ad-tag">皮肤商城首页</span>
+      </div>
+      <div class="flow-chain">
+        <div class="flow-step ok"><div class="step-name">触发时机</div><div class="step-issue">用户主动打开 APP</div></div>
+        <div class="flow-step warn"><div class="step-name">打扰程度</div><div class="step-issue">拍脸图强度高，5 位叠加累积打扰明显</div></div>
+        <div class="flow-step warn"><div class="step-name">转化路径</div><div class="step-issue">广告主类型杂，与用户画像匹配度低</div></div>
+        <div class="flow-step broken"><div class="step-name">回流设计</div><div class="step-issue">APP 打开率低，触达一次成本高</div></div>
+      </div>
+      <div class="deep-insight">
+        <div class="label">结构性洞察：搜狗 APP 的"存在感困境"</div>
+        <div class="body">搜狗输入法的 APP 在用户心里是<strong>"我其实不太用，但不敢卸载"的工具后台</strong>——打开频率远低于键盘使用频率（键盘日用户 vs APP 月活差距可能在 5-8 倍）。这导致 APP 端每次打开都变成"珍贵的触达机会"，产品方就倾向在每个角落塞广告，结果就是密度过高。<br><br>真正要解的不是"砍广告位"——是<strong>"给 APP 一个用户愿意主动打开的理由"</strong>。对标讯飞输入法的做法：把 APP 做成"语音助手 + 翻译工具 + AI 问答"的工作台，APP 打开频率提上来后，每个位置的单位压力自然下降。搜狗手里有元宝，有完整的 AI 能力栈，把 APP 重构为<strong>"元宝的移动工作台"</strong>——用户为了用 AI 打开 APP，广告位自然稀释。<br><br>这一步做不了，APP 端再怎么调广告密度都是治标。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Channel M6: 消息通道 -->
+  <div class="channel">
+    <div class="channel-header">
+      <h3>M6 · 消息通道（Push / 拍脸图 / 红点） <span class="badge badge-red">红灯（毒位）</span></h3>
+      <span style="font-size:12px;color:#888;">APP 外强触达，纯广告 Push</span>
+    </div>
+    <div class="channel-body">
+      <div class="ad-positions">
+        <strong>真实形态</strong>
+        <span class="ad-tag">纯广告 Push</span>
+        <span class="ad-tag">启动拍脸图</span>
+        <span class="ad-tag">红点催促打开</span>
+      </div>
+      <div class="flow-chain">
+        <div class="flow-step broken"><div class="step-name">触发时机</div><div class="step-issue">用户没有主动需求时强推送</div></div>
+        <div class="flow-step broken"><div class="step-name">打扰程度</div><div class="step-issue">锁屏/通知栏强曝光，最容易导致用户关通知权限</div></div>
+        <div class="flow-step warn"><div class="step-name">转化路径</div><div class="step-issue">短期有点击，长期流失通知权限 = 流失永久触达</div></div>
+        <div class="flow-step broken"><div class="step-name">回流设计</div><div class="step-issue">用户关通知权限后永远不再触达</div></div>
+      </div>
+      <div class="deep-insight">
+        <div class="label">红灯根因：这是一笔"把未来卖给现在"的账</div>
+        <div class="body">Push 通道的变现看似利润高（千次 Push 转化率在业内是有"合格线"的），但<strong>每一次纯广告 Push 都在以指数级速率烧掉通知权限资产</strong>。iOS 用户关通知的动作成本极低（一次长按 = 永久屏蔽），关掉之后搜狗就<strong>永远失去了这个用户的 APP 外触达权</strong>。<br><br>行业 Benchmark：输入法类 APP 的健康 Push 策略是"功能通知 + 重要更新 + 用户明确关心的话题"（例如"你的皮肤即将过期"），纯广告 Push 占比应控制在 5% 以下。搜狗当前比例估计远高于此。<br><br><strong>必须做的事：</strong>砍掉所有纯广告 Push，保留功能通知。短期月度变现掉 10-15%，换长期触达资产不被烧完。这不是优化题，是<strong>止损题</strong>。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================== -->
+<!-- PART 2: PC 端 -->
+<!-- ================================================== -->
+<div class="part-divider">
+  <div class="part-num">02</div>
+  <div class="part-text">
+    <h2>PC 端 · 16+ 个商业化点位</h2>
+    <p>PC 标广 3 位 + PC 非标（新用户 3 类 + 老用户 8 类）+ 合作渠道 2 位</p>
+  </div>
+</div>
+
+<!-- PC 端清单 -->
+<div class="section">
+  <div class="section-title">三、PC 端广告位全清单</div>
+  <div class="inventory-grid">
+    <div class="inv-card">
+      <h4>PC 标广 <span class="count">3位</span></h4>
+      <ul>
+        <li>PC 弹窗（系统级强曝光）</li>
+        <li>PC 灵犀应用分发（浏览器新标签页）</li>
+        <li>PC 灵犀标广（搜索结果位）</li>
+      </ul>
+    </div>
+    <div class="inv-card">
+      <h4>PC 非标 · 新用户 <span class="count">3类</span></h4>
+      <ul>
+        <li><strong>安装完成</strong>（27w × 3.43% × 69% = 6390）</li>
+        <li><strong>安装向导</strong>（定制版"AI全能助手"）</li>
+        <li><strong>装机必备</strong>（桌面小工具聚合面板）</li>
+      </ul>
+    </div>
+    <div class="inv-card">
+      <h4>PC 非标 · 老用户 <span class="count">8类</span></h4>
+      <ul>
+        <li>定制输入法（20w × 2% × 80% = 3200）</li>
+        <li><strong style="color:#C92B2B;">系统弹窗（200w × 3% × 3% × 80% = 1440，万分之0.72）</strong></li>
+        <li>侧边栏</li>
+        <li>侧边栏工具箱</li>
+        <li>灵犀-直达</li>
+        <li>灵犀-下载</li>
+        <li>灵犀-应用分发</li>
+        <li>PDF-光标皮肤（100w × 0.5% × 60% = 3000）</li>
+      </ul>
+    </div>
+    <div class="inv-card">
+      <h4>PC 合作渠道 <span class="count">2位</span></h4>
+      <ul>
+        <li>右键分发（文件右键菜单）</li>
+        <li>侧边栏（第三方工具推荐）</li>
+      </ul>
+    </div>
+  </div>
+  <div class="channel-insight">
+    <strong>PC 端的结构性风险：</strong>新用户侧 3 类是搜狗作为"腾讯系桌面装机渠道"的真实价值，效率尚可；老用户侧 8 类多数漏斗成功率在万分之几，属于<strong>"大流量堆微转化"的粗放打法</strong>。搜狗是流量所有方，品牌代价也是自己的，但变现收益被一堆小广告主分走——结构性不对等极严重。
+  </div>
+</div>
+
+<!-- PC 端链路深度诊断 -->
+<div class="section">
+  <div class="section-title">四、PC 端四条链路 · 深度诊断</div>
+  <div class="section-subtitle">新用户装机场景 / 老用户存量触达 / PC 标广 / 合作渠道分治</div>
+
+  <!-- Channel P1: PC 标广 -->
+  <div class="channel">
+    <div class="channel-header">
+      <h3>P1 · PC 标广（弹窗 + 灵犀分发 + 灵犀标广） <span class="badge badge-yellow">黄灯</span></h3>
+      <span style="font-size:12px;color:#888;">系统级强曝光 + 浏览器流量位</span>
+    </div>
+    <div class="channel-body">
+      <div class="ad-positions">
+        <strong>真实广告位</strong>
+        <span class="ad-tag">PC 弹窗</span>
+        <span class="ad-tag">灵犀应用分发</span>
+        <span class="ad-tag">灵犀标广</span>
+      </div>
+      <div class="flow-chain">
+        <div class="flow-step broken"><div class="step-name">触发时机</div><div class="step-issue">PC 弹窗在用户没主动需求时强拉</div></div>
+        <div class="flow-step broken"><div class="step-name">打扰程度</div><div class="step-issue">弹窗视觉冲击强；灵犀新标签页内容实用性不足</div></div>
+        <div class="flow-step warn"><div class="step-name">转化路径</div><div class="step-issue">广告主多为游戏/网贷/下载类，与搜狗用户画像错配</div></div>
+        <div class="flow-step broken"><div class="step-name">回流设计</div><div class="step-issue">无，一次性曝光</div></div>
+      </div>
+      <div class="deep-insight">
+        <div class="label">PC 弹窗 = 搜狗 PC 端的"品牌定时炸弹"</div>
+        <div class="body">PC 弹窗的商业收益逻辑是<strong>"买用户注意力 × 卖给出价最高者"</strong>，这是一个典型的<strong>劣币驱逐良币</strong>市场：出价能出到最高的永远是游戏/网贷/小下载站这类"高 LTV 黑灰产"。每一次弹窗点击短期变现没问题，长期后果是搜狗在用户心里的定位从"一个输入法"滑向"一个会弹窗的流氓软件"。<br><br>灵犀浏览器新标签页本应是"生产力工具入口"（参考 Edge 的 Copilot 新标签页、Arc 的 Space 设计），却被做成了"标广 + 应用分发"的流量位，等于把一个面向"用户工作开始时刻"的黄金位置做成了大字报墙。<br><br><strong>战略层面的选择题</strong>：继续靠 PC 弹窗这种毒位卖短期流量，等于用品牌资产的分期付款换当季收入。最迟 2026 H2 必须做"PC 弹窗自有化"——只推搜狗自家新功能（元宝/灵犀/AI）+ 白名单腾讯系产品，不接外部广告主。这一步做了，PC 端品牌损耗的最大出血点就止住了。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Channel P2: PC 非标 · 新用户 -->
+  <div class="channel">
+    <div class="channel-header">
+      <h3>P2 · PC 非标 · 新用户装机场景（3 类） <span class="badge badge-orange">橙灯（效率尚可但叙事空）</span></h3>
+      <span style="font-size:12px;color:#888;">安装完成 / 安装向导 / 装机必备</span>
+    </div>
+    <div class="channel-body">
+      <div class="ad-positions">
+        <strong>真实漏斗</strong>
+        <span class="ad-tag">安装完成 27w → 6390（万分之16健康）</span>
+        <span class="ad-tag">安装向导（定制版"AI全能助手"）</span>
+        <span class="ad-tag">装机必备（桌面小工具聚合）</span>
+      </div>
+      <div class="flow-chain">
+        <div class="flow-step ok"><div class="step-name">触发时机</div><div class="step-issue">用户刚装完输入法，"愿意接受引导"的窗口期</div></div>
+        <div class="flow-step warn"><div class="step-name">打扰程度</div><div class="step-issue">装机场景接受度高；"定制版输入法"损品牌纯度</div></div>
+        <div class="flow-step warn"><div class="step-name">转化路径</div><div class="step-issue">万分之 16 的成功率，但导量对象叙事薄</div></div>
+        <div class="flow-step broken"><div class="step-name">回流设计</div><div class="step-issue">装完即走，没有"新用户价值教育"后续动作</div></div>
+      </div>
+      <div class="deep-insight">
+        <div class="label">这是搜狗作为"腾讯系装机渠道"最值钱的一块 — 但叙事没讲</div>
+        <div class="body">新用户装机场景的漏斗效率（万分之 16）远高于老用户侧（多数万分之几）——原因是用户此时处于<strong>"感激 + 接纳"的心理窗口期</strong>，"顺便装一个"的心理成本极低。这是搜狗真正能拿来讲故事的价值位。<br><br>但当前的打法暴露了三个问题：① <strong>"AI 全能助手"话术笼统到没品牌</strong>——用户装的究竟是元宝、灵犀、还是某个第三方工具？话术回避了具体身份；② <strong>"装机必备"半自家半合作</strong>——既推搜狗自家产品又推第三方小工具，用户无法建立"搜狗的装机推荐值得信任"的心智；③ <strong>一次性交付没有长期价值</strong>——装完用户对搜狗的认知还是"一个输入法"，没转化为"一个提效生态"。<br><br><strong>对标微软 Win11 OOBE 的做法</strong>：装完系统后推 Microsoft 365 + Edge + Copilot 的组合，<strong>每个推荐都明说"这是微软家族成员"</strong>——不回避品牌、不混装第三方。搜狗应该复制这个模式：<strong>"欢迎使用搜狗输入法，推荐你一起使用：元宝（AI 助手）+ 灵犀（AI 搜索）+ 搜狗浏览器"</strong>。把装机窗口从"流量位"升级为"搜狗家族推广主战场"，自家人给自家人背书，效率和品牌双赢。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Channel P3: PC 非标 · 老用户 -->
+  <div class="channel">
+    <div class="channel-header">
+      <h3>P3 · PC 非标 · 老用户存量触达（8 类） <span class="badge badge-red">红灯（大流量堆微转化）</span></h3>
+      <span style="font-size:12px;color:#888;">系统弹窗 / 灵犀三连招 / PDF 光标皮肤 / 定制输入法 等</span>
+    </div>
+    <div class="channel-body">
+      <div class="ad-positions">
+        <strong>真实漏斗</strong>
+        <span class="ad-tag">定制输入法：20w → 3200（万分之16）</span>
+        <span class="ad-tag" style="background:#FEE2E2;color:#C92B2B;border-color:#FCA5A5;">系统弹窗：200w → 1440（万分之0.72）</span>
+        <span class="ad-tag">PDF 光标皮肤：100w → 3000（万分之3）</span>
+        <span class="ad-tag">灵犀-直达 / 下载 / 应用分发（三连招）</span>
+        <span class="ad-tag">侧边栏 / 侧边栏工具箱</span>
+      </div>
+      <div class="flow-chain">
+        <div class="flow-step broken"><div class="step-name">触发时机</div><div class="step-issue">8 个位置触发逻辑各不相同，用户无法预期</div></div>
+        <div class="flow-step broken"><div class="step-name">打扰程度</div><div class="step-issue">系统弹窗未主动时强拉 · PDF 光标皮肤插入阅读流</div></div>
+        <div class="flow-step broken"><div class="step-name">转化路径</div><div class="step-issue">系统弹窗漏斗：200w→6w(3%)→1800(3%)→1440(80%)</div></div>
+        <div class="flow-step broken"><div class="step-name">回流设计</div><div class="step-issue">装机成功即结束，无长期价值沉淀</div></div>
+      </div>
+      <div class="deep-insight">
+        <div class="label">三个数字揭示一个结构性问题：搜狗在用 200 万流量给小广告主"打工"</div>
+        <div class="body"><strong>系统弹窗 200 万曝光换 1440 装机</strong>（万分之 0.72）的漏斗不是"效率可优化"的问题——这是<strong>"不做比做更好"</strong>的临界线。行业 benchmark：装机类位置健康成功率下限约万分之 20-30。搜狗在<strong>健康线下方 30-40 倍的位置</strong>，每一次低效曝光都在磨损多年品牌。<br><br>更深层的问题是<strong>"价值分配极不对等"</strong>：搜狗是流量所有方，品牌代价是自己的（用户骂的是搜狗），变现收益却被 200w 曝光对应的一堆小广告主分走——搜狗在自己家里给广告主"打工"。这是 PC 端多年没人敢动的隐形毒瘤。<br><br><strong>灵犀三连招</strong>（直达 / 下载 / 应用分发）是另一个缩影：灵犀从设计上是"生产力工具"（AI 搜索）——被硬做成"应用分发商"，等于拿工作场景卖<strong>"下载站流量"</strong>。用户对灵犀的信任感在"直达正确答案"和"推下载"之间每天被拉扯，最终会倒向不信任。<br><br><strong>必须做的三件事：</strong><br>① <strong>系统弹窗立刻砍</strong>——万分之 0.72 已到"做了亏品牌、不做反而省钱"的地步<br>② <strong>8 位砍到 3-4 位</strong>——保留定制输入法（健康）+ PDF 光标皮肤（无感）+ 灵犀-直达（产品逻辑成立的唯一灵犀位）；砍灵犀-下载、灵犀-应用分发、侧边栏工具箱、系统弹窗<br>③ <strong>漏斗体检制度化</strong>——所有 PC 非标位置每季度过漏斗，万分之 5 以下进下架候选池</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Channel P4: PC 合作渠道 -->
+  <div class="channel">
+    <div class="channel-header">
+      <h3>P4 · PC 合作渠道（右键分发 + 侧边栏） <span class="badge badge-red">红灯（毒位）</span></h3>
+      <span style="font-size:12px;color:#888;">操作系统级寄生触达</span>
+    </div>
+    <div class="channel-body">
+      <div class="ad-positions">
+        <strong>真实形态</strong>
+        <span class="ad-tag">文件右键菜单接入第三方</span>
+        <span class="ad-tag">桌面侧边栏第三方工具</span>
+      </div>
+      <div class="flow-chain">
+        <div class="flow-step broken"><div class="step-name">触发时机</div><div class="step-issue">用户执行系统操作时突然冒出"非搜狗"的第三方入口</div></div>
+        <div class="flow-step broken"><div class="step-name">打扰程度</div><div class="step-issue">寄生在系统级操作，用户心理上等同"流氓软件注入"</div></div>
+        <div class="flow-step warn"><div class="step-name">转化路径</div><div class="step-issue">短期有点击，长期口碑崩坏</div></div>
+        <div class="flow-step broken"><div class="step-name">回流设计</div><div class="step-issue">无</div></div>
+      </div>
+      <div class="deep-insight">
+        <div class="label">这一类是搜狗 PC 体验口碑最大的"黑点源"</div>
+        <div class="body">"右键分发"和"第三方侧边栏"在用户心里<strong>不被认为是"输入法的一部分"</strong>，而是"流氓软件注入了我的系统"。用户每次看到这些入口，攻击对象不是具体的第三方工具，而是<strong>"搜狗把它注进来了"</strong>——这是一种<strong>品牌债务转嫁</strong>，搜狗替第三方工具吃了所有骂名，自己什么也没得到（分成微薄）。<br><br>社区/知乎/贴吧里"搜狗输入法推荐卸载"的帖子大多数是冲着这类位置去的，不是冲输入法本身。也就是说：<strong>搜狗 PC 品牌口碑的主要污染源不在输入法产品本身，在这些"不属于输入法的附赠物"上。</strong><br><br><strong>战略层面只有一个选择：退出</strong>。这笔钱本来就是用品牌换的短期分成，卖的不划算。2026 H2 前全量下架右键分发、第三方侧边栏；把侧边栏收归搜狗自用（放搜狗家族产品入口 + 剪贴板 + AI 问答 + 翻译）。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================== -->
+<!-- PART 3: 竞品 + 问题 + 战略 -->
+<!-- ================================================== -->
+<div class="part-divider">
+  <div class="part-num">03</div>
+  <div class="part-text">
+    <h2>竞品对标 · 系统性问题 · 战略建议</h2>
+    <p>豆包 / 百度 / 讯飞 / 微信 / Wispr Flow / Typeless 六家横向对比</p>
+  </div>
+</div>
+
+<!-- Section 5: 竞品对标 -->
+<div class="section">
+  <div class="section-title">五、竞品横向对标（6 家）</div>
+  <div class="section-subtitle">从商业化克制度、差异化武器、订阅能力、生态联动四维打分</div>
+
+  <table class="comp-table">
+    <thead>
+      <tr>
+        <th style="width:12%;">竞品</th>
+        <th style="width:19%;">核心商业化模型</th>
+        <th style="width:19%;">差异化武器</th>
+        <th style="width:16%;">订阅能力</th>
+        <th style="width:18%;">生态联动</th>
+        <th style="width:16%;">对搜狗的启示</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>豆包输入法</strong><br>（字节系）</td>
+        <td class="mid">广告克制 + 抖音/豆包导流</td>
+        <td class="good">AI 聊天候选区直出、抖音短视频卡片、豆包一键唤起</td>
+        <td class="bad">无独立订阅</td>
+        <td class="good">抖音+豆包+剪映三级火箭</td>
+        <td>生态联动已起跑——搜狗必须把元宝+灵犀+搜狗浏览器做成同样的三级火箭</td>
+      </tr>
+      <tr>
+        <td><strong>百度输入法</strong></td>
+        <td class="bad">广告密度高 + 百度搜索导流</td>
+        <td class="mid">AI 助手"小度"、AI 斗图、百度搜索直连</td>
+        <td class="bad">无独立订阅</td>
+        <td class="mid">百度搜索+文心一言</td>
+        <td>商业化强度最高但品牌最受损——搜狗不该以百度为对标，该以不成为百度为目标</td>
+      </tr>
+      <tr>
+        <td><strong>讯飞输入法</strong></td>
+        <td class="good">克制 + 专业用户付费</td>
+        <td class="good">语音输入王者、垂直场景（医生/律师专业词库）</td>
+        <td class="good">VIP 订阅 ~¥15/月</td>
+        <td class="mid">讯飞星火生态</td>
+        <td>订阅模型已跑通——证明中文输入法有 ¥15-28/月的付费天花板</td>
+      </tr>
+      <tr>
+        <td><strong>微信键盘</strong></td>
+        <td class="good">无广告（流量自留）</td>
+        <td class="good">微信生态原生集成（发红包/小程序卡片/公众号引用）</td>
+        <td class="bad">无独立订阅</td>
+        <td class="good">微信全生态</td>
+        <td>用"零广告"作为微信生态防御工事——搜狗可学"纯净承诺"的品牌打法</td>
+      </tr>
+      <tr>
+        <td><strong>Wispr Flow</strong><br>（美国）</td>
+        <td class="good">纯订阅，零广告</td>
+        <td class="good">Vibe Coding / Code Mode — 语音→工作流→原地执行</td>
+        <td class="good">$12/月，年付 $96</td>
+        <td class="mid">MCP 协议深度集成</td>
+        <td>"原地完成任务"的产品形态已被海外验证——搜狗 M2 + M3 有资格成为中文社交场景下的 Wispr Flow</td>
+      </tr>
+      <tr>
+        <td><strong>Typeless</strong></td>
+        <td class="good">纯订阅，零广告</td>
+        <td class="good">AI 打字流、对话式交互</td>
+        <td class="good">$12/月</td>
+        <td class="mid">Arc / Cursor 生态工具联动</td>
+        <td>在"生产力工具"定位下 $12/月可行——输入法本身卖不出这个价</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="deep-insight">
+    <div class="label">六家横向看下来的战略结论</div>
+    <div class="body">① <strong>"克制"不是战术选择，是战略分水岭</strong>——讯飞/微信/Wispr/Typeless 都选择克制，共同点是它们都能讲清"自己是什么"。百度不克制，陷在流量换收入的短期账里。搜狗站在中间带：主态克制但非标失控，正好是最差的位置。<br><br>② <strong>差异化武器必须是"原地闭环"</strong>——豆包靠生态联动、Wispr 靠 Code Mode、微信靠原生集成，共同底层都是<strong>"用户说完一件事，这件事就被完成了"</strong>。搜狗的 M2（词服务发送后联想）+ M3（这厢有礼）是中国社交场景下唯一能跑这条路的候选。<br><br>③ <strong>订阅天花板的前提是品类重定义</strong>——输入法本身卖不出 ¥15-28/月，但"专业工作助手"（讯飞 VIP ¥15）、"AI 生产力工具"（Wispr $12、Typeless $12）都能卖。<strong>搜狗的 Pro 订阅必须包装成"搜狗 Agent Pro"</strong>，不是"搜狗输入法 VIP"。<br><br>④ <strong>生态联动决定下半场</strong>——豆包已经跑出"抖音+豆包+剪映"的三级火箭，搜狗握着"元宝+灵犀+搜狗浏览器"但从没把它们串起来讲故事。2026 年必须建立<strong>搜狗三级火箭叙事</strong>，否则被字节生态一次吃掉的风险极高。</div>
+  </div>
+</div>
+
+<!-- Section 6: 系统性问题 -->
+<div class="section">
+  <div class="section-title">六、系统性问题四诊</div>
+
+  <div class="problem-grid" style="grid-template-columns: repeat(2, 1fr); gap: 22px;">
+    <div class="problem-card" style="margin-top:18px;">
+      <div class="num">1</div>
+      <span class="tag">沉默代价</span>
+      <h3>做了克制却从没讲过 — 沉没成本白白烧掉</h3>
+      <p>打字主态、候选区、回填区、IME 中间态全部干净，这是搜狗在行业里罕见的自律。用户却普遍觉得"搜狗到处是广告"——因为他们看到的是面板广告和 PC 非标，而主态没广告这件事从来没人告诉他们。</p>
+      <div class="key">搜狗付了克制的成本（放弃主态变现），没拿到克制的品牌红利（没转化为心智资产）。这是所有问题里 ROI 最高的一个能优化点——只需要一份《输入纯净区承诺》。</div>
+    </div>
+
+    <div class="problem-card" style="margin-top:18px;">
+      <div class="num">2</div>
+      <span class="tag">漏斗效率</span>
+      <h3>PC 非标老用户侧"大流量堆微转化"</h3>
+      <p>系统弹窗 200w→1440（万分之 0.72）、PDF 光标皮肤 100w→3000（万分之 3）——远低于行业健康线（万分之 20-30）。搜狗用庞大流量磨极稀薄的转化，收益小广告主拿走，品牌代价自己扛。</p>
+      <div class="key">这是结构性不对等——流量价值在分配链里被严重折价。必须立刻止血：系统弹窗先砍，灵犀三连招收到一招，8 位砍到 3-4 位。</div>
+    </div>
+
+    <div class="problem-card" style="margin-top:18px;">
+      <div class="num">3</div>
+      <span class="tag">差异化浪费</span>
+      <h3>三个最有想象力的位置全被当边角料</h3>
+      <p>M2（词服务发送后联想）、M3（这厢有礼）、M4（任务中心）——搜狗唯三能跑出"键盘即服务"差异化的位置。当前做法：M2 当联想广告、M3 当固定商城、M4 当积分池。任何一个升级为"原地闭环"都能建立豆包/百度/微信学不来的叙事。</p>
+      <div class="key">差异化不是技术问题，是产品形态问题。不需要新建引擎，只需要重新定义这些位置的定位。</div>
+    </div>
+
+    <div class="problem-card" style="margin-top:18px;">
+      <div class="num">4</div>
+      <span class="tag">叙事缺失</span>
+      <h3>搜狗在输入法战场用"单品牌 × 单产品"打，对手在用"生态 × 协议"打</h3>
+      <p>豆包、微信键盘、百度输入法、Wispr Flow——当下主要对手全都已经不是"一个输入法"，而是把输入法作为一条入口，在背后接一整个生态/协议层。搜狗手握元宝+灵犀+搜狗浏览器+腾讯系资源，却还在用"搜狗输入法"一个单品牌打单点战。</p>
+      <div class="key">这不是"缺一个三级火箭概念"的问题——是**整个作战单位从"产品"升维到"生态"这一步，搜狗还没迈出去**。下面一节详解四家各是什么火箭结构、搜狗的火箭应当怎么建。</div>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================== -->
+<!-- Section 6.5: 生态对标深度解析 -->
+<!-- ================================================== -->
+<div class="section">
+  <div class="section-title">六·补 · 输入法 × 生态联动 · 四家深度对标</div>
+  <div class="section-subtitle">每家的三级火箭是什么结构、燃料从哪来、目标星系去哪 —— 搜狗需要建的是哪一种</div>
+
+  <!-- 命题重定义 -->
+  <div class="deep-insight" style="margin-top: 4px;">
+    <div class="label">先把命题重新定义 —— "输入法 × 生态"不是一道题，是四道题</div>
+    <div class="body">市场上常说"豆包跑通了生态联动、搜狗该学"，这种说法不准确。<strong>四家对手的生态结构完全不同</strong>：豆包是<strong>内容生态驱动型</strong>（字节系内容消费 → 输入法回流），微信键盘是<strong>社交关系驱动型</strong>（微信生态内原生体验），百度是<strong>搜索流量驱动型</strong>（搜索心智 → 输入法分发），Wispr Flow 是<strong>协议生态驱动型</strong>（MCP × 任意应用 × 原地执行）。<br><br>"火箭"这个比喻有误导性——它暗示三级火箭是<strong>"一级推一级"的线性结构</strong>。但真实生态从来不是这样，生态是<strong>"中心 + 辐射 + 反哺"的三角循环</strong>：中心产品定义心智，辐射产品扩展触点，反哺机制让流量和数据回到中心。看清这个底层差异，才能判断搜狗应该建哪种生态。</div>
+  </div>
+
+  <!-- 四家生态对比表 -->
+  <table class="comp-table" style="margin-top: 26px;">
+    <thead>
+      <tr>
+        <th style="width:14%;">对手</th>
+        <th style="width:17%;">生态中心</th>
+        <th style="width:19%;">输入法的角色定位</th>
+        <th style="width:22%;">生态反哺机制（输入法→中心）</th>
+        <th style="width:28%;">结构性优势 × 边界</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>豆包输入法</strong><br><span style="color:#888;font-size:11.5px;">字节系</span></td>
+        <td class="good">豆包 AI 助手<br><span style="color:#666;font-weight:400;font-size:11.5px;">（以 AI 对话为中心）</span></td>
+        <td>
+          <strong>AI 对话的移动入口</strong><br>
+          <span style="color:#555;font-size:12px;">候选区直出 AI 回复 · 抖音短视频卡片插入 · 剪映模板一键唤起</span>
+        </td>
+        <td>
+          ① 用户在输入法用 AI 功能 → 沉淀到豆包账号<br>
+          ② 抖音内容消费数据 → 反向优化输入法推荐<br>
+          ③ 剪映创作需求 → 输入法直接调起模板
+        </td>
+        <td>
+          <strong class="good-txt" style="color:#2B8A2B;">优势</strong>：内容生态自带高频触点，用户每天刷抖音 → 看到豆包 → 顺便用豆包输入法，这个链路已跑通。<br>
+          <strong class="bad-txt" style="color:#C92B2B;">边界</strong>：依赖抖音的流量池，To C 娱乐场景强、To 工作/专业场景弱。
+        </td>
+      </tr>
+      <tr>
+        <td><strong>微信键盘</strong><br><span style="color:#888;font-size:11.5px;">微信生态</span></td>
+        <td class="good">微信 App<br><span style="color:#666;font-weight:400;font-size:11.5px;">（以社交关系为中心）</span></td>
+        <td>
+          <strong>微信生态内的原生输入体验</strong><br>
+          <span style="color:#555;font-size:12px;">发红包快捷 · 小程序卡片预览 · 公众号引用直插 · 企业微信专用词库</span>
+        </td>
+        <td>
+          ① 微信社交场景的输入数据 → 不出生态<br>
+          ② 零广告承诺 → 换用户对微信"纯净"的信任<br>
+          ③ 防御性价值 &gt; 进攻性价值（拒绝其他输入法偷微信数据）
+        </td>
+        <td>
+          <strong class="good-txt" style="color:#2B8A2B;">优势</strong>：国民级关系链是唯一不可替代资产，键盘即微信、微信即键盘，心智闭环极强。<br>
+          <strong class="bad-txt" style="color:#C92B2B;">边界</strong>：跳不出微信生态；非微信场景体验弱于专业输入法；注定不做商业化。
+        </td>
+      </tr>
+      <tr>
+        <td><strong>百度输入法</strong><br><span style="color:#888;font-size:11.5px;">百度生态</span></td>
+        <td class="mid">百度搜索 + 文心一言<br><span style="color:#666;font-weight:400;font-size:11.5px;">（以搜索心智为中心）</span></td>
+        <td>
+          <strong>搜索流量的分发终端</strong><br>
+          <span style="color:#555;font-size:12px;">AI 斗图 · 小度助手 · 百度搜索直连 · 百度网盘/文库导流</span>
+        </td>
+        <td>
+          ① 输入法分发百度 App 下载<br>
+          ② 输入场景触发搜索心智<br>
+          ③ 搜索广告预算反哺输入法广告位收益
+        </td>
+        <td>
+          <strong class="good-txt" style="color:#2B8A2B;">优势</strong>：中心产品（百度搜索）的用户基数和商业化能力仍然巨大。<br>
+          <strong class="bad-txt" style="color:#C92B2B;">边界</strong>：搜索心智本身在流失（用户转向 AI 对话/抖音/小红书），输入法沦为变现救命稻草，商业化越用力品牌越损。
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Wispr Flow</strong><br><span style="color:#888;font-size:11.5px;">MCP 协议生态</span></td>
+        <td class="good">MCP 协议 + 任意应用<br><span style="color:#666;font-weight:400;font-size:11.5px;">（以执行能力为中心）</span></td>
+        <td>
+          <strong>语音 → 任意应用的执行入口</strong><br>
+          <span style="color:#555;font-size:12px;">Vibe Coding / Code Mode · 语音→工作流→原地执行 · 对接 Cursor/Notion/Linear/Arc 等</span>
+        </td>
+        <td>
+          ① 用户每接一个 MCP 工具 → Wispr 的价值感越强<br>
+          ② 执行数据反哺模型优化<br>
+          ③ 协议绑定越深 → 迁移成本越高
+        </td>
+        <td>
+          <strong class="good-txt" style="color:#2B8A2B;">优势</strong>：不依赖任何内容/社交生态，生态越碎片化越有价值（生态的"操作系统层"）。<br>
+          <strong class="bad-txt" style="color:#C92B2B;">边界</strong>：依赖开发者/第三方应用主动接入 MCP，目前仍是 geek 工具，出圈难度大。
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 四个关键洞察 -->
+  <div class="deep-insight" style="margin-top: 22px;">
+    <div class="label">从四家对比中抽出的四个关键洞察</div>
+    <div class="body">
+      <strong>洞察一 · 输入法不是中心、永远不会是中心。</strong>——没有任何一家把输入法当生态中心打。豆包的中心是 AI 助手、微信的中心是社交、百度的中心是搜索、Wispr 的中心是协议。<strong>输入法的战略价值是"高频触点"而非"价值中枢"</strong>。搜狗过去十年的错误之一，是试图把"搜狗输入法"当中心打，而搜狗真正的生态中心应该是别的东西。<br><br>
+      <strong>洞察二 · 反哺机制决定生态能不能活。</strong>——豆包靠抖音数据反哺输入法推荐、微信靠社交心智反哺零广告承诺、Wispr 靠执行数据反哺模型——<strong>反哺是生态的心脏</strong>。搜狗当前"输入法 + 元宝 + 灵犀"的关系是**三个独立产品做互推**，没有数据/流量/心智的双向流动。没反哺的生态不叫生态，叫产品矩阵——这是搜狗和豆包的根本差距。<br><br>
+      <strong>洞察三 · 生态类型决定商业化形态。</strong>——内容生态（豆包）靠广告变现、社交生态（微信）零广告靠其他产品变现、搜索生态（百度）靠广告拍卖、协议生态（Wispr）靠订阅。<strong>搜狗要选哪条路，先要选自己是哪种生态</strong>。当前搜狗的商业化模型（广告为主）暗示它把自己定位成了"内容 + 搜索"混合生态——但它既没有抖音级内容、也没有百度级搜索心智，这种定位是注定亏损的。<br><br>
+      <strong>洞察四 · 搜狗唯一可行的生态类型是"协议生态 × 中文本土化"。</strong>——内容生态打不过豆包（没抖音）、社交生态打不过微信（没关系链）、搜索生态打不过百度（搜狗搜索心智已流失）。<strong>唯一空位是"协议生态"</strong>——中国版的 Wispr Flow × 中国版 MCP 网络。搜狗输入法的独特价值在于：在中文社交/工作场景下，它是唯一有规模同时覆盖"社交输入 + 专业输入 + 键盘级触发"的入口。这是搜狗可以自建的生态，不是靠别人施舍的。
+    </div>
+  </div>
+
+  <!-- 搜狗应当建的火箭 -->
+  <div class="deep-insight" style="margin-top: 22px; background: linear-gradient(135deg, #1a1a2e 0%, #2a1810 100%);">
+    <div class="label" style="color: #FFB088;">搜狗应当建的生态 —— "中文 Agent 协议生态"</div>
+    <div class="body" style="color: #E8DCCB;">
+      不要沿用"三级火箭"这个比喻——它会误导组织去堆产品矩阵。正确的叙事是<strong style="color:#FFB088;">"三角生态"</strong>：<strong>中心 × 辐射 × 反哺</strong>。<br><br>
+
+      <strong style="color:#FFB088;">中心：元宝（而非输入法）。</strong>元宝是 AI Agent 能力中枢，承担"大脑"角色。搜狗过去把元宝当作"推荐给输入法用户的另一个 App"——错了。应该反过来：<strong style="color:#FFB088;">输入法是元宝伸到键盘的手指</strong>。这个角色置换是最关键的一步，也是最反直觉的一步——很多人在组织里会抗拒，因为输入法团队的 KPI 是输入法装机量和收入，但战略上必须这么做。<br><br>
+
+      <strong style="color:#FFB088;">辐射：搜狗输入法（触点） + 灵犀（搜索） + 搜狗浏览器（阅读）。</strong>三个辐射产品各自覆盖一种高频场景——输入法覆盖社交/沟通输入、灵犀覆盖信息检索、浏览器覆盖内容阅读。这三个场景合起来是<strong>中国人每天 70%+ 的数字生活</strong>。每个辐射产品都成为"元宝能力的具体化身"：在输入法里元宝是原地 Agent、在灵犀里元宝是 AI 搜索、在浏览器里元宝是阅读助手。<br><br>
+
+      <strong style="color:#FFB088;">反哺：数据 × 流量 × 心智三条回路。</strong>① <strong>数据反哺</strong>：三个辐射产品收集的场景数据回流到元宝，让元宝在"中文社交场景"这个细分领域超越通用大模型；② <strong>流量反哺</strong>：装机场景、PC 新标签页、APP 首页三大战略入口统一导量到元宝（不是导给第三方广告主）；③ <strong>心智反哺</strong>：元宝的 AI 能力提升会让用户觉得"搜狗家族每个产品都更聪明了"，而不是"搜狗又做了个 AI 产品"。<br><br>
+
+      <strong style="color:#FFB088;">对外叙事：</strong>不说"搜狗三级火箭"、不说"搜狗家族"——这些都是组织内部视角。对用户的一句话是：<strong style="color:#FFF;font-size:15px;">"说一句话，让搜狗帮你办完整件事"</strong>——键盘输入、搜索查询、浏览阅读全部统一到这个承诺下。这是搜狗可以从豆包、微信、百度手里抢回来的那块"任务完成度"心智高地。<br><br>
+
+      <strong style="color:#FFB088;">对手对标：</strong>这不是抄豆包（内容生态），不是抄微信（社交生态），不是抄百度（搜索生态）——是走 <strong>"Wispr Flow × 中文本土化 × 键盘级规模"</strong> 的路线。Wispr 证明了"协议生态 + 原地执行"模型能卖 $12/月，搜狗有它没有的东西：中文社交场景的原生触点 + 键盘级用户规模 + 腾讯系生态协议对接可能性。<strong>这是当前唯一一条搜狗能跑赢的赛道</strong>。
+    </div>
+  </div>
+</div>
+
+<!-- Section 7: 战略建议 -->
+<div class="section">
+  <div class="section-title">七、三阶段战略建议</div>
+
+  <div class="rec-grid">
+    <div class="rec-card phase-1">
+      <div class="phase">阶段一 · H2 2026</div>
+      <h3>立信 · 止血 · 发芽</h3>
+      <ol>
+        <li><strong>立信</strong>：发布《输入纯净区承诺》，把"主态无广告"从沉默成本转为品牌资产。</li>
+        <li><strong>止血 PC 老用户侧</strong>：砍系统弹窗（万分之 0.72）+ 灵犀-下载 + 灵犀-应用分发 + 侧边栏工具箱。</li>
+        <li><strong>止血 PC 合作渠道</strong>：下架右键分发 + 第三方侧边栏，侧边栏收归搜狗自用。</li>
+        <li><strong>M2 发芽</strong>：词服务发送后联想升级为"原地完成任务 MVP"——用户发"今晚去吃"→ 半浮层选老乡鸡 → 原地下单 → 回填到输入框。</li>
+        <li><strong>M3 重定位</strong>：这厢有礼从"固定商城"升级为"情境化品牌服务入口"。</li>
+        <li><strong>APP Push 重构</strong>：砍纯广告 Push，只保留功能通知。</li>
+      </ol>
+    </div>
+
+    <div class="rec-card phase-2">
+      <div class="phase">阶段二 · 2027</div>
+      <h3>上订阅 · 换引擎 · 联生态</h3>
+      <ol>
+        <li><strong>搜狗 Agent Pro 上线</strong>：¥28/月，权益 = 无广告 + 原地 Agent 代理 + 专业词库 + 元宝高级额度。</li>
+        <li><strong>任务中心转漏斗</strong>：看广告换 Pro 体验日，为订阅做低门槛教育。</li>
+        <li><strong>原地闭环全量</strong>：从生活服务（订餐/订位）扩到工作服务（订会议室/查票/订机票）。</li>
+        <li><strong>搜狗三级火箭叙事</strong>：元宝+灵犀+搜狗浏览器统一品牌叙事，装机场景自家人背书。</li>
+        <li><strong>PC 弹窗自有化</strong>：只推搜狗家族 + 白名单腾讯系，不接外部广告主。</li>
+        <li><strong>漏斗体检制度化</strong>：所有非标位置季度过漏斗，万分之 5 以下下架。</li>
+      </ol>
+    </div>
+
+    <div class="rec-card phase-3">
+      <div class="phase">阶段三 · 2028</div>
+      <h3>重定义品类 · 开生态</h3>
+      <ol>
+        <li><strong>品类重定义</strong>：对外从"搜狗输入法"升级为"搜狗智能输入 / 搜狗 Agent"，跳出输入法红海。</li>
+        <li><strong>开发者生态</strong>：开放"原地服务接入协议"，第三方商家可入驻原地闭环（参考微信小程序早期路径）。</li>
+        <li><strong>用户分层</strong>：免费（纯净输入区）/ Pro（去广告 + Agent）/ Pro+（专业词库 + 团队协作）。</li>
+        <li><strong>商业化正金字塔</strong>：订阅 40% / Agent 交易抽成 30% / 品牌合作 20% / 广告 10%。从"广告一条腿"到"四条腿"。</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- Section 8: 致老板 -->
+<div class="section">
+  <div class="section-title">八、写给老板的四句话</div>
+  <div style="padding: 14px 0;">
+    <div class="boss-letter">
+      <strong>① 搜狗做了很多"体面的克制"，但从没把它变成品牌资产。</strong>
+      <span>打字主态、候选区、回填区全干净——业界罕见的自律。问题是用户不知道。一份《输入纯净区承诺》能把这笔沉没成本变成心智资产，这是 ROI 最高的一步。</span>
+    </div>
+    <div class="boss-letter">
+      <strong>② PC 非标老用户侧是"大流量堆微转化"的典型样板——必须立刻止血。</strong>
+      <span>系统弹窗 200 万曝光只换来 1440 装机（万分之 0.72）、PDF 光标皮肤 100 万换 3000（万分之 3）——这些数字不是"还能优化"，是"不做比做更好"。万分之 5 以下的位置先砍掉，品牌损耗的最大出血点就止住了。</span>
+    </div>
+    <div class="boss-letter">
+      <strong>③ 三个最有差异化想象力的位置都被当成"边角料"——浪费到极致。</strong>
+      <span>词服务发送后联想、这厢有礼、任务中心——任何一个做成"发消息→原地完成任务→回填输入框"的闭环，就是搜狗跑赢豆包/微信/百度的差异化主武器。不需要新技术，只需要重新定义这些位置的产品形态。</span>
+    </div>
+    <div class="boss-letter">
+      <strong>④ Pro 订阅必须基于"品类重定义"——输入法本身卖不出 ¥28/月。</strong>
+      <span>Typeless $12/月、Wispr Flow $12/月、讯飞 VIP ¥15/月都已验证订阅模型，但前提都是"生产力工具/专业助手"定位。搜狗的订阅产品必须包装成"Agent Pro"——你说一句话，搜狗帮你完成一整件事。这是唯一能让输入法摆脱"只值 0 元"魔咒的路径。</span>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p><strong>搜狗输入法商业化布局专家诊断 · 终版</strong></p>
+  <p>视角：资深商业化专家 · 基于真实广告位截图核对 · 竞品池：豆包 / 百度 / 讯飞 / 微信 / Wispr Flow / Typeless</p>
+  <p>2026-04-19 · 内部参考，请勿外传</p>
+</div>
+
+</div>
+</body>
+</html>
