@@ -11,19 +11,27 @@
     :root {
       --font: 'Noto Sans SC', 'Segoe UI', system-ui, sans-serif;
       --bg: #ffffff;
-      --bg-surface: #f8f9fa;
-      --bg-hover: #f1f3f4;
-      --text: #202124;
-      --text-2: #5f6368;
-      --text-3: #80868b;
-      --text-4: #bdc1c6;
-      --border: #dadce0;
-      --border-light: #e8eaed;
-      --blue: #1a73e8;
-      --blue-light: #e8f0fe;
-      --shadow-hover: 0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
-      --radius: 8px;
-      --radius-lg: 12px;
+      --bg-surface: #f5f5f5;
+      --bg-hover: #eeeeee;
+      --text: #141414;
+      --text-2: #525252;
+      --text-3: #8a8a8a;
+      --text-4: #bdbdbd;
+      --border: #e5e5e5;
+      --border-light: #f0f0f0;
+      --blue: #4a90ff;
+      --blue-light: #edf3ff;
+      --accent-green: #00c896;
+      --accent-green-bg: #e6faf3;
+      --accent-yellow: #ffd93d;
+      --accent-yellow-bg: #fff9d6;
+      --accent-pink: #ff6b9d;
+      --accent-pink-bg: #ffeaf2;
+      --accent-purple: #9b6bff;
+      --accent-purple-bg: #f0eaff;
+      --shadow-hover: 0 8px 24px 0 rgba(0,0,0,0.08);
+      --radius: 12px;
+      --radius-lg: 20px;
       --radius-full: 100px;
       --ease: cubic-bezier(0.2, 0, 0, 1);
       --max-w: 1200px;
@@ -31,7 +39,8 @@
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { font-size: 16px; scroll-behavior: smooth; }
-    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.5; -webkit-font-smoothing: antialiased; letter-spacing: -0.005em; }
+    ::selection { background: var(--text); color: var(--bg); }
 
     /* NAV — 与index.html保持一致 */
     .topnav {
@@ -64,13 +73,13 @@
 
     /* HERO */
     .hero {
-      max-width: var(--max-w); margin: 0 auto; padding: 48px 24px 0; text-align: left;
+      max-width: var(--max-w); margin: 0 auto; padding: 56px 24px 0; text-align: left;
     }
-    .hero-title { font-size: 2.75rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; color: var(--text); }
-    .hero-subtitle { margin-top: 12px; font-size: 1rem; color: var(--text-2); max-width: 640px; }
+    .hero-title { font-size: 3.75rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1.05; color: var(--text); }
+    .hero-subtitle { margin-top: 16px; font-size: 1rem; color: var(--text-2); max-width: 640px; line-height: 1.65; }
 
     /* FILTER */
-    .filters { max-width: var(--max-w); margin: 0 auto; padding: 28px 24px 0; }
+    .filters { max-width: var(--max-w); margin: 0 auto; padding: 36px 24px 0; }
     .filters-scroll { display: flex; align-items: center; gap: 8px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
     .filters-scroll::-webkit-scrollbar { display: none; }
     .chip {
@@ -80,24 +89,24 @@
       cursor: pointer; transition: all 200ms var(--ease); white-space: nowrap;
       display: flex; align-items: center; gap: 6px; flex-shrink: 0;
     }
-    .chip:hover { background: var(--bg-surface); border-color: var(--text-4); }
-    .chip.active { background: var(--blue-light); color: var(--blue); border-color: transparent; }
+    .chip:hover { background: var(--bg-surface); border-color: var(--text-4); color: var(--text); }
+    .chip.active { background: var(--text); color: var(--bg); border-color: var(--text); }
     .chip .chip-num { font-size: 0.6875rem; opacity: 0.5; }
     .chip.active .chip-num { opacity: 0.7; }
 
     /* MASONRY GRID */
     .gallery {
-      max-width: var(--max-w); margin: 0 auto; padding: 24px 24px 80px;
-      columns: 3; column-gap: 16px;
+      max-width: var(--max-w); margin: 0 auto; padding: 28px 24px 80px;
+      columns: 3; column-gap: 20px;
     }
 
     .gallery-card {
-      break-inside: avoid; margin-bottom: 16px;
+      break-inside: avoid; margin-bottom: 20px;
       border: 1px solid var(--border-light); border-radius: var(--radius-lg);
       overflow: hidden; background: var(--bg);
-      transition: box-shadow 200ms var(--ease), border-color 200ms var(--ease);
+      transition: all 300ms var(--ease);
     }
-    .gallery-card:hover { box-shadow: var(--shadow-hover); border-color: var(--border); }
+    .gallery-card:hover { box-shadow: var(--shadow-hover); border-color: var(--border); transform: translateY(-3px); }
 
     .gallery-img {
       width: 100%; display: block;
