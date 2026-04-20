@@ -83,6 +83,7 @@
       color: var(--text-3); cursor: pointer; transition: color 250ms var(--ease);
       white-space: nowrap; display: flex; align-items: center; gap: 6px;
     }
+    .cat-link:first-child { padding-left: 0; }
     .cat-link:hover { color: var(--text); }
     .cat-link.active { color: var(--text); font-weight: 500; }
     .cat-link .cat-dot {
@@ -95,7 +96,7 @@
     /* SUB-CATEGORY NAV */
     .sub-nav {
       max-width: var(--max-w); margin: 0 auto; padding: 16px 24px 0;
-      display: none; justify-content: center; align-items: center; gap: 0;
+      display: none; justify-content: flex-start; align-items: center; gap: 0;
     }
     .sub-nav.visible { display: flex; }
     .sub-link {
@@ -105,6 +106,7 @@
       white-space: nowrap; border-radius: var(--radius-full);
     }
     .sub-link:hover { color: var(--text-2); }
+    .sub-link:first-child { padding-left: 0; }
     .sub-link.active {
       color: var(--text); font-weight: 500;
       background: var(--bg-surface); border: 1px solid var(--border-light);
@@ -546,7 +548,6 @@ const REPORTS = [
 // CATEGORY DEFINITIONS
 // ============================================================
 const CATEGORIES = [
-  { key: null, label: '全部', icon: '📋' },
   { key: '流量商业化', label: '流量商业化', icon: '📈' },
   { key: '应用商业化', label: '应用商业化', icon: '📱' },
   { key: '内容商业化', label: '内容商业化', icon: '🎨' }
@@ -554,7 +555,6 @@ const CATEGORIES = [
 
 const SUB_CATEGORIES = {
   '内容商业化': [
-    { key: null, label: '全部', icon: '' },
     { key: '装扮', label: '装扮', icon: '🎭' },
     { key: '会员', label: '会员', icon: '👑' },
     { key: '陪伴', label: '陪伴', icon: '💬' },
@@ -643,7 +643,11 @@ function renderReportList() {
 }
 
 function setCategory(cat) {
-  activeCategory = activeCategory === cat ? null : cat;
+  if (activeCategory === cat) {
+    activeCategory = null;
+  } else {
+    activeCategory = cat;
+  }
   activeSubCategory = null;
   renderFilters();
   renderSubFilters();
@@ -651,7 +655,11 @@ function setCategory(cat) {
 }
 
 function setSubCategory(sub) {
-  activeSubCategory = activeSubCategory === sub ? null : sub;
+  if (activeSubCategory === sub) {
+    activeSubCategory = null;
+  } else {
+    activeSubCategory = sub;
+  }
   renderSubFilters();
   renderReportList();
 }
