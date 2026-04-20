@@ -77,6 +77,15 @@
       height: 2px; background: var(--text); border-radius: 1px 1px 0 0;
     }
 
+    /* HERO（仅在报告列表页显示） */
+    .hero {
+      max-width: var(--max-w); margin: 0 auto; padding: 56px 24px 0; text-align: left;
+    }
+    .hero-title { font-size: 3.75rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1.05; color: var(--text); }
+    .hero-subtitle { margin-top: 16px; font-size: 1rem; color: var(--text-2); max-width: 720px; line-height: 1.65; }
+    /* 进入报告详情页时隐藏体验地图大标题 */
+    body.report-active .hero { display: none; }
+
     /* TWO-COLUMN LAYOUT: 左侧竖向定位器 + 右侧内容 */
     .content-wrap {
       max-width: var(--max-w); margin: 0 auto; padding: 40px 24px 80px;
@@ -167,7 +176,7 @@
     .report-stat strong { color: var(--text); font-weight: 700; }
 
     /* EMBEDDED REPORT */
-    .report-embed { max-width: var(--max-w); margin: 0 auto; padding: 0 24px 80px; display: none; }
+    .report-embed { max-width: var(--max-w); margin: 0 auto; padding: 48px 24px 80px; display: none; }
     .report-embed.active { display: block; }
     .report-back {
       display: inline-flex; align-items: center; gap: 8px;
@@ -242,6 +251,8 @@
 
     /* RESPONSIVE */
     @media (max-width: 768px) {
+      .hero { padding: 32px 16px 0; }
+      .hero-title { font-size: 2rem; }
       .cat-nav { padding: 24px 16px 0; gap: 4px; flex-wrap: wrap; }
       .cat-link { padding: 8px 16px; font-size: 0.8125rem; }
       .content-wrap {
@@ -257,6 +268,7 @@
     }
     @media (max-width: 480px) {
       .nav-tab { padding: 0 12px; font-size: 0.8125rem; }
+      .hero-title { font-size: 1.5rem; }
       .cat-link { padding: 6px 12px; font-size: 0.75rem; }
     }
   </style>
@@ -274,6 +286,11 @@
       </div>
     </div>
   </nav>
+
+  <header class="hero">
+    <h1 class="hero-title">体验地图</h1>
+    <p class="hero-subtitle">深度剖析竞品产品体验链路、用户需求和设计策略，基于 Figma 设计稿和用户行为调研的一手分析报告</p>
+  </header>
 
   <!-- Two-column layout: Left category nav + Right content -->
   <div class="content-wrap" id="contentWrap">
@@ -798,12 +815,14 @@ function showReport(id) {
   document.getElementById('contentWrap').style.display = 'none';
   document.getElementById('catNav').style.display = 'none';
   document.getElementById('report-' + id).classList.add('active');
+  document.body.classList.add('report-active');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 function hideReport() {
   document.querySelectorAll('.report-embed').forEach(el => el.classList.remove('active'));
   document.getElementById('contentWrap').style.display = 'grid';
   document.getElementById('catNav').style.display = 'flex';
+  document.body.classList.remove('report-active');
   renderSubFilters();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
