@@ -1,0 +1,2080 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>输入法皮肤高价值用户研究 · 完整报告</title>
+<style>
+/* ============ 清新配色体系 ============ */
+:root{
+  /* 背景体系：极简白 + 层次灰 */
+  --bg:#FBFBFD;            /* 页面底色（近白） */
+  --surface:#FFFFFF;       /* 卡片 */
+  --surface-2:#F7F8FA;     /* 辅助区 */
+  --surface-3:#F0F2F5;     /* 分隔 */
+  --border:#EBEEF2;
+  --border-2:#E0E4E9;
+
+  /* 文字层级 */
+  --ink-1:#0F1419;         /* 主标题 */
+  --ink-2:#2C3440;         /* 正文 */
+  --ink-3:#5B6673;         /* 次要 */
+  --ink-4:#94A0AE;         /* 弱化 */
+
+  /* 高饱和度点缀色（克制使用） */
+  --rose:#FF3B6B;          /* 玫瑰红 - 追星 */
+  --rose-soft:#FFE4EC;
+  --violet:#7C3AED;        /* 深紫 - 审美 */
+  --violet-soft:#F0E9FF;
+  --ocean:#0066FF;         /* 海洋蓝 - 二次元 */
+  --ocean-soft:#E0ECFF;
+  --mint:#10B981;          /* 薄荷绿 - UGC */
+  --mint-soft:#D1FAE5;
+  --amber:#F59E0B;         /* 琥珀 */
+  --amber-soft:#FEF3C7;
+  --crimson:#B91C1C;       /* 粉丝红 */
+  --crimson-soft:#FEE2E2;
+
+  /* 语义色 */
+  --success:var(--mint);
+  --success-soft:var(--mint-soft);
+  --warning:var(--amber);
+  --warning-soft:var(--amber-soft);
+  --danger:#DC2626;
+  --danger-soft:#FEE2E2;
+  --info:var(--ocean);
+  --info-soft:var(--ocean-soft);
+
+  /* 旧变量别名（兼容原内容） */
+  --m:var(--mint);--ml:var(--mint-soft);--md:#047857;
+  --r:var(--danger);--rl:var(--danger-soft);
+  --o:var(--amber);--ol:var(--amber-soft);
+  --b:var(--ocean);--bl:var(--ocean-soft);
+  --p:var(--violet);--pl:var(--violet-soft);
+  --pk:var(--rose);--pkl:var(--rose-soft);
+  --fan:var(--crimson);--fanl:var(--crimson-soft);
+  --gold:#D97706;--goldl:#FEF3C7;
+  --g50:var(--surface-2);--g100:var(--surface-3);--g200:var(--border);--g400:var(--ink-4);--g600:var(--ink-3);--g800:var(--ink-2);--g900:var(--ink-1);
+
+  --shadow-sm:0 1px 2px rgba(15,20,25,.04);
+  --shadow-md:0 2px 8px rgba(15,20,25,.05),0 1px 3px rgba(15,20,25,.04);
+  --shadow-lg:0 8px 24px rgba(15,20,25,.06),0 2px 6px rgba(15,20,25,.04);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg);
+  color:var(--ink-2);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ============ HERO - 清新白色版 ============ */
+.hero{
+  background:var(--surface);
+  color:var(--ink-1);
+  padding:72px 32px 56px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+  border-bottom:1px solid var(--border);
+}
+.hero::before{
+  content:'';position:absolute;
+  top:-200px;left:50%;transform:translateX(-50%);
+  width:800px;height:800px;
+  background:radial-gradient(circle,rgba(255,59,107,.05) 0%,transparent 60%);
+  pointer-events:none;
+}
+.hero::after{
+  content:'';position:absolute;
+  top:40px;right:-100px;
+  width:400px;height:400px;
+  background:radial-gradient(circle,rgba(124,58,237,.06) 0%,transparent 60%);
+  pointer-events:none;
+}
+.hero .preline{
+  font-size:11px;letter-spacing:4px;
+  color:var(--rose);font-weight:700;
+  margin-bottom:14px;position:relative;
+}
+.hero h1{
+  font-size:38px;font-weight:800;
+  line-height:1.3;color:var(--ink-1);
+  position:relative;
+  letter-spacing:-.5px;
+}
+.hero h1 br + *, .hero h1{background:linear-gradient(135deg,var(--ink-1) 0%,var(--violet) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero .sub{
+  font-size:14px;color:var(--ink-3);
+  position:relative;margin-top:14px;
+  max-width:560px;margin-left:auto;margin-right:auto;
+}
+.hero .tags{
+  margin-top:24px;display:flex;
+  justify-content:center;gap:8px;
+  flex-wrap:wrap;position:relative;
+}
+.hero .tag{
+  background:var(--surface-2);
+  border:1px solid var(--border);
+  color:var(--ink-3);
+  border-radius:20px;
+  padding:5px 14px;font-size:12px;
+  font-weight:500;
+  transition:all .15s;
+}
+.hero .tag:hover{
+  background:#fff;border-color:var(--violet);
+  color:var(--violet);
+  transform:translateY(-1px);
+}
+
+/* ============ Container ============ */
+.ct{max-width:1120px;margin:0 auto;padding:40px 24px 80px}
+
+/* ============ TOC - 浅色版 ============ */
+.big-toc{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:16px;padding:32px;
+  margin-bottom:32px;
+  position:relative;overflow:hidden;
+  box-shadow:var(--shadow-md);
+}
+.big-toc::before{
+  content:'';position:absolute;
+  top:-60px;right:-60px;
+  width:240px;height:240px;
+  background:radial-gradient(circle,rgba(124,58,237,.04),transparent 70%);
+}
+.big-toc-inner{position:relative}
+.big-toc h2{
+  font-size:20px;font-weight:800;
+  color:var(--ink-1);margin-bottom:6px;
+}
+.big-toc .toc-sub{
+  font-size:12px;color:var(--ink-4);
+  margin-bottom:22px;
+}
+.toc-parts{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:14px;margin-bottom:22px;
+}
+@media(max-width:768px){.toc-parts{grid-template-columns:1fr}}
+.toc-part{
+  background:var(--surface-2);
+  border:1px solid var(--border);
+  border-radius:14px;padding:18px;
+  text-decoration:none;color:var(--ink-2);
+  transition:all .2s;display:block;
+}
+.toc-part:hover{
+  background:var(--surface);
+  border-color:var(--violet);
+  transform:translateY(-2px);
+  box-shadow:var(--shadow-md);
+}
+.toc-part .tp-num{
+  font-size:11px;letter-spacing:2px;
+  color:var(--violet);font-weight:700;
+  margin-bottom:4px;
+}
+.toc-part .tp-name{
+  font-size:16px;font-weight:700;
+  color:var(--ink-1);
+}
+.toc-part .tp-items{
+  font-size:11px;color:var(--ink-3);
+  margin-top:6px;line-height:1.7;
+}
+.toc-divider{
+  height:1px;background:var(--border);
+  margin:8px 0 18px;
+}
+.toc-deep-label{
+  font-size:11px;letter-spacing:2px;
+  color:var(--ink-4);font-weight:600;
+  margin-bottom:12px;
+}
+.toc-deep{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:10px;
+}
+@media(max-width:768px){.toc-deep{grid-template-columns:1fr 1fr}}
+.toc-deep-item{
+  background:var(--surface-2);
+  border:1px solid var(--border);
+  border-radius:12px;padding:14px 10px;
+  text-decoration:none;color:var(--ink-2);
+  text-align:center;transition:all .2s;
+  display:block;
+}
+.toc-deep-item:hover{
+  background:#fff;transform:translateY(-2px);
+  box-shadow:var(--shadow-md);
+}
+.toc-deep-item:nth-child(1):hover{border-color:var(--rose)}
+.toc-deep-item:nth-child(2):hover{border-color:var(--violet)}
+.toc-deep-item:nth-child(3):hover{border-color:var(--ocean)}
+.toc-deep-item:nth-child(4):hover{border-color:var(--mint)}
+.toc-deep-item .tdi-e{font-size:24px}
+.toc-deep-item .tdi-n{
+  font-size:12px;font-weight:700;
+  color:var(--ink-1);margin-top:4px;
+}
+
+/* ============ Part Hero - 柔和渐变 ============ */
+.part-hero{
+  border-radius:16px;padding:40px 28px;
+  color:#fff;margin:44px 0 24px;
+  position:relative;overflow:hidden;
+  text-align:center;
+  box-shadow:var(--shadow-lg);
+}
+.part-hero::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.15) 0%,transparent 50%);
+}
+.part-hero.ph-1{background:linear-gradient(135deg,#FF3B6B 0%,#7C3AED 100%)}
+.part-hero.ph-2{background:linear-gradient(135deg,#10B981 0%,#0066FF 100%)}
+.part-hero-inner{position:relative}
+.part-hero .ph-num{
+  font-size:11px;letter-spacing:4px;
+  opacity:.85;margin-bottom:8px;font-weight:700;
+}
+.part-hero h2{
+  font-size:26px;font-weight:800;
+  line-height:1.4;letter-spacing:-.3px;
+}
+.part-hero .ph-sub{
+  font-size:13px;opacity:.88;
+  margin-top:8px;max-width:620px;
+  margin-left:auto;margin-right:auto;
+}
+
+/* ============ Section Header ============ */
+.sh, .part-header{
+  display:flex;align-items:center;
+  gap:12px;margin:40px 0 18px;
+}
+.sh-num, .part-num{
+  background:var(--ink-1);color:#fff;
+  font-size:10px;font-weight:700;
+  letter-spacing:2.5px;padding:5px 12px;
+  border-radius:6px;
+}
+.sh-t, .part-title{
+  font-size:20px;font-weight:800;
+  color:var(--ink-1);letter-spacing:-.2px;
+}
+
+.ss{display:flex;align-items:center;gap:10px;margin:24px 0 14px}
+.ss-bar{
+  width:3px;height:18px;
+  background:linear-gradient(180deg,var(--violet),var(--ocean));
+  border-radius:2px;
+}
+.ss-t{font-size:17px;font-weight:700;color:var(--ink-1)}
+
+/* ============ Cards ============ */
+.cd, .card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:14px;padding:26px;
+  margin-bottom:18px;
+  box-shadow:var(--shadow-sm);
+  transition:box-shadow .2s;
+}
+.cd:hover, .card:hover{box-shadow:var(--shadow-md)}
+.cd h3, .card h3{
+  font-size:16px;font-weight:700;
+  color:var(--ink-1);margin-bottom:14px;
+  display:flex;align-items:center;gap:8px;
+}
+.cd h4, .card h4{
+  font-size:14px;font-weight:700;
+  color:var(--ink-1);margin:16px 0 10px;
+}
+
+/* ============ Pyramid - 柔和色块 ============ */
+.pyramid{
+  display:flex;flex-direction:column;
+  align-items:center;gap:8px;margin:20px 0;
+}
+.py-tier{
+  border-radius:12px;padding:16px 22px;
+  text-align:center;color:#fff;
+  position:relative;
+  box-shadow:var(--shadow-sm);
+}
+.py-tier .py-label{
+  font-size:11px;opacity:.9;
+  font-weight:600;letter-spacing:1px;
+}
+.py-tier .py-name{
+  font-size:15px;font-weight:700;margin:3px 0;
+}
+.py-tier .py-desc{font-size:12px;opacity:.92}
+.py-t1{width:40%;background:linear-gradient(135deg,#F59E0B,#D97706)}
+.py-t2{width:55%;background:linear-gradient(135deg,var(--rose),#E11D48)}
+.py-t3{width:70%;background:linear-gradient(135deg,var(--ocean),#1D4ED8)}
+.py-t4{width:85%;background:linear-gradient(135deg,#94A3B8,#64748B)}
+
+/* ============ Persona Cards ============ */
+.pg, .persona-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:14px;
+}
+.pc, .persona-card{
+  border-radius:14px;padding:22px;
+  border:1px solid var(--border);
+  background:var(--surface);
+  transition:all .2s;
+}
+.pc:hover, .persona-card:hover{
+  transform:translateY(-3px);
+  box-shadow:var(--shadow-lg);
+}
+.pc .pe, .persona-card .persona-emoji{
+  font-size:32px;margin-bottom:8px;
+}
+.pc .pn2, .persona-card .persona-name{
+  font-size:16px;font-weight:700;
+  color:var(--ink-1);margin-bottom:3px;
+}
+.pc .pd, .persona-card .persona-desc{
+  font-size:11px;color:var(--ink-4);
+  margin-bottom:10px;
+  padding-bottom:10px;border-bottom:1px dashed var(--border);
+}
+.pc .pp, .persona-card .persona-need{
+  font-size:12px;line-height:1.8;color:var(--ink-3);
+}
+.pc .pp strong, .persona-card .persona-need strong{color:var(--ink-1);font-weight:700}
+
+/* ============ Tables ============ */
+.tb, .eval-table{
+  width:100%;border-collapse:collapse;font-size:13px;
+}
+.tb th, .eval-table th{
+  background:var(--surface-2);
+  padding:12px 14px;text-align:left;
+  font-weight:600;font-size:12px;
+  color:var(--ink-3);
+  border-bottom:1px solid var(--border-2);
+  letter-spacing:.2px;
+}
+.tb td, .eval-table td{
+  padding:13px 14px;
+  border-bottom:1px solid var(--border);
+  vertical-align:top;color:var(--ink-2);
+}
+.tb tr:last-child td, .eval-table tr:last-child td{border-bottom:none}
+.tb tr:hover td, .eval-table tr:hover td{background:var(--surface-2)}
+.tb strong, .eval-table strong{color:var(--ink-1);font-weight:700}
+
+/* ============ Tags - 统一风格 ============ */
+.tg, .tag-green, .tag-red, .tag-orange, .tag-blue, .tag-purple{
+  padding:3px 10px;border-radius:20px;
+  font-size:11px;font-weight:600;
+  white-space:nowrap;display:inline-block;
+  letter-spacing:.2px;
+}
+.tg-g, .tag-green{background:var(--mint-soft);color:#047857}
+.tg-r, .tag-red{background:var(--danger-soft);color:var(--danger)}
+.tg-o, .tag-orange{background:var(--amber-soft);color:#B45309}
+.tg-b, .tag-blue{background:var(--ocean-soft);color:#1D4ED8}
+.tg-p, .tag-purple{background:var(--violet-soft);color:var(--violet)}
+.tg-pk{background:var(--rose-soft);color:var(--rose)}
+.tg-f{background:var(--crimson-soft);color:var(--crimson)}
+.tg-gold{background:var(--amber-soft);color:#B45309}
+
+/* ============ Insight Boxes ============ */
+.ins, .insight-box{
+  border-radius:14px;
+  padding:18px 22px;margin:16px 0;
+  border:1px solid var(--border);
+  background:var(--surface-2);
+  position:relative;padding-left:24px;
+}
+.ins::before, .insight-box::before{
+  content:'';position:absolute;
+  left:0;top:14px;bottom:14px;
+  width:4px;border-radius:2px;
+  background:var(--violet);
+}
+.ins.ins-p::before, .insight-box::before{background:var(--violet)}
+.ins.ins-g::before{background:var(--mint)}
+.ins.ins-f::before{background:var(--crimson)}
+.ins.ins-r::before{background:var(--danger)}
+.ins.ins-b::before{background:var(--ocean)}
+.ins, .insight-box{background:linear-gradient(135deg,var(--surface) 0%,var(--surface-2) 100%)}
+.ins.ins-p{background:linear-gradient(135deg,#fff 0%,var(--violet-soft) 100%)}
+.ins.ins-g{background:linear-gradient(135deg,#fff 0%,var(--mint-soft) 100%)}
+.ins.ins-f{background:linear-gradient(135deg,#fff 0%,var(--crimson-soft) 100%)}
+.ins.ins-r{background:linear-gradient(135deg,#fff 0%,var(--danger-soft) 100%)}
+.ins.ins-b{background:linear-gradient(135deg,#fff 0%,var(--ocean-soft) 100%)}
+.ins h4, .insight-box h4{
+  font-size:13px;font-weight:700;
+  margin-bottom:8px;color:var(--ink-1);
+  display:flex;align-items:center;gap:6px;
+}
+.ins p, .insight-box p{
+  font-size:13px;line-height:1.85;color:var(--ink-2);
+}
+
+/* ============ Progress / Bars ============ */
+.db, .progress-bar{
+  display:flex;align-items:center;
+  gap:8px;margin:5px 0;
+}
+.db-bar, .progress-bar{
+  flex:1;height:8px;
+  background:var(--surface-3);
+  border-radius:4px;overflow:hidden;width:100%;
+}
+.db-fill, .progress-fill{height:100%;border-radius:4px;transition:width .6s}
+.db-label{
+  font-size:11px;color:var(--ink-3);
+  min-width:40px;text-align:right;font-weight:600;
+}
+.fill-green{background:linear-gradient(90deg,var(--mint),#059669)}
+.fill-orange{background:linear-gradient(90deg,var(--amber),#D97706)}
+.fill-red{background:linear-gradient(90deg,var(--danger),#B91C1C)}
+
+/* ============ Motivation Bars ============ */
+.mb{margin:12px 0}
+.mb-row{display:flex;align-items:center;gap:10px;margin:7px 0}
+.mb-label{
+  width:100px;font-size:12px;
+  color:var(--ink-2);flex-shrink:0;
+  font-weight:500;
+}
+.mb-track{
+  flex:1;height:18px;
+  background:var(--surface-3);
+  border-radius:9px;overflow:hidden;
+  position:relative;
+}
+.mb-fill{
+  height:100%;border-radius:9px;
+  display:flex;align-items:center;
+  padding-left:10px;color:#fff;
+  font-size:10px;font-weight:700;
+  transition:width .8s;
+}
+
+/* ============ Group Hero ============ */
+.gh, .sh[class*="sh-"]{
+  border-radius:16px;padding:36px 32px;
+  color:#fff;margin:36px 0 22px;
+  position:relative;overflow:hidden;
+  box-shadow:var(--shadow-lg);
+}
+.gh.gh-fan, .sh.sh-fan{background:linear-gradient(135deg,#B91C1C 0%,#FF3B6B 100%)}
+.gh.gh-aes, .sh.sh-aes{background:linear-gradient(135deg,#7C3AED 0%,#A78BFA 100%)}
+.gh.gh-2d, .sh.sh-2d{background:linear-gradient(135deg,#1D4ED8 0%,#0066FF 100%)}
+.gh.gh-ugc, .sh.sh-ugc{background:linear-gradient(135deg,#047857 0%,#10B981 100%)}
+.gh::before, .sh[class*="sh-"]::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.18) 0%,transparent 60%);
+}
+.gh-inner, .sh-inner{position:relative}
+.gh-emoji, .sh-emoji{font-size:52px;margin-bottom:6px}
+.gh h2{
+  font-size:28px;font-weight:800;
+  margin-bottom:6px;letter-spacing:-.3px;
+}
+.gh .gh-tag{
+  display:inline-block;
+  background:rgba(255,255,255,.2);
+  border:1px solid rgba(255,255,255,.3);
+  padding:4px 13px;border-radius:20px;
+  font-size:11px;margin:3px 4px 3px 0;
+  font-weight:500;
+}
+.gh .gh-quote{
+  font-size:13px;font-style:italic;
+  opacity:.95;margin-top:14px;
+  padding-left:14px;
+  border-left:3px solid rgba(255,255,255,.5);
+  max-width:720px;line-height:1.75;
+}
+
+/* ============ Stats ============ */
+.stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+  gap:12px;margin:14px 0;
+}
+.stat{
+  border-radius:12px;padding:18px 14px;
+  text-align:center;
+  background:var(--surface);
+  border:1px solid var(--border);
+  transition:all .2s;
+}
+.stat:hover{
+  transform:translateY(-2px);
+  box-shadow:var(--shadow-md);
+  border-color:var(--border-2);
+}
+.stat .sn{
+  font-size:26px;font-weight:800;
+  line-height:1.2;letter-spacing:-.5px;
+}
+.stat .sl{
+  font-size:11px;color:var(--ink-3);
+  margin-top:6px;font-weight:500;
+}
+
+/* ============ Yes/No ============ */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:768px){.two{grid-template-columns:1fr}}
+.yn{border-radius:12px;padding:18px;border:1px solid transparent}
+.yn.y{background:var(--mint-soft);border-color:#A7F3D0}
+.yn.n{background:var(--danger-soft);border-color:#FECACA}
+.yn h4{margin-top:0;font-size:13px;color:var(--ink-1)}
+.yn ul{margin:0;padding-left:18px;font-size:12px;line-height:2;color:var(--ink-2)}
+
+/* ============ Strategy Cards ============ */
+.sg, .roadmap-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:14px;margin-top:14px;
+}
+@media(max-width:768px){.sg, .roadmap-grid{grid-template-columns:1fr}}
+.sg-card{
+  border-radius:12px;padding:16px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  transition:all .2s;
+}
+.sg-card:hover{
+  transform:translateY(-2px);
+  box-shadow:var(--shadow-md);
+}
+.sg-card .sgc-title{
+  font-size:13px;font-weight:700;
+  color:var(--ink-1);margin-bottom:6px;
+}
+.sg-card .sgc-body{
+  font-size:12px;color:var(--ink-3);
+  line-height:1.8;
+}
+.roadmap-phase{border-radius:14px;padding:22px;border:1px solid var(--border)}
+.roadmap-phase.phase-1{background:linear-gradient(135deg,#fff,var(--danger-soft));border-color:#FECACA}
+.roadmap-phase.phase-2{background:linear-gradient(135deg,#fff,var(--amber-soft));border-color:#FDE68A}
+.roadmap-phase.phase-3{background:linear-gradient(135deg,#fff,var(--mint-soft));border-color:#A7F3D0}
+.roadmap-phase .phase-label{
+  font-size:11px;font-weight:700;
+  letter-spacing:1.5px;margin-bottom:8px;
+}
+.phase-1 .phase-label{color:var(--danger)}
+.phase-2 .phase-label{color:#B45309}
+.phase-3 .phase-label{color:#047857}
+.roadmap-phase h4{font-size:14px;font-weight:700;color:var(--ink-1);margin-bottom:10px}
+.roadmap-phase ul{list-style:none;padding:0}
+.roadmap-phase li{font-size:12px;padding:4px 0;display:flex;gap:6px;color:var(--ink-2)}
+.roadmap-phase li::before{content:'→';color:var(--ink-4);flex-shrink:0}
+
+/* ============ Timeline ============ */
+.tl{position:relative;padding-left:22px;margin:14px 0}
+.tl::before{
+  content:'';position:absolute;
+  left:7px;top:8px;bottom:8px;width:2px;
+  background:linear-gradient(180deg,var(--violet) 0%,var(--ocean) 100%);
+  border-radius:1px;
+}
+.tl-item{position:relative;padding:4px 0 14px 12px;font-size:13px}
+.tl-item::before{
+  content:'';position:absolute;
+  left:-19px;top:10px;width:10px;height:10px;
+  border-radius:50%;background:#fff;
+  border:2px solid var(--violet);
+  box-shadow:0 0 0 2px #fff;
+}
+.tl-item strong{display:block;font-size:13px;color:var(--ink-1);margin-bottom:3px;font-weight:700}
+.tl-item small{font-size:12px;color:var(--ink-3);line-height:1.7}
+
+/* ============ Journey ============ */
+.jn{display:flex;gap:8px;overflow-x:auto;padding:12px 0;flex-wrap:wrap;justify-content:center}
+.jn-step{
+  background:var(--surface);
+  border:1.5px solid var(--border);
+  border-radius:12px;padding:14px;
+  min-width:110px;max-width:150px;
+  text-align:center;flex:1;
+  transition:all .2s;
+}
+.jn-step:hover{
+  transform:translateY(-2px);
+  box-shadow:var(--shadow-md);
+  border-color:var(--violet);
+}
+.jn-arr{font-size:18px;color:var(--ink-4);align-self:center;font-weight:600}
+.jn-step .jn-e{font-size:22px;margin-bottom:4px}
+.jn-step .jn-t{font-size:13px;font-weight:700;color:var(--ink-1)}
+.jn-step .jn-d{font-size:11px;color:var(--ink-3);margin-top:3px}
+
+/* ============ Quadrant ============ */
+.qd{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.qd-cell{border-radius:12px;padding:16px;border:1px solid var(--border);background:var(--surface-2)}
+.qd-cell h5{font-size:13px;font-weight:700;margin-bottom:8px;color:var(--ink-1)}
+.qd-cell p{font-size:12px;color:var(--ink-3);line-height:1.85}
+
+/* ============ Pain list ============ */
+.pain, .gap-item{
+  display:flex;gap:14px;
+  padding:16px 0;
+  border-bottom:1px solid var(--border);
+  align-items:flex-start;list-style:none;
+}
+.pain:last-child, .gap-item:last-child{border-bottom:none}
+.pain-i, .gap-icon{
+  width:36px;height:36px;
+  border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;flex-shrink:0;
+}
+.pain-t h4, .gap-content h4{
+  font-size:14px;font-weight:700;
+  margin-bottom:4px;color:var(--ink-1);
+}
+.pain-t p, .gap-content p{
+  font-size:12px;color:var(--ink-3);
+  line-height:1.75;
+}
+
+/* ============ Footer ============ */
+.ft, .footer-note{
+  text-align:center;font-size:12px;
+  color:var(--ink-4);margin-top:56px;
+  padding:24px 0;
+  border-top:1px solid var(--border);
+}
+
+/* ============ Utils ============ */
+.anchor{display:block;position:relative;top:-20px;visibility:hidden}
+.pm{
+  display:inline-flex;align-items:center;gap:4px;
+  background:var(--surface-2);
+  border:1px solid var(--border);
+  border-radius:6px;padding:2px 8px;
+  font-size:11px;font-weight:600;color:var(--ink-3);
+}
+.gap-list{list-style:none;padding:0}
+.stg{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+@media(max-width:768px){.stg{grid-template-columns:1fr}}
+.st{border-radius:14px;padding:22px;border:1px solid var(--border)}
+.st h4{font-size:14px;font-weight:700;color:var(--ink-1);margin-bottom:10px}
+.st ul{list-style:none;padding:0}
+.st li{font-size:12px;padding:4px 0;display:flex;gap:6px;color:var(--ink-2);line-height:1.8}
+.st li::before{content:'→';color:var(--ink-4);flex-shrink:0}
+.st.st1{background:linear-gradient(135deg,#fff,var(--rose-soft));border-color:#FECDD3}
+.st.st2{background:linear-gradient(135deg,#fff,var(--violet-soft));border-color:#DDD6FE}
+.st.st3{background:linear-gradient(135deg,#fff,var(--ocean-soft));border-color:#BFDBFE}
+
+/* ============ Emotion grid (hero内版本) ============ */
+.ed-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:16px}
+.ed-card{
+  background:rgba(255,255,255,.95);
+  border-radius:12px;padding:18px;
+  text-align:center;
+  border:1px solid rgba(255,255,255,.3);
+  backdrop-filter:blur(8px);
+}
+.ed-card .ed-e{font-size:26px;margin-bottom:6px}
+.ed-card .ed-t{font-size:13px;font-weight:700;color:var(--ink-1)}
+.ed-card .ed-d{font-size:12px;color:var(--ink-3);margin-top:4px}
+
+/* ============ Highlight row ============ */
+.hi{
+  background:var(--surface-2);
+  border:1px solid var(--border);
+  border-radius:12px;padding:16px 18px;
+  font-size:13px;color:var(--ink-2);
+  margin:14px 0;line-height:1.85;
+}
+
+.fi{display:flex;justify-content:center;gap:16px;margin-top:14px;font-size:12px;opacity:.92;flex-wrap:wrap}
+.sw{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:middle;margin-right:3px;border:1px solid rgba(0,0,0,.08)}
+
+/* ============ 特殊文字 / 数字 ============ */
+.cd strong, .card strong{color:var(--ink-1)}
+
+/* 数字着色 */
+.stat .sn{
+  background:linear-gradient(135deg,var(--violet) 0%,var(--rose) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+
+/* 不同分组的 stat 着色 */
+[style*="color:var(--fan)"]{color:var(--crimson) !important}
+[style*="color:var(--p)"]{color:var(--violet) !important}
+[style*="color:var(--b)"]{color:var(--ocean) !important}
+[style*="color:var(--md)"]{color:#047857 !important}
+
+/* ============ Hover 增强 ============ */
+a{transition:all .15s}
+
+/* Part Hero 里的 Summary 样式（"一句话总结"区块） */
+.sb{
+  background:linear-gradient(135deg,var(--ink-1) 0%,var(--violet) 100%);
+  color:#fff;border-radius:14px;padding:32px;
+  text-align:center;margin:20px 0;
+  box-shadow:var(--shadow-lg);
+}
+.sb .bs{font-size:52px;font-weight:800;background:linear-gradient(135deg,#fff,#C4B5FD);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.sb .bl{font-size:12px;opacity:.65}
+.sb .vt{font-size:16px;font-weight:700;margin-top:12px}
+.sb .vs{font-size:13px;opacity:.8;margin-top:8px;max-width:600px;margin-left:auto;margin-right:auto;line-height:1.85}
+
+/* Roadmap grid （兼容） */
+.rg{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:768px){.rg{grid-template-columns:1fr}}
+.rp{border-radius:14px;padding:22px;border:1px solid var(--border)}
+.rp.r1{background:linear-gradient(135deg,#fff,var(--danger-soft));border-color:#FECACA}
+.rp.r2{background:linear-gradient(135deg,#fff,var(--amber-soft));border-color:#FDE68A}
+.rp.r3{background:linear-gradient(135deg,#fff,var(--mint-soft));border-color:#A7F3D0}
+.rp .rl{font-size:11px;font-weight:700;letter-spacing:1.5px;margin-bottom:8px}
+.r1 .rl{color:var(--danger)}
+.r2 .rl{color:#B45309}
+.r3 .rl{color:#047857}
+.rp h4{font-size:14px;font-weight:700;color:var(--ink-1);margin-bottom:10px}
+.rp ul{list-style:none;padding:0}
+.rp li{font-size:12px;padding:4px 0;display:flex;gap:6px;color:var(--ink-2)}
+.rp li::before{content:'→';color:var(--ink-4);flex-shrink:0}
+
+/* ============ SP cards ============ */
+.sp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+@media(max-width:768px){.sp{grid-template-columns:1fr}}
+.sp-card{border-radius:14px;padding:22px;border:1px solid var(--border)}
+.sp-card.sp1{background:linear-gradient(135deg,#fff,var(--rose-soft));border-color:#FECDD3}
+.sp-card.sp2{background:linear-gradient(135deg,#fff,var(--violet-soft));border-color:#DDD6FE}
+.sp-card.sp3{background:linear-gradient(135deg,#fff,var(--ocean-soft));border-color:#BFDBFE}
+.sp-card .sp-label{font-size:11px;font-weight:700;letter-spacing:1.5px;margin-bottom:8px}
+.sp1 .sp-label{color:var(--rose)}
+.sp2 .sp-label{color:var(--violet)}
+.sp3 .sp-label{color:var(--ocean)}
+.sp-card h4{font-size:15px;font-weight:700;color:var(--ink-1);margin-bottom:10px}
+.sp-card ul{list-style:none;padding:0}
+.sp-card li{font-size:12px;padding:4px 0;display:flex;gap:6px;color:var(--ink-2);line-height:1.8}
+.sp-card li::before{content:'→';color:var(--ink-4);flex-shrink:0}
+
+/* Global code font */
+code{
+  font-family:"SF Mono","Fira Code",Consolas,monospace;
+  background:var(--surface-3);padding:2px 6px;
+  border-radius:4px;font-size:.9em;color:var(--violet);
+}
+
+/* Scroll bar 美化 */
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:var(--surface-2)}
+::-webkit-scrollbar-thumb{background:var(--border-2);border-radius:5px}
+::-webkit-scrollbar-thumb:hover{background:var(--ink-4)}
+</style>
+
+
+
+</head>
+<body>
+<div class="hero">
+  <div class="preline">COMPREHENSIVE REPORT</div>
+  <h1>🎯 输入法皮肤<br>高价值用户研究 · 完整报告</h1>
+  <div class="sub">从用户全景到深度画像，从价值洞察到运营策略——输入法皮肤业务的全景参考</div>
+  <div class="tags">
+    <span class="tag">👥 4大核心画像</span>
+    <span class="tag">🏔️ 4级价值分层</span>
+    <span class="tag">📈 8大变现场景</span>
+    <span class="tag">🎯 差异化运营策略</span>
+    <span class="tag">📅 2026.04</span>
+  </div>
+</div>
+
+
+<div class="ct">
+
+<div class="big-toc">
+  <div class="big-toc-inner">
+    <h2>📋 报告导航</h2>
+    <div class="toc-sub">全报告分为两大部分，八个核心章节</div>
+    <div class="toc-parts">
+      <a href="#part1" class="toc-part">
+        <div class="tp-num">PART 01 · 宏观篇</div>
+        <div class="tp-name">🌐 用户全景</div>
+        <div class="tp-items">价值金字塔 · 核心画像 · 价值分层 · 场景矩阵 · 情绪洞察 · 痛点 · 策略总览</div>
+      </a>
+      <a href="#part2" class="toc-part">
+        <div class="tp-num">PART 02 · 深度篇</div>
+        <div class="tp-name">🔬 四大群体拆解</div>
+        <div class="tp-items">追星女孩 · 审美女生 · 二次元IP粉 · UGC创作者 逐一深度分析</div>
+      </a>
+    </div>
+    <div class="toc-divider"></div>
+    <div class="toc-deep-label">四大群体深度分析快速入口</div>
+    <div class="toc-deep">
+      <a href="#fan" class="toc-deep-item"><div class="tdi-e">💖</div><div class="tdi-n">追星女孩</div></a>
+      <a href="#aes" class="toc-deep-item"><div class="tdi-e">🎨</div><div class="tdi-n">审美女生</div></a>
+      <a href="#2d" class="toc-deep-item"><div class="tdi-e">🎮</div><div class="tdi-n">二次元IP粉</div></a>
+      <a href="#ugc" class="toc-deep-item"><div class="tdi-e">✨</div><div class="tdi-n">UGC创作者</div></a>
+    </div>
+  </div>
+</div>
+
+
+<span class="anchor" id="part1"></span>
+<div class="part-hero ph-1">
+  <div class="part-hero-inner">
+    <div class="ph-num">PART 01</div>
+    <h2>🌐 宏观篇 · 输入法皮肤用户全景</h2>
+    <div class="ph-sub">先建立对高价值用户的整体认知：他们是谁，分布在哪一层，什么时候最愿意掏钱</div>
+  </div>
+</div>
+
+
+<!-- ========== PART 1 ========== -->
+<div class="ph"><span class="pn">PART 01</span><span class="pt">谁是输入法皮肤的高价值用户？</span></div>
+
+<div class="cd">
+  <h3>🏔️ 用户价值金字塔</h3>
+  <div class="pyramid">
+    <div class="py-tier py-t1">
+      <div class="py-label">💎 钻石层 · 占比 2-5%</div>
+      <div class="py-name">UGC 创作者</div>
+      <div class="py-desc">自己做皮肤→上传分享→带动下载。1个优质创作者 = 1个内容引擎</div>
+    </div>
+    <div class="py-tier py-t2">
+      <div class="py-label">💰 黄金层 · 占比 10-15%</div>
+      <div class="py-name">收藏型 / 追星型</div>
+      <div class="py-desc">持续付费、高频换肤、追逐IP/偶像。LTV远高于普通用户</div>
+    </div>
+    <div class="py-tier py-t3">
+      <div class="py-label">🔄 白银层 · 占比 30-40%</div>
+      <div class="py-name">跟风型 / 审美驱动</div>
+      <div class="py-desc">看到好看的就想要，社交传播的承接者</div>
+    </div>
+    <div class="py-tier py-t4">
+      <div class="py-label">⚪ 青铜层 · 占比 40-50%</div>
+      <div class="py-name">沉默型 / 默认用户</div>
+      <div class="py-desc">用默认皮肤或偶尔换一次。DAU基数，难直接变现</div>
+    </div>
+  </div>
+</div>
+
+<div class="cd">
+  <h3>👥 第一梯队：年轻女性（贡献 60-70% 皮肤消费）</h3>
+  <table class="tb">
+    <tr><th style="width:18%">维度</th><th>特征</th></tr>
+    <tr><td><strong>年龄</strong></td><td>15-28 岁</td></tr>
+    <tr><td><strong>性别</strong></td><td>女性为绝对主力</td></tr>
+    <tr><td><strong>城市分布</strong></td><td>二三线城市 > 一线城市（一线选择多，二三线更依赖手机个性化表达）</td></tr>
+    <tr><td><strong>核心驱动力</strong></td><td>情感表达、审美满足、身份认同</td></tr>
+    <tr><td><strong>付费模式</strong></td><td>单次 1-6 元，但频率高、复购强。"花小钱买开心"心理</td></tr>
+    <tr><td><strong>心理本质</strong></td><td><strong>"手机是我的脸，输入法是我每天触摸最多的东西，它必须像我"</strong></td></tr>
+  </table>
+</div>
+
+<!-- ========== PART 2 ========== -->
+<div class="ph"><span class="pn">PART 02</span><span class="pt">4 大核心高价值用户画像</span></div>
+
+<div class="pg">
+  <div class="pc" style="border-left:3px solid #FF6B9D">
+    <div class="pe">💖</div>
+    <div class="pn2">追星女孩 / 饭圈粉丝</div>
+    <div class="pd">13-25岁 · 90%+女性 · 有组织有动员力</div>
+    <div class="pp">
+      <strong>核心诉求：</strong>应援色一键匹配、偶像原图完美展示、限定/纪念日皮肤、一键分享超话<br>
+      <strong>独特价值：</strong>一个后援会发一条"姐妹们快去下这个皮肤"→ 几万次下载。自发传播力极强，皮肤是"最便宜的应援"<br>
+      <strong>消费动力：</strong>身份认同 + 组织动员 + 情感投射
+    </div>
+  </div>
+  <div class="pc" style="border-left:3px solid #8B5CF6">
+    <div class="pe">🎨</div>
+    <div class="pn2">审美驱动型女生</div>
+    <div class="pd">18-28岁 · 小红书活跃 · 分享欲强</div>
+    <div class="pp">
+      <strong>核心诉求：</strong>高质感模板、精细配色/透明度、设计感强的半成品、截图分享<br>
+      <strong>独特价值：</strong>同时是消费者+传播者+潜在创作者，三位一体。在小红书搜"输入法皮肤"的就是她们<br>
+      <strong>消费动力：</strong>审美满足 + 社交货币 + "是我做的"成就感
+    </div>
+  </div>
+  <div class="pc" style="border-left:3px solid #4A90D9">
+    <div class="pe">🎮</div>
+    <div class="pn2">二次元 / IP 忠粉</div>
+    <div class="pd">14-25岁 · 男女各半 · 收集控</div>
+    <div class="pp">
+      <strong>核心诉求：</strong>IP角色主题模板、系列收集、联动元素、按键图标替换<br>
+      <strong>独特价值：</strong>付费率最高、对"官方授权"有强认知。每出新角色/新皮肤都会买，复购最稳定<br>
+      <strong>消费动力：</strong>IP忠诚 + 收集欲 + 正版信仰
+    </div>
+  </div>
+  <div class="pc" style="border-left:3px solid #3ECFAC">
+    <div class="pe">✨</div>
+    <div class="pn2">UGC 创作者</div>
+    <div class="pd">有设计基础 · 追求认可 · 内容引擎</div>
+    <div class="pp">
+      <strong>核心诉求：</strong>高自由度编辑器、图层/素材叠加、作品上架、创作者收益/流量扶持<br>
+      <strong>独特价值：</strong>1个优质创作者 = 1个内容生产引擎。一款爆款 UGC 皮肤可带来数万次下载<br>
+      <strong>消费动力：</strong>创作成就 + 被认可的渴望 + 收益分成
+    </div>
+  </div>
+</div>
+
+<!-- ========== PART 3 ========== -->
+<div class="ph"><span class="pn">PART 03</span><span class="pt">按价值行为分层：谁最值钱？</span></div>
+
+<div class="cd">
+  <h3>📊 四层用户的价值贡献对比</h3>
+  <table class="tb">
+    <tr>
+      <th style="width:15%">层级</th>
+      <th style="width:12%">占比</th>
+      <th style="width:25%">行为特征</th>
+      <th style="width:23%">画像标签</th>
+      <th style="width:25%">核心需求</th>
+    </tr>
+    <tr>
+      <td><span class="tg" style="background:#FFF3CD;color:#856404">💎 钻石</span></td>
+      <td>2-5%</td>
+      <td>自制皮肤→上传→引发下载。<strong>1人=1引擎</strong></td>
+      <td>有设计基础的大学生/年轻设计师</td>
+      <td>好用的创作工具、曝光机会、创作者激励</td>
+    </tr>
+    <tr>
+      <td><span class="tg tg-pk">💰 黄金</span></td>
+      <td>10-15%</td>
+      <td>疯狂下载/购买，频繁换肤，追求全收集</td>
+      <td>审美驱动女性、IP收集控、追星族</td>
+      <td>丰富新品供给、系列套装、限时限量</td>
+    </tr>
+    <tr>
+      <td><span class="tg tg-b">🔄 白银</span></td>
+      <td>30-40%</td>
+      <td>看到朋友/博主用了好看的→跟着下载</td>
+      <td>普通年轻女性，无强偏好但"好看就想要"</td>
+      <td>推荐机制好用、下载简单、预览效果直观</td>
+    </tr>
+    <tr>
+      <td><span class="tg" style="background:var(--g100);color:var(--g600)">⚪ 青铜</span></td>
+      <td>40-50%</td>
+      <td>用默认或偶尔换一次，几乎不付费</td>
+      <td>男性用户居多，或年龄偏大用户</td>
+      <td>不花哨，但如果有"恰好合适"的主题可能尝试</td>
+    </tr>
+  </table>
+
+  <div style="margin-top:16px">
+    <h4 style="font-size:14px;margin-bottom:10px">各层级价值贡献占比</h4>
+    <div style="font-size:12px;margin-bottom:4px">💎 钻石（内容生产价值）</div>
+    <div class="db"><div class="db-bar"><div class="db-fill" style="width:60%;background:#FFD700"></div></div><div class="db-label">60%</div></div>
+    <div style="font-size:12px;margin-bottom:4px;margin-top:8px">💰 黄金（付费收入贡献）</div>
+    <div class="db"><div class="db-bar"><div class="db-fill" style="width:55%;background:var(--pk)"></div></div><div class="db-label">55%</div></div>
+    <div style="font-size:12px;margin-bottom:4px;margin-top:8px">🔄 白银（流量承接 & 传播）</div>
+    <div class="db"><div class="db-bar"><div class="db-fill" style="width:30%;background:var(--b)"></div></div><div class="db-label">30%</div></div>
+    <div style="font-size:12px;margin-bottom:4px;margin-top:8px">⚪ 青铜（DAU 基数）</div>
+    <div class="db"><div class="db-bar"><div class="db-fill" style="width:10%;background:var(--g400)"></div></div><div class="db-label">10%</div></div>
+  </div>
+</div>
+
+<!-- ========== PART 4 ========== -->
+<div class="ph"><span class="pn">PART 04</span><span class="pt">8 大高价值场景：什么时候他们最愿意掏钱？</span></div>
+
+<div class="cd">
+  <h3>🎯 场景 × 人群 × 变现矩阵</h3>
+  <table class="tb">
+    <tr>
+      <th style="width:16%">场景</th>
+      <th style="width:16%">目标人群</th>
+      <th style="width:28%">为什么高价值</th>
+      <th style="width:18%">变现方式</th>
+      <th style="width:22%">时效窗口</th>
+    </tr>
+    <tr>
+      <td><strong>🎤 追星应援</strong></td>
+      <td>饭圈女孩</td>
+      <td>自发传播+组织下载，一波回归期可能带来<strong>十万级下载</strong></td>
+      <td>官方联名付费皮肤</td>
+      <td>偶像回归/生日/新剧期间</td>
+    </tr>
+    <tr>
+      <td><strong>🎮 IP联名</strong></td>
+      <td>二次元/游戏粉</td>
+      <td>对IP极度忠诚，付费率最高，<strong>正版 > 盗版</strong>共识强</td>
+      <td>IP授权皮肤（3-12元）</td>
+      <td>新版本/新角色上线</td>
+    </tr>
+    <tr>
+      <td><strong>💕 节日/情侣</strong></td>
+      <td>年轻情侣</td>
+      <td>情人节/纪念日刚需，<strong>情感溢价高</strong></td>
+      <td>限时付费+情侣套装</td>
+      <td>情人节/七夕/520</td>
+    </tr>
+    <tr>
+      <td><strong>📚 考试加油</strong></td>
+      <td>高中生/考研党</td>
+      <td>群体极大，有情感需求（"锦鲤皮肤""上岸皮肤"）</td>
+      <td>免费引流+增值付费</td>
+      <td>高考/考研前1-2个月</td>
+    </tr>
+    <tr>
+      <td><strong>🐱 萌宠/治愈</strong></td>
+      <td>泛女性用户</td>
+      <td>受众最广，是<strong>"最大公约数"审美</strong></td>
+      <td>基础免费+高级动效付费</td>
+      <td>全年常青</td>
+    </tr>
+    <tr>
+      <td><strong>🌙 暗黑/赛博</strong></td>
+      <td>男性/Z世代</td>
+      <td><strong>男性皮肤消费的几乎唯一入口</strong></td>
+      <td>付费皮肤</td>
+      <td>全年常青</td>
+    </tr>
+    <tr>
+      <td><strong>✨ 极简/高级感</strong></td>
+      <td>25-35岁白领</td>
+      <td>消费能力强，对"设计感"有追求</td>
+      <td>中高价位付费</td>
+      <td>全年常青</td>
+    </tr>
+    <tr>
+      <td><strong>👶 亲子/晒娃</strong></td>
+      <td>年轻妈妈</td>
+      <td>新晋妈妈群体庞大，晒娃心理驱动</td>
+      <td>付费模板+照片皮肤工具</td>
+      <td>全年常青</td>
+    </tr>
+  </table>
+</div>
+
+<!-- ========== PART 5 ========== -->
+<div class="ph"><span class="pn">PART 05</span><span class="pt">最值得深耕的 3 个群体</span></div>
+
+<div class="cd">
+  <h3>🥇 第一优先：「审美自觉」的 18-25 岁女性</h3>
+  <div style="display:grid;grid-template-columns:2fr 1fr;gap:16px">
+    <div>
+      <p style="font-size:13px;margin-bottom:12px"><strong>为什么是她们？</strong>因为她们<strong>同时是消费者 + 传播者 + 潜在创作者</strong>，三位一体。</p>
+      <ul style="font-size:13px;padding-left:18px;line-height:2">
+        <li>在小红书搜"输入法皮肤"的就是她们</li>
+        <li>愿意花 15 分钟折腾一个好看的皮肤</li>
+        <li>做好了会截图发朋友圈/小红书</li>
+        <li>每一次分享 = 一次免费推广</li>
+      </ul>
+      <div class="ins ins-p" style="margin-top:12px">
+        <h4>关键策略</h4>
+        <p>给她们<strong>"半成品"模板</strong>——既有设计感兜底，又留出自定义空间让她们觉得"是我做的"。降低创作门槛，提升成就感。</p>
+      </div>
+    </div>
+    <div style="background:var(--pkl);border-radius:12px;padding:16px;font-size:12px;text-align:center">
+      <div style="font-size:36px;margin-bottom:8px">🎨</div>
+      <div style="font-size:11px;color:var(--g600)">用户旅程</div>
+      <div style="margin-top:8px;text-align:left;line-height:2">
+        看到好看的皮肤 →<br>
+        "我也想要" →<br>
+        打开制造机 →<br>
+        选模板 + 小调整 →<br>
+        截图发小红书 →<br>
+        <strong>引来更多人 →<br>
+        循环裂变 🔄</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cd">
+  <h3>🥈 第二优先：「有组织有纪律」的追星群体</h3>
+  <div style="display:grid;grid-template-columns:2fr 1fr;gap:16px">
+    <div>
+      <p style="font-size:13px;margin-bottom:12px"><strong>为什么是她们？</strong>她们是<strong>最强的自传播引擎</strong>，组织动员能力无人能比。</p>
+      <ul style="font-size:13px;padding-left:18px;line-height:2">
+        <li>一个后援会发一条指令 → 几万次下载</li>
+        <li>皮肤是"最便宜的应援"，1-6元付费零阻力</li>
+        <li>不只付费，更是免费推广渠道（超话/小红书安利）</li>
+        <li>对应援色、粉丝标识有极强的身份认同需求</li>
+      </ul>
+      <div class="ins ins-pk" style="margin-top:12px">
+        <h4>关键策略</h4>
+        <p>与经纪公司合作出<strong>官方授权皮肤</strong>（生日/回归限定）。同时提供应援色配色系统，让粉丝用偶像原图自制皮肤。饭圈会自发 all in。<br><br>
+        <strong>⚠️ 注意：</strong>饭圈2025年起抵制AI改造偶像形象。皮肤制造机对追星群体应走"原图智能适配"路径，避免AI人脸融合引发争议。</p>
+      </div>
+    </div>
+    <div style="background:var(--rl);border-radius:12px;padding:16px;font-size:12px;text-align:center">
+      <div style="font-size:36px;margin-bottom:8px">💖</div>
+      <div style="font-size:11px;color:var(--g600)">裂变引擎</div>
+      <div style="margin-top:8px;text-align:left;line-height:2">
+        偶像回归/生日 →<br>
+        粉丝做应援皮肤 →<br>
+        超话发布教程 →<br>
+        后援会组织下载 →<br>
+        <strong>几万级传播 →<br>
+        其他粉圈跟进 →<br>
+        形成平台心智 🚀</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cd">
+  <h3>🥉 第三优先：「IP忠诚」的二次元用户</h3>
+  <div style="display:grid;grid-template-columns:2fr 1fr;gap:16px">
+    <div>
+      <p style="font-size:13px;margin-bottom:12px"><strong>为什么是他们？</strong><strong>付费率最高、复购最稳定</strong>。</p>
+      <ul style="font-size:13px;padding-left:18px;line-height:2">
+        <li>每出一个新角色/新版本都会买对应皮肤</li>
+        <li>对"官方授权"有强认知，正版 > 盗版</li>
+        <li>系列收集欲极强，"全收集"是核心驱动力</li>
+        <li>审美要求高，对品质有明确标准</li>
+      </ul>
+      <div class="ins ins-p" style="margin-top:12px">
+        <h4>关键策略</h4>
+        <p>拿热门 IP 授权（原神/崩铁/间谍过家家等），做<strong>系列收集</strong>型皮肤。每个角色一款，集齐解锁隐藏款。定价 3-12 元/款。</p>
+      </div>
+    </div>
+    <div style="background:var(--bl);border-radius:12px;padding:16px;font-size:12px;text-align:center">
+      <div style="font-size:36px;margin-bottom:8px">🎮</div>
+      <div style="font-size:11px;color:var(--g600)">变现飞轮</div>
+      <div style="margin-top:8px;text-align:left;line-height:2">
+        热门IP新角色上线 →<br>
+        联名皮肤同步发售 →<br>
+        核心粉丝付费购买 →<br>
+        社区晒图传播 →<br>
+        <strong>系列收集需求 →<br>
+        长线复购 →<br>
+        稳定收入流 💰</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== PART 6 ========== -->
+<div class="ph"><span class="pn">PART 06</span><span class="pt">一个反直觉的洞察</span></div>
+
+<div class="cd" style="background:linear-gradient(135deg,#1a1a2e,#16213e);color:#fff;border-radius:14px;padding:32px">
+  <h3 style="color:#fff;font-size:18px;text-align:center;margin-bottom:20px">💡 用户不是在买"皮肤"，是在买"情绪"和"身份"</h3>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px">
+    <div style="background:rgba(255,255,255,.08);border-radius:10px;padding:16px;text-align:center">
+      <div style="font-size:24px;margin-bottom:6px">💖</div>
+      <div style="font-size:13px;font-weight:600">追星女孩买的是</div>
+      <div style="font-size:12px;opacity:.8;margin-top:4px">"我属于这个圈子"</div>
+    </div>
+    <div style="background:rgba(255,255,255,.08);border-radius:10px;padding:16px;text-align:center">
+      <div style="font-size:24px;margin-bottom:6px">🎨</div>
+      <div style="font-size:13px;font-weight:600">审美女生买的是</div>
+      <div style="font-size:12px;opacity:.8;margin-top:4px">"我是有品位的人"</div>
+    </div>
+    <div style="background:rgba(255,255,255,.08);border-radius:10px;padding:16px;text-align:center">
+      <div style="font-size:24px;margin-bottom:6px">🎮</div>
+      <div style="font-size:13px;font-weight:600">二次元玩家买的是</div>
+      <div style="font-size:12px;opacity:.8;margin-top:4px">"我爱这个角色"</div>
+    </div>
+    <div style="background:rgba(255,255,255,.08);border-radius:10px;padding:16px;text-align:center">
+      <div style="font-size:24px;margin-bottom:6px">📚</div>
+      <div style="font-size:13px;font-weight:600">考研学生买的是</div>
+      <div style="font-size:12px;opacity:.8;margin-top:4px">"给自己打气的仪式感"</div>
+    </div>
+  </div>
+  <p style="font-size:14px;text-align:center;margin-top:20px;opacity:.85;line-height:1.8">
+    所以皮肤运营的核心不是"好不好看"，而是<strong>"能不能击中某个群体的情感共鸣"</strong>。<br>
+    全年的皮肤排期，本质上是在做<strong>"情绪日历"</strong>——什么时间点，哪个群体的什么情绪最浓烈，就在那个窗口推对应的皮肤。
+  </p>
+</div>
+
+<!-- ========== PART 7 ========== -->
+<div class="ph"><span class="pn">PART 07</span><span class="pt">高价值用户的 5 大痛点</span></div>
+
+<div class="cd">
+  <h3>😤 他们在"做皮肤"时最受不了什么？</h3>
+  <div style="list-style:none;padding:0">
+    <div class="pain">
+      <div class="pain-i" style="background:var(--rl)">😫</div>
+      <div class="pain-t">
+        <h4>1. 图片适配太难</h4>
+        <p>自己塞图进去，要么被裁切、要么糊。偶像脸被按键遮挡，调了半天也调不好。<strong>这是追星用户放弃的第一原因。</strong></p>
+      </div>
+    </div>
+    <div class="pain">
+      <div class="pain-i" style="background:var(--ol)">🎨</div>
+      <div class="pain-t">
+        <h4>2. 配色调不出来</h4>
+        <p>想用应援色但不知道怎么让整体好看。没有色号输入，没有一键配色，全靠手感。</p>
+      </div>
+    </div>
+    <div class="pain">
+      <div class="pain-i" style="background:var(--bl)">👀</div>
+      <div class="pain-t">
+        <h4>3. 按键看不清</h4>
+        <p>背景图太亮/太花导致打字困难。好看和好用之间的矛盾没有工具帮忙解决。</p>
+      </div>
+    </div>
+    <div class="pain">
+      <div class="pain-i" style="background:var(--pl)">📐</div>
+      <div class="pain-t">
+        <h4>4. 没有好模板</h4>
+        <p>想做好看的但设计能力有限。现有模板偏萌系，缺少追星/极简/IP等场景模板。</p>
+      </div>
+    </div>
+    <div class="pain">
+      <div class="pain-i" style="background:var(--g100)">🔄</div>
+      <div class="pain-t">
+        <h4>5. 换图太折腾</h4>
+        <p>每次换一张背景图就要从头做。追星用户每天有新物料，这个效率完全跟不上。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== PART 8 ========== -->
+<div class="ph"><span class="pn">PART 08</span><span class="pt">运营策略建议</span></div>
+
+<div class="cd">
+  <h3>🗺️ 针对三大高价值群体的差异化策略</h3>
+  <div class="stg">
+    <div class="st st1">
+      <div style="font-size:11px;font-weight:700;color:var(--pk);margin-bottom:6px">💖 追星群体</div>
+      <h4>应援色 + 原图适配 + 社交裂变</h4>
+      <ul>
+        <li>应援色数据库 + HEX输入一键配色</li>
+        <li>原图智能适配（人脸避让+自动裁切）</li>
+        <li>粉丝文字贴纸（口号/粉丝名/标识）</li>
+        <li>换图保布局（日更换图零成本）</li>
+        <li>一键分享超话/小红书预览卡</li>
+        <li>⚠️ 不做AI人脸融合（饭圈红线）</li>
+        <li>官方联名（与经纪公司合作限定皮肤）</li>
+      </ul>
+    </div>
+    <div class="st st2">
+      <div style="font-size:11px;font-weight:700;color:var(--p);margin-bottom:6px">🎨 审美女生</div>
+      <h4>半成品模板 + AI辅助 + 社区展示</h4>
+      <ul>
+        <li>高质感"半成品"模板库（100+款）</li>
+        <li>AI智能配色建议（基于图片主色调）</li>
+        <li>透明度/模糊度精细滑块</li>
+        <li>UGC社区排行榜 + 点赞收藏</li>
+        <li>创作者认证 + 作品上架</li>
+        <li>小红书/朋友圈分享模板</li>
+        <li>AI文生皮肤（描述→生成背景）</li>
+      </ul>
+    </div>
+    <div class="st st3">
+      <div style="font-size:11px;font-weight:700;color:var(--b);margin-bottom:6px">🎮 二次元/IP</div>
+      <h4>IP授权 + 系列收集 + 品质保证</h4>
+      <ul>
+        <li>热门IP联名皮肤（原神/崩铁等）</li>
+        <li>系列收集机制（全收集解锁隐藏款）</li>
+        <li>按键图标替换（角色元素）</li>
+        <li>高品质动效（角色技能特效）</li>
+        <li>定价 3-12 元/款（正版溢价）</li>
+        <li>限时限量发售（稀缺感）</li>
+        <li>新版本同步上新</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="ins ins-p">
+  <h4>💡 一句话总结</h4>
+  <p>
+    输入法皮肤的高价值用户本质上在为<strong>"情绪"和"身份"</strong>买单。运营的核心是做好<strong>"情绪日历"</strong>——在正确的时间，用正确的皮肤，击中正确的人群的情感共鸣。三大群体需要<strong>差异化的产品路径</strong>：追星群体要原图+应援色，审美女生要半成品+AI辅助，IP粉要正版+收集。不要用一套产品满足所有人。
+  </p>
+</div>
+
+<div class="ft">
+  输入法皮肤高价值用户群体研究报告 · 2026.04 · 搜狗输入法商业化参考
+</div>
+
+<span class="anchor" id="part2"></span>
+<div class="part-hero ph-2">
+  <div class="part-hero-inner">
+    <div class="ph-num">PART 02</div>
+    <h2>🔬 深度篇 · 四大群体深度拆解</h2>
+    <div class="ph-sub">每个群体独立建模：核心数据 × 心理动机 × 子画像 × 用户旅程 × 雷区识别 × 差异化策略</div>
+  </div>
+</div>
+
+
+<!-- ===== TOC ===== -->
+
+
+<!-- ============================================ -->
+<!-- GROUP 1: 追星女孩 -->
+<!-- ============================================ -->
+<span class="anchor" id="fan"></span>
+<div class="sh sh-fan">
+  <div class="sh-inner">
+    <div class="sh-emoji">💖</div>
+    <h2>Group 1 · 追星女孩</h2>
+    <div style="margin-top:6px">
+      <span class="sh-tag">13-25岁</span>
+      <span class="sh-tag">90%+ 女性</span>
+      <span class="sh-tag">二三线城市主力</span>
+      <span class="sh-tag">组织化·高动员力</span>
+    </div>
+    <div class="sh-quote">"我追的不是偶像，是我心目中那个最真实、最好看的Ta。皮肤是我最便宜的应援方式。"</div>
+  </div>
+</div>
+
+<div class="cd">
+  <h3>📊 群体核心数据</h3>
+  <div class="stats">
+    <div class="stat"><div class="sn" style="color:var(--fan)">72.2%</div><div class="sl">Z世代会为偶像作品消费</div></div>
+    <div class="stat"><div class="sn" style="color:var(--fan)">796亿</div><div class="sl">2024演出市场规模（追星驱动）</div></div>
+    <div class="stat"><div class="sn" style="color:var(--fan)">数万人</div><div class="sl">王一博粉丝AI维权联名</div></div>
+    <div class="stat"><div class="sn" style="color:var(--fan)">10万+</div><div class="sl">单次回归期皮肤下载预估</div></div>
+  </div>
+  <p style="font-size:12px;color:var(--g600);margin-top:10px">数据来源：iiMedia艾媒咨询《中国偶像行业数据分析》、2024全国演出市场年报、果壳/虎嗅AI抵制报道</p>
+</div>
+
+<div class="cd">
+  <h3>🧠 深度心理剖析：她们到底在买什么？</h3>
+  <div class="mb">
+    <div style="font-size:12px;color:var(--g600);margin-bottom:8px">购买动机占比（基于饭圈行为调研）</div>
+    <div class="mb-row"><div class="mb-label">身份认同</div><div class="mb-track"><div class="mb-fill" style="width:90%;background:var(--fan)">90%</div></div></div>
+    <div class="mb-row"><div class="mb-label">组织归属</div><div class="mb-track"><div class="mb-fill" style="width:80%;background:#c41e3a">80%</div></div></div>
+    <div class="mb-row"><div class="mb-label">情感投射</div><div class="mb-track"><div class="mb-fill" style="width:75%;background:#d4374a">75%</div></div></div>
+    <div class="mb-row"><div class="mb-label">社交炫耀</div><div class="mb-track"><div class="mb-fill" style="width:65%;background:var(--pk)">65%</div></div></div>
+    <div class="mb-row"><div class="mb-label">纯审美</div><div class="mb-track"><div class="mb-fill" style="width:35%;background:#FFB6C1;color:var(--g800)">35%</div></div></div>
+  </div>
+
+  <div class="ins ins-f">
+    <h4>💡 底层心理真相</h4>
+    <p>追星女孩买皮肤<strong>不是在"装饰手机"，是在"宣告身份"</strong>。凌赫红 = 凌赫粉 = 组织成员。这意味着皮肤对她们的功能性是<strong>社交识别符号 > 审美装饰 > 输入工具</strong>。产品设计要围绕"辨识度"而非"美观度"展开——她的皮肤必须让其他小核桃一眼认出"这是自己人"。</p>
+  </div>
+</div>
+
+<div class="cd">
+  <h3>📱 用户旅程全链路</h3>
+  <div class="jn">
+    <div class="jn-step" style="border-color:var(--fan)"><div class="jn-e">👀</div><div class="jn-t">发现</div><div class="jn-d">超话看到同好分享</div></div>
+    <div class="jn-arr">→</div>
+    <div class="jn-step"><div class="jn-e">💻</div><div class="jn-t">获取</div><div class="jn-d">抖音/小红书搜教程</div></div>
+    <div class="jn-arr">→</div>
+    <div class="jn-step"><div class="jn-e">🎨</div><div class="jn-t">制作</div><div class="jn-d">选图+调色+加文字</div></div>
+    <div class="jn-arr">→</div>
+    <div class="jn-step"><div class="jn-e">✨</div><div class="jn-t">使用</div><div class="jn-d">打字时看到偶像</div></div>
+    <div class="jn-arr">→</div>
+    <div class="jn-step"><div class="jn-e">📸</div><div class="jn-t">晒图</div><div class="jn-d">截图发超话/小红书</div></div>
+    <div class="jn-arr">→</div>
+    <div class="jn-step" style="border-color:var(--fan);background:var(--fanl)"><div class="jn-e">🚀</div><div class="jn-t">裂变</div><div class="jn-d">带动更多人做</div></div>
+  </div>
+  <p style="font-size:12px;color:var(--g600);margin-top:8px;text-align:center">关键节点：<strong>"制作"是痛点集中区</strong>，"晒图"是裂变起点。产品应优化制作效率 + 增强晒图美感。</p>
+</div>
+
+<div class="cd">
+  <h3>⚠️ 雷区识别：哪些操作会被粉丝抵制？</h3>
+  <table class="tb">
+    <tr><th style="width:22%">雷区</th><th style="width:15%">风险等级</th><th style="width:63%">原因</th></tr>
+    <tr>
+      <td><strong>AI改造偶像面部</strong></td>
+      <td><span class="tg tg-r">🔴 P0 雷区</span></td>
+      <td>2025年起饭圈系统性抵制AI生成偶像内容。粉丝认为"AI消解偶像真实性"。王一博粉丝已因此发起数万人联名。风险：引发舆情危机</td>
+    </tr>
+    <tr>
+      <td><strong>偶像面部被按键遮挡</strong></td>
+      <td><span class="tg tg-r">🔴 P0 雷区</span></td>
+      <td>心理不适："打字=手指反复触碰偶像的脸"。会被粉丝形容为"糟蹋偶像"</td>
+    </tr>
+    <tr>
+      <td><strong>应援色用错</strong></td>
+      <td><span class="tg tg-o">🟠 P1 敏感</span></td>
+      <td>应援色是身份图腾。用错颜色 = 粉丝名不对、粉丝群体识别错误。会被其他粉丝嘲讽</td>
+    </tr>
+    <tr>
+      <td><strong>磨皮美颜过度</strong></td>
+      <td><span class="tg tg-o">🟠 P1 敏感</span></td>
+      <td>张凌赫等偶像被粉丝称为"生图战神"。过度美颜反而被视为"降级"。粉丝骄傲的是不需要修图的真实颜值</td>
+    </tr>
+    <tr>
+      <td><strong>未授权的偶像联名</strong></td>
+      <td><span class="tg tg-r">🔴 法律风险</span></td>
+      <td>肖像权/商业化授权。多位艺人团队已明确禁止未授权使用</td>
+    </tr>
+  </table>
+</div>
+
+<div class="cd">
+  <h3>🎯 追星女孩运营策略</h3>
+  
+  <h4>① 产品路径策略：弱化AI融合，强化"原图适配"</h4>
+  <div class="sg">
+    <div class="sg-card" style="border-left:3px solid var(--fan)">
+      <div class="sgc-title">🖼️ 原图智能适配</div>
+      <div class="sgc-body">上传偶像原图 → AI人脸检测 → 自动裁切到键盘上半部 → 按键区避让面部 → 一键完成。<strong>关键：AI服务于"让键盘适配照片"，而不是"改造照片"</strong></div>
+    </div>
+    <div class="sg-card" style="border-left:3px solid var(--fan)">
+      <div class="sgc-title">🎨 应援色配色系统</div>
+      <div class="sgc-body">支持HEX色号输入（如凌赫红#971230） + 预置100+热门偶像应援色库 + AI基于应援色自动生成按键/字体/候选栏配色方案</div>
+    </div>
+    <div class="sg-card" style="border-left:3px solid var(--fan)">
+      <div class="sgc-title">🏷️ 粉丝身份贴纸</div>
+      <div class="sgc-body">文字贴纸（自定义粉丝名/应援口号如"凌霄之上 赫然有声"） + 粉丝logo贴纸 + 可拖拽位置。让"懂的人一眼就认出"</div>
+    </div>
+  </div>
+
+  <h4>② 运营节奏：跟着"追星日历"走</h4>
+  <div class="tl">
+    <div class="tl-item"><strong>偶像生日 T-30 天</strong><small>预告生日限定皮肤，粉丝后援会同步通知</small></div>
+    <div class="tl-item"><strong>偶像新剧/专辑发布期</strong><small>角色主题模板专区上线（如谢征战神风、古装系列）</small></div>
+    <div class="tl-item"><strong>颁奖季/红毯</strong><small>造型同款皮肤 + 倒计时动态元素</small></div>
+    <div class="tl-item"><strong>出道周年</strong><small>"出道N天"纪念皮肤 + 时间轴动态显示</small></div>
+    <div class="tl-item"><strong>日常期</strong><small>提供丰富模板库，支持一键换图不换布局</small></div>
+  </div>
+
+  <h4>③ 商业化策略：官方授权 + 粉丝共创</h4>
+  <table class="tb">
+    <tr><th>策略</th><th>具体玩法</th><th>预期效果</th></tr>
+    <tr>
+      <td><strong>官方联名</strong></td>
+      <td>与经纪公司合作，推出偶像官方授权皮肤（生日/周年/新剧限定）</td>
+      <td>付费转化率可达 20-30%（远高于普通皮肤）</td>
+    </tr>
+    <tr>
+      <td><strong>粉丝后援会合作</strong></td>
+      <td>与头部超话/后援会合作，首发专属折扣码</td>
+      <td>一次合作可带来 10万+ 下载 + 超话自发宣传</td>
+    </tr>
+    <tr>
+      <td><strong>打榜联动</strong></td>
+      <td>下载皮肤 = 为偶像打榜 / 投票</td>
+      <td>利用饭圈动员机制，免费获得核心用户</td>
+    </tr>
+    <tr>
+      <td><strong>限定收藏机制</strong></td>
+      <td>生日限定皮肤仅在7天内可下载，错过不再开放</td>
+      <td>制造稀缺感，激发即时行动</td>
+    </tr>
+  </table>
+
+  <div class="ins ins-f">
+    <h4>🌰 案例：张凌赫 x 搜狗 小核桃主题皮肤</h4>
+    <p><strong>链路设计：</strong>小核桃进入皮肤制造机 → 选「追星专区」→ 搜索"张凌赫"自动识别应援色凌赫红#971230 → 上传赫赫原图（AI只做裁切不改脸）→ 自动配色（暗红系） → 添加"凌霄之上 赫然有声"文字贴纸 → 一键保存为"我的小核桃模板" → 后续换图只需点击"换图"按钮 → 分享到超话带话题#小核桃的键盘# → 其他小核桃跟做<br><br>
+    <strong>预期效果：</strong>一次合作覆盖超话核心 500万+ 粉丝，转化率 5%+ 即可带来 25万+ 下载。</p>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- GROUP 2: 审美女生 -->
+<!-- ============================================ -->
+<span class="anchor" id="aes"></span>
+<div class="sh sh-aes" style="margin-top:32px">
+  <div class="sh-inner">
+    <div class="sh-emoji">🎨</div>
+    <h2>Group 2 · 审美驱动型女生</h2>
+    <div style="margin-top:6px">
+      <span class="sh-tag">18-28岁</span>
+      <span class="sh-tag">小红书活跃用户</span>
+      <span class="sh-tag">高线城市为主</span>
+      <span class="sh-tag">消费·传播·创作三位一体</span>
+    </div>
+    <div class="sh-quote">"手机是我的名片。输入法要匹配我的审美段位，不然宁可用系统默认。"</div>
+  </div>
+</div>
+
+<div class="cd">
+  <h3>📊 群体核心数据</h3>
+  <div class="stats">
+    <div class="stat"><div class="sn" style="color:var(--p)">3亿</div><div class="sl">小红书月活（70%+ 年轻女性）</div></div>
+    <div class="stat"><div class="sn" style="color:var(--p)">18-35</div><div class="sl">小红书核心用户年龄段</div></div>
+    <div class="stat"><div class="sn" style="color:var(--p)">70%+</div><div class="sl">用户女性占比</div></div>
+    <div class="stat"><div class="sn" style="color:var(--p)">↑55%</div><div class="sl">平均每月情绪消费增长</div></div>
+  </div>
+  <p style="font-size:12px;color:var(--g600);margin-top:10px">数据来源：千瓜数据《2025小红书活跃用户研究》、Just So Soul《2025 Z世代情绪消费报告》</p>
+</div>
+
+<div class="cd">
+  <h3>🧠 深度心理剖析：她们的审美标准是什么？</h3>
+  <div class="mb">
+    <div style="font-size:12px;color:var(--g600);margin-bottom:8px">消费动机占比</div>
+    <div class="mb-row"><div class="mb-label">审美满足</div><div class="mb-track"><div class="mb-fill" style="width:85%;background:var(--p)">85%</div></div></div>
+    <div class="mb-row"><div class="mb-label">社交货币</div><div class="mb-track"><div class="mb-fill" style="width:80%;background:#A78BFA">80%</div></div></div>
+    <div class="mb-row"><div class="mb-label">"是我做的"成就感</div><div class="mb-track"><div class="mb-fill" style="width:70%;background:#C4B5FD;color:var(--g800)">70%</div></div></div>
+    <div class="mb-row"><div class="mb-label">情绪价值</div><div class="mb-track"><div class="mb-fill" style="width:60%;background:#DDD6FE;color:var(--g800)">60%</div></div></div>
+    <div class="mb-row"><div class="mb-label">从众跟风</div><div class="mb-track"><div class="mb-fill" style="width:50%;background:#EDE9FE;color:var(--g800)">50%</div></div></div>
+  </div>
+
+  <div class="ins ins-p">
+    <h4>💡 底层心理真相</h4>
+    <p>审美女生买皮肤本质是<strong>"自我表达 + 社交展示"</strong>的双重需求。她们不需要别人能看懂（不像追星女孩需要身份识别），但需要<strong>自己觉得"有格调"</strong>且<strong>能被审美相近的人欣赏</strong>。核心驱动力不是"便宜好看"，是"在我这个层级里的品位彰显"。</p>
+  </div>
+</div>
+
+<div class="cd">
+  <h3>🎭 审美女生的 4 种子画像</h3>
+  <table class="tb">
+    <tr><th style="width:18%">子画像</th><th style="width:18%">特征</th><th style="width:32%">审美偏好</th><th style="width:32%">运营切入点</th></tr>
+    <tr>
+      <td><strong>🌸 元气少女</strong></td>
+      <td>18-22 · 大学生<br>小红书活跃</td>
+      <td>奶油色系、萌宠、清新插画、ins风</td>
+      <td>季节限定、萌系IP联名、校园场景</td>
+    </tr>
+    <tr>
+      <td><strong>✨ 精致白领</strong></td>
+      <td>23-28 · 职场<br>一二线城市</td>
+      <td>极简高级感、莫兰迪色系、质感材质、暗色</td>
+      <td>高价位付费皮肤、腔调生活方式、设计师联名</td>
+    </tr>
+    <tr>
+      <td><strong>🎨 文艺青年</strong></td>
+      <td>20-26 · 设计/文艺从业<br>有审美积淀</td>
+      <td>胶片感、油画、水彩、复古、独立设计</td>
+      <td>艺术家联名、小众风格模板、可创作工具</td>
+    </tr>
+    <tr>
+      <td><strong>🌙 暗黑酷女</strong></td>
+      <td>18-28 · Z世代<br>亚文化受众</td>
+      <td>黑色/暗色、赛博朋克、Y2K、故障艺术</td>
+      <td>暗黑主题、动效丰富、个性化程度高</td>
+    </tr>
+  </table>
+</div>
+
+<div class="cd">
+  <h3>🎯 审美女生运营策略</h3>
+  
+  <h4>① 产品策略：「半成品」模板是最优解</h4>
+  <div class="qd">
+    <div class="qd-cell" style="background:var(--pl)">
+      <h5>✅ 应该提供</h5>
+      <p>• 高质感「半成品」模板（设计师已完成 80%）<br>
+      • 留 20% 自定义空间（换背景、微调色、加装饰）<br>
+      • 配色方案推荐（不用自己调）<br>
+      • 模糊度/透明度精细滑块<br>
+      • AI生成建议但可跳过<br>
+      • 预览图质感要能"直接发小红书"</p>
+    </div>
+    <div class="qd-cell" style="background:var(--rl)">
+      <h5>❌ 不该强求</h5>
+      <p>• 从零开始自由设计（门槛太高）<br>
+      • 只有模板不能改（个性不够）<br>
+      • 模板风格单一（审美疲劳）<br>
+      • 界面复杂（降低完成率）<br>
+      • 生成效果低质（不敢发小红书）</p>
+    </div>
+  </div>
+
+  <h4>② 内容策略：小红书生态深度运营</h4>
+  <table class="tb">
+    <tr><th>策略</th><th>具体打法</th><th>预期效果</th></tr>
+    <tr>
+      <td><strong>种草内容矩阵</strong></td>
+      <td>与 100+ 小红书审美博主合作，内容形式：#皮肤教程# #我的键盘# #手机美化# 系列笔记</td>
+      <td>单月触达 500万+ 精准用户</td>
+    </tr>
+    <tr>
+      <td><strong>热门话题联动</strong></td>
+      <td>借势#多巴胺穿搭# #美拉德# 等热门审美风潮，推出同风格皮肤</td>
+      <td>蹭上审美热点，自然流量涌入</td>
+    </tr>
+    <tr>
+      <td><strong>UGC分享激励</strong></td>
+      <td>小红书带话题#我的输入法键盘# 发笔记可得付费皮肤</td>
+      <td>低成本激活 UGC 生态</td>
+    </tr>
+    <tr>
+      <td><strong>设计师联名</strong></td>
+      <td>与独立设计师/插画师推出联名皮肤专区</td>
+      <td>提升品牌调性，吸引高价值用户</td>
+    </tr>
+  </table>
+
+  <h4>③ 商业化策略：订阅制 + 高价位皮肤</h4>
+  <div class="sg">
+    <div class="sg-card" style="border-left:3px solid var(--p)">
+      <div class="sgc-title">💎 月度订阅会员</div>
+      <div class="sgc-body">9.9元/月或39元/年，解锁全部高级皮肤 + 新品优先使用。审美女生月均使用 4-8款，订阅更划算</div>
+    </div>
+    <div class="sg-card" style="border-left:3px solid var(--p)">
+      <div class="sgc-title">🎨 设计师精品</div>
+      <div class="sgc-body">6-15元单款，主打设计师联名和独家精品。强调"限量感"和"设计感"</div>
+    </div>
+    <div class="sg-card" style="border-left:3px solid var(--p)">
+      <div class="sgc-title">🆓 免费种草引流</div>
+      <div class="sgc-body">每月1-2款免费新品，作为种草内容。免费内容必须质感在线，否则损害品牌调性</div>
+    </div>
+  </div>
+
+  <div class="ins ins-p">
+    <h4>💡 审美女生的核心痛点解决方案</h4>
+    <p>
+      <strong>痛点：</strong>"想要好看但做不出设计师那种质感"<br>
+      <strong>方案：</strong>提供「设计师严选」模板库 + 一键智能配色 + 质感照片滤镜。降低创作门槛到"5分钟出成品"的同时保证视觉水准。<br><br>
+      <strong>关键指标：</strong>让每一张做出来的皮肤截图都能"直接发小红书不修图"。这是审美女生是否会用的核心判断标准。
+    </p>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- GROUP 3: 二次元IP粉 -->
+<!-- ============================================ -->
+<span class="anchor" id="2d"></span>
+<div class="sh sh-2d" style="margin-top:32px">
+  <div class="sh-inner">
+    <div class="sh-emoji">🎮</div>
+    <h2>Group 3 · 二次元 / IP 忠粉</h2>
+    <div style="margin-top:6px">
+      <span class="sh-tag">14-25岁</span>
+      <span class="sh-tag">男女各半</span>
+      <span class="sh-tag">Z世代核心</span>
+      <span class="sh-tag">付费率最高</span>
+    </div>
+    <div class="sh-quote">"这个角色我爱了5年。每出一款周边我都买，皮肤只是我收集清单里的一项。"</div>
+  </div>
+</div>
+
+<div class="cd">
+  <h3>📊 群体核心数据</h3>
+  <div class="stats">
+    <div class="stat"><div class="sn" style="color:var(--b)">1741亿</div><div class="sl">2025谷子经济市场规模</div></div>
+    <div class="stat"><div class="sn" style="color:var(--b)">30%+</div><div class="sl">谷子经济年增速</div></div>
+    <div class="stat"><div class="sn" style="color:var(--b)">千亿级</div><div class="sl">2024二次元产业规模</div></div>
+    <div class="stat"><div class="sn" style="color:var(--b)">15%+</div><div class="sl">二次元行业年均增速</div></div>
+  </div>
+  <p style="font-size:12px;color:var(--g600);margin-top:10px">数据来源：2025谷子经济专题报告、2025中国二次元文化行业市场研究报告、36氪《二次元潮流消费趋势报告》</p>
+</div>
+
+<div class="cd">
+  <h3>🧠 深度心理剖析：IP忠诚是如何建立的？</h3>
+  <div class="mb">
+    <div style="font-size:12px;color:var(--g600);margin-bottom:8px">消费动机占比</div>
+    <div class="mb-row"><div class="mb-label">IP忠诚</div><div class="mb-track"><div class="mb-fill" style="width:95%;background:var(--b)">95%</div></div></div>
+    <div class="mb-row"><div class="mb-label">收藏欲</div><div class="mb-track"><div class="mb-fill" style="width:85%;background:#6BB3E0">85%</div></div></div>
+    <div class="mb-row"><div class="mb-label">正版信仰</div><div class="mb-track"><div class="mb-fill" style="width:75%;background:#8ECAE6;color:var(--g800)">75%</div></div></div>
+    <div class="mb-row"><div class="mb-label">角色CP</div><div class="mb-track"><div class="mb-fill" style="width:60%;background:#B8DEE8;color:var(--g800)">60%</div></div></div>
+    <div class="mb-row"><div class="mb-label">情感陪伴</div><div class="mb-track"><div class="mb-fill" style="width:70%;background:#A8D5E2;color:var(--g800)">70%</div></div></div>
+  </div>
+
+  <div class="ins" style="background:var(--bl);border-left-color:var(--b)">
+    <h4>💡 底层心理真相</h4>
+    <p>二次元用户的消费本质是<strong>"为爱发电"</strong>——不是在买产品，是在用付费证明"我爱这个角色"。他们对价格敏感度低、对品质敏感度高、对官方授权有强信仰。<strong>正版 > 盗版</strong>不是面子问题，是道德问题。因此付费转化率最高、复购最稳定，但也最看重品质和真实性。</p>
+  </div>
+</div>
+
+<div class="cd">
+  <h3>🎭 二次元的子品类与消费偏好</h3>
+  <table class="tb">
+    <tr><th style="width:15%">子群体</th><th style="width:18%">核心IP</th><th style="width:30%">消费特征</th><th style="width:37%">皮肤需求</th></tr>
+    <tr>
+      <td><strong>🎮 游戏党</strong></td>
+      <td>原神 / 崩铁 / 绝区零 / 鸣潮</td>
+      <td>新版本上线必氪、角色立绘收集、周边同步购买</td>
+      <td>角色主题、技能特效动画、按键图标替换成角色元素</td>
+    </tr>
+    <tr>
+      <td><strong>📺 动漫党</strong></td>
+      <td>咒术回战 / 间谍过家家 / 进击的巨人</td>
+      <td>新番追更、经典回味、CP向消费</td>
+      <td>角色剧照、台词贴纸、CP组合皮肤</td>
+    </tr>
+    <tr>
+      <td><strong>📖 国漫党</strong></td>
+      <td>时光代理人 / 凡人修仙传 / 罗小黑</td>
+      <td>支持国漫、IP故事向深度消费</td>
+      <td>国漫特色配色、水墨风、国风元素</td>
+    </tr>
+    <tr>
+      <td><strong>💕 乙游党</strong></td>
+      <td>恋与深空 / 光与夜之恋 / 世界之外</td>
+      <td>男主立绘、人设向消费、节日限定必买</td>
+      <td>男主皮肤、约会场景、节日限定</td>
+    </tr>
+    <tr>
+      <td><strong>🌸 偶像IP党</strong></td>
+      <td>Hatsune Miku / 虚拟偶像 / VTuber</td>
+      <td>虚拟形象、演唱会周边、应援文化</td>
+      <td>虚拟偶像专属、演出主题、应援色</td>
+    </tr>
+  </table>
+</div>
+
+<div class="cd">
+  <h3>🎯 二次元IP粉运营策略</h3>
+
+  <h4>① 产品策略：「官方授权 + 系列收集 + 深度定制」三支柱</h4>
+  <div class="sg">
+    <div class="sg-card" style="border-left:3px solid var(--b)">
+      <div class="sgc-title">🏆 官方IP授权</div>
+      <div class="sgc-body">与米哈游、鹰角、叠纸、B站等头部IP方合作。<strong>必须拿到授权</strong>，不授权不做。盗版会毁掉二次元用户的信任</div>
+    </div>
+    <div class="sg-card" style="border-left:3px solid var(--b)">
+      <div class="sgc-title">📦 系列收集机制</div>
+      <div class="sgc-body">每个角色一款皮肤（如原神60+角色）→ 集齐5款解锁隐藏主题 → 集齐全套解锁限定成就。激发收集欲</div>
+    </div>
+    <div class="sg-card" style="border-left:3px solid var(--b)">
+      <div class="sgc-title">✨ 深度定制</div>
+      <div class="sgc-body">按键图标替换为角色元素（原神元素符号/崩铁命途图标）、打字音效替换为角色语音片段、技能特效动画</div>
+    </div>
+  </div>
+
+  <h4>② 节奏策略：跟版本、跟新番、跟活动</h4>
+  <div class="tl">
+    <div class="tl-item"><strong>游戏新版本上线（每6周）</strong><small>原神/崩铁等新版本上线同步推出新角色皮肤，首周限时折扣</small></div>
+    <div class="tl-item"><strong>新番放送期（每季度）</strong><small>当季热门新番（如4月番、10月番）同步推出主角皮肤</small></div>
+    <div class="tl-item"><strong>角色生日/纪念日</strong><small>热门角色生日限定皮肤（如3月1日派蒙生日）</small></div>
+    <div class="tl-item"><strong>大型漫展期（CP/BW/CCG）</strong><small>漫展期间专属优惠 + 限定主题皮肤</small></div>
+    <div class="tl-item"><strong>IP重大事件</strong><small>原神全球公测周年、新番完结等重要节点</small></div>
+  </div>
+
+  <h4>③ 商业化策略：高客单价 + 稀缺机制</h4>
+  <table class="tb">
+    <tr><th>策略</th><th>价格区间</th><th>心理机制</th></tr>
+    <tr><td><strong>标准角色皮肤</strong></td><td>3-6 元</td><td>适合收集入门，降低门槛</td></tr>
+    <tr><td><strong>SR 角色皮肤</strong></td><td>6-12 元</td><td>热门角色溢价，粉丝愿意付</td></tr>
+    <tr><td><strong>SSR 限定皮肤</strong></td><td>12-30 元</td><td>官方联名限定款，收藏级</td></tr>
+    <tr><td><strong>年度套装</strong></td><td>68-128 元</td><td>全系列打包，收集党刚需</td></tr>
+    <tr><td><strong>限时绝版</strong></td><td>不等</td><td>7天内可购，过期永久下架，极度稀缺</td></tr>
+  </table>
+
+  <div class="ins" style="background:var(--bl);border-left-color:var(--b)">
+    <h4>💡 关键提示：二次元用户的「信任护城河」</h4>
+    <p>
+      <strong>一旦做错一次，就永久失信。</strong>二次元社区是相互连通的——一次盗版、一次质量差、一次官方授权问题被发现，会在微博/B站/贴吧全网扩散，粉丝会<strong>集体抵制</strong>。<br><br>
+      <strong>三个不能犯的错误：</strong><br>
+      ① 未授权使用IP素材<br>
+      ② 皮肤品质粗糙（角色立绘不精）<br>
+      ③ 对官方细节不尊重（配色错、角色名错、CP错）<br><br>
+      建议与IP方合作时配备专门的"IP审校官"，确保每款皮肤都经过原作方确认。
+    </p>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- GROUP 4: UGC创作者 -->
+<!-- ============================================ -->
+<span class="anchor" id="ugc"></span>
+<div class="sh sh-ugc" style="margin-top:32px">
+  <div class="sh-inner">
+    <div class="sh-emoji">✨</div>
+    <h2>Group 4 · UGC 创作者</h2>
+    <div style="margin-top:6px">
+      <span class="sh-tag">有设计基础</span>
+      <span class="sh-tag">占比 2-5%</span>
+      <span class="sh-tag">追求认可</span>
+      <span class="sh-tag">内容生产引擎</span>
+    </div>
+    <div class="sh-quote">"我做的皮肤被人用 = 我的审美被认可。这比钱更重要。"</div>
+  </div>
+</div>
+
+<div class="cd">
+  <h3>📊 群体核心数据</h3>
+  <div class="stats">
+    <div class="stat"><div class="sn" style="color:var(--md)">2-5%</div><div class="sl">占全体用户比例</div></div>
+    <div class="stat"><div class="sn" style="color:var(--md)">60%</div><div class="sl">内容价值贡献占比</div></div>
+    <div class="stat"><div class="sn" style="color:var(--md)">65%</div><div class="sl">Adobe Stock收益分成比例（行业标杆）</div></div>
+    <div class="stat"><div class="sn" style="color:var(--md)">10万+</div><div class="sl">优质单款UGC皮肤下载预估</div></div>
+  </div>
+  <p style="font-size:12px;color:var(--g600);margin-top:10px">数据来源：Adobe Stock创作者分成政策、Figma/Behance UGC生态数据、行业UGC平台对比</p>
+</div>
+
+<div class="cd">
+  <h3>🧠 深度心理剖析：创作者真正要什么？</h3>
+  <div class="mb">
+    <div style="font-size:12px;color:var(--g600);margin-bottom:8px">创作动机占比</div>
+    <div class="mb-row"><div class="mb-label">作品被认可</div><div class="mb-track"><div class="mb-fill" style="width:90%;background:var(--md)">90%</div></div></div>
+    <div class="mb-row"><div class="mb-label">创作自由</div><div class="mb-track"><div class="mb-fill" style="width:85%;background:var(--m)">85%</div></div></div>
+    <div class="mb-row"><div class="mb-label">社区归属</div><div class="mb-track"><div class="mb-fill" style="width:70%;background:#6DE0C4;color:var(--g800)">70%</div></div></div>
+    <div class="mb-row"><div class="mb-label">作品集积累</div><div class="mb-track"><div class="mb-fill" style="width:65%;background:#9FECD8;color:var(--g800)">65%</div></div></div>
+    <div class="mb-row"><div class="mb-label">收益分成</div><div class="mb-track"><div class="mb-fill" style="width:50%;background:#C5F2E5;color:var(--g800)">50%</div></div></div>
+  </div>
+
+  <div class="ins ins-g">
+    <h4>💡 底层心理真相（与追星/审美女生完全不同）</h4>
+    <p>创作者不是在"消费"，是在"生产"。他们的满足感<strong>主要来自作品被使用、被点赞、被认可</strong>，金钱回报是结果不是主因。早期创作者可能更在乎曝光；成熟后才会关注收益。这意味着<strong>激励设计应该先满足"被看见"，再解决"被赚到"</strong>。</p>
+  </div>
+</div>
+
+<div class="cd">
+  <h3>🎭 UGC创作者的 3 个阶段</h3>
+  <table class="tb">
+    <tr><th style="width:18%">阶段</th><th style="width:22%">特征</th><th style="width:30%">核心需求</th><th style="width:30%">运营策略</th></tr>
+    <tr>
+      <td><strong>🌱 萌新期</strong><br>0-3个月</td>
+      <td>首次使用编辑器<br>作品 <5 个<br>下载量 <100</td>
+      <td>上手指引、模板参考、获得第一个正向反馈</td>
+      <td>新手任务体系、作品上架指引、首作品冷启动流量扶持</td>
+    </tr>
+    <tr>
+      <td><strong>🚀 成长期</strong><br>3-12个月</td>
+      <td>作品 5-30 个<br>累计下载 1K-10K<br>有自己风格</td>
+      <td>更多曝光、获得认证、进阶工具、同好社区</td>
+      <td>创作者认证、专属徽章、作品推荐位、进阶功能开放</td>
+    </tr>
+    <tr>
+      <td><strong>⭐ 成熟期</strong><br>1年以上</td>
+      <td>头部创作者<br>单品下载 10K+<br>有粉丝追随</td>
+      <td>收益分成、商务合作、创作者品牌建设、特权</td>
+      <td>收益分成体系、IP方对接、个人主页/粉丝关注机制、独家权益</td>
+    </tr>
+  </table>
+</div>
+
+<div class="cd">
+  <h3>🎯 UGC创作者运营策略</h3>
+
+  <h4>① 工具策略：给创作者足够强大的编辑器</h4>
+  <div class="two">
+    <div class="yn y">
+      <h4>✅ 创作者必备功能</h4>
+      <ul>
+        <li>图层叠加（至少5层）</li>
+        <li>自定义按键形状/颜色/渐变</li>
+        <li>贴纸/文字/图标完整库</li>
+        <li>透明度/模糊度精细控制</li>
+        <li>动效编辑器（粒子/帧动画）</li>
+        <li>草稿保存 + 版本历史</li>
+        <li>PC端专业编辑器</li>
+        <li>批量生成（同素材多配色）</li>
+      </ul>
+    </div>
+    <div class="yn n">
+      <h4>❌ 创作者讨厌的限制</h4>
+      <ul>
+        <li>只能套模板不能自由设计</li>
+        <li>颜色只能从预设里选</li>
+        <li>不能上传自己的素材</li>
+        <li>作品尺寸/元素数量限制</li>
+        <li>审核过严或过慢（&gt;24h）</li>
+        <li>没有数据反馈（下载/点赞）</li>
+        <li>作品被平台随意下架</li>
+      </ul>
+    </div>
+  </div>
+
+  <h4>② 激励体系：金钱 + 荣誉 + 特权 三位一体</h4>
+  <table class="tb">
+    <tr><th>激励类型</th><th>具体机制</th><th>心理作用</th></tr>
+    <tr>
+      <td><strong>💰 收益分成</strong></td>
+      <td>作品被付费下载，创作者获得 40-65% 分成（参考 Adobe Stock 65%、Figma 社区等行业标杆）</td>
+      <td>物质激励，吸引专业设计师入驻</td>
+    </tr>
+    <tr>
+      <td><strong>🏅 等级认证</strong></td>
+      <td>新手 → 创作者 → 认证创作者 → 签约设计师。每级解锁不同权益</td>
+      <td>游戏化满足感，持续创作动力</td>
+    </tr>
+    <tr>
+      <td><strong>📊 数据反馈</strong></td>
+      <td>实时下载量、点赞、收藏、评论数据看板</td>
+      <td>即时反馈，持续优化动力</td>
+    </tr>
+    <tr>
+      <td><strong>🎯 流量扶持</strong></td>
+      <td>优质作品首页推荐、专区展示、算法倾斜</td>
+      <td>"被看见"是第一需求</td>
+    </tr>
+    <tr>
+      <td><strong>🎁 IP合作机会</strong></td>
+      <td>头部创作者对接IP方、品牌方合作机会</td>
+      <td>职业生涯跃迁，生态黏性</td>
+    </tr>
+    <tr>
+      <td><strong>📢 社区曝光</strong></td>
+      <td>创作者故事采访、官方社媒转发</td>
+      <td>建立个人品牌，粉丝沉淀</td>
+    </tr>
+  </table>
+
+  <h4>③ 生态策略：构建创作者社区飞轮</h4>
+  <div class="jn">
+    <div class="jn-step" style="border-color:var(--md)"><div class="jn-e">🎨</div><div class="jn-t">创作</div><div class="jn-d">工具+模板</div></div>
+    <div class="jn-arr">→</div>
+    <div class="jn-step"><div class="jn-e">📤</div><div class="jn-t">上传</div><div class="jn-d">审核快速</div></div>
+    <div class="jn-arr">→</div>
+    <div class="jn-step"><div class="jn-e">👀</div><div class="jn-t">曝光</div><div class="jn-d">算法分发</div></div>
+    <div class="jn-arr">→</div>
+    <div class="jn-step"><div class="jn-e">📈</div><div class="jn-t">数据</div><div class="jn-d">下载反馈</div></div>
+    <div class="jn-arr">→</div>
+    <div class="jn-step"><div class="jn-e">🏅</div><div class="jn-t">激励</div><div class="jn-d">分成+认证</div></div>
+    <div class="jn-arr">→</div>
+    <div class="jn-step" style="border-color:var(--md);background:var(--ml)"><div class="jn-e">💎</div><div class="jn-t">留存</div><div class="jn-d">持续产出</div></div>
+  </div>
+  <p style="font-size:12px;color:var(--g600);margin-top:8px;text-align:center">任何环节断裂（如审核慢、算法不公、激励不到位），都会导致创作者流失到竞品</p>
+
+  <h4>④ 年度计划：设计大赛 + 训练营</h4>
+  <table class="tb">
+    <tr><th>活动</th><th>频次</th><th>目标</th></tr>
+    <tr>
+      <td><strong>年度皮肤设计大赛</strong></td>
+      <td>1次/年</td>
+      <td>吸引新创作者入驻、挖掘头部设计师、品牌事件营销（参考讯飞皮肤大赛模式）</td>
+    </tr>
+    <tr>
+      <td><strong>主题月活动</strong></td>
+      <td>1次/月</td>
+      <td>围绕节日/热点设主题（春节、母亲节等），激发创作热情</td>
+    </tr>
+    <tr>
+      <td><strong>创作者训练营</strong></td>
+      <td>1次/季度</td>
+      <td>线上课程+1v1辅导，帮助萌新进阶</td>
+    </tr>
+    <tr>
+      <td><strong>IP联名赛事</strong></td>
+      <td>按需</td>
+      <td>与原神/间谍过家家等IP方合办设计赛，赢家作品官方授权上架</td>
+    </tr>
+    <tr>
+      <td><strong>年度颁奖盛典</strong></td>
+      <td>1次/年</td>
+      <td>表彰头部创作者，树立行业标杆</td>
+    </tr>
+  </table>
+
+  <div class="ins ins-g">
+    <h4>💡 关键提示：创作者生态的「复利效应」</h4>
+    <p>
+      <strong>1 个头部创作者 = 1 个内容引擎。</strong>他/她持续产出的皮肤可覆盖数万个下载用户。<br>
+      <strong>10 个头部创作者 = 一个自运转的内容生态。</strong>甚至可以反哺运营，减少官方对排期的依赖。<br>
+      <strong>100 个中腰部创作者 = 内容长尾覆盖所有小众需求。</strong>萌宠/暗黑/赛博/文艺/古风… 任何一种审美都有对应创作者。<br><br>
+      <strong>投资逻辑：</strong>用 15% 的运营资源建设 UGC 生态，换取 60% 的内容供给。这是效率最高的运营策略。竞品如讯飞的皮肤大赛、Kika 的 9000+主题模板库都证明了这一点。
+    </p>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- 横向对比 & 资源分配 -->
+<!-- ============================================ -->
+<div class="sh" style="margin-top:32px;background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)">
+  <div class="sh-inner">
+    <div class="sh-emoji">📊</div>
+    <h2>四大群体横向对比 & 资源分配建议</h2>
+    <div class="sh-quote">不要用一套策略服务所有人。差异化才能最大化价值。</div>
+  </div>
+</div>
+
+<div class="cd">
+  <h3>🆚 四大群体能力维度对比（FECSL模型打分）</h3>
+  <table class="tb">
+    <tr>
+      <th style="width:20%">维度</th>
+      <th style="width:20%">💖 追星女孩</th>
+      <th style="width:20%">🎨 审美女生</th>
+      <th style="width:20%">🎮 二次元IP粉</th>
+      <th style="width:20%">✨ UGC创作者</th>
+    </tr>
+    <tr>
+      <td><strong>💰 付费力 F</strong></td>
+      <td>⭐⭐⭐⭐ (70分)</td>
+      <td>⭐⭐⭐ (55分)</td>
+      <td>⭐⭐⭐⭐⭐ (85分)</td>
+      <td>⭐⭐⭐ (60分)</td>
+    </tr>
+    <tr>
+      <td><strong>🔥 参与度 E</strong></td>
+      <td>⭐⭐⭐⭐⭐ (85分)</td>
+      <td>⭐⭐⭐⭐ (70分)</td>
+      <td>⭐⭐⭐ (60分)</td>
+      <td>⭐⭐⭐⭐⭐ (95分)</td>
+    </tr>
+    <tr>
+      <td><strong>🎨 创作力 C</strong></td>
+      <td>⭐⭐ (40分)</td>
+      <td>⭐⭐⭐⭐ (70分)</td>
+      <td>⭐⭐ (35分)</td>
+      <td>⭐⭐⭐⭐⭐ (95分)</td>
+    </tr>
+    <tr>
+      <td><strong>📣 传播力 S</strong></td>
+      <td>⭐⭐⭐⭐⭐ (90分)</td>
+      <td>⭐⭐⭐⭐ (75分)</td>
+      <td>⭐⭐⭐ (55分)</td>
+      <td>⭐⭐⭐⭐ (70分)</td>
+    </tr>
+    <tr>
+      <td><strong>❤️ 忠诚度 L</strong></td>
+      <td>⭐⭐⭐ (60分)<br><small>（偶像依赖）</small></td>
+      <td>⭐⭐⭐ (55分)<br><small>（审美变化）</small></td>
+      <td>⭐⭐⭐⭐⭐ (90分)<br><small>（IP情感黏性）</small></td>
+      <td>⭐⭐⭐⭐⭐ (90分)<br><small>（工具依赖）</small></td>
+    </tr>
+    <tr style="background:var(--g100);font-weight:700">
+      <td><strong>综合价值评分</strong></td>
+      <td style="color:var(--fan)">66.5</td>
+      <td style="color:var(--p)">62.5</td>
+      <td style="color:var(--b)">64.8</td>
+      <td style="color:var(--md)">80.5</td>
+    </tr>
+  </table>
+
+  <div class="ins ins-p">
+    <h4>📈 综合价值排序</h4>
+    <p>
+      <strong>UGC创作者 (80.5) > 追星女孩 (66.5) > 二次元IP粉 (64.8) > 审美女生 (62.5)</strong><br><br>
+      UGC 创作者综合价值最高，因为他们<strong>同时具备高参与、高创作、高忠诚</strong>，能反哺整个生态。但四个群体价值点不同：UGC创作者产"内容"、追星女孩带"流量"、二次元IP粉贡献"付费"、审美女生创造"调性"。<strong>缺一不可。</strong>
+    </p>
+  </div>
+</div>
+
+<div class="cd">
+  <h3>💰 建议运营资源分配</h3>
+  <table class="tb">
+    <tr><th>群体</th><th>资源占比</th><th>核心投入方向</th><th>预期 ROI</th></tr>
+    <tr>
+      <td><strong>✨ UGC 创作者</strong></td>
+      <td><span class="tg tg-g">25%</span></td>
+      <td>工具升级、激励体系、社区建设、设计大赛</td>
+      <td><strong>🔥 最高</strong><br>1 创作者 = 1 引擎，内容复利</td>
+    </tr>
+    <tr>
+      <td><strong>💖 追星女孩</strong></td>
+      <td><span class="tg tg-f">30%</span></td>
+      <td>官方IP合作、应援色系统、粉丝身份贴纸、跟追星日历排期</td>
+      <td><strong>🔥 高</strong><br>强传播力 + 高付费意愿</td>
+    </tr>
+    <tr>
+      <td><strong>🎮 二次元IP粉</strong></td>
+      <td><span class="tg tg-b">25%</span></td>
+      <td>IP授权、系列收集、深度定制、品质保证</td>
+      <td><strong>🔥 高</strong><br>最高付费率 + 最稳复购</td>
+    </tr>
+    <tr>
+      <td><strong>🎨 审美女生</strong></td>
+      <td><span class="tg tg-p">20%</span></td>
+      <td>半成品模板、小红书种草、设计师联名、订阅制会员</td>
+      <td><strong>💎 稳健</strong><br>调性标杆 + 扩圈入口</td>
+    </tr>
+  </table>
+
+  <div class="ins ins-g">
+    <h4>🎯 四大群体协同飞轮</h4>
+    <p>
+      <strong>UGC创作者</strong> 生产大量高质量模板 → <strong>审美女生</strong> 用这些模板创作并在小红书分享 → 带动 <strong>追星女孩 + 二次元IP粉</strong> 发现新玩法和高级技巧 → 她们的付费反哺平台 → 平台有更多资源激励<strong>UGC创作者</strong> → 形成正向循环。<br><br>
+      <strong>关键抓手：</strong>一款优秀的皮肤制造机工具 + 一个有活力的UGC社区 + 明确的激励体系。这三者是飞轮的启动器。
+    </p>
+  </div>
+</div>
+
+<!-- ===== Summary ===== -->
+<div class="sh" style="margin-top:32px;background:linear-gradient(135deg,#971230 0%,#302b63 50%,#0f0c29 100%)">
+  <div class="sh-inner" style="text-align:center">
+    <div style="font-size:13px;opacity:.7;margin-bottom:6px;letter-spacing:2px">最终建议</div>
+    <h2 style="font-size:24px;line-height:1.5">四大群体，四种产品路径<br>但共享一个工具内核</h2>
+    <div style="margin-top:16px;font-size:14px;opacity:.85;max-width:720px;margin-left:auto;margin-right:auto;line-height:1.9">
+      <strong>💖 追星女孩</strong> 要原图+应援色，AI做裁切不做改造<br>
+      <strong>🎨 审美女生</strong> 要半成品模板 + 小红书传播生态<br>
+      <strong>🎮 二次元IP粉</strong> 要正版授权 + 系列收集 + 深度定制<br>
+      <strong>✨ UGC创作者</strong> 要自由工具 + 即时反馈 + 公平分成<br><br>
+      <strong style="font-size:15px">🎯 一个通用工具满足不了所有人，但四类定制路径可以共用一个底层编辑器内核。</strong>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="ft">
+  输入法皮肤高价值用户研究完整报告 · 2026.04 · 搜狗输入法商业化参考<br>
+  数据来源：iiMedia艾媒咨询 / 千瓜数据 / Just So Soul / 36氪 / 谷子经济专题报告 等
+</div>
+
+
+</div>
+</body>
+</html>

@@ -298,6 +298,17 @@
     </main>
   </div>
 
+  <!-- High-Value Users Report Detail (iframe mode) -->
+  <div class="report-embed" id="report-high-value-users">
+    <button class="report-back" onclick="hideReport()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      返回报告列表
+    </button>
+    <div class="report-frame">
+      <iframe src="high-value-users-combined.html" title="输入法皮肤高价值用户研究 · 完整报告" style="min-height: 85vh;"></iframe>
+    </div>
+  </div>
+
   <!-- Sogou Biz Expert Report Detail (iframe mode, keeps original orange visual) -->
   <div class="report-embed" id="report-sogou-biz-expert">
     <button class="report-back" onclick="hideReport()">
@@ -591,6 +602,25 @@ const REPORTS = [
       { icon: '💻', label: 'PC点位', value: '16+' },
       { icon: '🆚', label: '竞品对标', value: '6' },
       { icon: '🎯', label: '战略阶段', value: '3' }
+    ]
+  },
+  {
+    id: 'high-value-users',
+    title: '输入法皮肤高价值用户研究 · 完整报告',
+    desc: '从宏观到微观，系统性拆解输入法皮肤的高价值用户群体：全景篇还原行业用户画像与付费意愿；深度篇深挖「追星女孩 / 审美驱动型女生 / 二次元 IP 忠粉 / UGC 创作者」四大核心群体的需求图谱、行为动机与产品路径；最终输出四大群体横向对比与资源分配建议——四种产品路径，一个共享的工具内核。',
+    date: '2026.04.19',
+    category: '内容商业化',
+    subCategory: '装扮',
+    tags: [
+      { text: '用户研究', bg: '#edf3ff', color: '#2a6fd8' },
+      { text: '人群拆解', bg: '#ffeaf2', color: '#d63384' },
+      { text: '资源分配', bg: '#e6faf3', color: '#007a5e' }
+    ],
+    stats: [
+      { icon: '👥', label: '核心人群', value: '4' },
+      { icon: '🌐', label: '研究维度', value: '宏观+微观' },
+      { icon: '🎯', label: '产品路径', value: '4 条' },
+      { icon: '🔧', label: '工具内核', value: '1 个' }
     ]
   },
   {
