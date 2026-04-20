@@ -1226,21 +1226,36 @@ const CASES = [
 ];
 
 // TAGS
-const ALL_TAGS = [...new Set(CASES.flatMap(c => c.tags))];
-let activeTag = null;
+// 三大商业化类别 ↔ 细分标签映射
+const CATEGORY_MAP = {
+  '流量商业化': ['广告营销', '增长设计', '社交裂变', '活动页面', '红包活动', '抽奖活动', '秒杀活动', '互动营销', '直播电商', '新人引导'],
+  '应用商业化': ['订阅付费', '会员体系', '定价策略', 'AI商业化', 'VIP设计', '签到活动', '积分活动', '游戏化', '任务体系'],
+  '内容商业化': ['电商大促', '本地生活', '隐私合规']
+};
+
+// 根据 case 的 tags 推断其商业化大类
+function getCategoryOfCase(c) {
+  for (const [cat, subTags] of Object.entries(CATEGORY_MAP)) {
+    if (c.tags.some(t => subTags.includes(t))) return cat;
+  }
+  return null;
+}
+
+const MAIN_CATEGORIES = ['流量商业化', '应用商业化', '内容商业化'];
+let activeCategory = null;
 
 function renderFilters() {
   const el = document.getElementById('filterRow');
-  let h = `<button class="chip ${activeTag === null ? 'active' : ''}" onclick="filterTag(null)">全部 <span class="chip-num">${CASES.length}</span></button>`;
-  ALL_TAGS.forEach(tag => {
-    const count = CASES.filter(c => c.tags.includes(tag)).length;
-    h += `<button class="chip ${activeTag === tag ? 'active' : ''}" onclick="filterTag('${tag}')">${tag} <span class="chip-num">${count}</span></button>`;
+  let h = `<button class="chip ${activeCategory === null ? 'active' : ''}" onclick="filterCategory(null)">全部 <span class="chip-num">${CASES.length}</span></button>`;
+  MAIN_CATEGORIES.forEach(cat => {
+    const count = CASES.filter(c => getCategoryOfCase(c) === cat).length;
+    h += `<button class="chip ${activeCategory === cat ? 'active' : ''}" onclick="filterCategory('${cat}')">${cat} <span class="chip-num">${count}</span></button>`;
   });
   el.innerHTML = h;
 }
 
-function filterTag(tag) {
-  activeTag = activeTag === tag ? null : tag;
+function filterCategory(cat) {
+  activeCategory = activeCategory === cat ? null : cat;
   renderFilters();
   renderGallery();
 }
@@ -1248,7 +1263,7 @@ function filterTag(tag) {
 function renderGallery() {
   const el = document.getElementById('gallery');
   let items = CASES;
-  if (activeTag) items = items.filter(c => c.tags.includes(activeTag));
+  if (activeCategory) items = items.filter(c => getCategoryOfCase(c) === activeCategory);
 
   if (!items.length) {
     el.innerHTML = `<div class="empty" style="column-span:all"><div class="empty-title">没有匹配结果</div><div class="empty-desc">请调整筛选标签</div></div>`;
@@ -1262,6 +1277,20 @@ function renderGallery() {
       </a>
       <div class="gallery-info">
         <div class="gallery-title">${c.title}</div>
+        <div class="gallery-desc">${c.desc}</div>
+        <div class="gallery-meta">
+          <div class="gallery-tags">
+            ${c.tags.map(t => `<span class="gallery-tag">${t}</span>`).join('')}
+          </div>
+          <span class="gallery-source">${c.source}</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+renderFilters();
+renderGallery();
         <div class="gallery-desc">${c.desc}</div>
         <div class="gallery-meta">
           <div class="gallery-tags">

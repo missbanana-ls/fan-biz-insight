@@ -144,39 +144,17 @@
     .empty-title { font-size: 0.9375rem; font-weight: 500; color: var(--text-2); margin-bottom: 6px; }
     .empty-desc { font-size: 0.8125rem; color: var(--text-3); max-width: 360px; margin: 0 auto; }
 
-    /* REPORT LIST — 设计师风格卡片 */
+    /* REPORT LIST — 素雅设计师风格卡片 */
     .report-list { display: flex; flex-direction: column; gap: 20px; }
     .report-card {
-      display: block; overflow: hidden;
+      display: block; padding: 28px 32px;
       border: 1px solid var(--border-light); border-radius: var(--radius-lg);
       background: var(--bg);
       transition: all 300ms var(--ease);
       text-decoration: none; color: inherit; cursor: pointer;
     }
     .report-card:hover { border-color: var(--border); box-shadow: var(--shadow-hover); transform: translateY(-3px); }
-    .report-card-visual {
-      height: 180px; position: relative;
-      background: linear-gradient(135deg, #0f0c29 0%, #302b63 60%, #971230 100%);
-      display: flex; align-items: center; justify-content: center;
-      overflow: hidden;
-    }
-    .report-card-visual::before {
-      content: ''; position: absolute; inset: 0;
-      background: radial-gradient(circle at 20% 30%, rgba(62,207,172,.2), transparent 50%),
-                  radial-gradient(circle at 80% 70%, rgba(139,92,246,.2), transparent 50%);
-    }
-    .report-card-visual-emoji {
-      font-size: 5rem; position: relative; z-index: 1;
-      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
-    }
-    .report-card-visual-badge {
-      position: absolute; top: 20px; left: 20px; z-index: 2;
-      background: rgba(255,255,255,0.95); color: var(--text);
-      padding: 6px 14px; border-radius: var(--radius-full);
-      font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.02em;
-    }
-    .report-card-body { padding: 24px 28px 28px; }
-    .report-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+    .report-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
     .report-date { font-size: 0.75rem; color: var(--text-3); font-weight: 500; }
     .report-tag {
       padding: 3px 10px; border-radius: var(--radius-full);
@@ -678,21 +656,16 @@ function renderReportList() {
 
   el.innerHTML = filtered.map(r => `
     <div class="report-card" onclick="showReport('${r.id}')">
-      <div class="report-card-visual" style="${r.visualGradient ? 'background:' + r.visualGradient : ''}">
-        <span class="report-card-visual-badge">${r.subCategory || r.category}</span>
-        <span class="report-card-visual-emoji">${r.visualEmoji || '📊'}</span>
+      <div class="report-meta">
+        <span class="report-date">${r.date}</span>
+        <span class="report-tag" style="background:${r.category === '内容商业化' ? '#f0eaff' : r.category === '流量商业化' ? '#edf3ff' : '#e6faf3'};color:${r.category === '内容商业化' ? '#6a3dd6' : r.category === '流量商业化' ? '#2a6fd8' : '#007a5e'}">${r.category}</span>
+        ${r.subCategory ? `<span class="report-tag" style="background:#fff0e5;color:#d96b1f">${r.subCategory}</span>` : ''}
+        ${r.tags.map(t => `<span class="report-tag" style="background:${t.bg};color:${t.color}">${t.text}</span>`).join('')}
       </div>
-      <div class="report-card-body">
-        <div class="report-meta">
-          <span class="report-date">${r.date}</span>
-          <span class="report-tag" style="background:${r.category === '内容商业化' ? '#f0eaff' : r.category === '流量商业化' ? '#edf3ff' : '#e6faf3'};color:${r.category === '内容商业化' ? '#6a3dd6' : r.category === '流量商业化' ? '#2a6fd8' : '#007a5e'}">${r.category}</span>
-          ${r.tags.map(t => `<span class="report-tag" style="background:${t.bg};color:${t.color}">${t.text}</span>`).join('')}
-        </div>
-        <div class="report-title">${r.title}</div>
-        <div class="report-desc">${r.desc}</div>
-        <div class="report-stats">
-          ${r.stats.map(s => `<span class="report-stat">${s.icon} <strong>${s.value}</strong> ${s.label}</span>`).join('')}
-        </div>
+      <div class="report-title">${r.title}</div>
+      <div class="report-desc">${r.desc}</div>
+      <div class="report-stats">
+        ${r.stats.map(s => `<span class="report-stat">${s.icon} <strong>${s.value}</strong> ${s.label}</span>`).join('')}
       </div>
     </div>
   `).join('');
