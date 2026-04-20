@@ -72,45 +72,43 @@
     .hero-title { font-size: 2.75rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; color: var(--text); }
     .hero-subtitle { margin-top: 12px; font-size: 1rem; color: var(--text-2); max-width: 720px; }
 
-    /* CATEGORY NAV — 参考 HappyOps 居中导航风格 */
+    /* CATEGORY NAV */
     .cat-nav {
       max-width: var(--max-w); margin: 0 auto; padding: 32px 24px 0;
-      display: flex; justify-content: center; align-items: center; gap: 0;
+      display: flex; justify-content: flex-start; align-items: center; gap: 8px;
     }
     .cat-link {
-      position: relative; padding: 10px 24px; border: none; background: none;
-      font-family: var(--font); font-size: 0.9375rem; font-weight: 400;
-      color: var(--text-3); cursor: pointer; transition: color 250ms var(--ease);
-      white-space: nowrap; display: flex; align-items: center; gap: 6px;
+      position: relative; padding: 10px 20px; border: none; background: none;
+      font-family: var(--font); font-size: 0.9375rem; font-weight: 500;
+      color: var(--text-3); cursor: pointer; transition: all 250ms var(--ease);
+      white-space: nowrap; display: flex; align-items: center;
+      border-radius: var(--radius-full);
     }
-    .cat-link:first-child { padding-left: 0; }
-    .cat-link:hover { color: var(--text); }
-    .cat-link.active { color: var(--text); font-weight: 500; }
-    .cat-link .cat-dot {
-      width: 6px; height: 6px; border-radius: 50%; background: var(--text);
-      opacity: 0; transition: opacity 250ms var(--ease);
+    .cat-link:hover { color: var(--text); background: var(--bg-surface); }
+    .cat-link.active {
+      color: #fff; background: var(--text); font-weight: 500;
     }
-    .cat-link.active .cat-dot { opacity: 1; }
-    .cat-sep { width: 1px; height: 16px; background: var(--border); margin: 0 4px; flex-shrink: 0; }
+    .cat-link.active:hover { background: var(--text); color: #fff; }
+    .cat-link .cat-dot { display: none; }
+    .cat-sep { display: none; }
 
     /* SUB-CATEGORY NAV */
     .sub-nav {
       max-width: var(--max-w); margin: 0 auto; padding: 16px 24px 0;
-      display: none; justify-content: flex-start; align-items: center; gap: 0;
+      display: none; justify-content: flex-start; align-items: center; gap: 8px;
     }
     .sub-nav.visible { display: flex; }
     .sub-link {
-      position: relative; padding: 6px 18px; border: none; background: none;
-      font-family: var(--font); font-size: 0.8125rem; font-weight: 400;
-      color: var(--text-4); cursor: pointer; transition: all 250ms var(--ease);
+      position: relative; padding: 6px 14px; border: none; background: none;
+      font-family: var(--font); font-size: 0.8125rem; font-weight: 500;
+      color: var(--text-3); cursor: pointer; transition: all 250ms var(--ease);
       white-space: nowrap; border-radius: var(--radius-full);
     }
-    .sub-link:hover { color: var(--text-2); }
-    .sub-link:first-child { padding-left: 0; }
+    .sub-link:hover { color: var(--text); background: var(--bg-surface); }
     .sub-link.active {
-      color: var(--text); font-weight: 500;
-      background: var(--bg-surface); border: 1px solid var(--border-light);
+      color: #fff; background: var(--text); font-weight: 500;
     }
+    .sub-link.active:hover { background: var(--text); color: #fff; }
 
     /* EMPTY */
     .empty { text-align: center; padding: 60px 24px; }
@@ -578,12 +576,9 @@ function countReports(cat, sub) {
 
 function renderFilters() {
   const el = document.getElementById('catNav');
-  el.innerHTML = CATEGORIES.map((c, i) => {
+  el.innerHTML = CATEGORIES.map(c => {
     const isActive = activeCategory === c.key;
-    return (i > 0 ? '<span class="cat-sep"></span>' : '') +
-      `<button class="cat-link ${isActive ? 'active' : ''}" onclick="setCategory(${c.key === null ? 'null' : "'" + c.key + "'"})">
-        <span class="cat-dot"></span>${c.label}
-      </button>`;
+    return `<button class="cat-link ${isActive ? 'active' : ''}" onclick="setCategory(${c.key === null ? 'null' : "'" + c.key + "'"})">${c.label}</button>`;
   }).join('');
 }
 
@@ -599,9 +594,7 @@ function renderSubFilters() {
   subEl.classList.add('visible');
   subEl.innerHTML = subs.map(s => {
     const isActive = activeSubCategory === s.key;
-    return `<button class="sub-link ${isActive ? 'active' : ''}" onclick="setSubCategory(${s.key === null ? 'null' : "'" + s.key + "'"})">
-      ${s.icon ? s.icon + ' ' : ''}${s.label}
-    </button>`;
+    return `<button class="sub-link ${isActive ? 'active' : ''}" onclick="setSubCategory(${s.key === null ? 'null' : "'" + s.key + "'"})">${s.icon ? s.icon + ' ' : ''}${s.label}</button>`;
   }).join('');
 }
 
