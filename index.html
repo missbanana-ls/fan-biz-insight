@@ -693,6 +693,78 @@ const TAG_COLORS = {
 // DATA
 // ============================================================
 const NEWS_DATA = {
+  "2026-05-11": [
+    {
+      title: "OpenAI完成800亿美元二级市场要约：估值飙至5000亿美元成全球最值钱私企，AI基建支出承诺累计1.4万亿",
+      summary: "据Reuters与CNBC本周联合报道，OpenAI完成员工股票二级市场要约收购，估值跃升至5000亿美元，正式超越SpaceX成为全球估值最高的私营公司。本轮交易由软银、Thrive Capital、Dragoneer和T. Rowe Price等领投，总规模约66亿美元，员工套现约80亿美元。OpenAI同时披露未来5-8年AI基础设施承诺总额已达1.4万亿美元（含与Oracle 3000亿、CoreWeave 1190亿、AMD 6GW算力合作等）。CFO Sarah Friar在内部信中明确：「下半年广告产品将作为ChatGPT变现的关键支柱推进」，并首次公开规划Sora视频订阅、Agent按任务计费、企业Codex席位三大新收入流。",
+      reason: "5000亿估值与1.4万亿基建承诺之间存在巨大「变现敞口」，意味着OpenAI必须在未来18个月内验证多元化商业模式——广告、Agent按效果付费、企业版席位将三线齐发。这是AI行业从「技术故事」转向「现金流验证」的关键节点，也意味着对话式AI广告、Agent商业模式将进入加速验证窗口期，影响所有依赖大模型API的下游商业产品定价策略。",
+      imeInsight: "OpenAI正式将「广告」列为变现支柱，对输入法商业化是直接利好——它确立了「对话场景广告」作为新一代广告形态的合法性。输入法可借势布局：(1)与ChatGPT/Sora等对话产品建立广告SDK合作，将输入法作为广告投放的「上游意图捕获层」；(2)推出按Agent任务计费的输入法AI助手（订机票、查快递、找优惠券）抽取交易佣金；(3)输出企业版输入法席位授权模式，对标Codex企业席位。",
+      tags: ["AI商业化", "广告营销"], priority: "high", source: "Reuters/CNBC/The Information"
+    },
+    {
+      title: "Apple App Store广告业务全面扩张：Today Tab+Apps Tab双广告位上线，2026年广告收入预计破70亿美元",
+      summary: "Apple于5月7日宣布Apple Search Ads升级品牌升级为「Apple Ads」，并在App Store的Today Tab（首页推荐位）和Apps Tab新增两个广告展位，广告主可竞价位于编辑推荐内容旁的「Featured」位置。同时，Apple Ads首次开放在Apple News和Stocks应用的展示广告位，正式从「搜索广告」扩展为全生态广告平台。Evercore ISI预测Apple广告收入将从2025年的约45亿美元增至2026年70亿美元、2027年破百亿。Apple强调全部广告基于差分隐私和本地化处理，不依赖跨App追踪，这是其与Meta/Google广告的核心差异点。",
+      reason: "Apple从「Search Ads」升级为「Apple Ads」标志着其正式将广告作为继服务订阅之后的第二大增长引擎。70亿规模虽不及Meta/Google千亿级，但Apple拥有14亿活跃设备的独家流量与隐私护城河，会逐步蚕食iOS端的应用买量市场。对App开发者意味着：iOS买量成本将上升，但隐私友好的归因体系也将更可靠，这是后IDFA时代广告生态重塑的关键一步。",
+      imeInsight: "Apple Ads坚持「差分隐私+本地化处理」的路线，对输入法商业化是重大启示：输入法天然具备本地化处理优势（输入数据可全程在端侧处理，仅上传脱敏聚合特征），可以打造「隐私优先广告网络」对标Apple Ads，避开Meta/Google式的数据合规风险。同时，输入法可作为iOS端「跨App统一意图入口」，与Apple Ads形成互补——Apple拥有展示位，输入法拥有意图信号，存在数据合作空间。",
+      tags: ["广告营销", "隐私合规"], priority: "high", source: "Apple Newsroom/Evercore ISI/AdExchanger"
+    },
+    {
+      title: "Shopify Q1电商Agent GMV突破12亿美元：Agentic Commerce Protocol接入商家超50万，AI推荐转化率较传统搜索高3.4倍",
+      summary: "Shopify 5月8日发布2026年Q1财报，Agentic Commerce相关GMV首次单独披露——通过ChatGPT、Perplexity、Claude等AI Agent入口完成的购买额达12亿美元，环比增长214%。Shopify的Agentic Commerce Protocol (ACP)接入商家数突破50万，覆盖全球约18%的Shopify生态。CEO Tobi Lütke在电话会中透露：来自AI Agent的订单平均客单价比传统社交流量高47%，转化率比传统搜索流量高3.4倍，退货率低22%。同时Shopify宣布与OpenAI联合推出「Instant Checkout in ChatGPT」——用户可在ChatGPT对话框内直接完成下单和支付，Shopify负责履约和售后。",
+      reason: "12亿美元Agentic Commerce GMV是行业首个被验证的规模化数据点，证明AI对话式电商已从概念走向真实交易闭环。3.4倍转化率优势源于AI已经在对话中完成需求澄清和商品筛选，到达Shopify时已是「高确定性流量」。这将引发两大连锁反应：(1)传统Google Shopping/Amazon搜索广告预算迁移；(2)所有DTC品牌必须重新优化「AI Agent可发现性」，催生新的「AISO」（AI Search Optimization）服务市场。",
+      imeInsight: "Shopify+OpenAI的「ChatGPT内一键下单」对输入法是直接威胁——意味着用户不再需要离开聊天场景就能完成购买。输入法必须加快布局自己的「Instant Checkout」能力：(1)与主流电商平台（淘宝、京东、Shopee）建立支付级集成，让用户在输入框内直接完成下单；(2)输入法AI主动捕捉用户购物意图（输入「最近想买」「求推荐」等触发词），呼出商品卡片；(3)收取CPS分佣，建立电商Agent变现闭环。",
+      tags: ["电商零售", "AI商业化"], priority: "high", source: "Shopify Q1 FY26 Earnings/TechCrunch"
+    },
+    {
+      title: "TikTok Symphony 2.0+TikTok Shop Live AI主播全球上线：1人即可同时运营20+直播间，东南亚GMV单日破纪录",
+      summary: "TikTok于5月6日在洛杉矶举办Symphony 2.0发布会，推出三大重磅升级：(1)AI Avatar Live——基于10秒真人录音和3张照片即可生成可7×24小时直播的AI主播，支持42种语言实时切换；(2)Symphony Creative Director——输入产品URL自动生成20条不同风格的短视频广告；(3)Smart+ Trends——AI预测7天后的爆款品类并自动生成对应素材。东南亚试点数据：印尼某美妆商家用1名运营+8个AI主播覆盖24小时全时段直播，单日GMV突破420万人民币，是传统真人直播的6.8倍。TikTok Shop全球GMV预计2026年突破750亿美元（同比+89%）。",
+      reason: "AI主播7×24小时直播打破了「人力上限」这一直播电商最大的天花板，将彻底重塑直播电商的成本结构和竞争格局——中小商家也能用极低成本拥有「永不下播」的销售渠道。同时，42种语言实时切换让东南亚商家一夜之间获得全球出海能力。这意味着：(1)真人主播职业将进入「头部精品+长尾AI」的二元结构；(2)直播间数量将爆发式增长，平台流量分配机制必将随之重构；(3)出海门槛被极大降低，催生新一波东南亚→全球的跨境电商红利。",
+      imeInsight: "TikTok AI Avatar Live的「10秒录音+3张照片生成数字人」对输入法的启示：输入法可类似地推出「AI回复Avatar」功能——用户可用极少素材训练自己的「数字分身」，在聊天场景中代为回复（适用于客服、社群运营、跨时区沟通）。商家可通过输入法的「品牌Avatar」在私域聊天中持续触达用户，形成「输入法版数字员工」服务，收取SaaS订阅费。",
+      tags: ["社交变现", "AI商业化"], priority: "high", source: "TikTok Newsroom/Sensor Tower/36氪"
+    },
+    {
+      title: "EU AI Act进入80天倒计时：欧盟委员会发布Annex III最终实施细则，AI招聘+信用评分需在8月2日前完成强制注册",
+      summary: "欧盟委员会5月5日发布EU AI Act Annex III高风险AI系统的最终实施细则（Implementing Regulation 2026/758），距8月2日全面执法仅剩80天。最终细则确定五大执行要点：(1)AI招聘系统、信用评分模型必须在7月15日前完成EU AI数据库注册；(2)生物识别系统须在生效首日提交第三方合格评定证书；(3)所有Annex III提供者必须建立「实时事件报告通道」，严重事件须15天内上报；(4)罚款执行采用「累进制」——首次违规最高营收3%，重复违规最高7%或3500万欧元；(5)统一执法工具包TaskForce已组建，由欧盟AI Office与各成员国DPA联合运作。CSA同步发布合规自查清单，警告全球仅35%的企业已完成AI系统Inventory。",
+      reason: "80天倒计时+「累进罚款制」+15天事件报告窗口，意味着合规已从「准备阶段」进入「冲刺阶段」。35%的Inventory完成率说明大多数跨国企业仍未做好准备，预计6-7月将出现合规咨询和RegTech服务的爆发性需求。对广告、招聘、金融、保险等高频AI使用行业，未来12周的合规执行力将直接决定欧洲市场业务连续性，部分企业可能被迫暂停AI功能上线或退出欧洲市场。",
+      imeInsight: "EU AI Act对输入法欧洲业务的紧迫提示：输入法的「智能联想」「情感识别」「语音输入」功能如服务欧洲用户，必须立即完成三件事：(1)AI系统Inventory盘点，明确哪些功能落入Annex III；(2)在7月15日前完成EU AI数据库注册；(3)建立15天事件报告SOP。建议同步推出「欧盟版」精简功能集，将高风险AI模块降级为可选服务，规避全球营收7%的罚款风险。",
+      tags: ["隐私合规", "平台治理"], priority: "high", source: "European Commission/CSA/IAPP"
+    },
+    {
+      title: "Anthropic Claude 4.0+Claude for Enterprise全面升级：百万Token上下文、原生Computer Use、企业ARR突破40亿美元",
+      summary: "Anthropic于5月7日发布Claude 4.0系列（Opus 4.0/Sonnet 4.0/Haiku 4.0），三大核心升级：(1)百万Token原生上下文窗口（Opus 4.0），可处理整本书或完整代码库；(2)Computer Use 2.0——AI可直接操作浏览器、Excel、Photoshop等桌面应用，准确率较前代提升68%；(3)Constitutional Agent——内置宪法AI约束的Agent框架，企业可定义合规边界。同步推出Claude for Enterprise升级版，新增SAML SSO、审计日志、数据驻留选项（欧盟/美国/日本三区可选）。Anthropic CFO在投资人沟通会中透露企业ARR已突破40亿美元，1000+财富2000强企业客户，渗透率较2025年底翻倍。",
+      reason: "Claude 4.0的「百万Token+Computer Use+Constitutional Agent」三件套定位极为清晰——专攻企业级Agent市场，与OpenAI的消费级路线形成差异化。40亿企业ARR证明了Anthropic的「合规优先」战略奏效——大企业愿意为「可审计、可控制、隐私友好」的AI支付溢价。这将加剧企业AI市场的「双寡头」格局：OpenAI主攻消费+开发者，Anthropic主攻企业+合规市场，其他厂商生存空间被进一步挤压。",
+      imeInsight: "Anthropic的「Constitutional Agent」框架对输入法商业化有重要启示：输入法可借鉴「宪法AI」思路，向企业客户提供「可定义合规边界的输入法AI」——例如金融行业版本禁止AI联想敏感词、医疗行业版本自动屏蔽诊断建议、政府版本强制本地化处理。这种行业垂直版本输入法可以打开企业级订阅市场，单席位定价对标Claude for Enterprise，形成新的高利润收入流。",
+      tags: ["企业服务", "AI商业化"], priority: "high", source: "Anthropic Blog/The Information"
+    },
+    {
+      title: "美国FTC对AI广告深度伪造执法升级：首单针对AI数字人代言开出850万美元罚单，全行业代言合规风暴启动",
+      summary: "美国联邦贸易委员会（FTC）于5月6日宣布对一家加密货币平台开出850万美元罚款——理由是该平台使用AI生成的「明星数字人」（包含未授权的Tom Hanks、Taylor Swift等公众人物形象）在社交媒体投放广告，误导消费者认为获得名人背书。这是FTC在AI广告领域的首单标志性执法，明确三条红线：(1)未授权使用真人形象生成AI代言违反《FTC Act》第5条；(2)即使带有「AI生成」标识，使用真人特征的AI数字人仍构成欺骗；(3)广告平台需承担「合理审查义务」，知情不报罚款翻倍。FTC同步发布《AI广告执法指南2026》，与纽约SB8420A、加州SB 942形成联邦+州级执法合力。",
+      reason: "850万美元罚单+「平台连带责任」是AI广告生态的分水岭事件——它意味着AI数字人广告的「灰色地带」时代结束。所有广告平台必须立即建立AI内容审核机制，识别未授权的真人特征。这将催生新的「AI内容溯源」和「数字人版权管理」赛道。同时，合规AI数字人（明确授权+水印标识）的市场价值将上升，与Sora、TikTok AI Avatar等合规产品形成正向循环。",
+      imeInsight: "FTC执法对输入法广告业务的重大警示：输入法如在广告位中使用AI生成的人物形象（如AI推荐表情包、AI头像广告），需立即建立「真人特征识别」机制，避免误用名人形象。同时，输入法可推出「AI数字人广告合规检测」工具，作为广告SDK的增值服务，向品牌客户提供「上线前合规审查」，定价基于检测频次，开辟RegTech式的新收入流。",
+      tags: ["隐私合规", "广告营销"], priority: "high", source: "FTC.gov/Adweek/Reuters"
+    },
+    {
+      title: "Pinduoduo+TikTok Shop+SHEIN东南亚三国杀升级：印尼站GMV单月破百亿，本地化AI推荐成胜负关键",
+      summary: "Sensor Tower 5月8日发布东南亚电商Q2开局报告：Pinduoduo（Temu）、TikTok Shop、SHEIN三大平台在印尼+越南+泰国的合计月GMV突破180亿美元，同比增长94%。三平台呈现差异化打法：(1)Temu凭「全托管+AI低价推荐」拿下印尼下沉市场，4月单月GMV突破110亿美元，AI推荐贡献GMV占比72%；(2)TikTok Shop以「直播+AI Avatar」主攻Z世代，泰国市场份额超38%；(3)SHEIN推出「AI快反时尚」——从Trend识别到上架仅需7天。三家共同的胜负手是「本地化AI推荐」——能否针对每个国家的语言、宗教、消费习惯定制推荐模型。Lazada、Shopee等本地玩家份额持续被挤压。",
+      reason: "180亿月GMV+94%增长率证明东南亚电商进入「中国出海大战」最激烈阶段。三家平台的差异化打法本质上是同一个命题——「谁的本地化AI最强」。AI推荐贡献72%GMV的数据说明算法已经成为电商竞争的真正护城河。这将引发两大连锁反应：(1)东南亚本地AI人才争夺战白热化；(2)传统电商SEO/广告投放团队被「本地化AI推荐工程师」取代，行业人才结构重塑。",
+      imeInsight: "东南亚电商「本地化AI推荐」决战对输入法出海是巨大机遇——输入法掌握用户最真实的语言习惯、宗教文化、口语表达数据，是本地化AI最稀缺的「冷启动数据源」。输入法可与Temu/TikTok Shop/SHEIN等平台建立「本地化语料合作」——以脱敏聚合的输入数据训练区域化推荐模型，按推荐效果分成。这是输入法在出海市场最具差异化的B2B商业模式。",
+      tags: ["电商零售", "AI商业化"], priority: "medium", source: "Sensor Tower/36氪/亿邦动力"
+    },
+    {
+      title: "Meta+Google宣布AI广告「无关键词时代」全面到来：意图识别完全AI化，广告主只需输入业务目标",
+      summary: "Meta于5月5日宣布Advantage+ Audience全面取消「兴趣定向」选项，所有广告默认进入纯AI意图匹配模式——广告主只需提供产品URL和转化目标，Meta AI完全负责受众识别、创意生成、出价优化。Google同期宣布AI Max for Search全球推广，传统关键词广告将在2026年Q4起逐步进入「Legacy模式」（仍可用但不再获得新功能）。两大平台的共同信号：广告投放正式进入「无关键词、无受众标签、无定向参数」的「Three-Zero时代」——广告主输入「我要卖XX，目标ROI是XX」，AI完成所有中间环节。早期数据显示：Three-Zero模式下中小商家ROAS平均提升42%。",
+      reason: "「Three-Zero时代」是数字广告业30年来最大的范式转移——从「人找广告位」到「广告位自己理解需求」。广告投放的技术门槛被极大降低，中小商家直接获得与大品牌同等的AI优化能力，竞争焦点转向「业务目标设定的清晰度」和「转化数据的完整性」。传统广告代理商业务模式面临颠覆——「投放优化」不再是核心价值，「数据基础设施」和「创意素材生产」成为新护城河。",
+      imeInsight: "Meta/Google「Three-Zero时代」对输入法广告业务的核心启示：输入法应彻底放弃「关键词广告位售卖」的旧模式，全面转向「意图驱动的Agentic广告匹配」——广告主只需提供品牌目标和创意素材，输入法AI根据用户实时输入语境自动匹配最佳广告形态（联想词、表情、快捷回复卡片）。这种「AI原生输入法广告」可对标Advantage+和AI Max的体验，是输入法在AI广告时代的差异化产品形态。",
+      tags: ["广告营销", "AI商业化"], priority: "high", source: "Meta Newsroom/Google Ads Blog/Search Engine Land"
+    },
+    {
+      title: "Substack+YouTube+X创作者订阅大战升级：Substack月活破1亿、YouTube Premium用户破1.5亿，订阅经济进入存量博弈",
+      summary: "5月初创作者经济三大平台同时披露Q1关键数据：Substack月活突破1亿（同比+58%），付费订阅创作者收入超12亿美元；YouTube Premium全球付费用户突破1.5亿（含Music），创作者订阅+打赏收入年化达84亿美元；X的Creator Subscriptions首次超越Twitch 2025同期数据，头部创作者月入破百万案例增至2300人。三大平台的共同新动作：(1)推出「跨平台导入」功能，鼓励创作者迁入；(2)将AI内容工具内嵌到创作流程；(3)推出「订阅+打赏+电商+AI数字人」的多维变现工具包。Stripe数据显示：2026年Q1全球订阅经济规模达4.8万亿美元，AI驱动的「微订阅」（$1-5/月）增速达187%。",
+      reason: "1亿+1.5亿+创作者百万收入潮共同表明创作者经济进入「存量博弈+收入加速」的新阶段。订阅经济从「内容订阅」扩展到「Agent订阅、Avatar订阅、知识库订阅」等多元形态。AI微订阅187%增速说明用户支付意愿被「低价+高频+AI体验」激活。对所有内容平台和工具产品而言：未来18个月内必须建立完整的「订阅+AI变现」组合，否则将被订阅生态边缘化。",
+      imeInsight: "订阅经济和AI微订阅爆发为输入法商业化打开新通道：输入法可推出「AI Pro微订阅」——$2.99/月解锁高级AI功能（无限翻译、AI写作助手、多Avatar切换、专属皮肤），定价对标AI微订阅趋势。同时输入法可作为「创作者订阅入口」——用户在聊天中订阅内容时，输入法直接呼出订阅卡片完成支付，按订阅GMV收取0.5-1%通道费，建立轻量但规模化的订阅分发网络。",
+      tags: ["社交变现", "AI商业化"], priority: "medium", source: "Substack/YouTube/X/Stripe"
+    }
+  ],
   "2026-05-04": [
     {
       title: "Meta Q1财报炸裂：营收563亿美元同比增33%，AI广告工具覆盖800万广告主，自适应排名模型驱动转化率提升1.6%",
@@ -2053,7 +2125,7 @@ const NEWS_DATA = {
 // ============================================================
 // STATE
 // ============================================================
-let currentDate = new Date(2026, 4, 4);
+let currentDate = new Date(2026, 4, 11);
 let activeTag = null;
 let searchQuery = '';
 
