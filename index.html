@@ -430,15 +430,14 @@
     }
 
     .card-source {
-      flex-shrink: 0;
+      display: inline-block;
       font-size: 0.6875rem;
       font-weight: 500;
-      color: var(--text-2);
+      color: var(--text-3);
       background: var(--bg-surface);
       padding: 4px 10px;
       border-radius: var(--radius-full);
       white-space: nowrap;
-      margin-top: 2px;
     }
 
     .card-body {
@@ -2285,8 +2284,8 @@ function renderCard(n) {
     <article class="card">
       <div class="card-header">
         <h3>${n.title}</h3>
-        <span class="card-source">${n.source}</span>
       </div>
+      <span class="card-source">${n.source}</span>
       <p class="card-body">${n.summary}</p>
       <div class="card-insight">
         <div class="card-insight-label">值得关注</div>
