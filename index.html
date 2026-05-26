@@ -386,6 +386,16 @@
       gap: 16px;
     }
 
+    .cards.cards-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      .cards.cards-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
     /* ====== CARD (Designer-style) ====== */
     .card {
       background: var(--bg);
@@ -2261,7 +2271,8 @@ function renderContent() {
 
   let h = '';
   sg.forEach(([tag, items]) => {
-    h += `<section class="section-row"><div class="section-title">${tag} · ${items.length}</div><div class="cards">`;
+    const cardsClass = items.length <= 2 ? 'cards cards-2' : 'cards';
+    h += `<section class="section-row"><div class="section-title">${tag} · ${items.length}</div><div class="${cardsClass}">`;
     items.forEach(n => { h += renderCard(n); });
     h += '</div></section>';
   });
