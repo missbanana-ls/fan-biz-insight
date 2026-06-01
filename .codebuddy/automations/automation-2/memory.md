@@ -1,5 +1,23 @@
 # 每日竞品设计案例更新 - 执行记录
 
+## 2026-05-11 09:30 执行成功
+
+- 通过 Playwright 从 Dribbble 抓取 4 组关键词（gamification reward mobile UI、e-commerce promotion campaign、membership VIP subscription、sign in daily reward app），共抓取约 167 张图片 URL，按最新排序（sort=latest）
+- 从中精选 5 个高质量商业化运营 UI 设计案例（已去重、已验证 URL 全部 200 可访问）
+- 新增案例：游戏化Battle Pass季度通行证、电商Mega Sale限时闪购Landing、三档VIP会员订阅升级页、7日连签宝箱阶梯日历、Flash Sale限时秒杀通栏
+- 标签覆盖：游戏化、增长设计、订阅付费、电商大促、活动页面、广告营销、会员体系、定价策略、签到活动、积分活动、互动营销
+- Git commit c012f6a 已 push 到 GitHub (missbanana-ls/fan-biz-insight)
+- compete.html 现有案例总数：约 80+ 个
+
+## 2026-04-21 09:30 执行成功
+
+- 通过 Playwright 从 Dribbble 搜索了 4 组关键词（membership loyalty program、subscription paywall pricing、social referral invite friend reward、e-commerce promotion campaign sale coupon），共抓取约 67 张图片 URL（其中约 50 张为新 URL）
+- 从中精选 5 个高质量商业化运营 UI 设计案例（已去重、已验证 URL 全部 200 可访问）
+- 新增案例：会员忠诚度积分钱包、VIP等级成长体系、电商促销倒计时卡片、App订阅付费墙A/B方案库、社交裂变邀请组件
+- 标签覆盖：会员体系、积分活动、增长设计、电商大促、活动页面、订阅付费、社交裂变
+- Git commit 75963fd 已 push 到 GitHub (missbanana-ls/fan-biz-insight)
+- compete.html 现有案例总数：约 75+ 个
+
 ## 2026-04-20 09:30 执行成功
 
 - 通过 Playwright 从 Dribbble 搜索了 3 组关键词（gamification reward mobile UI、app monetization paywall subscription、e-commerce promotion campaign sale discount），共抓取约 78 张图片 URL（其中 43 张为新 URL）
